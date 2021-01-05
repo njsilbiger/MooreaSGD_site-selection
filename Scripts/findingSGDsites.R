@@ -103,3 +103,6 @@ Mooreamap_allsites<- ggmap(M3)+
   geom_label_repel(data = AllSites %>% filter(SiteID %in% Sites2Keep$row), mapping = aes(x=Lon, y=Lat, label = SiteID), force = 2)+
   ggsave(here("Output","AllSites_labels.pdf"), height = 8, width = 8)
 
+# priority sites to target
+priority<-AllSites %>% filter(SiteID %in% Sites2Keep$row)
+write_csv(x = priority, path = here::here("Output", "prioritysites.csv"))
