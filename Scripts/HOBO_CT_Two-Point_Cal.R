@@ -45,11 +45,11 @@ Pres_bar<-0
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of initial calibrations
-startCal1<-'2021-01-10 15:19:00' # Y-M-D H:M:S First Calibration for Two-Point Cal (1413 uS/cm)
-endCal1<-'2021-01-10 15:23:00'
+startCal1<-'2021-01-09 16:59:00' # Y-M-D H:M:S First Calibration for Two-Point Cal (1413 uS/cm)
+endCal1<-'2021-01-09 17:05:00'
 
-startCal2<-'2021-01-10 15:10:00' # Y-M-D H:M:S Second Calibration for Two-Point Cal (50.0 mS/cm)
-endCal2<-'2021-01-10 15:17:00'
+startCal2<-'2021-01-09 17:17:40' # Y-M-D H:M:S Second Calibration for Two-Point Cal (50.0 mS/cm)
+endCal2<-'2021-01-09 17:25:00'
 
 # Date of in situ logs, Y-M-D, H:M:S
 Launch<-'2021-01-10 15:30:00'
@@ -74,18 +74,18 @@ int<-10 #seconds
 ############################################################
 ### Read in and Calibration and Logger Files
 
-# Conductivity files
+# Conductivity Calibration files
 path.Cal<-paste0('Data/',folder.date)
 file.names.Cal<-basename(list.files(path.Cal, pattern = c("CT","csv$"), recursive = T)) #list all csv file names in the folder and subfolders
-CT.data <- file.names.Cal %>%
+condCal <- file.names.Cal %>%
   map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
-CT.data<-CT.data%>% # Filter specified probe by Serial number
+condCal<-condCal%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
   #select(!contains('Low Range'))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),E_Conductivity=contains("High Range"))%>%
   drop_na()
-CT.data$date<-CT.data$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
+condCal$date<-condCal$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # In Situ Conductivity files
 #path.Cal<-paste0('Data/',folder.date)
