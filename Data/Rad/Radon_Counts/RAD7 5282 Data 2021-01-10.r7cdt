@@ -1,305 +1,416 @@
 /*------------------------- File Info ----------------------------
 
-CAPTURE version: 6.0.1
+CAPTURE version: 6.0.2
 Platform: Windows
-Date: 2021-01-10T20:49:25
+Date: 2021-01-12T17:11:54
+
+------------------------ Printer Output -----------------------
+
+0101 0.00+-2.82 p Sniff
+  SUN 08-MAR-20 14:21
+  22.6`C RH:10% B:6.27V
+  L: 1   HV:2218V, 9%
+Total Counts: 2.
+Livetime:   5.6min
+A: 0.00+-0.71 cpm 0.0%
+B: 0.36+-0.97 cpm 100.0%
+C: 0.00+-0.71 cpm 0.0%
+D: 0.00+-0.71 cpm 0.0%
+O: 0.00+-0.71 cpm 0.0%
+
+0201 0.00+-2.83 p Sniff
+  SUN 10-JAN-21 11:21
+  35.7`C RH:7% B:6.33V
+  L: 2   HV:2218V, 8%
+Total Counts: 1.
+Livetime:   5.6min
+A: 0.00+-0.71 cpm 0.0%
+B: 0.00+-0.71 cpm 0.0%
+C: 0.18+-0.86 cpm 100.0%
+D: 0.00+-0.71 cpm 0.0%
+O: 0.00+-0.71 cpm 0.0%
+
+0202 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 11:27
+  36.0`C RH:7% B:6.30V
+  L: 2   HV:2201V, 9%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.18+-0.87 cpm 100.0%
+
+0203 0.71+-3.44 p Sniff
+  SUN 10-JAN-21 11:33
+  35.7`C RH:7% B:6.30V
+  L: 2   HV:2236V, 8%
+Total Counts: 4.
+Livetime:   5.5min
+A: 0.18+-0.87 cpm 25.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.18+-0.87 cpm 25.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.36+-0.98 cpm 50.0%
+
+0204 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 11:39
+  35.4`C RH:6% B:6.30V
+  L: 2   HV:2218V, 8%
+Total Counts: 0.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 100.0%
+
+0205 0.72+-3.45 p Sniff
+  SUN 10-JAN-21 11:45
+  34.8`C RH:6% B:6.30V
+  L: 2   HV:2218V, 8%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.18+-0.87 cpm 100.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0301 0.00+-2.82 p Sniff
+  SUN 10-JAN-21 15:27
+  33.8`C RH:24% B:6.30V
+  L: 2   HV:2218V, 8%
+Total Counts: 0.
+Livetime:   5.6min
+A: 0.00+-0.71 cpm 0.0%
+B: 0.00+-0.71 cpm 0.0%
+C: 0.00+-0.71 cpm 0.0%
+D: 0.00+-0.71 cpm 0.0%
+O: 0.00+-0.71 cpm 100.0%
+
+0302 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 15:33
+  33.5`C RH:27% B:6.33V
+  L: 1   HV:2218V, 8%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.18+-0.87 cpm 100.0%
+
+0303 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 15:39
+  33.2`C RH:28% B:6.33V
+  L: 2   HV:2218V, 8%
+Total Counts: 0.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 100.0%
+
+0304 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 15:45
+  32.9`C RH:28% B:6.30V
+  L: 1   HV:2236V, 8%
+Total Counts: 0.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 100.0%
+
+0305 0.71+-3.44 p Sniff
+  SUN 10-JAN-21 15:51
+  32.9`C RH:28% B:6.30V
+  L: 1   HV:2218V, 9%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.18+-0.87 cpm 100.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0306 2.14+-4.27 p Sniff
+  SUN 10-JAN-21 15:57
+  32.9`C RH:28% B:6.30V
+  L: 1   HV:2201V, 9%
+Total Counts: 3.
+Livetime:   5.5min
+A: 0.54+-1.08 cpm 100.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0307 1.42+-3.89 p Sniff
+  SUN 10-JAN-21 16:03
+  33.2`C RH:29% B:6.30V
+  L: 1   HV:2218V, 9%
+Total Counts: 2.
+Livetime:   5.5min
+A: 0.36+-0.98 cpm 100.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0308 1.42+-3.89 p Sniff
+  SUN 10-JAN-21 16:09
+  33.5`C RH:29% B:6.30V
+  L: 2   HV:2218V, 8%
+Total Counts: 3.
+Livetime:   5.5min
+A: 0.36+-0.98 cpm 66.7%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.18+-0.87 cpm 33.3%
+
+0309 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 16:15
+  33.5`C RH:29% B:6.30V
+  L: 1   HV:2236V, 8%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.18+-0.87 cpm 100.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0310 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 16:21
+  33.8`C RH:29% B:6.30V
+  L: 1   HV:2201V, 9%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.18+-0.87 cpm 100.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0311 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 16:27
+  33.8`C RH:30% B:6.30V
+  L: 2   HV:2236V, 8%
+Total Counts: 0.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 100.0%
+
+0312 1.42+-3.89 p Sniff
+  SUN 10-JAN-21 16:33
+  34.2`C RH:32% B:6.30V
+  L: 2   HV:2218V, 8%
+Total Counts: 3.
+Livetime:   5.5min
+A: 0.36+-0.98 cpm 66.7%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.18+-0.87 cpm 33.3%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0313 0.00+-2.85 p Sniff
+  SUN 10-JAN-21 16:40
+  34.2`C RH:32% B:6.30V
+  L: 1   HV:2218V, 8%
+Total Counts: 0.
+Livetime:   5.5min
+A: 0.00+-0.72 cpm 0.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 100.0%
+
+0314 1.42+-3.89 p Sniff
+  SUN 10-JAN-21 16:46
+  34.2`C RH:32% B:6.30V
+  L: 2   HV:2236V, 8%
+Total Counts: 2.
+Livetime:   5.5min
+A: 0.36+-0.98 cpm 100.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0315 0.71+-3.44 p Sniff
+  SUN 10-JAN-21 16:52
+  34.2`C RH:32% B:6.30V
+  L: 1   HV:2218V, 8%
+Total Counts: 1.
+Livetime:   5.5min
+A: 0.18+-0.87 cpm 100.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.00+-0.72 cpm 0.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0316 0.71+-3.44 p Sniff
+  SUN 10-JAN-21 16:58
+  34.2`C RH:32% B:6.30V
+  L: 2   HV:2218V, 9%
+Total Counts: 2.
+Livetime:   5.5min
+A: 0.18+-0.87 cpm 50.0%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.18+-0.87 cpm 50.0%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0317 0.71+-3.44 p Sniff
+  SUN 10-JAN-21 17:04
+  33.8`C RH:32% B:6.33V
+  L: 1   HV:2218V, 8%
+Total Counts: 3.
+Livetime:   5.5min
+A: 0.18+-0.87 cpm 33.3%
+B: 0.00+-0.72 cpm 0.0%
+C: 0.36+-0.98 cpm 66.7%
+D: 0.00+-0.72 cpm 0.0%
+O: 0.00+-0.72 cpm 0.0%
+
+0318 0.00+-3.04 p Sniff
+  SUN 10-JAN-21 17:09
+  33.5`C RH:33% B:6.30V
+  L: 1   HV:2218V, 9%
+Total Counts: 1.
+Livetime:   5.2min
+A: 0.00+-0.77 cpm 0.0%
+B: 0.00+-0.77 cpm 0.0%
+C: 0.19+-0.92 cpm 100.0%
+D: 0.00+-0.77 cpm 0.0%
+O: 0.00+-0.77 cpm 0.0%
 
 ---------------------- End of File Info -----------------------*/
 
->Special ComAll
-Special ComAll 
-Data transfer...
-001,20,03,08,14,21, 2.,   5.6, 0.0, 100, 0.0, 0.0,2218, 9, 22.6,10, 1,6.27, 50,198, 0., 2.821869,255
-002,21,01,10,11,21, 1.,   5.6, 0.0, 0.0, 100, 0.0,2218, 8, 35.7, 7, 2,6.33, 40,198, 0., 2.834468,255
-003,21,01,10,11,27, 1.,   5.5, 0.0, 0.0, 0.0, 0.0,2201, 9, 36.0, 7, 2,6.30, 40,198, 0., 2.847178,255
-004,21,01,10,11,33, 4.,   5.5,25.0, 0.0,25.0, 0.0,2236, 8, 35.7, 7, 2,6.30, 40,198, .7117945, 3.436847,255
-005,21,01,10,11,39, 0.,   5.5, 0.0, 0.0, 0.0, 0.0,2218, 8, 35.4, 6, 2,6.30, 40,198, 0., 2.847178,255
-006,21,01,10,11,45, 1.,   5.5, 100, 0.0, 0.0, 0.0,2218, 8, 34.8, 6, 2,6.30, 40,198, .7150008, 3.452329,255
-007,21,01,10,15,27, 0.,   5.6, 0.0, 0.0, 0.0, 0.0,2218, 8, 33.8,24, 2,6.30, 40,198, 0., 2.821869,255
-008,21,01,10,15,33, 1.,   5.5, 0.0, 0.0, 0.0, 0.0,2218, 8, 33.5,27, 1,6.33, 40,198, 0., 2.847178,255
-009,21,01,10,15,39, 0.,   5.5, 0.0, 0.0, 0.0, 0.0,2218, 8, 33.2,28, 2,6.33, 40,198, 0., 2.847178,255
-010,21,01,10,15,45, 0.,   5.5, 0.0, 0.0, 0.0, 0.0,2236, 8, 32.9,28, 1,6.30, 40,198, 0., 2.847178,255
-011,21,01,10,15,51, 1.,   5.5, 100, 0.0, 0.0, 0.0,2218, 9, 32.9,28, 1,6.30, 40,198, .7117945, 3.436847,255
-012,21,01,10,15,57, 3.,   5.5, 100, 0.0, 0.0, 0.0,2201, 9, 32.9,28, 1,6.30, 40,198, 2.135384, 4.270767,255
-013,21,01,10,16,03, 2.,   5.5, 100, 0.0, 0.0, 0.0,2218, 9, 33.2,29, 1,6.30, 40,198, 1.423589, 3.889317,255
-014,21,01,10,16,09, 3.,   5.5,66.7, 0.0, 0.0, 0.0,2218, 8, 33.5,29, 2,6.30, 40,198, 1.423589, 3.889317,255
-015,21,01,10,16,15, 1.,   5.5, 0.0, 0.0, 100, 0.0,2236, 8, 33.5,29, 1,6.30, 40,198, 0., 2.847178,255
-016,21,01,10,16,21, 1.,   5.5, 0.0, 0.0, 100, 0.0,2201, 9, 33.8,29, 1,6.30, 40,198, 0., 2.847178,255
-017,21,01,10,16,27, 0.,   5.5, 0.0, 0.0, 0.0, 0.0,2236, 8, 33.8,30, 2,6.30, 40,198, 0., 2.847178,255
-018,21,01,10,16,33, 3.,   5.5,66.7, 0.0,33.3, 0.0,2218, 8, 34.2,32, 2,6.30, 40,198, 1.423589, 3.889317,255
-019,21,01,10,16,40, 0.,   5.5, 0.0, 0.0, 0.0, 0.0,2218, 8, 34.2,32, 1,6.30, 40,198, 0., 2.847178,255
-020,21,01,10,16,46, 2.,   5.5, 100, 0.0, 0.0, 0.0,2236, 8, 34.2,32, 2,6.30, 40,198, 1.423589, 3.889317,255
-021,21,01,10,16,52, 1.,   5.5, 100, 0.0, 0.0, 0.0,2218, 8, 34.2,32, 1,6.30, 40,198, .7117945, 3.436847,255
-022,21,01,10,16,58, 2.,   5.5,50.0, 0.0,50.0, 0.0,2218, 9, 34.2,32, 2,6.30, 40,198, .7117945, 3.436847,255
-023,21,01,10,17,04, 3.,   5.5,33.3, 0.0,66.7, 0.0,2218, 8, 33.8,32, 1,6.33, 40,198, .7117945, 3.436847,255
-024,21,01,10,17,09, 1.,   5.2, 0.0, 0.0, 100, 0.0,2218, 9, 33.5,33, 1,6.30, 40,198, 0., 3.037898,255
->Special SprAll
-Special SPrAll 
-0101 0.00+-2.82 p Sniff 
-  SUN 08-MAR-20 14:21
-  22.6`C RH:10% B:6.27V 
-Total Counts:  2.
-Livetime:    5.6min
-A: 0.00+-0.71 cpm   0.0%
-B: 0.36+-0.97 cpm   100%
-C: 0.00+-0.71 cpm   0.0%
-D: 0.00+-0.71 cpm   0.0%
-O: 0.00+-0.71 cpm   0.0%
-0201 0.00+-2.83 p Sniff 
-  SUN 10-JAN-21 11:21
-  35.7`C RH: 7% B:6.33V 
-Total Counts:  1.
-Livetime:    5.6min
-A: 0.00+-0.71 cpm   0.0%
-B: 0.00+-0.71 cpm   0.0%
-C: 0.18+-0.86 cpm   100%
-D: 0.00+-0.71 cpm   0.0%
-O: 0.00+-0.71 cpm   0.0%
-0202 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 11:27
-  36.0`C RH: 7% B:6.30V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.18+-0.87 cpm   100%
-0203 0.71+-3.44 p Sniff 
-  SUN 10-JAN-21 11:33
-  35.7`C RH: 7% B:6.30V 
-Total Counts:  4.
-Livetime:    5.5min
-A: 0.18+-0.87 cpm  25.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.18+-0.87 cpm  25.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.36+-0.98 cpm  50.0%
-0204 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 11:39
-  35.4`C RH: 6% B:6.30V 
-Total Counts:  0.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   100%
-0205 0.72+-3.45 p Sniff 
-  SUN 10-JAN-21 11:45
-  34.8`C RH: 6% B:6.30V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.18+-0.87 cpm   100%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0301 0.00+-2.82 p Sniff 
-  SUN 10-JAN-21 15:27
-  33.8`C RH:24% B:6.30V 
-Total Counts:  0.
-Livetime:    5.6min
-A: 0.00+-0.71 cpm   0.0%
-B: 0.00+-0.71 cpm   0.0%
-C: 0.00+-0.71 cpm   0.0%
-D: 0.00+-0.71 cpm   0.0%
-O: 0.00+-0.71 cpm   100%
-0302 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 15:33
-  33.5`C RH:27% B:6.33V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.18+-0.87 cpm   100%
-0303 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 15:39
-  33.2`C RH:28% B:6.33V 
-Total Counts:  0.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   100%
-0304 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 15:45
-  32.9`C RH:28% B:6.30V 
-Total Counts:  0.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   100%
-0305 0.71+-3.44 p Sniff 
-  SUN 10-JAN-21 15:51
-  32.9`C RH:28% B:6.30V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.18+-0.87 cpm   100%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0306 2.14+-4.27 p Sniff 
-  SUN 10-JAN-21 15:57
-  32.9`C RH:28% B:6.30V 
-Total Counts:  3.
-Livetime:    5.5min
-A: 0.54+-1.08 cpm   100%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0307 1.42+-3.89 p Sniff 
-  SUN 10-JAN-21 16:03
-  33.2`C RH:29% B:6.30V 
-Total Counts:  2.
-Livetime:    5.5min
-A: 0.36+-0.98 cpm   100%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0308 1.42+-3.89 p Sniff 
-  SUN 10-JAN-21 16:09
-  33.5`C RH:29% B:6.30V 
-Total Counts:  3.
-Livetime:    5.5min
-A: 0.36+-0.98 cpm  66.7%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.18+-0.87 cpm  33.3%
-0309 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 16:15
-  33.5`C RH:29% B:6.30V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.18+-0.87 cpm   100%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0310 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 16:21
-  33.8`C RH:29% B:6.30V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.18+-0.87 cpm   100%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0311 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 16:27
-  33.8`C RH:30% B:6.30V 
-Total Counts:  0.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   100%
-0312 1.42+-3.89 p Sniff 
-  SUN 10-JAN-21 16:33
-  34.2`C RH:32% B:6.30V 
-Total Counts:  3.
-Livetime:    5.5min
-A: 0.36+-0.98 cpm  66.7%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.18+-0.87 cpm  33.3%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0313 0.00+-2.85 p Sniff 
-  SUN 10-JAN-21 16:40
-  34.2`C RH:32% B:6.30V 
-Total Counts:  0.
-Livetime:    5.5min
-A: 0.00+-0.72 cpm   0.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   100%
-0314 1.42+-3.89 p Sniff 
-  SUN 10-JAN-21 16:46
-  34.2`C RH:32% B:6.30V 
-Total Counts:  2.
-Livetime:    5.5min
-A: 0.36+-0.98 cpm   100%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0315 0.71+-3.44 p Sniff 
-  SUN 10-JAN-21 16:52
-  34.2`C RH:32% B:6.30V 
-Total Counts:  1.
-Livetime:    5.5min
-A: 0.18+-0.87 cpm   100%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.00+-0.72 cpm   0.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0316 0.71+-3.44 p Sniff 
-  SUN 10-JAN-21 16:58
-  34.2`C RH:32% B:6.30V 
-Total Counts:  2.
-Livetime:    5.5min
-A: 0.18+-0.87 cpm  50.0%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.18+-0.87 cpm  50.0%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0317 0.71+-3.44 p Sniff 
-  SUN 10-JAN-21 17:04
-  33.8`C RH:32% B:6.33V 
-Total Counts:  3.
-Livetime:    5.5min
-A: 0.18+-0.87 cpm  33.3%
-B: 0.00+-0.72 cpm   0.0%
-C: 0.36+-0.98 cpm  66.7%
-D: 0.00+-0.72 cpm   0.0%
-O: 0.00+-0.72 cpm   0.0%
-0318 0.00+-3.04 p Sniff 
-  SUN 10-JAN-21 17:09
-  33.5`C RH:33% B:6.30V 
-Total Counts:  1.
-Livetime:    5.2min
-A: 0.00+-0.77 cpm   0.0%
-B: 0.00+-0.77 cpm   0.0%
-C: 0.19+-0.92 cpm   100%
-D: 0.00+-0.77 cpm   0.0%
-O: 0.00+-0.77 cpm   0.0%
->Setup Format Medium
-Setup Format 
-Format: Med 
->Special SPrOff
-Special SPrOff 
->
-Special Ident
-Special Ident
-DURRIDGE  RAD7
-Vers Vers 3.1a 151208
-Model 716
-Serial 05282
-Calib 03-FEB-20
+fileName = RAD7 5282 Data 2021-01-10.r7cdt
+fileDescription = 
+fileDataTags = 
+fileFormat = CDT vers 1.1
+linesContainingFatalErrors = 
+RAD7CalibrationDate = 2020-02-03T00:00:00
+RAD7FirmwareVers = Vers 3.1a 151208
+RAD7Model = 716
+RAD7RADLINKVersion = 0311
+RAD7SerialNumber = 5282
+RAD7CalibrationValCBSpillFactor = 727
+RAD7CalibrationValEScale = 11030
+RAD7CalibrationValRelativeHumidity = 34478
+RAD7CalibrationValSensitivityNORMAL = 526
+RAD7CalibrationValSensitivitySNIFF = 252
+RAD7CalibrationValSensitivityTHORON = 126
+RAD7CalibrationValTemp = 246
+RAD7CalibrationValYear = 120
+dataIsFromMultipleRAD7s = False
+sourceRAD7SNs = 5282
+includeEmbeddedRAD7Profile = True
+embeddedRAD7ProfileBASpillFactor = 0.025000000
+embeddedRAD7ProfileCBSpillFactorDataSource = 1
+embeddedRAD7ProfileCBSpillFactor = 0.011093140
+embeddedRAD7ProfileEffectiveDate = 2020-02-03T00:00:00
+embeddedRAD7ProfileMyRAD7ProfileSource = 1
+embeddedRAD7ProfileName = RAD7 5282 [2020-02-03]
+embeddedRAD7ProfileNORMALSensitivityVal = 0.526000000
+embeddedRAD7ProfileNORMALSensitivityUnit = 4
+embeddedRAD7ProfileRadonSensitivityDataSource = 1
+embeddedRAD7ProfileSerialNumber = 5282
+embeddedRAD7ProfileSNIFFSensitivityVal = 0.252000000
+embeddedRAD7ProfileSNIFFSensitivityUnit = 4
+embeddedRAD7ProfileSpecifyEffectiveDate = True
+embeddedRAD7ProfileSpecifySerialNumber = True
+embeddedRAD7ProfileThoronSensitivityDataSource = 1
+embeddedRAD7ProfileTHORONSensitivityVal = 0.126000000
+embeddedRAD7ProfileTHORONSensitivityUnit = 4
+recordDates = 2020-03-08T14:21:00, 2021-01-10T11:21:00, 2021-01-10T11:27:00, 2021-01-10T11:33:00, 2021-01-10T11:39:00, 2021-01-10T11:45:00, 2021-01-10T15:27:00, 2021-01-10T15:33:00, 2021-01-10T15:39:00, 2021-01-10T15:45:00, 2021-01-10T15:51:00, 2021-01-10T15:57:00, 2021-01-10T16:03:00, 2021-01-10T16:09:00, 2021-01-10T16:15:00, 2021-01-10T16:21:00, 2021-01-10T16:27:00, 2021-01-10T16:33:00, 2021-01-10T16:40:00, 2021-01-10T16:46:00, 2021-01-10T16:52:00, 2021-01-10T16:58:00, 2021-01-10T17:04:00, 2021-01-10T17:09:00
+RAD7Fields_01_TestNumbers = 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024
+RAD7Fields_02_Years = 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21
+RAD7Fields_03_Months = 03, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01
+RAD7Fields_04_Days = 08, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+RAD7Fields_05_Hours = 14, 11, 11, 11, 11, 11, 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 17, 17
+RAD7Fields_06_Minutes = 21, 21, 27, 33, 39, 45, 27, 33, 39, 45, 51, 57, 03, 09, 15, 21, 27, 33, 40, 46, 52, 58, 04, 09
+RAD7Fields_07_TotalCounts = 2, 1, 1, 4, 0, 1, 0, 1, 0, 0, 1, 3, 2, 3, 1, 1, 0, 3, 0, 2, 1, 2, 3, 1
+RAD7Fields_08_LiveTimes = 5.6, 5.6, 5.5, 5.5, 5.5, 5.5, 5.6, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.2
+RAD7Fields_09_PercentOfTotalCountsInWindowsA = 0, 0, 0, 25, 0, 100, 0, 0, 0, 0, 100, 100, 100, 66.7, 0, 0, 0, 66.7, 0, 100, 100, 50, 33.3, 0
+RAD7Fields_10_PercentOfTotalCountsInWindowsB = 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+RAD7Fields_11_PercentOfTotalCountsInWindowsC = 0, 100, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 0, 33.3, 0, 0, 0, 50, 66.7, 100
+RAD7Fields_12_PercentOfTotalCountsInWindowsD = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+RAD7Fields_13_HighVoltageLevels = 2218, 2218, 2201, 2236, 2218, 2218, 2218, 2218, 2218, 2236, 2218, 2201, 2218, 2218, 2236, 2201, 2236, 2218, 2218, 2236, 2218, 2218, 2218, 2218
+RAD7Fields_14_HighVoltageDutyCycles = 9, 8, 9, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 8, 8, 9, 8, 8, 8, 8, 8, 9, 8, 9
+RAD7Fields_15_RawTemperatures = 22.6, 35.7, 36, 35.7, 35.4, 34.8, 33.8, 33.5, 33.2, 32.9, 32.9, 32.9, 33.2, 33.5, 33.5, 33.8, 33.8, 34.2, 34.2, 34.2, 34.2, 34.2, 33.8, 33.5
+RAD7Fields_16_RelativeHumidities = 10, 7, 7, 7, 6, 6, 24, 27, 28, 28, 28, 28, 29, 29, 29, 29, 30, 32, 32, 32, 32, 32, 32, 33
+RAD7Fields_17_LeakageCurrents = 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1
+RAD7Fields_18_BatteryVoltages = 6.27, 6.33, 6.3, 6.3, 6.3, 6.3, 6.3, 6.33, 6.33, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.33, 6.3
+RAD7Fields_19_PumpCurrents = 50, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40
+RAD7Fields_20_FlagsBytes = 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198
+RAD7Fields_21_RadonConcentrations = 0, 0, 0, 0.7117945, 0, 0.7150008, 0, 0, 0, 0, 0.7117945, 2.135384, 1.423589, 1.423589, 0, 0, 0, 1.423589, 0, 1.423589, 0.7117945, 0.7117945, 0.7117945, 0
+RAD7Fields_22_RadonConcentrationUncertainties = 2.821869, 2.834468, 2.847178, 3.436847, 2.847178, 3.452329, 2.821869, 2.847178, 2.847178, 2.847178, 3.436847, 4.270767, 3.889317, 3.889317, 2.847178, 2.847178, 2.847178, 3.889317, 2.847178, 3.889317, 3.436847, 3.436847, 3.436847, 3.037898
+RAD7Fields_23_Unitsbytes = 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+recordRAD7CalibrationDates = 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00
+recordRAD7FirmwareVersions = Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208
+recordRAD7Models = 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716
+recordRAD7RADLINKVersions = 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311
+recordRAD7SerialNumbers = 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282
+recordRAD7CalibratedCBSpillFactors = 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727
+recordRAD7CalibratedEScales = 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030
+recordRAD7CalibratedRelativeHumidities = 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478
+recordRAD7CalibratedSensitivitiesNORMALPCiL = 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526
+recordRAD7CalibratedSensitivitiesSNIFFPCiL = 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252
+recordRAD7CalibratedSensitivitiesTHORONPCiL = 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126
+recordRAD7CalibratedTemps = 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246
+recordRAD7CalibratedYears = 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120
+recordCycleNumbers = 1, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+recordRunNumbers = 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+recordThoronConcentrations = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordThoronConcentrationUncertainties = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordContainsCPMInfoFromMediumPrintFormat = True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True
+recordCPMsWindowAFromPrintout = 0, 0, 0, 0.18, 0, 0.18, 0, 0, 0, 0, 0.18, 0.54, 0.36, 0.36, 0, 0, 0, 0.36, 0, 0.36, 0.18, 0.18, 0.18, 0
+recordCPMsWindowBFromPrintout = 0.36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordCPMsWindowCFromPrintout = 0, 0.18, 0, 0.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.18, 0.18, 0, 0.18, 0, 0, 0, 0.18, 0.36, 0.19
+recordCPMsWindowDFromPrintout = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordCPMsWindowOFromPrintout = 0, 0, 0.18, 0.36, 0, 0, 0, 0.18, 0, 0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordCPMUncertaintiesWindowAFromPrintout = 0.71, 0.71, 0.72, 0.87, 0.72, 0.87, 0.71, 0.72, 0.72, 0.72, 0.87, 1.08, 0.98, 0.98, 0.72, 0.72, 0.72, 0.98, 0.72, 0.98, 0.87, 0.87, 0.87, 0.77
+recordCPMUncertaintiesWindowBFromPrintout = 0.97, 0.71, 0.72, 0.72, 0.72, 0.72, 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
+recordCPMUncertaintiesWindowCFromPrintout = 0.71, 0.86, 0.72, 0.87, 0.72, 0.72, 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.87, 0.87, 0.72, 0.87, 0.72, 0.72, 0.72, 0.87, 0.98, 0.92
+recordCPMUncertaintiesWindowDFromPrintout = 0.71, 0.71, 0.72, 0.72, 0.72, 0.72, 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
+recordCPMUncertaintiesWindowOFromPrintout = 0.71, 0.71, 0.87, 0.98, 0.72, 0.72, 0.71, 0.87, 0.72, 0.72, 0.72, 0.72, 0.72, 0.87, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
+recordAdditiveSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
+recordPerRecordSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
+recordBigBottleConfigAerationEfficiencyFactorVals = 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000
+recordBigBottleConfigAmbientAirRadonConcentrationValsPCiL = 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500
+recordBigBottleConfigBottleVolumesMl = 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0
+recordBigBottleConfigBrimFullWaterLossVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigBubbleTrapVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigCustomDryingUnitVolsmL = 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0
+recordBigBottleConfigCustomDRYSTIKVolsmL = 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0
+recordBigBottleConfigCustomRAD7VolsmL = 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0
+recordBigBottleConfigDryingUnitTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordbigBottleConfigDRYSTIKTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordBigBottleConfigHeadSpacesMl = 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0
+recordBigBottleConfigRAD7Types = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordBigBottleConfigSpecifyAmbientAirRadon = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordBigBottleConfigTubingPlusAdaptorCapVolMl = 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0
+recordRADAQUATemperatureRecordDelaysSeconds = 1800, 1800, 1800, 1800, 1800, 1800, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720
+recordRadonInWaterCalculationFormulasUsed = 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordRadonMeasurementMethodsUsed = 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordWaterProbeTemperatureRecordDelaysSeconds = 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200
+recordWaterSalinitiesPartsPerThousand = 0, 0, 0, 0, 0, 0, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35
+recordWaterTemperatureCelsiusFixedVals = 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20
+recordWaterTemperatureDataProfileNames = , , , , , , EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD
+recordWaterTemperatureDataSources = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordWaterTemperatureOffsetCelsiusFixedVals = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordAppliedWaterTemperaturesCelsius = -1, 37.6, 31.1, 30.6, 30.5, 31.1, 35.2, 31.4, 30.8, 31.3, 31.2, 31.0, 31.0, 31.0, 31.1, 31.5, 31.5, 31.5, 30.8, 30.6, 31.0, 30.9, 30.6, 30.7
+recordAppliedWaterTemperaturesDelayedCelsius = -1, 37.6, 31.1, 30.6, 30.5, 31.1, 34.2, 34.2, 35.2, 31.4, 30.8, 31.3, 31.2, 31.0, 31.0, 31.0, 31.1, 31.5, 31.5, 31.5, 30.8, 30.6, 31.0, 31.0
 
->Special Version
-Special Version
-Version: 0311
->Special GetCal
-Special GetCal 
-Thoron 126
-Sniff 252
-Normal 526
-RH 34478
-Spill 727
-Escale 11030
-Temp 246
-Year 120
->
