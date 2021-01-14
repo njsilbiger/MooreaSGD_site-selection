@@ -3,7 +3,7 @@
 # https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 
 # created: 9-23-2020 by Danielle Barnas
-# modified: 9-29-2020
+# modified: 1-13-2021
 
 #### Conductivity Calibration for Drift #####
 
@@ -21,9 +21,9 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-cal.date<-'011221' # Date of logger calibration
-file.date<-'011121' # Date in the logger file's name
-Serial<-'319' # CT Probe Serial Number
+cal.date<-'011321' # Date of logger calibration
+file.date<-'011321' # Date in the logger file's name
+Serial<-'354' # CT Probe Serial Number
 
 ###################################
 # Pressure data
@@ -44,12 +44,12 @@ Pres_bar<-0
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of initial calibrations
-startCal1<-'2021-01-12 15:46:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endCal1<-'2021-01-12 15:54:00'
+startCal1<-'2021-01-13 14:17:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endCal1<-'2021-01-13 14:25:00'
 
 # Date of in situ logs
-Launch<-'2021-01-11 10:00:00'
-Retrieval<-'2021-01-11 14:20:00'
+Launch<-'2021-01-13 10:00:00'
+Retrieval<-'2021-01-13 13:04:00'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -136,17 +136,21 @@ CT.data<-CT.data%>%
 write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',Serial,'_1pcal.csv'))
 View(CT.data)
 
-CT.data%>% # show low salinity points to either remove outliers or observe possible sgd points
-  filter(SalinityInSitu_1pCal<25)
+#CT.data<-read_csv(paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',Serial,'_1pcal.csv'))
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
-  filter(SalinityInSitu_1pCal>25)%>% # to ignore outliers
+#  filter(SalinityInSitu_1pCal>25)%>% # to ignore outliers
   ggplot(aes(x=date,y=SalinityInSitu_1pCal))+
   geom_line()
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
-  filter(SalinityInSitu_1pCal>25)%>% # to ignore outliers
   ggplot(aes(x=date,y=TempInSitu))+
   geom_line()
+
+
+CT.data%>% # show low salinity points to either remove outliers or observe possible sgd points
+  filter(SalinityInSitu_1pCal<20)
+
+ 
