@@ -19,17 +19,18 @@ library(patchwork)
 
 ### read in the conductivity files ###
 ## select all files with a .csv
-CondPath<-here("Data","Cond_temp","Calibrated_files")
-files <- dir(path = CondPath,pattern = "*hobo.csv")
+CondPath<-here("Data","Cond_temp","Calibrated_files", "fixed_cal")
+files <- dir(path = CondPath,pattern = ".csv")
 
 # read in the data
 CondData <- files %>%
-  map(~ read_csv(file.path(CondPath, .), skip = 2, col_names = c("ID", "date","HighRange", "Temp","SpC","Salinity"))) %>% 
+  map(~ read_csv(file.path(CondPath, .))) %>% 
+                 #col_names = c("ID", "date","HighRange", "Temp","SpC","Salinity")
   reduce(rbind) %>%
-  mutate(date = mdy_hms(date)) %>% # make data a date_time
+  mutate(date = ymd_hms(date)) %>% # make data a date_time
   group_by(date) %>% # there are two sensors paired. So average all data cross time
   summarise_if(is.numeric,.funs = mean) %>%
-  select(date,Temp, SpC, Salinity)
+  select(date,Temp = TempInSitu, Salinity = SalinityInSitu_1pCal)
    
 
 #### Read in GPS data ####
@@ -50,7 +51,7 @@ GPSData <- files %>%
 # join the GPS and conductivity data ####
 GPS_Cond<-left_join(GPSData, CondData) %>%
   drop_na(Salinity) %>% # drop missing data
-  filter(Salinity>28) # remove the bad data when the sensor probably jumped out of the water
+  filter(Salinity>28 & Salinity < 36.5) # remove the bad data when the sensor probably jumped out of the water
 
 ### read in API key for maps
 API<-names(read_table(here("Data","API.txt")))
@@ -75,9 +76,9 @@ West1<-data.frame(lon =	-149.865, lat = -17.575)
 
 M2<-get_map(West1,zoom = 16, maptype = 'satellite')
 West1_allcond<- ggmap(M2)+
-  # scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
-  #          model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-  #          location =  "bottomleft", transform = TRUE, dist_unit = "km", dist = 5)+
+  scalebar(x.min = -149.871, x.max = -149.859,y.min = -17.58, y.max = -17.572,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
   xlab("")+
   ylab("")+
@@ -86,13 +87,12 @@ West1_allcond<- ggmap(M2)+
 
 ## West side 2 ####
 
-	
 West2<-data.frame(lon =	-149.903, lat = -17.536)
 M5<-get_map(West2,zoom = 16, maptype = 'satellite')
 West2_allcond<- ggmap(M5)+
-  # scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
-  #          model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-  #          location =  "bottomleft", transform = TRUE, dist_unit = "km", dist = 5)+
+  scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
   xlab("")+
   ylab("")+
@@ -105,9 +105,9 @@ West2_allcond<- ggmap(M5)+
 North1<-data.frame(lon =	-149.794, lat = -17.47934142)
 M3<-get_map(North1,zoom = 18, maptype = 'satellite')
 North1_allcond<- ggmap(M3)+
-  # scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
-  #          model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-  #          location =  "bottomleft", transform = TRUE, dist_unit = "km", dist = 5)+
+  scalebar(x.min = -149.795, x.max = -149.793,y.min = -17.4805, y.max = -17.478,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "topleft", transform = TRUE, dist_unit = "m", dist = 50)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
   xlab("")+
   ylab("")+
@@ -115,12 +115,12 @@ North1_allcond<- ggmap(M3)+
   scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
 
 ## Opunahu
-Opu1<-data.frame(lon =	-149.8700656, lat = -17.49)
-M4<-get_map(Opu1,zoom = 14, maptype = 'satellite')
+Opu1<-data.frame(lon =	-149.869, lat = -17.4932)
+M4<-get_map(Opu1,zoom = 18, maptype = 'satellite')
 Opu1_allcond<- ggmap(M4)+
-  # scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
-  #          model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-  #          location =  "bottomleft", transform = TRUE, dist_unit = "km", dist = 5)+
+   scalebar(x.min = -149.87, x.max = -149.860,y.min = -17.4945, y.max = -17.492,
+            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
   xlab("")+
   ylab("")+
@@ -129,4 +129,5 @@ Opu1_allcond<- ggmap(M4)+
 
 
 ### Bring them together in patchwork
-(Opu1_allcond+North1_allcond)/(West1_allcond+West2_allcond)+ plot_layout(guides = "collect")
+Sal_map<-(Opu1_allcond+North1_allcond)/(West1_allcond+West2_allcond)+ plot_layout(guides = "collect")
+ggsave(here("Output", "Salinitymap.pdf"), plot = Sal_map, width = 8, height = 8)
