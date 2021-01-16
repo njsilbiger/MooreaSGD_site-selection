@@ -24,7 +24,7 @@ here()
 
 cal.date<-'011521' # Date of logger calibration
 file.date<-'011521' # Date in the logger file's name
-Serial<-'318' # CT Probe Serial Number
+Serial<-'319' # CT Probe Serial Number
 
 ###################################
 # Date and Time
@@ -32,12 +32,12 @@ Serial<-'318' # CT Probe Serial Number
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of initial calibrations
-startCal1<-'2021-01-15 08:42:12' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endCal1<-'2021-01-15 08:48:12'
+startCal1<-'2021-01-15 08:44:45' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endCal1<-'2021-01-15 08:47:55'
 
 # Date of in situ logs
-Launch<-'2021-01-15 09:54:32'
-Retrieval<-'2021-01-15 13:52:32'
+Launch<-'2021-01-15 08:48:25'
+Retrieval<-'2021-01-15 14:51:05'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -52,10 +52,10 @@ oneCal<-50000 # uS/cm
 # COMMENT OUT ONE OF THE FOLLOWING
 
 ### If pairing with Pressure/Depth Logger data
-Serial.depth<-'876' # Serial number of paired hobo pressure logger
+#Serial.depth<-'876' # Serial number of paired hobo pressure logger
 
 ### If data were recorded at a consistent pressure (bar)
-#Pres_bar<-0
+Pres_bar<-0
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -99,6 +99,7 @@ Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = chara
 condCal<-condCal%>%filter(between(date,startCal1,endCal1)) 
 condLog<-condLog%>%filter(between(date,Launch,Retrieval)) 
 CT.data<-union(condCal,condLog)# Join Calibration and Logged files
+#CT.data$date<-CT.data$date - seconds(5) # offset time if necessary
 
 ### 2. Calculate the non-linear temperature coefficient (alpha) [non-linear for groundwater influence]
 theta<-mean(condCal$TempInSitu)
@@ -112,12 +113,11 @@ f25<-oneCal / mean(condCal$E_Conductivity)
 CT.data<-CT.data%>%
   mutate(Sp_Conductance = f25 * E_Conductivity)
 
-
 ############################################################
 ############################################################
 # Load Pressure Data from HOBO Pressure Loggers for In Situ Practical Salinity Calculations
 If(Serial.depth = TRUE) {
-  Depth.data<-read_csv(paste0('Data/Depth/',file.date,'_Depth',Serial.depth,'.csv'))
+  Depth.data<-read_csv(paste0('Data/Depth/Calibrated_files/',file.date,'_Depth',Serial.depth,'.csv'))
   Depth.data<-Depth.data%>%
     filter(between(date,Launch,Retrieval))%>%
     rename(Serial.depth=Serial,TempInSitu.depth=TempInSitu)%>%
@@ -146,11 +146,8 @@ CT.data<-CT.data%>%
   unite(col=date,c('date','time'),sep=" ",remove=T)
 CT.data$date<-CT.data$date%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 
-CT.data$date<-CT.data$date - seconds(6)
-
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
-  #filter(SalinityInSitu_1pCal>27)%>%
   ggplot(aes(x=date,y=SalinityInSitu_1pCal))+
   geom_line()
 
