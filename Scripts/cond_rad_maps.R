@@ -72,81 +72,9 @@ Mooreamap_allcond<- ggmap(M1)+
   labs(color = "Salinity")+
   scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
 
-## zoom in on each site
-## West side 1
-West1<-data.frame(lon =	-149.865, lat = -17.575)
-
-M2<-get_map(West1,zoom = 16, maptype = 'satellite')
-West1_allcond<- ggmap(M2)+
-  scalebar(x.min = -149.871, x.max = -149.859,y.min = -17.58, y.max = -17.572,
-           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
-  xlab("")+
-  ylab("")+
-  labs(color = "Salinity")+
-  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
-
-## West side 2 ####
-
-West2<-data.frame(lon =	-149.903, lat = -17.536)
-M5<-get_map(West2,zoom = 16, maptype = 'satellite')
-West2_allcond<- ggmap(M5)+
-  scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
-           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
-  xlab("")+
-  ylab("")+
-  labs(color = "Salinity")+
-  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31)
-
-
-## North Shore ####
-
-North1<-data.frame(lon =	-149.794, lat = -17.47934142)
-M3<-get_map(North1,zoom = 18, maptype = 'satellite')
-North1_allcond<- ggmap(M3)+
-  scalebar(x.min = -149.795, x.max = -149.793,y.min = -17.4805, y.max = -17.478,
-           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "topleft", transform = TRUE, dist_unit = "m", dist = 50)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
-  xlab("")+
-  ylab("")+
-  labs(color = "Salinity")+
-  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
-
-## Opunahu
-Opu1<-data.frame(lon =	-149.869, lat = -17.4932)
-M4<-get_map(Opu1,zoom = 18, maptype = 'satellite')
-Opu1_allcond<- ggmap(M4)+
-   scalebar(x.min = -149.87, x.max = -149.860,y.min = -17.4945, y.max = -17.492,
-            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
-  xlab("")+
-  ylab("")+
-  labs(color = "Salinity")+
-  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
-
-
-## East side
-# Viarae
-Via1<-data.frame(lon =	-149.773, lat = -17.5295)
-M6<-get_map(Via1,zoom = 17, maptype = 'satellite')
-Via1_allcond<- ggmap(M6)+
-   scalebar(x.min = -149.776, x.max = -149.770,y.min = -17.532, y.max = -17.528,
-            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
-  xlab("")+
-  ylab("")+
-  labs(color = "Salinity")+
-  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
-
 ### Bring them together in patchwork
-Sal_map<-(Opu1_allcond+North1_allcond)/(West2_allcond+Via1_allcond)/(West1_allcond + Mooreamap_allcond)+ plot_layout(guides = "collect")
-ggsave(here("Output", "Salinitymap.pdf"), plot = Sal_map, width = 10, height = 10)
+# Sal_map<-(Opu1_allcond+North1_allcond)/(West2_allcond+Via1_allcond)/(West1_allcond + Mooreamap_allcond)+ plot_layout(guides = "collect")
+# ggsave(here("Output", "Salinitymap.pdf"), plot = Sal_map, width = 10, height = 10)
 
 #### Radon #####
 RadPath<-here("Data","Rad","Radon_Counts")
@@ -172,6 +100,8 @@ GPS_alteredRad<-GPSData %>%
   
 RAD_GPS<-left_join(RadData, GPS_alteredRad)
 
+#### Make maps of each site ####
+
 ## All of Mo'orea ####
 
 Mooreamap_allrad<- ggmap(M1)+
@@ -193,6 +123,9 @@ Mooreamap_allrad<- ggmap(M1)+
 
 ## zoom in on each site
 ## West side 1
+West1<-data.frame(lon =	-149.865, lat = -17.575)
+M2<-get_map(West1,zoom = 16, maptype = 'satellite')
+
 West1_allrad<- ggmap(M2)+
   scalebar(x.min = -149.871, x.max = -149.859,y.min = -17.58, y.max = -17.572,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
@@ -210,6 +143,9 @@ West1_allrad<- ggmap(M2)+
   guides(color= guide_legend(), size=guide_legend())
 
 ## West side 2 ####
+
+West2<-data.frame(lon =	-149.903, lat = -17.536)
+M5<-get_map(West2,zoom = 16, maptype = 'satellite')
 
 West2_allrad<- ggmap(M5)+
   scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
@@ -229,6 +165,9 @@ West2_allrad<- ggmap(M5)+
 
 
 ## North Shore ####
+North1<-data.frame(lon =	-149.794, lat = -17.47934142)
+M3<-get_map(North1,zoom = 18, maptype = 'satellite')
+
 North1_allrad<- ggmap(M3)+
   scalebar(x.min = -149.795, x.max = -149.793,y.min = -17.4805, y.max = -17.478,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
@@ -247,6 +186,9 @@ North1_allrad<- ggmap(M3)+
 
 
 ## Opunahu
+Opu1<-data.frame(lon =	-149.869, lat = -17.4932)
+M4<-get_map(Opu1,zoom = 18, maptype = 'satellite')
+
 Opu1_allrad<- ggmap(M4)+
   scalebar(x.min = -149.87, x.max = -149.860,y.min = -17.4945, y.max = -17.492,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
@@ -266,6 +208,9 @@ Opu1_allrad<- ggmap(M4)+
 
 ## East side
 # Viarae
+Via1<-data.frame(lon =	-149.773, lat = -17.5295)
+M6<-get_map(Via1,zoom = 17, maptype = 'satellite')
+
 Via1_allrad<- ggmap(M6)+
   scalebar(x.min = -149.776, x.max = -149.770,y.min = -17.532, y.max = -17.528,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
