@@ -22,8 +22,8 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-cal.date<-'011221' # Date of logger calibration
-file.date<-'011021' # Date in the logger file's name
+cal.date<-'011521' # Date of logger calibration
+file.date<-'011521' # Date in the logger file's name
 Serial<-'318' # CT Probe Serial Number
 
 ###################################
@@ -32,12 +32,12 @@ Serial<-'318' # CT Probe Serial Number
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of initial calibrations
-startCal1<-'2021-01-12 15:46:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endCal1<-'2021-01-12 15:54:00'
+startCal1<-'2021-01-15 08:42:12' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endCal1<-'2021-01-15 08:48:12'
 
 # Date of in situ logs
-Launch<-'2021-01-10 15:27:00'
-Retrieval<-'2021-01-10 17:11:40'
+Launch<-'2021-01-15 09:54:32'
+Retrieval<-'2021-01-15 13:52:32'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -52,10 +52,10 @@ oneCal<-50000 # uS/cm
 # COMMENT OUT ONE OF THE FOLLOWING
 
 ### If pairing with Pressure/Depth Logger data
-#Serial.depth<-'872' # Serial number of paired hobo pressure logger
+Serial.depth<-'876' # Serial number of paired hobo pressure logger
 
 ### If data were recorded at a consistent pressure (bar)
-Pres_bar<-0
+#Pres_bar<-0
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -69,7 +69,7 @@ Pres_bar<-0
 path.Cal<-'Data/Cond_temp/Calibration'
 file.names.Cal<-basename(list.files(path.Cal, pattern = c(cal.date,"csv$"), recursive = F)) #list all csv file names in the folder and subfolders
 condCal <- file.names.Cal %>%
-  map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+  map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE))
 condCal<-condCal%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
   mutate(Serial=Serial)%>%
@@ -81,8 +81,7 @@ condCal$date<-condCal$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na 
 path.Log<-paste0('Data/Cond_temp')
 file.names.Log<-basename(list.files(path.Log, pattern = c(file.date,"csv$"), recursive = F)) #list all csv file names in the folder and subfolders
 condLog <- file.names.Log %>%
-  map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
-condLog<-read_csv('Data/Cond_temp/SGD_011021_318.csv',skip=1)
+  map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE))
 condLog<-condLog%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
   mutate(Serial=Serial)%>%
@@ -118,16 +117,16 @@ CT.data<-CT.data%>%
 ############################################################
 # Load Pressure Data from HOBO Pressure Loggers for In Situ Practical Salinity Calculations
 If(Serial.depth = TRUE) {
-  data.pres<-read_csv(paste0('Probe_and_Logger_Protocols/HOBO_Pressure_Loggers/Data/',folder.date,'/',Serial.depth,'_HOBOdepth.csv'))
-  data.pres<-data.pres%>%
+  Depth.data<-read_csv(paste0('Data/Depth/',file.date,'_Depth',Serial.depth,'.csv'))
+  Depth.data<-Depth.data%>%
     filter(between(date,Launch,Retrieval))%>%
     rename(Serial.depth=Serial,TempInSitu.depth=TempInSitu)%>%
     mutate(AbsPressure_bar=AbsPressure*0.01) # convert kPa to Bar (conversion: 1 kPa = 0.01 Bar)
 } else {
-  data.pres<-tibble(date=CT.data$date, AbsPressure_bar=Pres_bar)
+  Depth.data<-tibble(date=CT.data$date, AbsPressure_bar=Pres_bar)
 }
 CT.data<-CT.data%>% # amend to larger dataframe
-  left_join(data.pres,by='date')
+  left_join(Depth.data,by='date')
 
 CT.data<-CT.data%>%
   separate(col=date,into=c("date","time"),sep=" ")
@@ -147,11 +146,11 @@ CT.data<-CT.data%>%
   unite(col=date,c('date','time'),sep=" ",remove=T)
 CT.data$date<-CT.data$date%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 
-# Write CSV file and graph data
-write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',Serial,'_1pcal_011421.csv'))
+CT.data$date<-CT.data$date - seconds(6)
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
+  #filter(SalinityInSitu_1pCal>27)%>%
   ggplot(aes(x=date,y=SalinityInSitu_1pCal))+
   geom_line()
 
@@ -159,4 +158,7 @@ CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
   ggplot(aes(x=date,y=TempInSitu))+
   geom_line()
+
+# Write CSV file and graph data
+write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',Serial,'_1pcal.csv'))
 

@@ -17,55 +17,59 @@
 
 rm(list=ls())
 
+
 library(tidyverse)
 library(lubridate)
 library(here)
 
 here()
 
-########################
-# File Names
-########################
+###################################
+# File Paths and Serial Numbers
+###################################
 
-folder.date<-'011021'
-#foldername<-'Raw'
-Serial<-'872'
+file.date<-'011521' # Date in the logger file's name
+Serial<-'876'
+
+###################################
+# Date and Time
+###################################
+### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of in situ logs
-Launch<-'2021-01-10 14:42:00' # Y-M-D H:M:S
-Retrieval<-'2021-01-10 17:02:00' # Y-M-D H:M:S
-
+Launch<-'2021-01-15 09:54:30'
+Retrieval<-'2021-01-15 13:52:30'
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
 #################################################################################
 
 # Read in Conductivity Calibration files
-path.p<-paste0('Data/',folder.date)
-file.names<-basename(list.files(path.p, pattern = c("Depth","csv$"), recursive = T)) #list all csv file names in the folder and subfolders
-data.pres<-file.names %>%
-  map_dfr(~ read_csv(file.path(path.p, .),skip=1,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+path.p<-'Data/Depth'
+file.names<-basename(list.files(path.p, pattern = c(file.date,"csv$"), recursive = F)) #list all csv file names in the folder and subfolders
+Depth.data<-file.names %>%
+  map_dfr(~ read_csv(file.path(path.p, .),skip=1,col_names=TRUE))
 
 # Filter specified probe by Serial number
-data.pres<-data.pres%>%
+Depth.data<-Depth.data%>%
   select(contains('Date'),contains(Serial))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),AbsPressure=contains("Abs Pres"),Depth=contains("Water Level"))%>%
   drop_na()
-data.pres$date<-data.pres$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
+Depth.data$date<-Depth.data$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # Filter data to only include deployment data
 Launch<-Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
-data.pres<-data.pres%>%filter(between(date,Launch,Retrieval)) 
+Depth.data<-Depth.data%>%filter(between(date,Launch,Retrieval)) 
 
 # Create simple csv file
-write_csv(data.pres,paste0('Probe_and_Logger_Protocols/HOBO_Pressure_Loggers/Data/',folder.date,'/',Serial,'_HOBOdepth.csv'))
+write_csv(Depth.data,paste0('Data/Depth/Calibrated_files',file.date,'_Depth',Serial,'.csv'))
 
 # Plot the data
-data.pres %>% # this is the dataframe
+Depth.data %>% # this is the dataframe
   ggplot(aes(x= date, y= TempInSitu))+   #setup plot with x and y data
   geom_line()
-data.pres %>% # this is the dataframe
+Depth.data %>% # this is the dataframe
   ggplot(aes(x= date, y= -Depth))+   #setup plot with x and y data
   geom_line()
