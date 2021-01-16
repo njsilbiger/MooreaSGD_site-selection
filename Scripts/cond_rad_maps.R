@@ -15,6 +15,8 @@ library(ggrepel)
 library(geodist)
 library(calecopal)
 library(patchwork)
+library(janitor)
+library(ggnewscale)
 
 
 ### read in the conductivity files ###
@@ -130,8 +132,6 @@ Opu1_allcond<- ggmap(M4)+
 
 ## East side
 # Viarae
-	-149.7756871
-
 Via1<-data.frame(lon =	-149.773, lat = -17.5295)
 M6<-get_map(Via1,zoom = 17, maptype = 'satellite')
 Via1_allcond<- ggmap(M6)+
@@ -156,10 +156,133 @@ files <- dir(path = RadPath,pattern = ".csv")
 RadData <- files %>%
   map(~ read_csv(file.path(RadPath, .))) %>% 
   #col_names = c("ID", "date","HighRange", "Temp","SpC","Salinity")
-  reduce(rbind) 
-  mutate(date = ymd_hms(Full_Date)) %>% # make data a date_time
-  group_by(date) %>% # there are two sensors paired. So average all data cross time
-  summarise_if(is.numeric,.funs = mean) %>%
-  select(date,Temp = TempInSitu, Salinity = SalinityInSitu_1pCal)
+  reduce(rbind) %>%
+  clean_names() %>% # clean up the names
+  mutate(date = mdy_hm(full_date)) %>% # make data a date_time
+  select(date,radon = radon_in_water_dpm_l)
 
 
+# The rad data is integrated over a 6 min interval while the GPS is every 10 seconds
+# This join will match the rad data with the starting point of the GPS track
+# I want to figure out how to fill it so it repeats the rad value for the entire 6 minute track
+
+# the rad data lags by 12 minutes behind the actual point. So subtract 12 minutes from the tracks
+GPS_alteredRad<-GPSData %>%
+  mutate(date = date - minutes(12))
+  
+RAD_GPS<-left_join(RadData, GPS_alteredRad)
+
+## All of Mo'orea ####
+
+Mooreamap_allrad<- ggmap(M1)+
+  scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "km", dist = 5)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "white") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+#  
+
+## zoom in on each site
+## West side 1
+West1_allrad<- ggmap(M2)+
+  scalebar(x.min = -149.871, x.max = -149.859,y.min = -17.58, y.max = -17.572,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "white") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+
+## West side 2 ####
+
+West2_allrad<- ggmap(M5)+
+  scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "white") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+
+
+## North Shore ####
+North1_allrad<- ggmap(M3)+
+  scalebar(x.min = -149.795, x.max = -149.793,y.min = -17.4805, y.max = -17.478,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "topleft", transform = TRUE, dist_unit = "m", dist = 50)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "white") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+
+
+## Opunahu
+Opu1_allrad<- ggmap(M4)+
+  scalebar(x.min = -149.87, x.max = -149.860,y.min = -17.4945, y.max = -17.492,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "white") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+
+
+## East side
+# Viarae
+Via1_allrad<- ggmap(M6)+
+  scalebar(x.min = -149.776, x.max = -149.770,y.min = -17.532, y.max = -17.528,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "white") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+
+
+### Bring them together in patchwork
+Rad_map<-(Opu1_allrad+North1_allrad)/(West2_allrad+Via1_allrad)/(West1_allrad + Mooreamap_allrad)+ plot_layout(guides = "collect")
+ggsave(here("Output", "Radmap.pdf"), plot = Rad_map, width = 10, height = 10)
