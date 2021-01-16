@@ -128,6 +128,38 @@ Opu1_allcond<- ggmap(M4)+
   scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
 
 
+## East side
+# Viarae
+	-149.7756871
+
+Via1<-data.frame(lon =	-149.773, lat = -17.5295)
+M6<-get_map(Via1,zoom = 17, maptype = 'satellite')
+Via1_allcond<- ggmap(M6)+
+   scalebar(x.min = -149.776, x.max = -149.770,y.min = -17.532, y.max = -17.528,
+            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), size = 2, alpha = .60)+
+  xlab("")+
+  ylab("")+
+  labs(color = "Salinity")+
+  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
+
 ### Bring them together in patchwork
-Sal_map<-(Opu1_allcond+North1_allcond)/(West1_allcond+West2_allcond)+ plot_layout(guides = "collect")
-ggsave(here("Output", "Salinitymap.pdf"), plot = Sal_map, width = 8, height = 8)
+Sal_map<-(Opu1_allcond+North1_allcond)/(West2_allcond+Via1_allcond)/(West1_allcond + Mooreamap_allcond)+ plot_layout(guides = "collect")
+ggsave(here("Output", "Salinitymap.pdf"), plot = Sal_map, width = 10, height = 10)
+
+#### Radon #####
+RadPath<-here("Data","Rad","Radon_Counts")
+files <- dir(path = RadPath,pattern = ".csv")
+
+# read in the data
+RadData <- files %>%
+  map(~ read_csv(file.path(RadPath, .))) %>% 
+  #col_names = c("ID", "date","HighRange", "Temp","SpC","Salinity")
+  reduce(rbind) 
+  mutate(date = ymd_hms(Full_Date)) %>% # make data a date_time
+  group_by(date) %>% # there are two sensors paired. So average all data cross time
+  summarise_if(is.numeric,.funs = mean) %>%
+  select(date,Temp = TempInSitu, Salinity = SalinityInSitu_1pCal)
+
+
