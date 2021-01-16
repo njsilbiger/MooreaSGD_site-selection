@@ -1,82 +1,10 @@
 /*------------------------- File Info ----------------------------
 
 CAPTURE version: 6.0.2
-Platform: Windows
-Date: 2021-01-12T17:11:54
+Platform: macOS Cocoa
+Date: 2021-01-15T19:31:14
 
 ------------------------ Printer Output -----------------------
-
-0101 0.00+-2.82 p Sniff
-  SUN 08-MAR-20 14:21
-  22.6`C RH:10% B:6.27V
-  L: 1   HV:2218V, 9%
-Total Counts: 2.
-Livetime:   5.6min
-A: 0.00+-0.71 cpm 0.0%
-B: 0.36+-0.97 cpm 100.0%
-C: 0.00+-0.71 cpm 0.0%
-D: 0.00+-0.71 cpm 0.0%
-O: 0.00+-0.71 cpm 0.0%
-
-0201 0.00+-2.83 p Sniff
-  SUN 10-JAN-21 11:21
-  35.7`C RH:7% B:6.33V
-  L: 2   HV:2218V, 8%
-Total Counts: 1.
-Livetime:   5.6min
-A: 0.00+-0.71 cpm 0.0%
-B: 0.00+-0.71 cpm 0.0%
-C: 0.18+-0.86 cpm 100.0%
-D: 0.00+-0.71 cpm 0.0%
-O: 0.00+-0.71 cpm 0.0%
-
-0202 0.00+-2.85 p Sniff
-  SUN 10-JAN-21 11:27
-  36.0`C RH:7% B:6.30V
-  L: 2   HV:2201V, 9%
-Total Counts: 1.
-Livetime:   5.5min
-A: 0.00+-0.72 cpm 0.0%
-B: 0.00+-0.72 cpm 0.0%
-C: 0.00+-0.72 cpm 0.0%
-D: 0.00+-0.72 cpm 0.0%
-O: 0.18+-0.87 cpm 100.0%
-
-0203 0.71+-3.44 p Sniff
-  SUN 10-JAN-21 11:33
-  35.7`C RH:7% B:6.30V
-  L: 2   HV:2236V, 8%
-Total Counts: 4.
-Livetime:   5.5min
-A: 0.18+-0.87 cpm 25.0%
-B: 0.00+-0.72 cpm 0.0%
-C: 0.18+-0.87 cpm 25.0%
-D: 0.00+-0.72 cpm 0.0%
-O: 0.36+-0.98 cpm 50.0%
-
-0204 0.00+-2.85 p Sniff
-  SUN 10-JAN-21 11:39
-  35.4`C RH:6% B:6.30V
-  L: 2   HV:2218V, 8%
-Total Counts: 0.
-Livetime:   5.5min
-A: 0.00+-0.72 cpm 0.0%
-B: 0.00+-0.72 cpm 0.0%
-C: 0.00+-0.72 cpm 0.0%
-D: 0.00+-0.72 cpm 0.0%
-O: 0.00+-0.72 cpm 100.0%
-
-0205 0.72+-3.45 p Sniff
-  SUN 10-JAN-21 11:45
-  34.8`C RH:6% B:6.30V
-  L: 2   HV:2218V, 8%
-Total Counts: 1.
-Livetime:   5.5min
-A: 0.18+-0.87 cpm 100.0%
-B: 0.00+-0.72 cpm 0.0%
-C: 0.00+-0.72 cpm 0.0%
-D: 0.00+-0.72 cpm 0.0%
-O: 0.00+-0.72 cpm 0.0%
 
 0301 0.00+-2.82 p Sniff
   SUN 10-JAN-21 15:27
@@ -296,7 +224,7 @@ O: 0.00+-0.77 cpm 0.0%
 
 ---------------------- End of File Info -----------------------*/
 
-fileName = RAD7 5282 Data 2021-01-10.r7cdt
+fileName = RAD7 5282 Data 2021-01-10
 fileDescription = 
 fileDataTags = 
 fileFormat = CDT vers 1.1
@@ -334,83 +262,83 @@ embeddedRAD7ProfileSpecifySerialNumber = True
 embeddedRAD7ProfileThoronSensitivityDataSource = 1
 embeddedRAD7ProfileTHORONSensitivityVal = 0.126000000
 embeddedRAD7ProfileTHORONSensitivityUnit = 4
-recordDates = 2020-03-08T14:21:00, 2021-01-10T11:21:00, 2021-01-10T11:27:00, 2021-01-10T11:33:00, 2021-01-10T11:39:00, 2021-01-10T11:45:00, 2021-01-10T15:27:00, 2021-01-10T15:33:00, 2021-01-10T15:39:00, 2021-01-10T15:45:00, 2021-01-10T15:51:00, 2021-01-10T15:57:00, 2021-01-10T16:03:00, 2021-01-10T16:09:00, 2021-01-10T16:15:00, 2021-01-10T16:21:00, 2021-01-10T16:27:00, 2021-01-10T16:33:00, 2021-01-10T16:40:00, 2021-01-10T16:46:00, 2021-01-10T16:52:00, 2021-01-10T16:58:00, 2021-01-10T17:04:00, 2021-01-10T17:09:00
-RAD7Fields_01_TestNumbers = 001, 002, 003, 004, 005, 006, 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024
-RAD7Fields_02_Years = 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21
-RAD7Fields_03_Months = 03, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01
-RAD7Fields_04_Days = 08, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
-RAD7Fields_05_Hours = 14, 11, 11, 11, 11, 11, 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 17, 17
-RAD7Fields_06_Minutes = 21, 21, 27, 33, 39, 45, 27, 33, 39, 45, 51, 57, 03, 09, 15, 21, 27, 33, 40, 46, 52, 58, 04, 09
-RAD7Fields_07_TotalCounts = 2, 1, 1, 4, 0, 1, 0, 1, 0, 0, 1, 3, 2, 3, 1, 1, 0, 3, 0, 2, 1, 2, 3, 1
-RAD7Fields_08_LiveTimes = 5.6, 5.6, 5.5, 5.5, 5.5, 5.5, 5.6, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.2
-RAD7Fields_09_PercentOfTotalCountsInWindowsA = 0, 0, 0, 25, 0, 100, 0, 0, 0, 0, 100, 100, 100, 66.7, 0, 0, 0, 66.7, 0, 100, 100, 50, 33.3, 0
-RAD7Fields_10_PercentOfTotalCountsInWindowsB = 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-RAD7Fields_11_PercentOfTotalCountsInWindowsC = 0, 100, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 0, 33.3, 0, 0, 0, 50, 66.7, 100
-RAD7Fields_12_PercentOfTotalCountsInWindowsD = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-RAD7Fields_13_HighVoltageLevels = 2218, 2218, 2201, 2236, 2218, 2218, 2218, 2218, 2218, 2236, 2218, 2201, 2218, 2218, 2236, 2201, 2236, 2218, 2218, 2236, 2218, 2218, 2218, 2218
-RAD7Fields_14_HighVoltageDutyCycles = 9, 8, 9, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 8, 8, 9, 8, 8, 8, 8, 8, 9, 8, 9
-RAD7Fields_15_RawTemperatures = 22.6, 35.7, 36, 35.7, 35.4, 34.8, 33.8, 33.5, 33.2, 32.9, 32.9, 32.9, 33.2, 33.5, 33.5, 33.8, 33.8, 34.2, 34.2, 34.2, 34.2, 34.2, 33.8, 33.5
-RAD7Fields_16_RelativeHumidities = 10, 7, 7, 7, 6, 6, 24, 27, 28, 28, 28, 28, 29, 29, 29, 29, 30, 32, 32, 32, 32, 32, 32, 33
-RAD7Fields_17_LeakageCurrents = 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1
-RAD7Fields_18_BatteryVoltages = 6.27, 6.33, 6.3, 6.3, 6.3, 6.3, 6.3, 6.33, 6.33, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.33, 6.3
-RAD7Fields_19_PumpCurrents = 50, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40
-RAD7Fields_20_FlagsBytes = 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198
-RAD7Fields_21_RadonConcentrations = 0, 0, 0, 0.7117945, 0, 0.7150008, 0, 0, 0, 0, 0.7117945, 2.135384, 1.423589, 1.423589, 0, 0, 0, 1.423589, 0, 1.423589, 0.7117945, 0.7117945, 0.7117945, 0
-RAD7Fields_22_RadonConcentrationUncertainties = 2.821869, 2.834468, 2.847178, 3.436847, 2.847178, 3.452329, 2.821869, 2.847178, 2.847178, 2.847178, 3.436847, 4.270767, 3.889317, 3.889317, 2.847178, 2.847178, 2.847178, 3.889317, 2.847178, 3.889317, 3.436847, 3.436847, 3.436847, 3.037898
-RAD7Fields_23_Unitsbytes = 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
-recordRAD7CalibrationDates = 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00
-recordRAD7FirmwareVersions = Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208
-recordRAD7Models = 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716
-recordRAD7RADLINKVersions = 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311
-recordRAD7SerialNumbers = 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282
-recordRAD7CalibratedCBSpillFactors = 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727
-recordRAD7CalibratedEScales = 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030
-recordRAD7CalibratedRelativeHumidities = 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478
-recordRAD7CalibratedSensitivitiesNORMALPCiL = 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526
-recordRAD7CalibratedSensitivitiesSNIFFPCiL = 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252
-recordRAD7CalibratedSensitivitiesTHORONPCiL = 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126
-recordRAD7CalibratedTemps = 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246
-recordRAD7CalibratedYears = 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120
-recordCycleNumbers = 1, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
-recordRunNumbers = 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
-recordThoronConcentrations = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
-recordThoronConcentrationUncertainties = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
-recordContainsCPMInfoFromMediumPrintFormat = True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True
-recordCPMsWindowAFromPrintout = 0, 0, 0, 0.18, 0, 0.18, 0, 0, 0, 0, 0.18, 0.54, 0.36, 0.36, 0, 0, 0, 0.36, 0, 0.36, 0.18, 0.18, 0.18, 0
-recordCPMsWindowBFromPrintout = 0.36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordCPMsWindowCFromPrintout = 0, 0.18, 0, 0.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.18, 0.18, 0, 0.18, 0, 0, 0, 0.18, 0.36, 0.19
-recordCPMsWindowDFromPrintout = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordCPMsWindowOFromPrintout = 0, 0, 0.18, 0.36, 0, 0, 0, 0.18, 0, 0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordCPMUncertaintiesWindowAFromPrintout = 0.71, 0.71, 0.72, 0.87, 0.72, 0.87, 0.71, 0.72, 0.72, 0.72, 0.87, 1.08, 0.98, 0.98, 0.72, 0.72, 0.72, 0.98, 0.72, 0.98, 0.87, 0.87, 0.87, 0.77
-recordCPMUncertaintiesWindowBFromPrintout = 0.97, 0.71, 0.72, 0.72, 0.72, 0.72, 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
-recordCPMUncertaintiesWindowCFromPrintout = 0.71, 0.86, 0.72, 0.87, 0.72, 0.72, 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.87, 0.87, 0.72, 0.87, 0.72, 0.72, 0.72, 0.87, 0.98, 0.92
-recordCPMUncertaintiesWindowDFromPrintout = 0.71, 0.71, 0.72, 0.72, 0.72, 0.72, 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
-recordCPMUncertaintiesWindowOFromPrintout = 0.71, 0.71, 0.87, 0.98, 0.72, 0.72, 0.71, 0.87, 0.72, 0.72, 0.72, 0.72, 0.72, 0.87, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
-recordAdditiveSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
-recordPerRecordSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
-recordBigBottleConfigAerationEfficiencyFactorVals = 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000
-recordBigBottleConfigAmbientAirRadonConcentrationValsPCiL = 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500
-recordBigBottleConfigBottleVolumesMl = 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0
-recordBigBottleConfigBrimFullWaterLossVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-recordBigBottleConfigBubbleTrapVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
-recordBigBottleConfigCustomDryingUnitVolsmL = 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0
-recordBigBottleConfigCustomDRYSTIKVolsmL = 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0
-recordBigBottleConfigCustomRAD7VolsmL = 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0
-recordBigBottleConfigDryingUnitTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordbigBottleConfigDRYSTIKTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordBigBottleConfigHeadSpacesMl = 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0
-recordBigBottleConfigRAD7Types = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordBigBottleConfigSpecifyAmbientAirRadon = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-recordBigBottleConfigTubingPlusAdaptorCapVolMl = 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0
-recordRADAQUATemperatureRecordDelaysSeconds = 1800, 1800, 1800, 1800, 1800, 1800, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720
-recordRadonInWaterCalculationFormulasUsed = 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-recordRadonMeasurementMethodsUsed = 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
-recordWaterProbeTemperatureRecordDelaysSeconds = 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200
-recordWaterSalinitiesPartsPerThousand = 0, 0, 0, 0, 0, 0, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35
-recordWaterTemperatureCelsiusFixedVals = 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20
-recordWaterTemperatureDataProfileNames = , , , , , , EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD
-recordWaterTemperatureDataSources = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordWaterTemperatureOffsetCelsiusFixedVals = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-recordAppliedWaterTemperaturesCelsius = -1, 37.6, 31.1, 30.6, 30.5, 31.1, 35.2, 31.4, 30.8, 31.3, 31.2, 31.0, 31.0, 31.0, 31.1, 31.5, 31.5, 31.5, 30.8, 30.6, 31.0, 30.9, 30.6, 30.7
-recordAppliedWaterTemperaturesDelayedCelsius = -1, 37.6, 31.1, 30.6, 30.5, 31.1, 34.2, 34.2, 35.2, 31.4, 30.8, 31.3, 31.2, 31.0, 31.0, 31.0, 31.1, 31.5, 31.5, 31.5, 30.8, 30.6, 31.0, 31.0
+recordDates = 2021-01-10T15:27:00, 2021-01-10T15:33:00, 2021-01-10T15:39:00, 2021-01-10T15:45:00, 2021-01-10T15:51:00, 2021-01-10T15:57:00, 2021-01-10T16:03:00, 2021-01-10T16:09:00, 2021-01-10T16:15:00, 2021-01-10T16:21:00, 2021-01-10T16:27:00, 2021-01-10T16:33:00, 2021-01-10T16:40:00, 2021-01-10T16:46:00, 2021-01-10T16:52:00, 2021-01-10T16:58:00, 2021-01-10T17:04:00, 2021-01-10T17:09:00
+RAD7Fields_01_TestNumbers = 007, 008, 009, 010, 011, 012, 013, 014, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024
+RAD7Fields_02_Years = 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21
+RAD7Fields_03_Months = 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01
+RAD7Fields_04_Days = 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+RAD7Fields_05_Hours = 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 17, 17
+RAD7Fields_06_Minutes = 27, 33, 39, 45, 51, 57, 03, 09, 15, 21, 27, 33, 40, 46, 52, 58, 04, 09
+RAD7Fields_07_TotalCounts = 0, 1, 0, 0, 1, 3, 2, 3, 1, 1, 0, 3, 0, 2, 1, 2, 3, 1
+RAD7Fields_08_LiveTimes = 5.6, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.5, 5.2
+RAD7Fields_09_PercentOfTotalCountsInWindowsA = 0, 0, 0, 0, 100, 100, 100, 66.7, 0, 0, 0, 66.7, 0, 100, 100, 50, 33.3, 0
+RAD7Fields_10_PercentOfTotalCountsInWindowsB = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+RAD7Fields_11_PercentOfTotalCountsInWindowsC = 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 0, 33.3, 0, 0, 0, 50, 66.7, 100
+RAD7Fields_12_PercentOfTotalCountsInWindowsD = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+RAD7Fields_13_HighVoltageLevels = 2218, 2218, 2218, 2236, 2218, 2201, 2218, 2218, 2236, 2201, 2236, 2218, 2218, 2236, 2218, 2218, 2218, 2218
+RAD7Fields_14_HighVoltageDutyCycles = 8, 8, 8, 8, 9, 9, 9, 8, 8, 9, 8, 8, 8, 8, 8, 9, 8, 9
+RAD7Fields_15_RawTemperatures = 33.8, 33.5, 33.2, 32.9, 32.9, 32.9, 33.2, 33.5, 33.5, 33.8, 33.8, 34.2, 34.2, 34.2, 34.2, 34.2, 33.8, 33.5
+RAD7Fields_16_RelativeHumidities = 24, 27, 28, 28, 28, 28, 29, 29, 29, 29, 30, 32, 32, 32, 32, 32, 32, 33
+RAD7Fields_17_LeakageCurrents = 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1
+RAD7Fields_18_BatteryVoltages = 6.3, 6.33, 6.33, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.33, 6.3
+RAD7Fields_19_PumpCurrents = 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40
+RAD7Fields_20_FlagsBytes = 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198, 198
+RAD7Fields_21_RadonConcentrations = 0, 0, 0, 0, 0.7117945, 2.135384, 1.423589, 1.423589, 0, 0, 0, 1.423589, 0, 1.423589, 0.7117945, 0.7117945, 0.7117945, 0
+RAD7Fields_22_RadonConcentrationUncertainties = 2.821869, 2.847178, 2.847178, 2.847178, 3.436847, 4.270767, 3.889317, 3.889317, 2.847178, 2.847178, 2.847178, 3.889317, 2.847178, 3.889317, 3.436847, 3.436847, 3.436847, 3.037898
+RAD7Fields_23_Unitsbytes = 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+recordRAD7CalibrationDates = 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00, 2020-02-03T00:00:00
+recordRAD7FirmwareVersions = Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208
+recordRAD7Models = 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716
+recordRAD7RADLINKVersions = 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311
+recordRAD7SerialNumbers = 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282, 5282
+recordRAD7CalibratedCBSpillFactors = 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727, 727
+recordRAD7CalibratedEScales = 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030, 11030
+recordRAD7CalibratedRelativeHumidities = 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478, 34478
+recordRAD7CalibratedSensitivitiesNORMALPCiL = 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526, 526
+recordRAD7CalibratedSensitivitiesSNIFFPCiL = 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252, 252
+recordRAD7CalibratedSensitivitiesTHORONPCiL = 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126, 126
+recordRAD7CalibratedTemps = 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246, 246
+recordRAD7CalibratedYears = 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120
+recordCycleNumbers = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+recordRunNumbers = 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3
+recordThoronConcentrations = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordThoronConcentrationUncertainties = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordContainsCPMInfoFromMediumPrintFormat = True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True
+recordCPMsWindowAFromPrintout = 0, 0, 0, 0, 0.18, 0.54, 0.36, 0.36, 0, 0, 0, 0.36, 0, 0.36, 0.18, 0.18, 0.18, 0
+recordCPMsWindowBFromPrintout = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordCPMsWindowCFromPrintout = 0, 0, 0, 0, 0, 0, 0, 0, 0.18, 0.18, 0, 0.18, 0, 0, 0, 0.18, 0.36, 0.19
+recordCPMsWindowDFromPrintout = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordCPMsWindowOFromPrintout = 0, 0.18, 0, 0, 0, 0, 0, 0.18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordCPMUncertaintiesWindowAFromPrintout = 0.71, 0.72, 0.72, 0.72, 0.87, 1.08, 0.98, 0.98, 0.72, 0.72, 0.72, 0.98, 0.72, 0.98, 0.87, 0.87, 0.87, 0.77
+recordCPMUncertaintiesWindowBFromPrintout = 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
+recordCPMUncertaintiesWindowCFromPrintout = 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.87, 0.87, 0.72, 0.87, 0.72, 0.72, 0.72, 0.87, 0.98, 0.92
+recordCPMUncertaintiesWindowDFromPrintout = 0.71, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
+recordCPMUncertaintiesWindowOFromPrintout = 0.71, 0.87, 0.72, 0.72, 0.72, 0.72, 0.72, 0.87, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.72, 0.77
+recordAdditiveSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
+recordPerRecordSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
+recordBigBottleConfigAerationEfficiencyFactorVals = 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000
+recordBigBottleConfigAmbientAirRadonConcentrationValsPCiL = 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500
+recordBigBottleConfigBottleVolumesMl = 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0
+recordBigBottleConfigBrimFullWaterLossVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigBubbleTrapVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigCustomDryingUnitVolsmL = 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0
+recordBigBottleConfigCustomDRYSTIKVolsmL = 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0
+recordBigBottleConfigCustomRAD7VolsmL = 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0
+recordBigBottleConfigDryingUnitTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordbigBottleConfigDRYSTIKTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordBigBottleConfigHeadSpacesMl = 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0
+recordBigBottleConfigRAD7Types = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordBigBottleConfigSpecifyAmbientAirRadon = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordBigBottleConfigTubingPlusAdaptorCapVolMl = 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0, 87.0
+recordRADAQUATemperatureRecordDelaysSeconds = 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720, 720
+recordRadonInWaterCalculationFormulasUsed = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordRadonMeasurementMethodsUsed = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordWaterProbeTemperatureRecordDelaysSeconds = 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200
+recordWaterSalinitiesPartsPerThousand = 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35
+recordWaterTemperatureCelsiusFixedVals = 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20
+recordWaterTemperatureDataProfileNames = EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD
+recordWaterTemperatureDataSources = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordWaterTemperatureOffsetCelsiusFixedVals = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordAppliedWaterTemperaturesCelsius = 35.2, 31.4, 30.8, 31.3, 31.2, 31.0, 31.0, 31.0, 31.1, 31.5, 31.5, 31.5, 30.8, 30.6, 31.0, 30.9, 30.6, 30.7
+recordAppliedWaterTemperaturesDelayedCelsius = 34.2, 34.2, 35.2, 31.4, 30.8, 31.3, 31.2, 31.0, 31.0, 31.0, 31.1, 31.5, 31.5, 31.5, 30.8, 30.6, 31.0, 31.0
 
