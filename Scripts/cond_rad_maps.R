@@ -17,6 +17,7 @@ library(calecopal)
 library(patchwork)
 library(janitor)
 library(ggnewscale)
+library(ggrepel)
 
 
 ### read in the conductivity files ###
@@ -55,12 +56,23 @@ GPS_Cond<-left_join(GPSData, CondData) %>%
   drop_na(Salinity) %>% # drop missing data
   filter(Salinity>28 & Salinity < 36.5) # remove the bad data when the sensor probably jumped out of the water
 
+# create a coordinate set for each day to add site labels
+GPS_ave<-GPS_Cond %>%
+  mutate(day = day(date)) %>%
+  group_by(day) %>%
+  summarise(lat_mean = mean(lat),
+            lon_mean = mean(lon))%>%
+  mutate(SiteID = c("A", "C", "E", "B", "D"))
+
 ### read in API key for maps
 API<-names(read_table(here("Data","API.txt")))
 register_google(key = API) ### use your own API
 
 ## All of Mo'orea ####
-M1<-get_map('Moorea',zoom = 12, maptype = 'satellite')
+#M1<-get_map('Moorea',zoom = 12, maptype = 'satellite')
+
+M_coords<-data.frame(lon =	-149.83, lat = -17.55)
+M1<-get_map(M_coords, maptype = 'satellite', zoom = 12)
 
 Mooreamap_allcond<- ggmap(M1)+
   scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
@@ -112,6 +124,7 @@ Mooreamap_allrad<- ggmap(M1)+
   scale_color_gradient(low = "yellow", high = "white") +
   new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  geom_label_repel(data = GPS_ave, mapping = aes(x = lon_mean, y = lat_mean, label = SiteID))+
   xlab("")+
   ylab("")+
   labs(color = "Radon (DPM/L)",
@@ -229,5 +242,7 @@ Via1_allrad<- ggmap(M6)+
 
 
 ### Bring them together in patchwork
-Rad_map<-(Opu1_allrad+North1_allrad)/(West2_allrad+Via1_allrad)/(West1_allrad + Mooreamap_allrad)+ plot_layout(guides = "collect")
+Rad_map<-(Opu1_allrad+North1_allrad)/(West2_allrad+Via1_allrad)/(West1_allrad + Mooreamap_allrad)+
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "A")
 ggsave(here("Output", "Radmap.pdf"), plot = Rad_map, width = 10, height = 10)
