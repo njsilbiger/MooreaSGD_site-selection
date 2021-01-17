@@ -62,7 +62,7 @@ GPS_ave<-GPS_Cond %>%
   group_by(day) %>%
   summarise(lat_mean = mean(lat),
             lon_mean = mean(lon))%>%
-  mutate(SiteID = c("A", "C", "E", "B", "D"))
+  mutate(SiteID = c("A", "C", "E", "B", "D", "F"))
 
 ### read in API key for maps
 API<-names(read_table(here("Data","API.txt")))
@@ -82,7 +82,7 @@ Mooreamap_allcond<- ggmap(M1)+
   xlab("")+
   ylab("")+
   labs(color = "Salinity")+
-  scale_color_gradient2(low = "lightgreen", high = "red", midpoint = 31) 
+  scale_color_gradient2(low = "yellow", high = "blue", midpoint = 31) 
 
 ### Bring them together in patchwork
 # Sal_map<-(Opu1_allcond+North1_allcond)/(West2_allcond+Via1_allcond)/(West1_allcond + Mooreamap_allcond)+ plot_layout(guides = "collect")
@@ -120,9 +120,9 @@ Mooreamap_allrad<- ggmap(M1)+
   scalebar(x.min = -149.9, x.max = -149.7,y.min = -17.63, y.max = -17.5,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "bottomleft", transform = TRUE, dist_unit = "km", dist = 5)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "white") +
-  new_scale("color")+
+  # geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  # scale_color_gradient(low = "yellow", high = "white") +
+  # new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
   geom_label_repel(data = GPS_ave, mapping = aes(x = lon_mean, y = lat_mean, label = SiteID))+
   xlab("")+
@@ -131,7 +131,8 @@ Mooreamap_allrad<- ggmap(M1)+
        size = "Radon (DPM/L)")+
   scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
   scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
+  guides(color= guide_legend(), size=guide_legend())+
+  ggsave("Output/MooreaAll.pdf", width = 6, height = 6)
 #  
 
 ## zoom in on each site
@@ -144,7 +145,7 @@ West1_allrad<- ggmap(M2)+
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "white") +
+  scale_color_gradient(low = "yellow", high = "blue") +
   new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
   xlab("")+
@@ -165,7 +166,7 @@ West2_allrad<- ggmap(M5)+
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "white") +
+  scale_color_gradient(low = "yellow", high = "blue") +
   new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
   xlab("")+
@@ -186,7 +187,7 @@ North1_allrad<- ggmap(M3)+
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "topleft", transform = TRUE, dist_unit = "m", dist = 50)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "white") +
+  scale_color_gradient(low = "yellow", high = "blue") +
   new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
   xlab("")+
@@ -207,7 +208,7 @@ Opu1_allrad<- ggmap(M4)+
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "white") +
+  scale_color_gradient(low = "yellow", high = "blue") +
   new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
   xlab("")+
@@ -229,7 +230,29 @@ Via1_allrad<- ggmap(M6)+
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
   geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "white") +
+  scale_color_gradient(low = "yellow", high = "blue") +
+  new_scale("color")+
+  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+  xlab("")+
+  ylab("")+
+  labs(color = "Radon (DPM/L)",
+       size = "Radon (DPM/L)")+
+  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
+  scale_color_gradient2(low = "white", high = "magenta") +
+  guides(color= guide_legend(), size=guide_legend())
+
+
+## East 2
+	
+East2<-data.frame(lon =	-149.790, lat = -17.554)
+M7<-get_map(East2,zoom = 17, maptype = 'satellite')
+
+East2_allrad<- ggmap(M7)+
+  scalebar(x.min = -149.792, x.max = -149.788,y.min = -17.556, y.max = -17.552,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
+  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+  scale_color_gradient(low = "yellow", high = "blue") +
   new_scale("color")+
   geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
   xlab("")+
@@ -242,7 +265,10 @@ Via1_allrad<- ggmap(M6)+
 
 
 ### Bring them together in patchwork
-Rad_map<-(Opu1_allrad+North1_allrad)/(West2_allrad+Via1_allrad)/(West1_allrad + Mooreamap_allrad)+
+Rad_map<-(Opu1_allrad+North1_allrad)/(West2_allrad+Via1_allrad)/(West1_allrad + East2_allrad)+
   plot_layout(guides = "collect") +
   plot_annotation(tag_levels = "A")
 ggsave(here("Output", "Radmap.pdf"), plot = Rad_map, width = 10, height = 10)
+
+Mooreamap_allrad + Mooreamap_allcond+
+  plot_layout(guides = "collect") 
