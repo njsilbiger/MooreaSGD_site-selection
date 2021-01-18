@@ -62,7 +62,7 @@ GPS_ave<-GPS_Cond %>%
   group_by(day) %>%
   summarise(lat_mean = mean(lat),
             lon_mean = mean(lon))%>%
-  mutate(SiteID = c("A", "C", "E", "B", "D", "F"))
+  mutate(SiteID = c("A", "C", "E", "B", "D", "F", "G"))
 
 ### read in API key for maps
 API<-names(read_table(here("Data","API.txt")))
