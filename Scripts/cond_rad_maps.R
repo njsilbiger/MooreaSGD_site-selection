@@ -113,6 +113,21 @@ GPS_alteredRad<-GPSData %>%
 RAD_GPS<-left_join(RadData, GPS_alteredRad)
 
 #### Make maps of each site ####
+#Function for all the Rad and Sal plots
+RadSalPlot<-function(map){
+  ggmap(map)+
+    geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
+    scale_color_gradient(low = "yellow", high = "blue") +
+    new_scale("color")+
+    geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
+    xlab("")+
+    ylab("")+
+    labs(color = "Radon (DPM/L)",
+         size = "Radon (DPM/L)")+
+    scale_size_continuous(limits=c(0, 20), breaks=seq(0,20, by=4))+
+    scale_color_gradient2(low = "white", high = "magenta", limits=c(0, 20), breaks=seq(0,20, by=4)) +
+    guides(color= guide_legend(), size=guide_legend())
+}
 
 ## All of Mo'orea ####
 
@@ -129,8 +144,8 @@ Mooreamap_allrad<- ggmap(M1)+
   ylab("")+
   labs(color = "Radon (DPM/L)",
        size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
+  scale_size_continuous(limits=c(0, 20), breaks=seq(0,20, by=4))+
+  scale_color_gradient2(low = "white", high = "magenta", limits=c(0, 20), breaks=seq(0,20, by=4)) +
   guides(color= guide_legend(), size=guide_legend())+
   ggsave("Output/MooreaAll.pdf", width = 6, height = 6)
 #  
@@ -140,129 +155,69 @@ Mooreamap_allrad<- ggmap(M1)+
 West1<-data.frame(lon =	-149.865, lat = -17.575)
 M2<-get_map(West1,zoom = 16, maptype = 'satellite')
 
-West1_allrad<- ggmap(M2)+
+West1_allrad<-RadSalPlot(M2)+
   scalebar(x.min = -149.871, x.max = -149.859,y.min = -17.58, y.max = -17.572,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "blue") +
-  new_scale("color")+
-  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
-  xlab("")+
-  ylab("")+
-  labs(color = "Radon (DPM/L)",
-       size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)
 
 ## West side 2 ####
 
 West2<-data.frame(lon =	-149.903, lat = -17.536)
 M5<-get_map(West2,zoom = 16, maptype = 'satellite')
 
-West2_allrad<- ggmap(M5)+
+West2_allrad<- RadSalPlot(M5)+
   scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "blue") +
-  new_scale("color")+
-  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
-  xlab("")+
-  ylab("")+
-  labs(color = "Radon (DPM/L)",
-       size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)
 
+# same site zoomed in over where we saw groundwater hits
+Westzoomed<-data.frame(lon =	-149.899, lat = -17.541)
+M8<-get_map(Westzoomed,zoom = 19, maptype = 'satellite')
 
+West2zoom_allrad<- RadSalPlot(M8)+
+  scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
+           model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
+  ggsave(filename = "Output/Westsidezoomed.pdf", width = 5, height = 5)
+
+  
 ## North Shore ####
 North1<-data.frame(lon =	-149.794, lat = -17.47934142)
 M3<-get_map(North1,zoom = 18, maptype = 'satellite')
 
-North1_allrad<- ggmap(M3)+
+North1_allrad<- RadSalPlot(M3)+
   scalebar(x.min = -149.795, x.max = -149.793,y.min = -17.4805, y.max = -17.478,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "topleft", transform = TRUE, dist_unit = "m", dist = 50)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "blue") +
-  new_scale("color")+
-  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
-  xlab("")+
-  ylab("")+
-  labs(color = "Radon (DPM/L)",
-       size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
-
+           location =  "topleft", transform = TRUE, dist_unit = "m", dist = 50)
 
 ## Opunahu
 Opu1<-data.frame(lon =	-149.869, lat = -17.4932)
 M4<-get_map(Opu1,zoom = 18, maptype = 'satellite')
 
-Opu1_allrad<- ggmap(M4)+
+Opu1_allrad<- RadSalPlot(M4)+
   scalebar(x.min = -149.87, x.max = -149.860,y.min = -17.4945, y.max = -17.492,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "blue") +
-  new_scale("color")+
-  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
-  xlab("")+
-  ylab("")+
-  labs(color = "Radon (DPM/L)",
-       size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
-
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)
 
 ## East side
 # Viarae
 Via1<-data.frame(lon =	-149.773, lat = -17.5295)
 M6<-get_map(Via1,zoom = 17, maptype = 'satellite')
 
-Via1_allrad<- ggmap(M6)+
+Via1_allrad<- RadSalPlot(M6)+
   scalebar(x.min = -149.776, x.max = -149.770,y.min = -17.532, y.max = -17.528,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "blue") +
-  new_scale("color")+
-  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
-  xlab("")+
-  ylab("")+
-  labs(color = "Radon (DPM/L)",
-       size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
-
-
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)
 ## East 2
 	
 East2<-data.frame(lon =	-149.790, lat = -17.554)
 M7<-get_map(East2,zoom = 17, maptype = 'satellite')
 
-East2_allrad<- ggmap(M7)+
+East2_allrad<- RadSalPlot(M7)+
   scalebar(x.min = -149.792, x.max = -149.788,y.min = -17.556, y.max = -17.552,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
-           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)+
-  geom_point(data = GPS_Cond, mapping = aes(x=lon, y=lat, color = Salinity), alpha = .60)+
-  scale_color_gradient(low = "yellow", high = "blue") +
-  new_scale("color")+
-  geom_point(data = RAD_GPS, mapping = aes(x=lon, y=lat, color = radon, size = radon))+
-  xlab("")+
-  ylab("")+
-  labs(color = "Radon (DPM/L)",
-       size = "Radon (DPM/L)")+
-  scale_size_continuous(limits=c(0, 11), breaks=seq(0,11, by=2.5))+
-  scale_color_gradient2(low = "white", high = "magenta") +
-  guides(color= guide_legend(), size=guide_legend())
-
+           location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 100)
+  
 
 ### Bring them together in patchwork
 Rad_map<-(Opu1_allrad+North1_allrad)/(West2_allrad+Via1_allrad)/(West1_allrad + East2_allrad)+
@@ -272,3 +227,5 @@ ggsave(here("Output", "Radmap.pdf"), plot = Rad_map, width = 10, height = 10)
 
 Mooreamap_allrad + Mooreamap_allcond+
   plot_layout(guides = "collect") 
+
+
