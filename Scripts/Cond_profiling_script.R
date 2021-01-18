@@ -41,5 +41,6 @@ CondProfileData <- files %>%
 AllProfiles<-ggplot(CondProfileData, aes(x = date, y = Depth, col = Salinity))+
   geom_line()+
   labs(ylab = "Depth (m)")+
-  theme_bw()
+  theme_bw()+
+  ggsave("Output/salinityprofiles.pdf", width = 6, height = 6)
 
