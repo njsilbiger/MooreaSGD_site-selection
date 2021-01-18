@@ -17,7 +17,6 @@
 
 rm(list=ls())
 
-
 library(tidyverse)
 library(lubridate)
 library(here)
@@ -28,7 +27,7 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-file.date<-'011521' # Date in the logger file's name
+file.date<-'011721' # Date in the logger file's name
 Serial<-'876'
 
 ###################################
@@ -37,8 +36,8 @@ Serial<-'876'
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of in situ logs
-Launch<-'2021-01-15 09:54:30'
-Retrieval<-'2021-01-15 13:52:30'
+Launch<-'2021-01-17 10:27:00'
+Retrieval<-'2021-01-17 13:13:00'
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -64,12 +63,13 @@ Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = chara
 Depth.data<-Depth.data%>%filter(between(date,Launch,Retrieval)) 
 
 # Create simple csv file
-write_csv(Depth.data,paste0('Data/Depth/Calibrated_files',file.date,'_Depth',Serial,'.csv'))
+write_csv(Depth.data,paste0('Data/Depth/Calibrated_files/',file.date,'_Depth',Serial,'.csv'))
 
 # Plot the data
 Depth.data %>% # this is the dataframe
-  ggplot(aes(x= date, y= TempInSitu))+   #setup plot with x and y data
-  geom_line()
-Depth.data %>% # this is the dataframe
   ggplot(aes(x= date, y= -Depth))+   #setup plot with x and y data
   geom_line()
+Depth.data %>% # this is the dataframe
+  ggplot(aes(x= date, y= TempInSitu))+   #setup plot with x and y data
+  geom_line()
+
