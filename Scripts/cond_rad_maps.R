@@ -171,6 +171,23 @@ West2_allrad<- RadSalPlot(M5)+
            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 200)
 
 # same site zoomed in over where we saw groundwater hits
+# bring in the waypoints for this site
+
+Waypts<-read_csv(file.path("Data/GPS/Waypoints/Waypoints_West_011721.csv"), skip = 22) %>%
+  mutate(date = ymd_hms(time)-hours(10),
+         lat = as.numeric(lat),
+         lon = as.numeric(lon))%>%
+  drop_na(lat) %>%
+  select(lat, lon, date, name)
+
+# select the waypoints with sensors
+Sensors <- Waypts %>%
+  filter(name %in% c("WEST-1-SLED",
+                      "WEST-SENSOR-A",
+                      "WEST-SENSOR-B",
+                      "WEST-SENSOR-C"))
+
+
 Westzoomed<-data.frame(lon =	-149.899, lat = -17.541)
 M8<-get_map(Westzoomed,zoom = 19, maptype = 'satellite')
 
@@ -178,7 +195,11 @@ West2zoom_allrad<- RadSalPlot(M8)+
   scalebar(x.min = -149.905, x.max = -149.900,y.min = -17.54, y.max = -17.53,
            model = 'WGS84', box.fill = c("yellow", "white"), st.color = "white",
            location =  "bottomleft", transform = TRUE, dist_unit = "m", dist = 50)+
-  ggsave(filename = "Output/Westsidezoomed.pdf", width = 5, height = 5)
+  geom_point(data = Waypts, aes(x = lon, y = lat), color = "black")+
+  geom_label_repel(data = Sensors, aes(x = lon, y = lat, label = name), nudge_x = -1.5)+
+  labs(title = "West side zoomed in",
+    subtitle = "Black dots are profile locations, labels are sensors")+
+  ggsave(filename = "Output/Westsidezoomed.pdf", width = 8, height = 8)
 
   
 ## North Shore ####
