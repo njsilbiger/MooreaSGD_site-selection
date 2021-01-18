@@ -22,9 +22,9 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-cal.date<-'011521' # Date of logger calibration
-file.date<-'011521' # Date in the logger file's name
-Serial<-'319' # CT Probe Serial Number
+cal.date<-'011721' # Date of logger calibration
+file.date<-'011721' # Date in the logger file's name
+Serial<-'354' # CT Probe Serial Number
 
 ###################################
 # Date and Time
@@ -32,12 +32,12 @@ Serial<-'319' # CT Probe Serial Number
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of initial calibrations
-startCal1<-'2021-01-15 08:44:45' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endCal1<-'2021-01-15 08:47:55'
+startCal1<-'2021-01-17 08:20:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endCal1<-'2021-01-17 08:21:00'
 
 # Date of in situ logs
-Launch<-'2021-01-15 08:48:25'
-Retrieval<-'2021-01-15 14:51:05'
+Launch<-'2021-01-17 10:27:00'
+Retrieval<-'2021-01-17 13:13:00'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -52,10 +52,10 @@ oneCal<-50000 # uS/cm
 # COMMENT OUT ONE OF THE FOLLOWING
 
 ### If pairing with Pressure/Depth Logger data
-#Serial.depth<-'876' # Serial number of paired hobo pressure logger
+Serial.depth<-'876' # Serial number of paired hobo pressure logger
 
 ### If data were recorded at a consistent pressure (bar)
-Pres_bar<-0
+#Pres_bar<-0
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -103,10 +103,13 @@ CT.data<-union(condCal,condLog)# Join Calibration and Logged files
 
 ### 2. Calculate the non-linear temperature coefficient (alpha) [non-linear for groundwater influence]
 theta<-mean(condCal$TempInSitu)
+meanCalCond<-mean(condCal$E_Conductivity)
 Cond_Ref<-1060*theta+23500
 
 # Calculate f25 using equation K25 = f25 * K.theta
 f25<-oneCal / mean(condCal$E_Conductivity)
+#####
+
 
 #temperature correction factor, f25, for the conversion of conductivity vlues from theta to 25C
 ### Back calculate conductivity of sample series using f25 and equation above
@@ -117,7 +120,10 @@ CT.data<-CT.data%>%
 ############################################################
 # Load Pressure Data from HOBO Pressure Loggers for In Situ Practical Salinity Calculations
 If(Serial.depth = TRUE) {
-  Depth.data<-read_csv(paste0('Data/Depth/Calibrated_files/',file.date,'_Depth',Serial.depth,'.csv'))
+  path.depth<-'Data/Depth/Calibrated_files'
+  file.names.depth<-basename(list.files(path.depth,pattern = c(Serial.depth, file.date,"csv$"), recursive = F))
+  Depth.data <- file.names.depth %>%
+    map_dfr(~ read_csv(file.path(path.depth, .),col_names=TRUE))
   Depth.data<-Depth.data%>%
     filter(between(date,Launch,Retrieval))%>%
     rename(Serial.depth=Serial,TempInSitu.depth=TempInSitu)%>%
@@ -148,6 +154,7 @@ CT.data$date<-CT.data$date%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = c
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
+  filter(SalinityInSitu_1pCal>25)%>%
   ggplot(aes(x=date,y=SalinityInSitu_1pCal))+
   geom_line()
 
@@ -157,5 +164,5 @@ CT.data%>%
   geom_line()
 
 # Write CSV file and graph data
-write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',Serial,'_1pcal.csv'))
+write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/fixed_cal/',file.date,'_CT',Serial,'_1pcal.csv'))
 
