@@ -1,0 +1,57 @@
+﻿
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2021-01-18T22:28:51Z,,-17.529830988496542,-149.7752539627254,-17.526804031804204,-149.77296000346541,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,-17.529647005721927,-149.77300602011383,-41.425353999999999,2021-01-18T20:10:23Z,,,"EAST-1-SLED",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:10:23Z,
+2,-17.526804031804204,-149.7752539627254,-70.025452000000001,2021-01-18T18:18:37Z,,,"EAST-CAST-1",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T18:18:37Z,
+3,-17.529034037142992,-149.77321296930313,288.81185900000003,2021-01-18T20:44:05Z,,,"EAST-CAST-10",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:44:05Z,
+4,-17.528767995536327,-149.77378402836621,184.389725,2021-01-18T20:58:02Z,,,"EAST-CAST-11",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:58:02Z,
+5,-17.527853026986122,-149.77504097856581,103.885254,2021-01-18T21:14:44Z,,,"EAST-CAST-12",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T21:14:44Z,
+6,-17.527380958199501,-149.77489999495447,-40.228043,2021-01-18T18:42:44Z,,,"EAST-CAST-2",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T18:42:44Z,
+7,-17.527779014781117,-149.77512395940721,-58.664749,2021-01-18T18:50:55Z,,,"EAST-CAST-3",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T18:50:55Z,
+8,-17.527923015877604,-149.77443798445165,-62.435867000000002,2021-01-18T19:06:23Z,,,"EAST-CAST-4",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T19:06:23Z,
+9,-17.528549982234836,-149.77368302643299,-24.308008000000001,2021-01-18T19:31:16Z,,,"EAST-CAST-5",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T19:31:16Z,
+10,-17.529830988496542,-149.77352201007307,-15.690925999999999,2021-01-18T19:51:07Z,,,"EAST-CAST-6",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T19:51:07Z,
+11,-17.529628984630108,-149.77299998514354,-32.153015000000003,2021-01-18T20:04:45Z,,,"EAST-CAST-7",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:04:45Z,
+12,-17.529517002403736,-149.77298003621399,-24.873047,2021-01-18T20:19:05Z,,,"EAST-CAST-8",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:19:05Z,
+13,-17.529320027679205,-149.77305396459997,6.58844,2021-01-18T20:32:05Z,,,"EAST-CAST-9",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:32:05Z,
+14,-17.529521025717258,-149.77296000346541,-51.915382000000001,2021-01-18T20:21:25Z,,,"EAST-SENSOR-A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:21:25Z,
+15,-17.529016016051173,-149.77321598678827,269.37298600000003,2021-01-18T20:46:15Z,,,"EAST-SENSOR-B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T20:46:15Z,
+16,-17.527869958430529,-149.77505899965763,100.117592,2021-01-18T21:17:16Z,,,"EAST-SENSOR-C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-01-18T21:17:16Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,
