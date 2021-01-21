@@ -1,0 +1,130 @@
+/*------------------------- File Info ----------------------------
+
+CAPTURE version: 6.0.2
+Platform: Windows
+Date: 2021-01-20T14:00:22
+
+------------------------ Printer Output -----------------------
+
+
+
+---------------------- End of File Info -----------------------*/
+
+fileName = RAD7 3499 Data 2021-01-20
+fileDescription = 
+fileDataTags = 
+fileFormat = CDT vers 1.1
+linesContainingFatalErrors = 
+RAD7CalibrationDate = 2019-08-22T00:00:00
+RAD7FirmwareVers = Vers 3.1a 151208
+RAD7Model = 716
+RAD7RADLINKVersion = 0311
+RAD7SerialNumber = 3499
+RAD7CalibrationValCBSpillFactor = 829
+RAD7CalibrationValEScale = 11100
+RAD7CalibrationValRelativeHumidity = 34981
+RAD7CalibrationValSensitivityNORMAL = 533
+RAD7CalibrationValSensitivitySNIFF = 257
+RAD7CalibrationValSensitivityTHORON = 128
+RAD7CalibrationValTemp = 243
+RAD7CalibrationValYear = 119
+dataIsFromMultipleRAD7s = False
+sourceRAD7SNs = 3499
+includeEmbeddedRAD7Profile = True
+embeddedRAD7ProfileBASpillFactor = 0.025000000
+embeddedRAD7ProfileCBSpillFactorDataSource = 1
+embeddedRAD7ProfileCBSpillFactor = 0.012649536
+embeddedRAD7ProfileEffectiveDate = 2019-08-22T00:00:00
+embeddedRAD7ProfileMyRAD7ProfileSource = 1
+embeddedRAD7ProfileName = RAD7 3499 [2019-08-22]
+embeddedRAD7ProfileNORMALSensitivityVal = 0.533000000
+embeddedRAD7ProfileNORMALSensitivityUnit = 4
+embeddedRAD7ProfileRadonSensitivityDataSource = 1
+embeddedRAD7ProfileSerialNumber = 3499
+embeddedRAD7ProfileSNIFFSensitivityVal = 0.257000000
+embeddedRAD7ProfileSNIFFSensitivityUnit = 4
+embeddedRAD7ProfileSpecifyEffectiveDate = True
+embeddedRAD7ProfileSpecifySerialNumber = True
+embeddedRAD7ProfileThoronSensitivityDataSource = 1
+embeddedRAD7ProfileTHORONSensitivityVal = 0.128000000
+embeddedRAD7ProfileTHORONSensitivityUnit = 4
+recordDates = 2021-01-20T08:37:00, 2021-01-20T08:43:00, 2021-01-20T08:49:00, 2021-01-20T08:55:00
+RAD7Fields_01_TestNumbers = 386, 387, 388, 389
+RAD7Fields_02_Years = 21, 21, 21, 21
+RAD7Fields_03_Months = 01, 01, 01, 01
+RAD7Fields_04_Days = 20, 20, 20, 20
+RAD7Fields_05_Hours = 08, 08, 08, 08
+RAD7Fields_06_Minutes = 37, 43, 49, 55
+RAD7Fields_07_TotalCounts = 1, 5, 7, 3
+RAD7Fields_08_LiveTimes = 5.6, 5.5, 5.5, 5.5
+RAD7Fields_09_PercentOfTotalCountsInWindowsA = 100, 100, 71.4, 100
+RAD7Fields_10_PercentOfTotalCountsInWindowsB = 0, 0, 0, 0
+RAD7Fields_11_PercentOfTotalCountsInWindowsC = 0, 0, 0, 0
+RAD7Fields_12_PercentOfTotalCountsInWindowsD = 0, 0, 0, 0
+RAD7Fields_13_HighVoltageLevels = 2218, 2218, 2218, 2218
+RAD7Fields_14_HighVoltageDutyCycles = 8, 8, 8, 8
+RAD7Fields_15_RawTemperatures = 29.6, 30.5, 31.4, 32
+RAD7Fields_16_RelativeHumidities = 9, 8, 7, 7
+RAD7Fields_17_LeakageCurrents = 2, 2, 2, 2
+RAD7Fields_18_BatteryVoltages = 6.15, 6.12, 6.12, 6.09
+RAD7Fields_19_PumpCurrents = 50, 50, 50, 50
+RAD7Fields_20_FlagsBytes = 134, 134, 134, 134
+RAD7Fields_21_RadonConcentrations = 0.6917424, 3.489732, 3.489732, 2.093839
+RAD7Fields_22_RadonConcentrationUncertainties = 3.340027, 4.815117, 4.815117, 4.187678
+RAD7Fields_23_Unitsbytes = 255, 255, 255, 255
+recordRAD7CalibrationDates = 2019-08-22T00:00:00, 2019-08-22T00:00:00, 2019-08-22T00:00:00, 2019-08-22T00:00:00
+recordRAD7FirmwareVersions = Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208
+recordRAD7Models = 716, 716, 716, 716
+recordRAD7RADLINKVersions = 0311, 0311, 0311, 0311
+recordRAD7SerialNumbers = 3499, 3499, 3499, 3499
+recordRAD7CalibratedCBSpillFactors = 829, 829, 829, 829
+recordRAD7CalibratedEScales = 11100, 11100, 11100, 11100
+recordRAD7CalibratedRelativeHumidities = 34981, 34981, 34981, 34981
+recordRAD7CalibratedSensitivitiesNORMALPCiL = 533, 533, 533, 533
+recordRAD7CalibratedSensitivitiesSNIFFPCiL = 257, 257, 257, 257
+recordRAD7CalibratedSensitivitiesTHORONPCiL = 128, 128, 128, 128
+recordRAD7CalibratedTemps = 243, 243, 243, 243
+recordRAD7CalibratedYears = 119, 119, 119, 119
+recordCycleNumbers = -1, -1, -1, -1
+recordRunNumbers = -1, -1, -1, -1
+recordThoronConcentrations = -1, -1, -1, -1
+recordThoronConcentrationUncertainties = -1, -1, -1, -1
+recordContainsCPMInfoFromMediumPrintFormat = False, False, False, False
+recordCPMsWindowAFromPrintout = -1, -1, -1, -1
+recordCPMsWindowBFromPrintout = -1, -1, -1, -1
+recordCPMsWindowCFromPrintout = -1, -1, -1, -1
+recordCPMsWindowDFromPrintout = -1, -1, -1, -1
+recordCPMsWindowOFromPrintout = -1, -1, -1, -1
+recordCPMUncertaintiesWindowAFromPrintout = -1, -1, -1, -1
+recordCPMUncertaintiesWindowBFromPrintout = -1, -1, -1, -1
+recordCPMUncertaintiesWindowCFromPrintout = -1, -1, -1, -1
+recordCPMUncertaintiesWindowDFromPrintout = -1, -1, -1, -1
+recordCPMUncertaintiesWindowOFromPrintout = -1, -1, -1, -1
+recordAdditiveSpectra = [None], [None], [None], [None]
+recordPerRecordSpectra = [None], [None], [None], [None]
+recordBigBottleConfigAerationEfficiencyFactorVals = 1.000, 1.000, 1.000, 1.000
+recordBigBottleConfigAmbientAirRadonConcentrationValsPCiL = 0.500, 0.500, 0.500, 0.500
+recordBigBottleConfigBottleVolumesMl = 2500.0, 2500.0, 2500.0, 2500.0
+recordBigBottleConfigBrimFullWaterLossVolumesMl = 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigBubbleTrapVolumesMl = 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigCustomDryingUnitVolsmL = 400.0, 400.0, 400.0, 400.0
+recordBigBottleConfigCustomDRYSTIKVolsmL = 133.0, 133.0, 133.0, 133.0
+recordBigBottleConfigCustomRAD7VolsmL = 800.0, 800.0, 800.0, 800.0
+recordBigBottleConfigDryingUnitTypes = 0, 0, 0, 0
+recordbigBottleConfigDRYSTIKTypes = 0, 0, 0, 0
+recordBigBottleConfigHeadSpacesMl = 15.0, 15.0, 15.0, 15.0
+recordBigBottleConfigRAD7Types = 0, 0, 0, 0
+recordBigBottleConfigSpecifyAmbientAirRadon = 1, 1, 1, 1
+recordBigBottleConfigTubingPlusAdaptorCapVolMl = 87.0, 87.0, 87.0, 87.0
+recordRADAQUATemperatureRecordDelaysSeconds = 720, 720, 720, 720
+recordRadonInWaterCalculationFormulasUsed = 1, 1, 1, 1
+recordRadonMeasurementMethodsUsed = 1, 1, 1, 1
+recordWaterProbeTemperatureRecordDelaysSeconds = 7200, 7200, 7200, 7200
+recordWaterSalinitiesPartsPerThousand = 35, 35, 35, 35
+recordWaterTemperatureCelsiusFixedVals = 20, 20, 20, 20
+recordWaterTemperatureDataProfileNames = EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD, EL-USB-TC Data YMD
+recordWaterTemperatureDataSources = 0, 0, 0, 0
+recordWaterTemperatureOffsetCelsiusFixedVals = 0, 0, 0, 0
+recordAppliedWaterTemperaturesCelsius = 32.7, 29.0, 30.3, 29.5
+recordAppliedWaterTemperaturesDelayedCelsius = 44.3, 44.0, 32.5, 29.0
+
