@@ -70,7 +70,13 @@ CondtimeData <- files %>%
   mutate(Depth = - Depth, # make depth negative so the profiles go down
          Day = day(date),
          Site = "West") %>% # pull out the day to facet by
-  filter(Depth< -0.5) # one weird depth reading to remove
+  filter(Depth< -0.5) %>% # one weird depth reading to remove
+  mutate(TS_Id = case_when(
+    Serial == 338 ~ "A",
+    Serial == 318 ~ "B",
+    Serial == 319 ~ "C",
+    Serial == 316 ~ "Sled"
+  ))
 
 # pH
 pHtimePath<-here("Data","pH")
@@ -94,7 +100,7 @@ Saltime<-CondtimeData %>%
   geom_line()+
   scale_color_gradient(low = "yellow", high = "blue") +
   theme_bw()+
-  facet_wrap(~Serial)
+  facet_wrap(~TS_Id)
 
 TempTime<-CondtimeData %>%
   ggplot(aes(x = date, y = Temp, color = Temp))+
