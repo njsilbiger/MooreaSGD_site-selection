@@ -6,6 +6,7 @@
 
 rm(list=ls())
 
+
 library(tidyverse)
 library(lubridate)
 library(here)
@@ -16,13 +17,12 @@ here()
 # File Names
 ########################
 
-folder.date<-'011021' # Dated logger folder
-#folderLog<-'Raw' # Logged in situ file path within folder.date
-Serial<-'196' # pH Probe Serial Number
+file.date<-'011821' # Dated logger folder
+Serial<-'197' # pH Probe Serial Number
 
 # Date of in situ logs
-Launch<-'2021-01-11 16:25:00' # Y-M-D H:M:S
-Retrieval<-'2021-01-10 20:05:47' # Y-M-D H:M:S
+Launch<-'2021-01-18 12:10:00' # Y-M-D H:M:S
+Retrieval<-'2021-01-20 11:00:00' # Y-M-D H:M:S
 
 
 #################################################################################
@@ -30,8 +30,8 @@ Retrieval<-'2021-01-10 20:05:47' # Y-M-D H:M:S
 #################################################################################
 
 ### Read in Logger Files
-path.Log<-paste0('Data/',folder.date)
-file.names.Log<-basename(list.files(path.Log, pattern = c("pH","csv$"), recursive = T)) #list all csv file names in the folder and subfolders
+path.Log<-'Data/pH'
+file.names.Log<-basename(list.files(path.Log, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
 file.names.Log<-file.names.Log[grep(pattern=Serial,x=file.names.Log)]
 pHLog <- file.names.Log %>%
   map_dfr(~ read_csv(file.path(path.Log, .),skip=2,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
@@ -48,7 +48,13 @@ Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = chara
 # Filter out dates
 pHLog<-pHLog%>%filter(between(date,Launch,Retrieval)) 
 
+# Plotting
+pHLog%>%
+  ggplot(aes(x=date,y=pH,color=TempInSitu))+
+  geom_line()+
+  ggsave(paste0('Output/timeseries_profiles/pH_',Serial,'_',file.date,'.png'), width = 15, height = 12)
+
 # write file
-write_csv(pHLog,paste0('Probe_and_Logger_Protocols/HOBO_pH_Logger/Data/',folder.date,'/pH_',Serial,'_',Sys.Date(),'.csv'))
+write_csv(pHLog,paste0('Data/pH/timeseries/pH_',Serial,'_',file.date,'.csv'))
 
 
