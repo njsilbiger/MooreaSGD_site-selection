@@ -99,7 +99,7 @@ Serial.depth<-'877' # Serial number of paired hobo pressure logger
 #condCal$date<-condCal$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # In Situ Conductivity files
-path.Log<-paste0('Data/Cond_temp')
+path.Log<-paste0('Data/Cond_temp/Raw_csv')
 file.names.Log<-basename(list.files(path.Log, pattern = c(file.date,"csv$"), recursive = F)) #list all csv file names in the folder and subfolders
 condLog <- file.names.Log %>%
   map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE))

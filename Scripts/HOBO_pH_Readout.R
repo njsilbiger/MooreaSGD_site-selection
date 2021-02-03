@@ -17,12 +17,12 @@ here()
 # File Names
 ########################
 
-file.date<-'011821' # Dated logger folder
-Serial<-'197' # pH Probe Serial Number
+file.date<-'011721' # Dated logger folder
+Serial<-'196' # pH Probe Serial Number
 
 # Date of in situ logs
-Launch<-'2021-01-18 12:10:00' # Y-M-D H:M:S
-Retrieval<-'2021-01-20 11:00:00' # Y-M-D H:M:S
+Launch<-'2021-01-17 12:30:00' # Y-M-D H:M:S
+Retrieval<-'2021-01-19 09:30:00' # Y-M-D H:M:S
 
 
 #################################################################################
@@ -52,7 +52,7 @@ pHLog<-pHLog%>%filter(between(date,Launch,Retrieval))
 pHLog%>%
   ggplot(aes(x=date,y=pH,color=TempInSitu))+
   geom_line()+
-  ggsave(paste0('Output/timeseries_profiles/pH_',Serial,'_',file.date,'.png'), width = 15, height = 12)
+  ggsave(paste0('Output/timeseries_profiles/pH_',Serial,'_',file.date,'.pdf'), width = 15, height = 12)
 
 # write file
 write_csv(pHLog,paste0('Data/pH/timeseries/pH_',Serial,'_',file.date,'.csv'))
