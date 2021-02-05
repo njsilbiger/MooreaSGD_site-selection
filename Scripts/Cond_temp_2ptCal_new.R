@@ -20,8 +20,8 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-file.date<-'0118-2021' # Date in the logger file's name
-serial<-'337' # CT Probe Serial Number
+file.date<-'0117-1921' # Date in the logger file's name
+serial<-'338' # CT Probe Serial Number
 
 condCal<-read_csv(paste0("Data/Cond_temp/Calibration/Full_Cal_",serial,".csv"))%>%
   select(-'#')%>%
@@ -35,29 +35,32 @@ condCal<-read_csv(paste0("Data/Cond_temp/Calibration/Full_Cal_",serial,".csv"))%
 
 # HIGH CALIBRATION POINT
 # Date of pre-deployment calibrations
-startHigh1<-'2021-01-18 06:20:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endHigh1<-'2021-01-18 06:29:00'
+startHigh1<-'2021-01-17 08:29:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endHigh1<-'2021-01-17 08:31:00'
 
 # Date of post-deployment calibrations
-startHigh2<-'2021-01-20 13:03:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endHigh2<-'2021-01-20 13:07:00'
+startHigh2<-'2021-01-19 13:40:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endHigh2<-'2021-01-19 13:45:00'
 
 # LOW CALIBRATION POINT
 # Date of pre-deployment calibrations
-startLow1<-'2021-01-18 06:32:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endLow1<-'2021-01-18 06:40:00'
+startLow1<-'2021-01-17 08:35:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endLow1<-'2021-01-17 08:44:00'
 
 # Date of post-deployment calibrations
-startLow2<-'2021-01-20 13:13:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endLow2<-'2021-01-20 13:19:00'
+startLow2<-'2021-01-19 13:54:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endLow2<-'2021-01-19 13:59:00'
 
 # common garden
-CGstart<-'2021-01-18 07:59:00'
-CGend<-'2021-01-18 08:05:00'
+CGstart<-'2021-01-17 10:02:00'
+CGend<-'2021-01-17 10:04:00'
+# common garden CT average
+CG_CT<-34.711 # 1-17-21
+#CG_CT<-36.544 # 1-18-21
 
 # Date of in situ logs
-Launch<-'2021-01-18 11:30:00'
-Retrieval<-'2021-01-20 11:00:00'
+Launch<-'2021-01-17 12:30:00'
+Retrieval<-'2021-01-19 09:30:00'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -73,7 +76,7 @@ refHigh<-50000 # uS/cm ; ThermoScientific Orion Application Solution: 12.9 mS/cm
 # COMMENT OUT ONE OF THE FOLLOWING
 
 ### If pairing with Pressure/Depth Logger data
-Serial.depth<-'877' # Serial number of paired hobo pressure logger
+Serial.depth<-'872' # Serial number of paired hobo pressure logger
 
 ### If data were recorded at a consistent pressure (bar)
 #Pres_bar<-0
@@ -244,9 +247,17 @@ CT.data<-CT.data%>%
   mutate(SalinityInSitu_2pCal=gsw_SP_from_C(C = E_Conductivity_cal*0.001, t = TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
 
 ############################################################
+# Adjust salinity readings based on common garden averages
+CG_logged<-CT.data%>%
+  filter(between(date,CGstart,CGend))%>%
+  summarise(mean(SalinityInSitu_2pCal))%>%
+  as.numeric()
+CG_offset <-CG_CT - CG_logged
+CT.data<-CT.data%>%
+  mutate(SalinityInSitu_2pCal_wOffset = SalinityInSitu_2pCal + CG_offset)
+
+############################################################
 # Graph data
-
-
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
@@ -256,7 +267,8 @@ CT.data%>%
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
-  ggplot(aes(x=date,y=SalinityInSitu_2pCal,color=TempInSitu))+
+  filter(SalinityInSitu_2pCal_wOffset>20)%>%
+  ggplot(aes(x=date,y=SalinityInSitu_2pCal_wOffset,color=TempInSitu))+
   geom_line()
 
 # CT.data%>%
@@ -279,13 +291,5 @@ CT.data%>%
 #   ggsave(paste0('Output/CT_Cal/new_2pCal/CT_',serial,'_',file.date,'_0118-2021.png'),height = 10,width = 13)
 
 # Write CSV file
-write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',serial,'_insitu_2pcal_sameDayCal_noTempCorrEq.csv'))
- 
-
- 
-
- 
- 
- 
- 
+write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',serial,'_insitu_2pcal_withCGcorr.csv'))
  
