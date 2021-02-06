@@ -1,9 +1,11 @@
-# One-point Conductivity Calibrations for the HOBO CT Loggers using raw data off of HOBOware
+# Two-point Conductivity Calibrations for the HOBO CT Loggers using raw data off of HOBOware
 
 # https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 
 # created: 9-23-2020 by Danielle Barnas
-# modified: 1-22-2021
+# modified: 1-25-2021
+
+#### Conductivity Calibration for Drift #####
 
 rm(list=ls())
 
@@ -13,7 +15,6 @@ library(gsw)
 library(here)
 
 here()
-
 
 ###################################
 # File Paths and Serial Numbers
@@ -34,12 +35,21 @@ condCal<-read_csv(paste0("Data/Cond_temp/Calibration/Full_Cal_",serial,".csv"))%
 
 # HIGH CALIBRATION POINT
 # Date of pre-deployment calibrations
-startCal1<-'2021-01-18 06:20:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endCal1<-'2021-01-18 06:29:00'
+startHigh1<-'2021-01-18 06:20:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endHigh1<-'2021-01-18 06:29:00'
 
 # Date of post-deployment calibrations
-startCal2<-'2021-01-20 13:03:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
-endCal2<-'2021-01-20 13:07:00'
+startHigh2<-'2021-01-20 13:03:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endHigh2<-'2021-01-20 13:07:00'
+
+# LOW CALIBRATION POINT
+# Date of pre-deployment calibrations
+startLow1<-'2021-01-18 06:32:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endLow1<-'2021-01-18 06:40:00'
+
+# Date of post-deployment calibrations
+startLow2<-'2021-01-20 13:13:00' # Y-M-D H:M:S Calibration for One-Point Cal (50.0 mS/cm)
+endLow2<-'2021-01-20 13:19:00'
 
 # common garden
 CGstart<-'2021-01-18 07:59:00'
@@ -50,11 +60,12 @@ Launch<-'2021-01-18 11:30:00'
 Retrieval<-'2021-01-20 11:00:00'
 
 ###################################
-# Conductivity Calibration Standards
+# Conductivity Calibration Standards and Logging Interval
 ###################################
 
-# One-Point Calibration Standard
-oneCal<-50000 # uS/cm # Salinity of 50,000 at 25C = 32.73317
+# Two-Point Calibration Standards
+refLow<-1413 # uS/cm ; ThermoScientific Orion Application Solution: 1413 uS/cm at 25degC Conductivity Standard
+refHigh<-50000 # uS/cm ; ThermoScientific Orion Application Solution: 12.9 mS/cm at 25degC Conductivity Standard
 
 ###################################
 # Pressure data
@@ -88,7 +99,7 @@ Serial.depth<-'877' # Serial number of paired hobo pressure logger
 #condCal$date<-condCal$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # In Situ Conductivity files
-path.Log<-paste0('Data/Cond_temp')
+path.Log<-paste0('Data/Cond_temp/Raw_csv')
 file.names.Log<-basename(list.files(path.Log, pattern = c(file.date,"csv$"), recursive = F)) #list all csv file names in the folder and subfolders
 condLog <- file.names.Log %>%
   map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE))
@@ -100,20 +111,24 @@ condLog<-condLog%>% # Filter specified probe by Serial number
 condLog$date<-condLog$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # Parse date filters into date and type vector types
-startCal1<-startCal1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
-endCal1<-endCal1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
-startCal2<-startCal2%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
-endCal2<-endCal2%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+startHigh1<-startHigh1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+endHigh1<-endHigh1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+startHigh2<-startHigh2%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+endHigh2<-endHigh2%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+startLow1<-startLow1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+endLow1<-endLow1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+startLow2<-startLow2%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+endLow2<-endLow2%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 CGstart<-CGstart%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 CGend<-CGend%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 Launch<-Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 
 # Filter out dates
-condCal1<-condCal%>%filter(between(date,startCal1,endCal1))
-condCal2<-condCal%>%filter(between(date,startCal2,endCal2))
+lowCal<-condCal%>%filter(between(date,startLow1,endLow1)|between(date,startLow2,endLow2))
+highCal<-condCal%>%filter(between(date,startHigh1,endHigh1)|between(date,startHigh2,endHigh2))
 condLog<-condLog%>%filter(between(date,CGstart,CGend)|between(date,Launch,Retrieval)) 
-condCal<-union(condCal1,condCal2) # Join calibration files together
+condCal<-union(lowCal,highCal) # Join calibration files together
 CT.data<-union(condCal,condLog)# Join Calibration and Logged files
 #CT.data$date<-CT.data$date - seconds(5) # offset time if necessary
 
@@ -136,40 +151,65 @@ CT.data<-CT.data%>% # amend to larger dataframe
   left_join(Depth.data,by='date')
 
 ############################################################
-# One Point Calibration
+# Two Point Calibration 
 
 # mean E_Conductivity measured by probes in calibration solutions
-rawCal<-CT.data%>%
-  filter(between(date,startCal1,endCal1))%>%
+rawLow<-CT.data%>%
+  filter(between(date,startLow2,endLow2))%>%
+  summarise(mean(E_Conductivity))%>%
+  as.numeric()
+rawHigh<-CT.data%>%
+  filter(between(date,startHigh2,endHigh2))%>%
   summarise(mean(E_Conductivity))%>%
   as.numeric()
 
 # mean TempInSitu measured by probes in calibration solutions
-tempCal<-CT.data%>%
-  filter(between(date,startCal1,endCal1))%>%
+lowTemp<-CT.data%>%
+  filter(between(date,startLow2,endLow2))%>%
+  summarise(mean(TempInSitu))%>%
+  as.numeric()
+highTemp<-CT.data%>%
+  filter(between(date,startHigh2,endHigh2))%>%
   summarise(mean(TempInSitu))%>%
   as.numeric()
 
 # Adjusted E_Conductivity of calibration solutions to logger-recorded temperature
-refCal<-1060*mean(tempCal) + 23500 # for high conductivity of 50,000 uS/cm
+refLow<-29.945*mean(lowTemp) + 664.28 # for low conductivity of 1413 uS/cm
+refHigh<-1060*mean(highTemp) + 23500 # for high conductivity of 50,000 uS/cm
 
-condCal<-CT.data%>%
-  filter(between(date,startCal1,endCal1))
-CT.data<-CT.data%>%
-  mutate(E_Conductivity_cal=E_Conductivity + refCal - rawCal)
+rawRange<-rawHigh - rawLow
+refRange<-refHigh - refLow
+
+CT.data<-CT.data %>%
+  mutate(E_Conductivity_cal = (((E_Conductivity - rawLow) * refRange) / rawRange) + refLow)
 
 ############################################################
-## Correct for drift between pre- and post-deployment calibrations
+# Correct for drift between pre- and post-deployment calibrations
 
-meanCal1<-CT.data%>%
-  filter(between(date,startCal1,endCal1))%>%
+# mean logger readings when in high conductivity solution at starting and ending calibration times
+meanHigh1<-CT.data%>%
+  filter(between(date,startHigh1,endHigh1))%>%
   summarise(mean(E_Conductivity_cal))%>%
   as.numeric()
-meanCal2<-CT.data%>%
-  filter(between(date,startCal2,endCal2))%>%
+meanHigh2<-CT.data%>%
+  filter(between(date,startHigh2,endHigh2))%>%
   summarise(mean(E_Conductivity_cal))%>%
   as.numeric()
-drift.off<-meanCal1-meanCal2
+
+# mean logger readings when in low conductivity solution at starting and ending calibration times
+meanLow1<-CT.data%>%
+  filter(between(date,startLow1,endLow1))%>%
+  summarise(mean(E_Conductivity_cal))%>%
+  as.numeric()
+meanLow2<-CT.data%>%
+  filter(between(date,startLow2,endLow2))%>%
+  summarise(mean(E_Conductivity_cal))%>%
+  as.numeric()
+
+# calculate max drift from differences between starting and ending conductivity readings
+drift.off.High<-meanHigh1-meanHigh2
+drift.off.Low<-meanLow1-meanLow2
+drift.off<-max(c(drift.off.High,drift.off.Low))
 drift.corr=drift.off/length(condLog$date)
 
 # fill in absolute pressure at common garden (near surface ~= 0)
@@ -188,10 +228,10 @@ condLog<-CT.data%>%
   select(-drift.correction.new)%>%
   mutate(E_Conductivity_cal.drift = E_Conductivity_cal + drift.correction)
 condCal1b<-CT.data%>%
-  filter(between(date,startCal1,endCal1))%>%
+  filter(between(date,startHigh1,endHigh1)|between(date,startLow1,endLow1))%>%
   mutate(E_Conductivity_cal.drift = E_Conductivity_cal)
 condCal2b<-CT.data%>%
-  filter(between(date,startCal2,endCal2))%>%
+  filter(between(date,startHigh2,endHigh2)|between(date,startLow2,endLow2))%>%
   mutate(E_Conductivity_cal.drift = E_Conductivity_cal + drift.off)
 condCal<-union(condCal1b,condCal2b)%>% # Join calibration files together
   mutate(AbsPressure_bar = 0) 
@@ -201,33 +241,51 @@ CT.data<-full_join(condCal,condLog) # Join Calibration and Logged files together
 # Calculate Salinity using gsw package for the PSS-78 equation
 
 CT.data<-CT.data%>%
-  mutate(SalinityInSitu_1pCal=gsw_SP_from_C(C = E_Conductivity_cal.drift*0.001, t = TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
+  mutate(SalinityInSitu_2pCal=gsw_SP_from_C(C = E_Conductivity_cal*0.001, t = TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
 
 ############################################################
 # Graph data
 
-CT.data%>%
-  filter(between(date,Launch,Retrieval))%>%
-  ggplot(aes(x=date,y=SalinityInSitu_1pCal,color=TempInSitu))+
-  geom_line()
+
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
-  ggplot(aes(x=date,y=-Depth,color=SalinityInSitu_1pCal))+
+  ggplot(aes(x=date,y=TempInSitu,color=SalinityInSitu_2pCal))+
   geom_line()+
   scale_colour_gradient(high = "#132B43",low = "#56B1F7")
+
+CT.data%>%
+  filter(between(date,Launch,Retrieval))%>%
+  ggplot(aes(x=date,y=SalinityInSitu_2pCal,color=TempInSitu))+
+  geom_line()
+
+# CT.data%>%
+#   filter(between(date,Launch,Retrieval))%>%
+#   ggplot(aes(x=date,y=-Depth,color=SalinityInSitu_1pCal))+
+#   geom_line()+
+#   scale_colour_gradient(high = "#132B43",low = "#56B1F7")
 
 # CT.data%>%
 #   filter(between(date,Launch,Retrieval))%>%
 #   ggplot(aes(x=date,y=-Depth,color=TempInSitu))+
 #   geom_line()
-# 
+
+# Save salinity profile graph, colored by temperature
 # CT.data%>%
 #   filter(between(date,Launch,Retrieval))%>%
 #   filter(SalinityInSitu_1pCal>24)%>%
-#   ggplot(aes(x=date,y=TempInSitu,color=SalinityInSitu_1pCal))+
+#   ggplot(aes(x=date,y=SalinityInSitu_1pCal,color=TempInSitu))+
 #   geom_line()+
-#   scale_colour_gradient(high = "#132B43",low = "#56B1F7")
+#   ggsave(paste0('Output/CT_Cal/new_2pCal/CT_',serial,'_',file.date,'_0118-2021.png'),height = 10,width = 13)
 
 # Write CSV file
-write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',serial,'_insitu_1pcal.csv'))
+write_csv(CT.data,paste0('Data/Cond_temp/Calibrated_files/',file.date,'_CT',serial,'_insitu_2pcal_sameDayCal_noTempCorrEq.csv'))
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
