@@ -32,14 +32,14 @@ rm(list=ls())
 
 ### Input
 # Path to folder storing logger .csv files
-path.cal<-here("Data","Cond_temp") # Logger calibration file path
-path.log<-here("Data","Cond_temp") # Logger in situ file path (CT and Water Level files)
-path.WL<-here("Data","Pressure")
+path.cal<-here("Data","May2021","Cond_temp") # Logger calibration file path
+path.log<-here("Data","May2021","Cond_temp") # Logger in situ file path (CT and Water Level files)
+path.WL<-here("Data","May2021","Pressure")
 file.date <- "011821" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Output","QC","Timeseries","011821") # Output file path
+path.output<-here("Output","May2021","QC","Timeseries","011821") # Output file path
 
 
 ###################################
@@ -261,8 +261,8 @@ launch.log <- launch.log %>%
     ggplot(aes(x = date, y = Salinity, color = TempInSitu)) + 
     geom_point() + 
     theme_bw() +
-    labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
-    ggtitle(paste("CT",CT_Serial,"Salinity"))
+    labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") +
+    ggtitle(paste("CT",CT_Serial,"Salinity", file.date))
   p[[2]]<-CTD.data %>% 
     filter(Salinity > 28) %>% 
     ggplot(aes(x = date, y = Depth, color = Salinity)) + 
@@ -270,14 +270,14 @@ launch.log <- launch.log %>%
     scale_y_reverse() +
     theme_bw() +
     labs(x = "Date", color = "Salinity", y = "Depth (m)") +
-    ggtitle(paste("WL",WL_Serial,"Depth"))
+    ggtitle(paste("WL",WL_Serial,"Depth", file.date))
   p[[3]]<-CTD.data %>% 
     ggplot(aes(x = date, y = Depth, color = TempInSitu)) + 
     geom_point() + 
     scale_y_reverse() +
     theme_bw() +
     labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
-    ggtitle(paste("WL",WL_Serial,"Depth"))
+    ggtitle(paste("WL",WL_Serial,"Depth", file.date))
   
   # Save all plots in a single dated pdf
   pdf(paste0(path.output,"/",file.date,"_CTD_plots.pdf"), onefile = TRUE)
