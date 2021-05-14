@@ -1,0 +1,6657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 7.09 using Garmin eTrex 10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/4 http://www.topografix.com/GPX/Private/TopoGrafix/0/4/topografix.xsd">
+<metadata>
+<bounds minlat="-17.87329104" minlon="-149.92403710" maxlat="44.75505397" maxlon="-124.06414800"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2021-05-14T06:46:45.616Z</time>
+</extensions>
+</metadata>
+<wpt lat="44.75263300" lon="-124.06621700">
+<time>2019-06-03T23:31:51Z</time>
+<name>001</name>
+<cmt>MAR OT2</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>001</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75271700" lon="-124.06605000">
+<time>2019-06-03T23:29:52Z</time>
+<name>002</name>
+<cmt>MAR OT1</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>002</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75271700" lon="-124.06628300">
+<time>2019-06-03T23:43:16Z</time>
+<name>003</name>
+<cmt>OT3</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>003</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75286700" lon="-124.06611700">
+<time>2019-06-03T23:55:55Z</time>
+<name>004</name>
+<cmt>OT4</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>004</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75280000" lon="-124.06623300">
+<time>2019-06-04T04:29:38Z</time>
+<name>005</name>
+<cmt>OT5</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>005</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75278300" lon="-124.06638300">
+<time>2019-06-04T00:00:03Z</time>
+<name>006</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>006</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75283300" lon="-124.06625000">
+<ele>-9.550</ele>
+<time>2019-06-04T04:30:49Z</time>
+<name>007</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>007</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75288300" lon="-124.06636700">
+<ele>-11.965</ele>
+<time>2019-06-04T04:31:47Z</time>
+<name>008</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>008</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75288300" lon="-124.06633300">
+<ele>-3.517</ele>
+<time>2019-06-04T04:32:39Z</time>
+<name>009</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>009</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75276700" lon="-124.06631700">
+<ele>-1.888</ele>
+<time>2019-06-04T04:33:49Z</time>
+<name>010</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>010</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75286700" lon="-124.06638300">
+<ele>-2.572</ele>
+<time>2019-06-04T04:34:52Z</time>
+<name>011</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>011</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75243300" lon="-124.06645000">
+<ele>-1.593</ele>
+<time>2019-06-04T04:35:45Z</time>
+<name>012</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>012</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75226700" lon="-124.06638300">
+<ele>-1.558</ele>
+<time>2019-06-04T04:37:03Z</time>
+<name>013</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>013</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75223300" lon="-124.06656700">
+<ele>-1.011</ele>
+<time>2019-06-04T04:37:50Z</time>
+<name>014</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>014</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75256100" lon="-124.06642900">
+<ele>-0.859</ele>
+<time>2019-06-04T12:52:04Z</time>
+<name>015</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>015</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75255500" lon="-124.06641000">
+<ele>-1.919</ele>
+<time>2019-06-04T12:55:56Z</time>
+<name>016</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>016</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75251900" lon="-124.06643500">
+<ele>-0.759</ele>
+<time>2019-06-04T12:57:02Z</time>
+<name>017</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>017</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75250800" lon="-124.06639000">
+<ele>0.646</ele>
+<time>2019-06-04T13:06:22Z</time>
+<name>018</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>018</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75251000" lon="-124.06639300">
+<ele>0.544</ele>
+<time>2019-06-04T13:06:27Z</time>
+<name>019</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>019</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75250900" lon="-124.06639200">
+<ele>0.363</ele>
+<time>2019-06-04T13:06:42Z</time>
+<name>020</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>020</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75246500" lon="-124.06640000">
+<ele>2.699</ele>
+<time>2019-06-04T13:11:33Z</time>
+<name>021</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>021</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75246400" lon="-124.06640100">
+<ele>2.438</ele>
+<time>2019-06-04T13:12:08Z</time>
+<name>022</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>022</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75238100" lon="-124.06643100">
+<ele>0.193</ele>
+<time>2019-06-04T13:20:07Z</time>
+<name>023</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>023</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75237500" lon="-124.06645400">
+<ele>-0.088</ele>
+<time>2019-06-04T13:23:03Z</time>
+<name>024</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>024</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75235700" lon="-124.06645300">
+<ele>0.228</ele>
+<time>2019-06-04T13:25:02Z</time>
+<name>025</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>025</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75235700" lon="-124.06644900">
+<ele>-0.359</ele>
+<time>2019-06-04T13:25:14Z</time>
+<name>026</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>026</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75229800" lon="-124.06643900">
+<ele>0.096</ele>
+<time>2019-06-04T13:30:21Z</time>
+<name>027</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>027</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75227100" lon="-124.06642800">
+<ele>0.159</ele>
+<time>2019-06-04T13:38:02Z</time>
+<name>028</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>028</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75211600" lon="-124.06629600">
+<ele>1.768</ele>
+<time>2019-06-04T13:54:50Z</time>
+<name>029</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>029</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75209700" lon="-124.06624700">
+<ele>-0.278</ele>
+<time>2019-06-04T14:01:23Z</time>
+<name>030</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>030</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75215500" lon="-124.06630900">
+<ele>0.759</ele>
+<time>2019-06-04T14:14:34Z</time>
+<name>031</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>031</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75229800" lon="-124.06627600">
+<ele>-0.040</ele>
+<time>2019-06-04T14:21:10Z</time>
+<name>032</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>032</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75227000" lon="-124.06629400">
+<ele>0.035</ele>
+<time>2019-06-04T14:40:38Z</time>
+<name>033</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>033</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75224900" lon="-124.06629700">
+<ele>1.794</ele>
+<time>2019-06-04T14:48:01Z</time>
+<name>034</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>034</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75232500" lon="-124.06644100">
+<ele>2.366</ele>
+<time>2019-06-04T15:15:36Z</time>
+<name>035</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>035</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75237600" lon="-124.06647400">
+<ele>1.785</ele>
+<time>2019-06-04T15:19:00Z</time>
+<name>036</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>036</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75242300" lon="-124.06648500">
+<ele>3.768</ele>
+<time>2019-06-04T15:24:27Z</time>
+<name>037</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>037</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75262500" lon="-124.06652700">
+<ele>2.475</ele>
+<time>2019-06-04T15:28:31Z</time>
+<name>038</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>038</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75297900" lon="-124.06636800">
+<ele>1.700</ele>
+<time>2019-06-04T15:44:09Z</time>
+<name>039</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>039</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75299200" lon="-124.06637000">
+<ele>0.922</ele>
+<time>2019-06-04T15:55:40Z</time>
+<name>040</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>040</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75268200" lon="-124.06644400">
+<ele>0.732</ele>
+<time>2019-06-04T16:00:17Z</time>
+<name>041</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>041</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75266100" lon="-124.06634600">
+<ele>1.751</ele>
+<time>2019-06-04T16:06:33Z</time>
+<name>042</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>042</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75267700" lon="-124.06635900">
+<ele>0.501</ele>
+<time>2019-06-04T16:16:04Z</time>
+<name>043</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>043</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75276000" lon="-124.06632500">
+<ele>2.063</ele>
+<time>2019-06-04T16:16:51Z</time>
+<name>044</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>044</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75292800" lon="-124.06635200">
+<ele>2.322</ele>
+<time>2019-06-04T16:20:21Z</time>
+<name>045</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>045</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75284700" lon="-124.06625900">
+<ele>0.406</ele>
+<time>2019-06-04T16:24:05Z</time>
+<name>046</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>046</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75284900" lon="-124.06625800">
+<ele>1.482</ele>
+<time>2019-06-04T16:27:04Z</time>
+<name>047</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>047</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75285500" lon="-124.06626900">
+<ele>1.387</ele>
+<time>2019-06-04T16:28:21Z</time>
+<name>048</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>048</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75289200" lon="-124.06622600">
+<ele>-0.899</ele>
+<time>2019-06-04T16:32:21Z</time>
+<name>049</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>049</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75320700" lon="-124.06603900">
+<ele>0.381</ele>
+<time>2019-06-04T16:36:59Z</time>
+<name>050</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>050</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75330800" lon="-124.06609100">
+<ele>0.675</ele>
+<time>2019-06-04T16:48:14Z</time>
+<name>051</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>051</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75303400" lon="-124.06607400">
+<ele>-1.151</ele>
+<time>2019-06-04T16:50:55Z</time>
+<name>052</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>052</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75294000" lon="-124.06601100">
+<ele>-0.518</ele>
+<time>2019-06-04T16:55:06Z</time>
+<name>053</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>053</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75295500" lon="-124.06586300">
+<ele>-0.053</ele>
+<time>2019-06-04T16:56:49Z</time>
+<name>054</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>054</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75296300" lon="-124.06582200">
+<ele>-2.058</ele>
+<time>2019-06-04T16:59:23Z</time>
+<name>055</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>055</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75297800" lon="-124.06573700">
+<ele>-2.538</ele>
+<time>2019-06-04T17:01:53Z</time>
+<name>056</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>056</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75297000" lon="-124.06571200">
+<ele>-2.990</ele>
+<time>2019-06-04T17:03:07Z</time>
+<name>057</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>057</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75300200" lon="-124.06566200">
+<ele>-3.051</ele>
+<time>2019-06-04T17:05:18Z</time>
+<name>058</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>058</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75301100" lon="-124.06562100">
+<ele>-2.223</ele>
+<time>2019-06-04T17:06:00Z</time>
+<name>059</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>059</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75295800" lon="-124.06563800">
+<ele>-1.207</ele>
+<time>2019-06-04T17:07:56Z</time>
+<name>060</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>060</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75293300" lon="-124.06555300">
+<ele>-0.454</ele>
+<time>2019-06-04T17:11:08Z</time>
+<name>061</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>061</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75291500" lon="-124.06550000">
+<ele>-0.804</ele>
+<time>2019-06-04T17:14:00Z</time>
+<name>062</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>062</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75259900" lon="-124.06557200">
+<ele>2.693</ele>
+<time>2019-06-04T17:15:22Z</time>
+<name>063</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>063</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75254900" lon="-124.06551100">
+<ele>0.522</ele>
+<time>2019-06-04T17:17:39Z</time>
+<name>064</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>064</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75290600" lon="-124.06536000">
+<ele>0.297</ele>
+<time>2019-06-04T17:19:14Z</time>
+<name>065</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>065</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75295800" lon="-124.06528700">
+<ele>-2.367</ele>
+<time>2019-06-04T17:25:58Z</time>
+<name>066</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>066</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75286300" lon="-124.06529600">
+<ele>0.163</ele>
+<time>2019-06-04T17:28:04Z</time>
+<name>067</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>067</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75351900" lon="-124.06526500">
+<ele>3.127</ele>
+<time>2019-06-04T17:31:53Z</time>
+<name>068</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>068</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75362900" lon="-124.06527800">
+<ele>2.641</ele>
+<time>2019-06-04T17:32:34Z</time>
+<name>069</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>069</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75370200" lon="-124.06523100">
+<ele>-1.609</ele>
+<time>2019-06-04T17:38:08Z</time>
+<name>070</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>070</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75388300" lon="-124.06518000">
+<ele>0.096</ele>
+<time>2019-06-04T17:40:28Z</time>
+<name>071</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>071</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75278700" lon="-124.06645699">
+<ele>-5.550</ele>
+<time>2019-03-15T22:36:59Z</time>
+<name>0551</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0551</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75292304" lon="-124.06601803">
+<ele>2.848</ele>
+<time>2019-03-15T22:52:02Z</time>
+<name>0561</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0561</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75472900" lon="-124.06464198">
+<ele>2.401</ele>
+<time>2019-03-15T23:11:10Z</time>
+<name>0571</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0571</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.74989801" lon="-124.06570103">
+<ele>-5.583</ele>
+<time>2019-03-16T20:16:03Z</time>
+<name>0581</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0581</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75150398" lon="-124.06578803">
+<ele>-5.449</ele>
+<time>2019-03-16T20:25:08Z</time>
+<name>0591</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0591</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75171596" lon="-124.06575803">
+<ele>-4.408</ele>
+<time>2019-03-16T20:29:11Z</time>
+<name>0601</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0601</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75174303" lon="-124.06576800">
+<ele>-4.374</ele>
+<time>2019-03-16T20:29:19Z</time>
+<name>0611</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0611</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75174102" lon="-124.06577303">
+<ele>-3.558</ele>
+<time>2019-03-16T20:30:42Z</time>
+<name>0621</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0621</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75211200" lon="-124.06623898">
+<ele>-2.970</ele>
+<time>2019-03-16T20:41:32Z</time>
+<name>0631</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0631</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75213304" lon="-124.06627301">
+<ele>-4.368</ele>
+<time>2019-03-16T20:44:25Z</time>
+<name>0641</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0641</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75227302" lon="-124.06628500">
+<ele>-0.051</ele>
+<time>2019-03-16T20:46:59Z</time>
+<name>0651</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0651</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75227897" lon="-124.06626496">
+<ele>-1.741</ele>
+<time>2019-03-16T20:49:12Z</time>
+<name>0661</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0661</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75228098" lon="-124.06641098">
+<ele>-1.723</ele>
+<time>2019-03-16T20:54:55Z</time>
+<name>0671</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0671</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75227696" lon="-124.06642204">
+<ele>5.011</ele>
+<time>2019-03-16T20:59:15Z</time>
+<name>0681</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0681</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75236698" lon="-124.06640704">
+<ele>-0.947</ele>
+<time>2019-03-16T21:00:25Z</time>
+<name>0691</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0691</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75236597" lon="-124.06641802">
+<ele>0.203</ele>
+<time>2019-03-16T21:01:15Z</time>
+<name>0701</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0701</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75237302" lon="-124.06640897">
+<ele>0.194</ele>
+<time>2019-03-16T21:01:22Z</time>
+<name>0711</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>0711</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75238902" lon="-124.06637502">
+<ele>1.536</ele>
+<time>2019-03-16T21:06:57Z</time>
+<name>072</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>072</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75242901" lon="-124.06637100">
+<ele>-1.899</ele>
+<time>2019-03-16T21:08:58Z</time>
+<name>073</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>073</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75243404" lon="-124.06639899">
+<ele>3.529</ele>
+<time>2019-03-16T21:09:56Z</time>
+<name>074</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>074</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75245097" lon="-124.06638701">
+<ele>2.285</ele>
+<time>2019-03-16T21:10:09Z</time>
+<name>075</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>075</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75238701" lon="-124.06649304">
+<ele>-1.928</ele>
+<time>2019-03-16T21:13:54Z</time>
+<name>076</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>076</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75242800" lon="-124.06647703">
+<ele>-0.270</ele>
+<time>2019-03-16T21:14:22Z</time>
+<name>077</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>077</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75252900" lon="-124.06640201">
+<ele>0.095</ele>
+<time>2019-03-16T21:21:04Z</time>
+<name>078</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>078</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75253403" lon="-124.06638298">
+<ele>-0.654</ele>
+<time>2019-03-16T21:21:30Z</time>
+<name>079</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>079</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75254501" lon="-124.06639203">
+<ele>-0.889</ele>
+<time>2019-03-16T21:21:42Z</time>
+<name>080</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>080</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75264601" lon="-124.06650896">
+<ele>-1.373</ele>
+<time>2019-03-16T21:31:41Z</time>
+<name>081</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>081</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75267602" lon="-124.06643998">
+<ele>0.999</ele>
+<time>2019-03-16T21:32:53Z</time>
+<name>082</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>082</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75265096" lon="-124.06634401">
+<ele>9.532</ele>
+<time>2019-03-16T21:34:18Z</time>
+<name>083</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>083</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75294902" lon="-124.06634199">
+<ele>5.911</ele>
+<time>2019-03-16T21:42:20Z</time>
+<name>084</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>084</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75283997" lon="-124.06623898">
+<ele>-70.156</ele>
+<time>2019-03-16T22:03:58Z</time>
+<name>085</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>085</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75291600" lon="-124.06602700">
+<ele>-19.805</ele>
+<time>2019-03-16T22:07:22Z</time>
+<name>086</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>086</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75290996" lon="-124.06601099">
+<ele>-19.729</ele>
+<time>2019-03-16T22:07:30Z</time>
+<name>087</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>087</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75288901" lon="-124.06600303">
+<ele>-16.348</ele>
+<time>2019-03-16T22:07:49Z</time>
+<name>088</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>088</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75259799" lon="-124.06557304">
+<ele>0.245</ele>
+<time>2019-03-16T22:15:35Z</time>
+<name>089</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>089</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75296897" lon="-124.06582198">
+<ele>2.261</ele>
+<time>2019-03-16T22:17:57Z</time>
+<name>090</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>090</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75295899" lon="-124.06585299">
+<ele>6.147</ele>
+<time>2019-03-16T22:18:28Z</time>
+<name>091</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>091</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75300199" lon="-124.06566398">
+<ele>21.321</ele>
+<time>2019-03-16T22:27:04Z</time>
+<name>092</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>092</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75296704" lon="-124.06574604">
+<ele>25.496</ele>
+<time>2019-03-16T22:27:29Z</time>
+<name>093</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>093</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75314901" lon="-124.06578904">
+<ele>29.448</ele>
+<time>2019-03-16T22:31:44Z</time>
+<name>094</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>094</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75321900" lon="-124.06577999">
+<ele>38.558</ele>
+<time>2019-03-16T22:35:14Z</time>
+<name>095</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>095</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75472800" lon="-124.06464600">
+<ele>4.163</ele>
+<time>2019-03-16T22:55:32Z</time>
+<name>096</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>096</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75492899" lon="-124.06454802">
+<ele>-19.406</ele>
+<time>2019-03-16T23:24:13Z</time>
+<name>097</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>097</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75504802" lon="-124.06448197">
+<ele>-19.178</ele>
+<time>2019-03-16T23:25:41Z</time>
+<name>098</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>098</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75505397" lon="-124.06452396">
+<ele>-15.989</ele>
+<time>2019-03-16T23:26:45Z</time>
+<name>099</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>099</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75484299" lon="-124.06482101">
+<ele>-7.263</ele>
+<time>2019-03-16T23:29:04Z</time>
+<name>100</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>100</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75469296" lon="-124.06459697">
+<ele>1.320</ele>
+<time>2019-03-16T23:31:39Z</time>
+<name>101</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>101</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75319302" lon="-124.06604502">
+<ele>-1.921</ele>
+<time>2019-03-16T23:45:16Z</time>
+<name>102</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>102</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75321498" lon="-124.06603899">
+<ele>-1.978</ele>
+<time>2019-03-16T23:45:22Z</time>
+<name>103</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>103</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75327499" lon="-124.06608802">
+<ele>-6.917</ele>
+<time>2019-03-16T23:45:54Z</time>
+<name>104</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>104</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75290099" lon="-124.06536198">
+<ele>23.627</ele>
+<time>2019-03-17T21:17:33Z</time>
+<name>105</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>105</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75291600" lon="-124.06527699">
+<ele>1.010</ele>
+<time>2019-03-17T21:19:49Z</time>
+<name>106</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>106</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75349301" lon="-124.06526098">
+<ele>6.686</ele>
+<time>2019-03-17T21:21:46Z</time>
+<name>107</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>107</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75359803" lon="-124.06536299">
+<ele>2.217</ele>
+<time>2019-03-17T21:24:16Z</time>
+<name>108</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>108</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75361899" lon="-124.06529602">
+<ele>-4.424</ele>
+<time>2019-03-17T21:24:25Z</time>
+<name>109</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>109</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75364396" lon="-124.06532703">
+<ele>-0.451</ele>
+<time>2019-03-17T21:27:09Z</time>
+<name>110</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>110</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75281200" lon="-124.06609300">
+<ele>1.418</ele>
+<time>2019-06-05T11:47:56Z</time>
+<name>111</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>111</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75389000" lon="-124.06516700">
+<ele>-2.669</ele>
+<time>2019-06-05T12:22:55Z</time>
+<name>112</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>112</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75255000" lon="-124.06640500">
+<ele>0.377</ele>
+<time>2019-06-05T14:19:48Z</time>
+<name>113</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>113</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75389492" lon="-124.06518697">
+<name>114</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>114</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75365897" lon="-124.06522796">
+<name>115</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>115</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75372192" lon="-124.06522980">
+<name>116</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>116</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75363784" lon="-124.06528395">
+<name>117</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>117</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75352192" lon="-124.06526894">
+<name>118</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>118</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75359686" lon="-124.06531169">
+<name>119</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>119</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75298774" lon="-124.06581595">
+<name>120</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>120</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75329997" lon="-124.06607579">
+<name>121</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>121</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75321590" lon="-124.06604092">
+<name>122</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>122</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75228576" lon="-124.06626698">
+<name>123</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>123</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75227998" lon="-124.06626899">
+<name>124</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>124</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75213069" lon="-124.06626597">
+<name>125</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>125</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75210387" lon="-124.06624577">
+<name>126</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>126</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75265875" lon="-124.06634795">
+<name>127</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>127</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75256295" lon="-124.06641793">
+<name>128</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>128</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75253898" lon="-124.06640084">
+<name>129</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>129</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75239187" lon="-124.06642590">
+<name>130</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>130</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75257770" lon="-124.06555879">
+<name>131</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>131</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75241000" lon="-124.06554400">
+<ele>2.366</ele>
+<time>2019-07-06T13:37:42Z</time>
+<name>132</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>132</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75288071" lon="-124.06600487">
+<name>133</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>133</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75290191" lon="-124.06602072">
+<name>134</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>134</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75296293" lon="-124.06606296">
+<name>135</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>135</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75295195" lon="-124.06586573">
+<name>136</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>136</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75302000" lon="-124.06638600">
+<ele>0.411</ele>
+<time>2019-07-07T18:16:07Z</time>
+<name>166</name>
+<cmt>OCEAN</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>166</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75239500" lon="-124.06642900">
+<ele>0.130</ele>
+<time>2019-06-24T17:50:18Z</time>
+<name>149</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>149</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75243400" lon="-124.06641200">
+<ele>-2.238</ele>
+<time>2019-06-09T22:06:29Z</time>
+<name>141</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>141</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75251600" lon="-124.06640400">
+<ele>1.516</ele>
+<time>2019-07-07T19:31:50Z</time>
+<name>168</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>168</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75269000" lon="-124.06643600">
+<ele>2.332</ele>
+<time>2019-06-09T17:16:48Z</time>
+<name>138</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>138</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75240000" lon="-124.06637900">
+<ele>-5.632</ele>
+<time>2019-06-09T22:01:52Z</time>
+<name>140</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>140</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75273671" lon="-124.06632372">
+<name>148</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>148</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75267686" lon="-124.06633789">
+<name>137</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>137</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75229400" lon="-124.06668500">
+<ele>57.935</ele>
+<time>2019-06-09T20:59:53Z</time>
+<name>139</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>139</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75242800" lon="-124.06641000">
+<time>2019-06-10T18:42:48Z</time>
+<name>142</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>142</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75236500" lon="-124.06651500">
+<ele>6.368</ele>
+<time>2019-06-10T19:03:34Z</time>
+<name>143</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>143</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75242490" lon="-124.06648499">
+<name>144</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>144</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75229188" lon="-124.06642900">
+<name>145</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>145</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75226196" lon="-124.06642196">
+<name>146</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>146</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75396000" lon="-124.06414800">
+<ele>-7.090</ele>
+<time>2019-06-11T22:10:04Z</time>
+<name>147</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>147</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75281000" lon="-124.06552400">
+<ele>0.474</ele>
+<time>2019-07-05T14:15:00Z</time>
+<name>150</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>150</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75277500" lon="-124.06554700">
+<ele>0.540</ele>
+<time>2019-07-05T14:16:02Z</time>
+<name>151</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>151</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75277300" lon="-124.06557500">
+<ele>0.385</ele>
+<time>2019-07-05T14:16:21Z</time>
+<name>152</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>152</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75315000" lon="-124.06564700">
+<ele>2.169</ele>
+<time>2019-07-05T14:17:20Z</time>
+<name>153</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>153</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75315000" lon="-124.06565100">
+<ele>1.588</ele>
+<time>2019-07-05T14:17:24Z</time>
+<name>154</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>154</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75314300" lon="-124.06563600">
+<ele>2.918</ele>
+<time>2019-07-05T14:17:37Z</time>
+<name>155</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>155</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75233400" lon="-124.06619400">
+<ele>-0.181</ele>
+<time>2019-07-05T14:28:18Z</time>
+<name>156</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>156</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75235400" lon="-124.06619600">
+<ele>0.186</ele>
+<time>2019-07-05T14:28:31Z</time>
+<name>157</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>157</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75235200" lon="-124.06619300">
+<ele>-0.123</ele>
+<time>2019-07-05T14:28:38Z</time>
+<name>158</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>158</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75210900" lon="-124.06630300">
+<ele>0.478</ele>
+<time>2019-07-05T14:33:41Z</time>
+<name>159</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>159</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75272200" lon="-124.06623800">
+<ele>3.174</ele>
+<time>2019-07-05T14:35:25Z</time>
+<name>160</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>160</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75271800" lon="-124.06623900">
+<ele>1.626</ele>
+<time>2019-07-05T14:38:15Z</time>
+<name>161</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>161</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75322000" lon="-124.06517800">
+<ele>-1.782</ele>
+<time>2019-07-05T16:53:45Z</time>
+<name>162</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>162</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75225700" lon="-124.06639000">
+<ele>-2.868</ele>
+<time>2019-07-06T17:50:41Z</time>
+<name>163</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>163</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75225700" lon="-124.06639000">
+<ele>-3.946</ele>
+<time>2019-07-06T17:51:02Z</time>
+<name>164</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>164</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75226300" lon="-124.06639300">
+<ele>-3.827</ele>
+<time>2019-07-06T17:51:14Z</time>
+<name>165</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>165</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75243100" lon="-124.06639600">
+<ele>1.139</ele>
+<time>2019-07-07T19:29:38Z</time>
+<name>167</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>167</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75291900" lon="-124.06582500">
+<ele>-0.594</ele>
+<time>2019-07-08T15:38:29Z</time>
+<name>169</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>169</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="44.75247500" lon="-124.06638500">
+<ele>1.090</ele>
+<time>2019-07-08T17:05:45Z</time>
+<name>170</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>170</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54050400" lon="-149.89930000">
+<ele>5.035</ele>
+<time>2021-01-22T22:40:36Z</time>
+<name>WEST ANCHOR</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WEST ANCHOR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57520910" lon="-149.87000140">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_10</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_10</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53432151" lon="-149.91013178">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_100</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_100</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53755852" lon="-149.91211058">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_101</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_101</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52928440" lon="-149.91816306">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_102</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_102</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52734936" lon="-149.91402718">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_103</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_103</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52568094" lon="-149.91074290">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_104</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_104</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52007479" lon="-149.92062483">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_105</name>
+<cmt>This sample was collected at LTER_6_Backreef, which is really close to 105</cmt>
+<desc>This sample was collected at LTER_6_Backreef, which is really close to 105</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_105</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51944682" lon="-149.91705674">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_106</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_106</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51885715" lon="-149.91327256">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_107</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_107</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57272990" lon="-149.86615813">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_11</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_11</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51055999" lon="-149.91591571">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_110</name>
+<cmt>110 New</cmt>
+<desc>110 New</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_110</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50318299" lon="-149.92403710">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_111</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_111</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50348139" lon="-149.92063698">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_112</name>
+<cmt>Bloom of Hydroclathrus</cmt>
+<desc>Bloom of Hydroclathrus</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_112</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50287202" lon="-149.91746997">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_113</name>
+<cmt>113 New</cmt>
+<desc>113 New</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_113</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49545580" lon="-149.92357283">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_114</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_114</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49504173" lon="-149.91971087">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_115</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_115</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49474971" lon="-149.91460394">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_116</name>
+<cmt>By PGEM marker</cmt>
+<desc>By PGEM marker</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_116</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49064844" lon="-149.91110106">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_117</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_117</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48914783" lon="-149.90675144">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_118</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_118</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48591677" lon="-149.90779339">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_119</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_119</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59225697" lon="-149.84888898">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_12</name>
+<cmt>Impossible to ge here; Site 465 on Becky's GPS</cmt>
+<desc>Impossible to ge here; Site 465 on Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_12</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48790848" lon="-149.90225254">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_120</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_120</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48853084" lon="-149.89685752">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_121</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_121</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48485495" lon="-149.89623508">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_122</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_122</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48842556" lon="-149.89214874">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_123</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_123</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48469737" lon="-149.89228134">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_124</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_124</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49019640" lon="-149.88266453">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_125</name>
+<cmt>125 New.  Need to get new waypoint from GPS</cmt>
+<desc>125 New.  Need to get new waypoint from GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_125</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49179919" lon="-149.87948972">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_126</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_126</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48897240" lon="-149.87898462">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_127</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_127</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48683493" lon="-149.87650442">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_128</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_128</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48972761" lon="-149.87265042">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_129</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_129</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56769070" lon="-149.87057313">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_13</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_13</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48467089" lon="-149.87421717">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_130</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_130</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48809573" lon="-149.86675643">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_131</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_131</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48744111" lon="-149.87096926">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_132</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_132</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49028584" lon="-149.88689924">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_133</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_133</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48732954" lon="-149.88700736">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_134</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_134</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48452814" lon="-149.88612852">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_135</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_135</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48690316" lon="-149.88057442">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_136</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_136</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48379691" lon="-149.87981108">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_137</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_137</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49209608" lon="-149.87464732">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_138</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_138</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49065096" lon="-149.86811883">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_139</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_139</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58281082" lon="-149.86625888">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_14</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_14</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49716361" lon="-149.86264360">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_140</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_140</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49316067" lon="-149.86737317">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_141</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_141</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49376005" lon="-149.85192047">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_142</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_142</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49082932" lon="-149.85441752">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_143</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_143</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48895002" lon="-149.85500056">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_144</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_144</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48545652" lon="-149.84698822">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_146</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_146</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48168911" lon="-149.84986514">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_147</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_147</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48386731" lon="-149.84902066">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_148</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_148</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48650493" lon="-149.85202960">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_149</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_149</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58035241" lon="-149.85350322">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_15</name>
+<cmt>No Turbinaria; water only</cmt>
+<desc>No Turbinaria; water only</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_15</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48430225" lon="-149.84201473">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_150</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_150</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47821942" lon="-149.84236040">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_151</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_151</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48009529" lon="-149.84227616">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_152</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_152</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47841690" lon="-149.83398076">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_153</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_153</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47973210" lon="-149.83653163">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_154</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_154</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48486702" lon="-149.83479280">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_155</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_155</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48502921" lon="-149.83127274">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_156</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_156</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48115082" lon="-149.83013791">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_157</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_157</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48467013" lon="-149.82751546">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_158</name>
+<cmt>water sample left out of cooler for 2 hours</cmt>
+<desc>water sample left out of cooler for 2 hours</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_158</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48655573" lon="-149.82505714">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_159</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_159</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58694980" lon="-149.84260750">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_16</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_16</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48204526" lon="-149.82620990">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_160</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_160</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47370895" lon="-149.77685273">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_161</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_161</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47599629" lon="-149.78035603">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_162</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_162</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47785238" lon="-149.78665394">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_163</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_163</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47880909" lon="-149.79098604">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_164</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_164</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47960570" lon="-149.79612884">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_165</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_165</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47499012" lon="-149.78672317">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_166</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_166</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47282634" lon="-149.78102943">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_167</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_167</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47187021" lon="-149.78655302">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_168</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_168</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47434254" lon="-149.79374318">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_169</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_169</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59328585" lon="-149.83903463">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_17</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_17</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47682031" lon="-149.79501220">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_170</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_170</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47496934" lon="-149.79011633">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_171</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_171</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48044037" lon="-149.79966098">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_172</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_172</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47605010" lon="-149.79736928">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_173</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_173</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48082167" lon="-149.80483688">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_175</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_175</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48256359" lon="-149.81385062">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_176</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_176</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48383638" lon="-149.81681379">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_177</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_177</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48728956" lon="-149.81839294">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_178</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_178</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48120195" lon="-149.81759883">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_179</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_179</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47707864" lon="-149.82123616">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_180</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_180</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47477999" lon="-149.81488653">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_181</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_181</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47831405" lon="-149.81353889">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_182</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_182</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48034675" lon="-149.81365121">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_183</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_183</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47691201" lon="-149.80662667">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_185</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_185</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47711502" lon="-149.80250336">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_186</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_186</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47899399" lon="-149.80633959">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_187</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_187</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47806804" lon="-149.81724277">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_188</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_188</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59716298" lon="-149.83775999">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_19</name>
+<cmt>Point 466 on Becky's GPS</cmt>
+<desc>Point 466 on Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_19</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59042955" lon="-149.85131412">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_2</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49043797" lon="-149.89176401">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_200</name>
+<cmt>Dead acropora probably last bleach</cmt>
+<desc>Dead acropora probably last bleach</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_200</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58182997" lon="-149.78964997">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_201</name>
+<cmt>453 in Becky's GPS</cmt>
+<desc>453 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_201</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58791003" lon="-149.80487997">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_202</name>
+<cmt>464 in Becky's GPS</cmt>
+<desc>464 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_202</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50637398" lon="-149.91715900">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_203</name>
+<cmt>Lots of staghorn and anemones</cmt>
+<desc>Lots of staghorn and anemones</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_203</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50963496" lon="-149.76817503">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_205</name>
+<cmt>No Turbinaria</cmt>
+<desc>No Turbinaria</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_205</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55094199" lon="-149.78794500">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_2051</name>
+<cmt>297 in GPS; Near site 205; water in 205 tube, sterivex in 205 bag</cmt>
+<desc>297 in GPS; Near site 205; water in 205 tube, sterivex in 205 bag</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_2051</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56594400" lon="-149.79258698">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_206</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_206</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57247602" lon="-149.79543901">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_207</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_207</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55015199" lon="-149.88495103">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_208</name>
+<cmt>Marked 208 New in Burkepile 4 GPS</cmt>
+<desc>Marked 208 New in Burkepile 4 GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_208</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55279799" lon="-149.88306502">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_209</name>
+<cmt>Marked 209 New in Burkepile 4 GPS</cmt>
+<desc>Marked 209 New in Burkepile 4 GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_209</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.60255003" lon="-149.80759000">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_22</name>
+<cmt>463 in Becky's GPS; beautiful site with bottlebrush Acropora</cmt>
+<desc>463 in Becky's GPS; beautiful site with bottlebrush Acropora</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_22</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59377996" lon="-149.81353001">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_24</name>
+<cmt>461 in Becky's GPS; Probably 23 or close</cmt>
+<desc>461 in Becky's GPS; Probably 23 or close</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_24</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59514001" lon="-149.80740996">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_25</name>
+<cmt>458 in Becky's GPS</cmt>
+<desc>458 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_25</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59317001" lon="-149.80336997">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_26</name>
+<cmt>455 in Becky's GPS; Huge anemone with clownfish</cmt>
+<desc>455 in Becky's GPS; Huge anemone with clownfish</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_26</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59616001" lon="-149.79826002">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_27</name>
+<cmt>457 in Becky's GPS</cmt>
+<desc>457 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_27</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59052703" lon="-149.86127098">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_3</name>
+<cmt>Gourgeous site; Little Turbinaria, lots of clams</cmt>
+<desc>Gourgeous site; Little Turbinaria, lots of clams</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_3</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59746004" lon="-149.80912004">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_30</name>
+<cmt>462 in Becky's GPS</cmt>
+<desc>462 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_30</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59731000" lon="-149.80624001">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_31</name>
+<cmt>459 in Becky's GPS</cmt>
+<desc>459 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_31</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59475000" lon="-149.80158999">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_32</name>
+<cmt>456 in Becky's GPS</cmt>
+<desc>456 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_32</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58631001" lon="-149.79183999">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_33</name>
+<cmt>454 in Becky's GPS</cmt>
+<desc>454 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_33</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58030999" lon="-149.79438004">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_34</name>
+<cmt>34 in Becky's GPS</cmt>
+<desc>34 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_34</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58383224" lon="-149.79854870">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_35</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_35</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57890997" lon="-149.79669998">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_36</name>
+<cmt>36 in Becky's GPS</cmt>
+<desc>36 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_36</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57349375" lon="-149.79428767">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_37</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_37</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56786983" lon="-149.79250308">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_38</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_38</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57239278" lon="-149.78832646">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_39</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_39</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58473849" lon="-149.85843463">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_4</name>
+<cmt>Some staghorn; small colonies</cmt>
+<desc>Some staghorn; small colonies</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_4</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57566885" lon="-149.78852662">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_40</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_40</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57019438" lon="-149.78739456">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_41</name>
+<cmt>Got close as we could</cmt>
+<desc>Got close as we could</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_41</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56927254" lon="-149.78965734">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_42</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_42</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56248479" lon="-149.78303388">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_43</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_43</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56150126" lon="-149.78549254">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_44</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_44</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56024699" lon="-149.78910062">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_45</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_45</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55798848" lon="-149.78094293">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_46</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_46</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59313297" lon="-149.85466193">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_47</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_47</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.60099997" lon="-149.80085003">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_50</name>
+<cmt>460 in Becky's GPS</cmt>
+<desc>460 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_50</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55479179" lon="-149.78911554">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_51</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_51</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54829758" lon="-149.78066297">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_52</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_52</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54553717" lon="-149.77825376">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_53</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_53</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54048841" lon="-149.77395100">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_54</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_54</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54065563" lon="-149.77038156">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_56</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_56</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54170898" lon="-149.76656654">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_57</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_57</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54808987" lon="-149.77324281">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_58</name>
+<cmt>Remember to access this site from the N!</cmt>
+<desc>Remember to access this site from the N!</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_58</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54354672" lon="-149.77060653">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_59</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_59</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57797027" lon="-149.87318988">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_6</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_6</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55227462" lon="-149.77739831">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_60</name>
+<cmt>Turbinaria collected a bit closer to shore than water sample</cmt>
+<desc>Turbinaria collected a bit closer to shore than water sample</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_60</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53528660" lon="-149.77266421">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_61</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_61</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53598314" lon="-149.76799314">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_62</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_62</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53573436" lon="-149.76293776">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_63</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_63</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52938876" lon="-149.76733306">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_64</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_64</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52484376" lon="-149.76495244">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_65</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_65</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52840162" lon="-149.77350298">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_66</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_66</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52266840" lon="-149.77936872">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_67</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_67</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52006574" lon="-149.77383164">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_68</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_68</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51597897" lon="-149.76877911">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_69</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_69</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57851023" lon="-149.86222090">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_7</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_7</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51029755" lon="-149.76658808">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_70</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_70</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51072251" lon="-149.76302669">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_71</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_71</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52172510" lon="-149.76436411">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_72</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_72</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51638885" lon="-149.76420636">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_73</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_73</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50532775" lon="-149.76093306">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_74</name>
+<cmt>Pretty site</cmt>
+<desc>Pretty site</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_74</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50326782" lon="-149.76453426">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_75</name>
+<cmt>New 75 waypoint in GPS</cmt>
+<desc>New 75 waypoint in GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_75</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50094125" lon="-149.76272151">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_76</name>
+<cmt>Only 3 Turbinaria collected here</cmt>
+<desc>Only 3 Turbinaria collected here</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_76</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50258469" lon="-149.75975222">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_77</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_77</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50024941" lon="-149.75764610">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_78</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_78</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58234638" lon="-149.85452380">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_8</name>
+<cmt>Beautiful, clear</cmt>
+<desc>Beautiful, clear</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_8</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56380737" lon="-149.87434507">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_80</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_80</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56509583" lon="-149.87755928">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_81</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_81</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56890935" lon="-149.87853770">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_82</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_82</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56706047" lon="-149.88305027">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_83</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_83</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56043784" lon="-149.88652549">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_84</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_84</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56350797" lon="-149.88121572">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_85</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_85</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55850204" lon="-149.88262983">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_86</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_86</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55897637" lon="-149.87884339">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_87</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_87</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56132901" lon="-149.87663317">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_88</name>
+<cmt>Not at site 88; Marked 88 New in Burkepile 4 GPS</cmt>
+<desc>Not at site 88; Marked 88 New in Burkepile 4 GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_88</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55473723" lon="-149.88559216">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_89</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_89</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57452698" lon="-149.87400183">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_9</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_9</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55573928" lon="-149.88792317">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_90</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_90</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55741642" lon="-149.89051091">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_91</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_91</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55032935" lon="-149.89704704">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_92</name>
+<cmt>Pretty site; lots of Acropora</cmt>
+<desc>Pretty site; lots of Acropora</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_92</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54637770" lon="-149.89117024">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_93</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_93</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54780925" lon="-149.89496179">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_94</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_94</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54493568" lon="-149.90222856">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_95</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_95</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53815631" lon="-149.90448858">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_96_8_22_2020</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_96_8_22_2020</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53815631" lon="-149.90448858">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_96_9_02_2020</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_96_9_02_2020</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54097733" lon="-149.90676317">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_97</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_97</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54181552" lon="-149.89851270">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_98</name>
+<cmt>Use Tahitian boat channel to get to this site</cmt>
+<desc>Use Tahitian boat channel to get to this site</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_98</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53412998" lon="-149.90548803">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_99_8_22_2020</name>
+<cmt>99 New</cmt>
+<desc>99 New</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_99_8_22_2020</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53412998" lon="-149.90548803">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_99_9_2_2020</name>
+<cmt>New 99 in the GPS</cmt>
+<desc>New 99 in the GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_99_9_2_2020</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49718255" lon="-149.81804827">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_Cook 1</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_Cook 1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51380001" lon="-149.76415004">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_LTER 3 back</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_LTER 3 back</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51305000" lon="-149.76688304">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_LTER 3 fringe</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_LTER 3 fringe</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51553297" lon="-149.91451702">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_LTER 6</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_LTER 6</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50843442" lon="-149.85258834">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_OPU 1</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_OPU 1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50653919" lon="-149.85760449">
+<time>2021-01-06T19:28:44Z</time>
+<name>Burke_OPU 2</name>
+<cmt>&amp;nbsp;</cmt>
+<desc>&amp;nbsp;</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Burke_OPU 2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52713285" lon="-149.77549570">
+<time>2021-01-06T19:31:52Z</time>
+<name>Fisher_40</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Fisher_40</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57266654" lon="-149.86550493">
+<time>2021-01-06T19:31:52Z</time>
+<name>Fisher_45</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Fisher_45</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53583520" lon="-149.90430258">
+<time>2021-01-06T19:31:52Z</time>
+<name>Fisher_46</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Fisher_46</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49211024" lon="-149.86931694">
+<time>2021-01-06T19:31:52Z</time>
+<name>Fisher_51</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Fisher_51</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65443603" lon="-149.60031501">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_24</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_24</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65443603" lon="-149.60031501">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_26</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_26</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.63259999" lon="-149.62089996">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_29</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_29</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.63380003" lon="-149.61985004">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_32</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_32</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55730502" lon="-149.87355399">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_33</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_33</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55649198" lon="-149.87404198">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_34</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_34</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57418701" lon="-149.86273396">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_35</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_35</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57276704" lon="-149.86414698">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_36</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_36</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57418701" lon="-149.86273396">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_37</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_37</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52779804" lon="-149.77560399">
+<time>2021-01-06T19:31:52Z</time>
+<name>Habler_38</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Habler_38</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51258774" lon="-149.76790890">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 1</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57266654" lon="-149.86550493">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 11</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 11</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53583520" lon="-149.90430258">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 12</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 12</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54845482" lon="-149.88831779">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 13</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 13</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54529166" lon="-149.89254043">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 14</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 14</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51931614" lon="-149.91315890">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 15</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 15</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49211024" lon="-149.86931694">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 16</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 16</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47572354" lon="-149.78092549">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 17</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 17</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58287469" lon="-149.84401289">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 2</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.47938048" lon="-149.79432279">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 21</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 21</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55534659" lon="-149.87931361">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview - 3</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview - 3</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.59271337" lon="-149.81690213">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview 1</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview 1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52713285" lon="-149.77549570">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Interview-2</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Interview-2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65443603" lon="-149.60031501">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH01</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH01</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.87329104" lon="-149.18958901">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH02</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH02</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.87277698" lon="-149.19067397">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH03</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH03</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65443603" lon="-149.60031501">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH04</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH04</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65443603" lon="-149.60031501">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH05</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH05</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.70519700" lon="-149.58477899">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH06</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH06</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.74172198" lon="-149.57247804">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH07</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH07</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75106302" lon="-149.54768303">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH08</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH08</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75106302" lon="-149.54768303">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH09</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH09</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75106302" lon="-149.54768303">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH10</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH10</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75502297" lon="-149.35642602">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH11</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH11</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75945197" lon="-149.37876103">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH12</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH12</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.76133496" lon="-149.39347898">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH13</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH13</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.76133496" lon="-149.39347898">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH14</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH14</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.76361903" lon="-149.39841298">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH15</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH15</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.77124598" lon="-149.42762098">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH16</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH16</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.77057903" lon="-149.47842697">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH17</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH17</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.76522702" lon="-149.49409501">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH18</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH18</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.68547304" lon="-149.56436796">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH19</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH19</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.63259999" lon="-149.62089996">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH20</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH20</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.85759198" lon="-149.25109198">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH21</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH21</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.85431298" lon="-149.25784000">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH22</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH22</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.82028698" lon="-149.29150399">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH23</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH23</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50735198" lon="-149.45709100">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH24</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH24</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53503196" lon="-149.43169802">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH25</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH25</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52225802" lon="-149.39385499">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH26</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH26</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53218404" lon="-149.39848004">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH27</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH27</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65460802" lon="-149.31570003">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH28</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH28</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.66005903" lon="-149.31262001">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH29</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH29</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.73301997" lon="-149.28054499">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH30</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH30</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.73931998" lon="-149.25895999">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH31</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH31</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75640699" lon="-149.16697104">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH32</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH32</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.74864401" lon="-149.19690600">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH33</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH33</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52500100" lon="-149.52315004">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH34</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH34</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51838801" lon="-149.50946398">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH35</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH35</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54243502" lon="-149.52188697">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH36</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH36</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52649901" lon="-149.52389703">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH37</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH37</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.63398896" lon="-149.60077400">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH38</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH38</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.75768104" lon="-149.38027899">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH39</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH39</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.67836301" lon="-149.58827198">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH42</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH42</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54317498" lon="-149.56870803">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH43</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH43</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65023904" lon="-149.44955198">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH44</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH44</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.65355702" lon="-149.45580396">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH45</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH45</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.64201497" lon="-149.45654098">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH46</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH46</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.64218302" lon="-149.43374799">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH47</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH47</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56252896" lon="-149.43003598">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH48</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH48</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55210003" lon="-149.43277803">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH49</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH49</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.76682897" lon="-149.32285801">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH50</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH50</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.67766002" lon="-149.30753002">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH51</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH51</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.69802804" lon="-149.30432998">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH52</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH52</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.73681496" lon="-149.27333797">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH53</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH53</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.63380003" lon="-149.61985004">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH54</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH54</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.63380003" lon="-149.61985004">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH55</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH55</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.62905001" lon="-149.57262900">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH56</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH56</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55730502" lon="-149.87355399">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH57</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH57</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55649198" lon="-149.87404198">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH58</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH58</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54815198" lon="-149.88512303">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH59</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH59</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54718002" lon="-149.88875901">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH60</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH60</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53444799" lon="-149.90312099">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH61</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH61</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53444799" lon="-149.90312099">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH62</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH62</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49206901" lon="-149.76618801">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH63</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH63</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48955703" lon="-149.77057099">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH64</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH64</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.48018900" lon="-149.77621101">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH65</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH65</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52066303" lon="-149.84715904">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH66</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH66</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49227101" lon="-149.87087396">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH67</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH67</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54980104" lon="-149.88213404">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH68</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH68</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55979897" lon="-149.87185498">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH69</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH69</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.56500699" lon="-149.87026501">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH70</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH70</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54059796" lon="-149.82570103">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH72</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH72</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53135800" lon="-149.83583199">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH73</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH73</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52429700" lon="-149.84181298">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH74</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH74</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52045499" lon="-149.84838699">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH75</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH75</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57418701" lon="-149.86273396">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH76</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH76</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58092296" lon="-149.84306004">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH77</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH77</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57276704" lon="-149.86414698">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH78</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH78</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.57418701" lon="-149.86273396">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH79</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH79</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54525604" lon="-149.83519999">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH81</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH81</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54296300" lon="-149.82960801">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH82</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH82</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54796297" lon="-149.79397302">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH83</name>
+<cmt>GW</cmt>
+<desc>GW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH83</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52779804" lon="-149.77560399">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH84</name>
+<cmt>FSGD</cmt>
+<desc>FSGD</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH84</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.52199098" lon="-149.78164801">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH85</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH85</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49112001" lon="-149.91273997">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH86</name>
+<cmt>SW</cmt>
+<desc>SW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH86</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49024301" lon="-149.82627503">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH87</name>
+<cmt>MW</cmt>
+<desc>MW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH87</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53338198" lon="-149.56785299">
+<time>2021-01-06T19:11:39Z</time>
+<name>KH88</name>
+<cmt>RW</cmt>
+<desc>RW</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KH88</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53815631" lon="-149.90448858">
+<time>2021-01-06T19:31:52Z</time>
+<name>Nutrients_19</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Nutrients_19</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53412998" lon="-149.90548803">
+<time>2021-01-06T19:31:52Z</time>
+<name>Nutrients_20</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Nutrients_20</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49065096" lon="-149.86811883">
+<time>2021-01-06T19:31:52Z</time>
+<name>Nutrients_4</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Nutrients_4</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49316067" lon="-149.86737317">
+<time>2021-01-06T19:31:52Z</time>
+<name>Nutrients_6</name>
+<cmt>Priority</cmt>
+<desc>Priority</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Nutrients_6</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51055999" lon="-149.91591571">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_110</name>
+<cmt>110 New</cmt>
+<desc>110 New</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_110</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.49316067" lon="-149.86737317">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_141</name>
+<cmt>NA</cmt>
+<desc>NA</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_141</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.58791003" lon="-149.80487997">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_202</name>
+<cmt>464 in Becky's GPS</cmt>
+<desc>464 in Becky's GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_202</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50637398" lon="-149.91715900">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_203</name>
+<cmt>Lots of staghorn and anemones</cmt>
+<desc>Lots of staghorn and anemones</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_203</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55015199" lon="-149.88495103">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_208</name>
+<cmt>Marked 208 New in Burkepile 4 GPS</cmt>
+<desc>Marked 208 New in Burkepile 4 GPS</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_208</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.55479179" lon="-149.78911554">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_51</name>
+<cmt>NA</cmt>
+<desc>NA</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_51</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.53412998" lon="-149.90548803">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_99_8_22_2020</name>
+<cmt>99 New</cmt>
+<desc>99 New</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_99_8_22_2020</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.50843442" lon="-149.85258834">
+<time>2021-01-06T19:17:55Z</time>
+<name>Si_OPU 1</name>
+<cmt>NA</cmt>
+<desc>NA</desc>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Si_OPU 1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.51630620" lon="-149.91262564">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Visual</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Visual</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="-17.54035690" lon="-149.89920722">
+<ele>0.000</ele>
+<time>2021-01-06T18:45:06Z</time>
+<name>Visual1</name>
+<sym>Flag, Blue</sym>
+<type>user</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Visual1</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>1-16 LOWER POOLS</name>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>1-16 LOWER POOLS</label_text>
+</label>
+</extensions>
+<rtept lat="44.75302000" lon="-124.06638600">
+<ele>0.411</ele>
+<time>2019-07-07T18:16:07Z</time>
+<name>166</name>
+<cmt>OCEAN</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>166</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75389492" lon="-124.06518697">
+<name>114</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>114</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75372192" lon="-124.06522980">
+<name>116</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>116</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75365897" lon="-124.06522796">
+<name>115</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>115</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75363784" lon="-124.06528395">
+<name>117</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>117</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75352192" lon="-124.06526894">
+<name>118</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>118</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75359686" lon="-124.06531169">
+<name>119</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>119</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75298774" lon="-124.06581595">
+<name>120</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>120</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75288071" lon="-124.06600487">
+<name>133</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>133</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75239500" lon="-124.06642900">
+<ele>0.130</ele>
+<time>2019-06-24T17:50:18Z</time>
+<name>149</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>149</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75239187" lon="-124.06642590">
+<name>130</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>130</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75243400" lon="-124.06641200">
+<ele>-2.238</ele>
+<time>2019-06-09T22:06:29Z</time>
+<name>141</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>141</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75251600" lon="-124.06640400">
+<ele>1.516</ele>
+<time>2019-07-07T19:31:50Z</time>
+<name>168</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>168</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75253898" lon="-124.06640084">
+<name>129</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>129</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75256295" lon="-124.06641793">
+<name>128</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>128</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75269000" lon="-124.06643600">
+<ele>2.332</ele>
+<time>2019-06-09T17:16:48Z</time>
+<name>138</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>138</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75240000" lon="-124.06637900">
+<ele>-5.632</ele>
+<time>2019-06-09T22:01:52Z</time>
+<name>140</name>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>140</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<rte>
+<name>17-32 HIGHER POOLS</name>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>17-32 HIGHER POOLS</label_text>
+</label>
+</extensions>
+<rtept lat="44.75302000" lon="-124.06638600">
+<ele>0.411</ele>
+<time>2019-07-07T18:16:07Z</time>
+<name>166</name>
+<cmt>OCEAN</cmt>
+<sym>Flag, Blue</sym>
+<type>Blue Flag</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>166</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75321590" lon="-124.06604092">
+<name>122</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>122</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75257770" lon="-124.06555879">
+<name>131</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>131</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75329997" lon="-124.06607579">
+<name>121</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>121</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75290191" lon="-124.06602072">
+<name>134</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>134</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75296293" lon="-124.06606296">
+<name>135</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>135</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75295195" lon="-124.06586573">
+<name>136</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>136</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75267686" lon="-124.06633789">
+<name>137</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>137</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75265875" lon="-124.06634795">
+<name>127</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>127</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75273671" lon="-124.06632372">
+<name>148</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>148</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75210387" lon="-124.06624577">
+<name>126</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>126</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75213069" lon="-124.06626597">
+<name>125</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>125</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75227998" lon="-124.06626899">
+<name>124</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>124</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75228576" lon="-124.06626698">
+<name>123</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>123</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75242490" lon="-124.06648499">
+<name>144</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>144</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75229188" lon="-124.06642900">
+<name>145</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>145</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="44.75226196" lon="-124.06642196">
+<name>146</name>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>146</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<trk>
+<name>Current Track: 22 JAN 2021 12:26</name>
+<type>GPS Tracklog</type>
+<extensions>
+<override_color xmlns="http://www.topografix.com/GPX/Private/TopoGrafix/0/4">00ffff</override_color>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Current Track: 22 JAN 2021 12:26</label_text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>ff6820</color>
+<opacity>1.00</opacity>
+<width>0.8330</width>
+<pattern>Solid</pattern>
+</line>
+</extensions>
+<trkseg>
+<trkpt lat="-17.54130213" lon="-149.89755490">
+<ele>3.980</ele>
+<time>2021-01-22T22:26:29Z</time>
+</trkpt>
+<trkpt lat="-17.54133976" lon="-149.89754383">
+<ele>5.910</ele>
+<time>2021-01-22T22:26:54Z</time>
+</trkpt>
+<trkpt lat="-17.54134244" lon="-149.89754559">
+<ele>5.420</ele>
+<time>2021-01-22T22:27:14Z</time>
+</trkpt>
+<trkpt lat="-17.54134605" lon="-149.89755582">
+<ele>5.910</ele>
+<time>2021-01-22T22:27:21Z</time>
+</trkpt>
+</trkseg>
+<trkseg>
+<trkpt lat="-17.54051741" lon="-149.89929683">
+<ele>2.540</ele>
+<time>2021-01-22T22:40:16Z</time>
+</trkpt>
+<trkpt lat="-17.54050693" lon="-149.89930077">
+<ele>4.940</ele>
+<time>2021-01-22T22:40:41Z</time>
+</trkpt>
+<trkpt lat="-17.54050660" lon="-149.89929196">
+<ele>3.980</ele>
+<time>2021-01-22T22:41:16Z</time>
+</trkpt>
+<trkpt lat="-17.54051029" lon="-149.89929775">
+<ele>3.500</ele>
+<time>2021-01-22T22:41:43Z</time>
+</trkpt>
+<trkpt lat="-17.54051289" lon="-149.89930973">
+<ele>1.580</ele>
+<time>2021-01-22T22:42:18Z</time>
+</trkpt>
+<trkpt lat="-17.54050752" lon="-149.89929708">
+<ele>2.060</ele>
+<time>2021-01-22T22:42:46Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<extensions>
+</extensions>
+</gpx>
