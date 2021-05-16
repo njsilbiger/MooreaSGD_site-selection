@@ -1,0 +1,49 @@
+﻿
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2021-05-16T04:29:53Z,,-17.530607990920544,-149.77527198381722,-17.526514017954469,-149.77331195957959,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,-17.526514017954469,-149.77527198381722,8.873207000000001,2021-05-15T19:22:11Z,,,"E1A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T19:22:11Z,
+2,-17.527050962671638,-149.77522202767432,15.041338,2021-05-15T20:04:14Z,,,"E2A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T20:04:14Z,
+3,-17.527576005086303,-149.77514902129769,14.019366,2021-05-15T20:45:19Z,,,"E3A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T20:45:19Z,
+4,-17.528132982552052,-149.77492799051106,15.540474,2021-05-15T21:25:05Z,,,"E4A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T21:25:05Z,
+5,-17.52873002551496,-149.7745150141418,15.128294,2021-05-15T22:05:28Z,,,"E5A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T22:05:28Z,
+6,-17.529334025457501,-149.77404504083097,18.927505,2021-05-15T22:44:40Z,,,"E6A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T22:44:40Z,
+7,-17.52991296350956,-149.7736220061779,17.138764999999999,2021-05-15T23:28:16Z,,,"E7A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T23:28:16Z,
+8,-17.530607990920544,-149.77331195957959,14.458399,2021-05-16T00:03:10Z,,,"E8A",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-16T00:03:10Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,

@@ -1,0 +1,48 @@
+﻿
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2021-05-16T04:21:01Z,,-17.529828976839781,-149.77495799772441,-17.526353001594543,-149.77342201396823,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,-17.526353001594543,-149.77492799051106,11.099874,2021-05-15T19:22:59Z,,,"E1B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T19:22:59Z,
+2,-17.527009975165129,-149.77494198828936,-55.459045000000003,2021-05-15T20:06:10Z,,,"E2B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T20:06:10Z,
+3,-17.52752797678113,-149.77495799772441,5.43232,2021-05-15T20:42:30Z,,,"E3B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T20:42:30Z,
+4,-17.528025023639202,-149.77470000274479,69.597610000000003,2021-05-15T21:23:31Z,,,"E4B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T21:23:31Z,
+5,-17.52862399443984,-149.77436103858054,70.795074,2021-05-15T22:02:06Z,,,"E5B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T22:02:06Z,
+6,-17.529216008260846,-149.77385502308607,18.551161,2021-05-15T22:42:30Z,,,"E6B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T22:42:30Z,
+7,-17.529828976839781,-149.77342201396823,118.582787,2021-05-15T23:22:18Z,,,"E7B",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-15T23:22:18Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,
