@@ -16,7 +16,7 @@ files <- dir(path = file_loc,pattern = ".csv")
 
 # Read in the gps data
 
-gps<-read_csv(here("Data","May2021","GPS","SpatialArray_0518.csv"))
+gps<-read_csv(here("Data","May2021","GPS","Varari_CT_Array_051621.csv"))
 
 # read in the cond data
 CondArrayData <- files %>%
@@ -30,16 +30,17 @@ CondArrayData <- files %>%
 CondArrayData_hourly<- CondArrayData %>%
   group_by(date = floor_date(date, "hour"), Serial) %>%
   summarise(Sal_hour = mean(Salinity, na.rm = TRUE),
-            lat = mean(lat, na.rm=TRUE),
-            long = mean(long, na.rm=TRUE))
+            Temp_hour = mean(TempInSitu, na.rm = TRUE),
+            lat = mean(Latitude, na.rm=TRUE),
+            long = mean(Longitude, na.rm=TRUE))
 
 ### read in API key for maps
 API<-names(read_table(here("Data","API.txt")))
 register_google(key = API) ### use your own API
 
 
-M_coords<-data.frame(lon =	mean(CondArrayData$long, na.rm = TRUE), lat = mean(CondArrayData$lat, na.rm = TRUE))
-ArrayMap1<-get_map(M_coords, maptype = 'satellite', zoom = 19)
+M_coords<-data.frame(lon =	mean(CondArrayData$Longitude, na.rm = TRUE), lat = mean(CondArrayData$Latitude, na.rm = TRUE))
+ArrayMap1<-get_map(M_coords, maptype = 'satellite', zoom = 18)
 
 ArrayMap<- ggmap(ArrayMap1)+
   geom_point(data = CondArrayData_hourly, mapping = aes(x=long, y=lat, color = Sal_hour), size = 2, alpha = .60)+
@@ -54,3 +55,24 @@ ArrayMap<- ggmap(ArrayMap1)+
 ArrayMap +
 transition_time(date) +
   labs(title = "Time: {frame_time}")
+
+
+# Flat map of the min values
+
+CondArrayData_hourly %>%
+  ggplot(aes(x = date, y = Sal_hour, color = lat, group = Serial)) +
+  geom_line() +
+  facet_wrap(~Serial)+
+  ggsave(here("Output", "May2021", "SalArrayTime_hour.png"))
+
+CondArrayData_hourly %>%
+  ggplot(aes(x = date, y = Temp_hour, color = lat, group = Serial)) +
+  geom_line() +
+  facet_wrap(~Serial)+
+  ggsave(here("Output", "May2021", "TempArrayTime_hour.png"))
+
+CondArrayData_hourly %>%
+  ggplot(aes(x = date, y = Temp_hour, color = lat, group = Serial)) +
+  geom_line() +
+ # facet_wrap(~Serial)+
+  ggsave(here("Output", "May2021", "TempArrayTime_hourall.png"))
