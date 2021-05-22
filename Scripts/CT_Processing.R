@@ -38,20 +38,20 @@ rm(list=ls())
 ### Input
 # Path to folder storing logger .csv files
 # path.cal<-here("Final_Project","Data","Cond_temp") # Logger calibration file path, if different from log path
-path.log<-here("Data","Cond_temp") # Logger in situ file path (CT and Water Level files)
-file.date <- "011721" # logger date used in file name(s)
+path.log<-here("Data","May2021","Cond_temp") # Logger in situ file path (CT and Water Level files)
+file.date <- "051321" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Output","QC","Spatial","011721") # Output file path
+path.output<-here("Output","May2021","QC","Spatial","051321") # Output file path
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2021-01-17')
-end.date <- ymd('2021-01-17')
+start.date <- ymd('2021-05-12')
+end.date <- ymd('2021-05-13')
 
 ###################################
 ### Import calibration and launch records

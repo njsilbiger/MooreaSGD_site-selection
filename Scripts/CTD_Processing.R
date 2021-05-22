@@ -34,28 +34,28 @@ rm(list=ls())
 # Path to folder storing logger .csv files
 path.cal<-here("Data","May2021","Cond_temp") # Logger calibration file path
 path.log<-here("Data","May2021","Cond_temp") # Logger in situ file path (CT and Water Level files)
-path.WL<-here("Data","May2021","Pressure")
-file.date <- "011821" # logger date used in file name(s)
+path.WL<-here("Data","May2021","Depth")
+file.date <- "051321" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Output","May2021","QC","Timeseries","011821") # Output file path
+path.output<-here("Output","May2021","QC","Spatial","051321") # Output file path
 
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-CT_Serial <- "324"
-WL_Serial <- "877"
+CT_Serial <- "329"
+WL_Serial <- "876"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2021-01-18')
-end.date <- ymd('2021-01-20')
+start.date <- ymd('2021-05-12')
+end.date <- ymd('2021-05-13')
 
 ###################################
 ### Import calibration and launch records
@@ -71,7 +71,7 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 ###################################
 
 # Two-Point Calibration Standard
-highCal<-53000 # uS/cm at 25deg C
+highCal<-50000 # uS/cm at 25deg C
 lowCal<-1413 # uS/cm at 25deg C
 
 
@@ -236,7 +236,7 @@ launch.log <- launch.log %>%
   
   # Calculate Practical Salinity using gsw package with PSS-78 equation
   CTD.data <- CTD.data %>% 
-    mutate(Salinity = gsw_SP_from_C(C = SC_Cal.2*0.001, t = 25, p = Pres_dbar))
+    mutate(Salinity = gsw_SP_from_C(C = SC_Cal.1*0.001, t = 25, p = Pres_dbar))
 
 
 
@@ -259,7 +259,7 @@ launch.log <- launch.log %>%
   p[[1]]<-CTD.data %>% 
     filter(Salinity > 28) %>% 
     ggplot(aes(x = date, y = Salinity, color = TempInSitu)) + 
-    geom_point() + 
+    geom_line() + 
     theme_bw() +
     labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") +
     ggtitle(paste("CT",CT_Serial,"Salinity", file.date))
@@ -280,7 +280,7 @@ launch.log <- launch.log %>%
     ggtitle(paste("WL",WL_Serial,"Depth", file.date))
   
   # Save all plots in a single dated pdf
-  pdf(paste0(path.output,"/",file.date,"_CTD_plots.pdf"), onefile = TRUE)
+  pdf(paste0(path.output,"/",file.date,"CT_",CT_Serial,"_CTD_plots.pdf"), onefile = TRUE)
   for (i in seq(length(p))) {
     tplot <- p[[i]]
     print(tplot)
