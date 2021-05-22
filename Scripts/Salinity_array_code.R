@@ -7,6 +7,7 @@ library(ggmap)
 library(here)
 library(lubridate)
 library(viridis)
+library(ggrepel)
 
 ### Read in the data ####
 
@@ -132,12 +133,13 @@ Cond_summary<-CondArray_all %>%
 
 ArrayMapmin<- ggmap(ArrayMap1)+
   geom_point(data = Cond_summary, mapping = aes(x=Longitude, y=Latitude, color = Sal_min), size = 2)+
+  # geom_label_repel(data = Cond_summary, mapping = aes(x=Longitude, y=Latitude,label = Serial))+
   xlab("")+
   ylab("")+
   labs(title = "Min Salinity over 2 days",
        color = "Salinity")+
   scale_color_viridis_c() +
-  facet_wrap(~Surf_Benth) +
+   facet_wrap(~Surf_Benth) +
   ggsave(here("Output","May2021","Spatial_array_plots","Map_Salinity_min.png"), width = 7, height = 3)
 
 
