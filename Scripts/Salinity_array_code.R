@@ -12,23 +12,23 @@ library(ggrepel)
 ### Read in the data ####
 
 # read in the benthic data
-file_loc_benthic<-here("Output","May2021","QC", "Spatial","051621")
+file_loc_benthic<-here("Data","May2021","Cond_temp","Csv_files", "QC", "Spatial_Array","051621")
 
 
 files_benthic <- dir(path = file_loc_benthic,pattern = ".csv")
 
 #GPS
-gps_benthic<-read_csv(here("Data","May2021","GPS","Varari_CT_Benthic_Array_051621.csv"))
+gps_benthic<-read_csv(here("Data","May2021","GPS","Logger_Spatial_Array","Varari_CT_Benthic_Array_051621.csv"))
 
 
 # read in the surface array data
-file_loc_surface<-here("Output","May2021","QC", "Spatial","051921")
+file_loc_surface<-here("Data","May2021","Cond_temp","Csv_files", "QC", "Spatial_Array","051921")
 
 files_surface <- dir(path = file_loc_surface,pattern = ".csv")
 
 #GPS
 
-gps_surface<-read_csv(here("Data","May2021","GPS","Varari_CT_Surface_Array_051921.csv"))
+gps_surface<-read_csv(here("Data","May2021","GPS","Logger_Spatial_Array","Varari_CT_Surface_Array_051921.csv"))
 
 
 # read in the cond data ####
