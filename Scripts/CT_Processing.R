@@ -37,21 +37,24 @@ rm(list=ls())
 
 ### Input
 # Path to folder storing logger .csv files
-# path.cal<-here("Final_Project","Data","Cond_temp") # Logger calibration file path, if different from log path
-path.log<-here("Data","May2021","Cond_temp") # Logger in situ file path (CT and Water Level files)
-file.date <- "051321" # logger date used in file name(s)
+path.log<-here("Data","May2021","Cond_temp","Csv_files","Calibrated_csv","051621_Varari_Benthic_Array") # Logger in situ file path (CT and Water Level files)
+#path.WL<-here("Data","May2021","Depth")
+file.date <- "051621" # logger date used in file name(s)
+
 
 ### Output
 # Path to store logger files
-path.output<-here("Output","May2021","QC","Spatial","051321") # Output file path
+path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array","Csv_files") # Output file path
+
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2021-05-12')
-end.date <- ymd('2021-05-13')
+start.date <- ymd('2021-05-16')
+end.date <- ymd('2021-05-18')
+
 
 ###################################
 ### Import calibration and launch records
@@ -62,13 +65,22 @@ calibration.log<-read_csv(here("Data","CT_Calibration_Log.csv")) # Calibration t
 launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
   filter(Log_Type == "CT")
 
+
 ###################################
 ### Conductivity Calibration Standards and Logging Interval
 ###################################
 
-# Two-Point Calibration Standard
-highCal<-50000 # uS/cm at 25deg C
-lowCal<-1413 # uS/cm at 25deg C
+# If calibrating to an in situ YSI point, then TRUE
+ysi.cal = TRUE
+  # YSI calibration reading at the Common Garden or some paired time point
+  ysi.ec <- 57449.9 # Electrical Conductivity reading (uS/cm) in situ
+  ysi.temp <- 29.72 # Temperature in Celcius
+
+# If calibrating to one or two standard solutions
+  # Two-Point Calibration Standard
+  highCal<-50000 # uS/cm at 25deg C
+  lowCal<-1413 # uS/cm at 25deg C
+
 
 ###################################
 ### Pressure data
@@ -180,8 +192,18 @@ for(i in 1:n1) {
   # single time point calibration
   if(nrow(C2) == 1){ 
     
+    if(ysi.cal == TRUE) {
+      
+      # if YSI calibration reading = TRUE, then calibrate to in situ conductivity and temperature
+      calibration<-CT_one_cal(data = C1, EC_probe = TRUE, cal.ref = ysi.ec, cal.ref.temp = ysi.temp,
+                              startCal = startHigh, endCal = endHigh, 
+                              date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity) %>% 
+        rename(EC_Cal.1 = EC_Cal) %>% 
+        mutate(EC_Cal.2 = NA)
+      
+    } else if(is.na(C2$time.in.low[1]) == F){ 
+      
     # if low standard calibration = TRUE, then two-point calibration
-    if(is.na(C2$time.in.low[1]) == F){ 
       calibration<-CT_two_cal(data = C1, high.Ref = highCal, low.Ref = lowCal, startHigh = startHigh, 
                  endHigh = endHigh, startLow = startLow, endLow = endLow,
                  date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity) %>% 
