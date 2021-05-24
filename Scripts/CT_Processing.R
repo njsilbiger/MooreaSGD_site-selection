@@ -28,8 +28,6 @@ library(here)
 library(gridExtra)
 library(mooreasgd)
 
-rm(list=ls())
-
 
 ###################################
 ### File Paths
@@ -37,14 +35,14 @@ rm(list=ls())
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","May2021","Cond_temp","Csv_files","Calibrated_csv","051621_Varari_Benthic_Array") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","May2021","Cond_temp","Csv_files","Calibrated_csv","05232021_commongarden") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "051621" # logger date used in file name(s)
+file.date <- "052221" # logger date used in file name(s)
 
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array","Csv_files") # Output file path
+path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","commongarden") # Output file path
 
 
 ###################################
@@ -52,8 +50,8 @@ path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array",
 ###################################
 
 # Log dates
-start.date <- ymd('2021-05-16')
-end.date <- ymd('2021-05-18')
+start.date <- ymd('2021-05-22')
+end.date <- ymd('2021-05-23')
 
 
 ###################################
