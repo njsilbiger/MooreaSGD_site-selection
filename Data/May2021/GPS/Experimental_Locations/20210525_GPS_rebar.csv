@@ -1,0 +1,47 @@
+﻿
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2021-05-26T05:05:40Z,,-17.540536019951105,-149.90051999688148,-17.539781983941793,-149.89937603473663,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,-17.540050959214568,-149.89999503828585,118.83178700000001,2021-05-25T22:25:40Z,,,"V09",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T22:25:40Z,
+2,-17.540306020528078,-149.90049703046679,105.28615600000001,2021-05-25T22:13:38Z,,,"V19",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T22:13:38Z,
+3,-17.539781983941793,-149.90051999688148,64.547461999999996,2021-05-25T22:37:21Z,,,"V21",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T22:37:21Z,
+4,-17.540314989164472,-149.90010903216898,31.692352,2021-05-25T22:48:49Z,,,"V22",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T22:48:49Z,
+5,-17.540536019951105,-149.89977702498436,36.123154,2021-05-25T23:10:00Z,,,"V23",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T23:10:00Z,
+6,-17.540414985269308,-149.89937603473663,39.681244,2021-05-25T23:02:16Z,,,"V24",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T23:02:16Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,
