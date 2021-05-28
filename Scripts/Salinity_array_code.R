@@ -38,7 +38,12 @@ files_cabral <- dir(path = file_loc_cabral,pattern = ".csv")
 
 gps_cabral<-read_csv(here("Data","May2021","GPS","Logger_Spatial_Array","Cabral_Spatial_Array_05242021.csv"))
 
-# read in the cond data ####
+# Pressure for cabral
+pressure_cabral <-read_csv(here("Data","May2021","Depth","Csv_files","Calibrated_csv","Pressure_870_Sled_052421.csv"), skip = 1) %>%
+  select(date = `Date Time, GMT-10:00`,depth = `Water Level, meters (LGR S/N: 20810870)` ) %>%
+  mutate(date = mdy_hms(date)) 
+
+# read in the cond data #### NEED SALINITY OFF FOR BENTHIC
 CondArrayData_Benthic <- files_benthic %>%
   set_names()%>% # set's the id of each list to the file name
   map_df(~ read_csv(file.path(file_loc_benthic, .)),.id = "filename") %>%
@@ -52,7 +57,7 @@ CondArrayData_Surface <- files_surface %>%
   map_df(~ read_csv(file.path(file_loc_surface, .)),.id = "filename") %>%
   left_join(gps_surface) %>% # Join the cond data with the gps data
   mutate(Surf_Benth = "Surface") %>% # add a column for surface 
-  select(date, Serial, TempInSitu, Salinity, Surf_Benth, Latitude, Longitude ) %>%
+  select(date, Serial, TempInSitu, Salinity = Salinity_off, Surf_Benth, Latitude, Longitude ) %>%
  mutate(Salinity = ifelse(Serial == "CT_354" & Salinity < 33, NA, Salinity ) ) %>% # remove weird spike that isnt real
   filter(Serial != "CT_345") # was exposed during low tide
 
@@ -62,12 +67,15 @@ CondArrayData_Cabral <- files_cabral %>%
   map_df(~ read_csv(file.path(file_loc_cabral, .)),.id = "filename") %>%
   left_join(gps_cabral) %>% # Join the cond data with the gps data
   mutate(Surf_Benth = "Cabral") %>% # add a column for surface 
-  select(date, Serial, TempInSitu, Salinity, Surf_Benth, Latitude, Longitude ) 
+  select(date, Serial, TempInSitu, Salinity = Salinity_off, Surf_Benth, Latitude, Longitude ) %>%
+  right_join(pressure_cabral) %>%
+  drop_na()
 
 ## Bind them together
 
 CondArray_all <- bind_rows(CondArrayData_Benthic, CondArrayData_Surface, CondArrayData_Cabral) %>%
-  mutate(time = format(date, format = "%H:%M:%S"))
+  mutate(time = hms(format(date, format = "%H:%M:%S")),
+         sun = ifelse(time> hms('06:22:00') & time <hms('17:32:0'), "day","night"))
   
 
 ## Make a plot with benthic and surface on top of each other ####
@@ -106,7 +114,6 @@ CondArray_all %>%
 #Cabral
 CondArray_all %>%
   filter(Surf_Benth == "Cabral") %>%
-  drop_na(Longitude) %>%
   filter(Salinity>20) %>% # remove bad points
   ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
   geom_line()+
@@ -120,10 +127,51 @@ CondArray_all %>%
   theme_bw()+
   ggsave(here("Output","May2021","Spatial_array_plots","CabralData.png"), width = 11, height = 6)
 
+# plot salinity versus depth
 
+CondArray_all %>%
+  filter(Surf_Benth == "Cabral") %>%
+  filter(Salinity>30) %>% # remove bad points
+  mutate(day = date(date)) %>%
+# unite("day_sun", day,sun)%>%
+  filter(day == ymd('2021-05-24') ) %>%
+  ggplot(aes(x = depth, y = Salinity, color = sun)) +
+  geom_point()+
+  geom_smooth(method = "lm")+
+  facet_wrap(~Serial, scales = 'free_y') 
+
+## everything just cabral on 5_24
+CondArray_all %>%
+  filter(Surf_Benth == "Cabral") %>%
+  filter(Salinity>20) %>% # remove bad points
+  mutate(day = date(date)) %>%
+  # unite("day_sun", day,sun)%>%
+  filter(day == ymd('2021-05-24') ) %>%
+  
+  ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
+  geom_line()+
+  scale_color_viridis_c()+
+  scale_x_datetime(date_labels = "%H %M %S")+
+  labs(title = "Cabral (2021-05-24)",
+       y = "Salinity (corrected)",
+       x = "",
+       color = "Temperature")+
+  theme_bw()+
+  ggsave(here("Output","May2021","Spatial_array_plots","CabralData2.png"), width = 6, height = 6)
+
+
+CondArray_all %>%
+  filter(Surf_Benth == "Cabral") %>%
+  filter(Salinity>20) %>% # remove bad points
+  mutate(day = date(date)) %>%
+  # unite("day_sun", day,sun)%>%
+ # filter(day == ymd('2021-05-24') ) %>%
+  
+  ggplot(aes(x = date, y = depth, color = TempInSitu)) +
+  geom_line()
+  
 ### Everything on top of each other faceted by benthic and surface 
 CondArray_all %>%
-  drop_na(Longitude) %>%
   filter(Salinity>20) %>% # remove bad points
   ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
   geom_line()+
@@ -135,6 +183,8 @@ CondArray_all %>%
        color = "Temperature")+
   theme_bw()+
   ggsave(here("Output","May2021","Spatial_array_plots","BenthicAndSurfaceData.png"), width = 9, height = 3)
+
+
 
 # # get hourly averages
 # CondArrayData_hourly<- CondArrayData %>%
@@ -152,7 +202,7 @@ API<-names(read_table(here("Data","API.txt")))
 register_google(key = API) ### use your own API
 
 
-M_coords<-data.frame(lon =	mean(CondArrayData_Benthic$Longitude, na.rm = TRUE), lat = mean(CondArrayData_Benthic$Latitude, na.rm = TRUE))
+M_coords<-data.frame(lon =	mean(CondArrayData_Surface$Longitude, na.rm = TRUE), lat = mean(CondArrayData_Surface$Latitude, na.rm = TRUE))
 ArrayMap1<-get_map(M_coords, maptype = 'satellite', zoom = 18)
 
 
@@ -197,6 +247,7 @@ ArrayMapmed_cabral<- ggmap(ArrayMap2)+
   labs(title = "Median Salinity over 3 days",
        color = "Salinity")+
   scale_color_viridis_c() +
+  geom_text_repel(data = Cond_summary %>% filter(Surf_Benth=="Cabral"), mapping = aes(x=Longitude, y=Latitude, label = Serial, color = Sal_med))+
   #facet_wrap(~Surf_Benth) +
   ggsave(here("Output","May2021","Spatial_array_plots","Map_Salinity_med_Cabral.png"), width = 10, height = 5)
 
