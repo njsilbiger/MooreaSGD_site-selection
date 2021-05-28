@@ -1,0 +1,72 @@
+﻿
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2021-05-26T17:48:45Z,,-17.540819998830557,-149.9008799996227,-17.539818026125431,-149.89789998158813,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,-17.540769958868623,-149.89789998158813,20.967312,2021-05-24T19:43:43Z,,,"317",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:43:43Z,
+2,-17.540499977767467,-149.89921996369958,19.966823999999999,2021-05-24T19:45:08Z,,,"318",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:45:08Z,
+3,-17.54061003215611,-149.89956999197602,20.129031999999999,2021-05-24T19:46:31Z,,,"320",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:46:31Z,
+4,-17.540819998830557,-149.89992999471724,19.897273999999999,2021-05-24T19:44:27Z,,,"323",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:44:27Z,
+5,-17.540510036051273,-149.89963998086751,23.249855,2021-05-24T19:48:58Z,,,"345",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:48:58Z,
+6,-17.540399981662631,-149.90009997971356,23.551901000000001,2021-05-24T19:51:38Z,,,"346",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:51:38Z,
+7,-17.540109967812896,-149.90015999414027,23.535105000000001,2021-05-24T19:50:52Z,,,"355",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:50:52Z,
+8,-17.540359999984503,-149.89950997754931,23.396011000000001,2021-05-24T19:49:44Z,,,"738",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:49:44Z,
+9,-17.540439963340759,-149.9008799996227,56.949913000000002,2021-05-24T19:36:51Z,,,"NORTHWEST CORNER",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:36:51Z,
+10,-17.540370980277658,-149.8994969855994,64.794089999999997,2021-05-24T20:46:42Z,,,"V01",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:46:42Z,
+11,-17.540453961119056,-149.89950603805482,112.678764,2021-05-24T20:47:44Z,,,"V02",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:47:44Z,
+12,-17.540285987779498,-149.89959497004747,104.843628,2021-05-24T20:55:22Z,,,"V03",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:55:22Z,
+13,-17.540335021913052,-149.89957703277469,94.351027999999999,2021-05-24T20:59:40Z,,,"V04",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:59:40Z,
+14,-17.540320018306375,-149.89975397475064,124.192116,2021-05-24T21:10:18Z,,,"V05",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:10:18Z,
+15,-17.540252041071653,-149.89975296892226,21.875702,2021-05-24T21:15:38Z,,,"V06",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:15:38Z,
+16,-17.540191020816565,-149.89989101886749,-46.291545999999997,2021-05-24T21:22:23Z,,,"V07",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:22:23Z,
+17,-17.540164031088352,-149.89988598972559,30.964704999999999,2021-05-24T21:34:52Z,,,"V08",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:34:52Z,
+18,-17.54007400944829,-149.89993301220238,45.736052999999998,2021-05-24T21:47:39Z,,,"V091",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:47:39Z,
+19,-17.540219016373158,-149.9000289849937,121.63208,2021-05-24T21:58:35Z,,,"V10",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:58:35Z,
+20,-17.540145004168153,-149.90017097443342,85.643974,2021-05-24T22:06:20Z,,,"V11",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:06:20Z,
+21,-17.540233014151454,-149.90032402798533,116.418961,2021-05-24T22:15:06Z,,,"V12",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:15:06Z,
+22,-17.540235025808215,-149.90045403130352,70.126571999999996,2021-05-24T22:18:46Z,,,"V13",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:18:46Z,
+23,-17.540114996954799,-149.90057699382305,61.800387999999998,2021-05-24T22:24:45Z,,,"V14",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:24:45Z,
+24,-17.539818026125431,-149.90048403851688,-48.827888000000002,2021-05-24T22:36:05Z,,,"V15",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:36:05Z,
+25,-17.540076021105051,-149.90067196078598,149.102463,2021-05-24T22:45:38Z,,,"V151",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:45:38Z,
+26,-17.540111979469657,-149.90057498216629,117.53701,2021-05-24T22:52:08Z,,,"V16",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:52:08Z,
+27,-17.539877034723759,-149.90052703768015,13.925499,2021-05-24T22:39:17Z,,,"V17",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T22:39:17Z,
+28,-17.540002008900046,-149.90012101829052,57.422179999999997,2021-05-24T23:13:20Z,,,"V18",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T23:13:20Z,
+29,-17.540028998628259,-149.89999000914395,46.903751,2021-05-24T23:29:47Z,,,"V191",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T23:29:47Z,
+30,-17.540769958868623,-149.89911803975701,13.978469,2021-05-24T23:41:40Z,,,"V20",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T23:41:40Z,
+31,-17.540359999984503,-149.89920998923481,22.458843000000002,2021-05-24T19:48:07Z,,,"VISUAL2",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T19:48:07Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,
