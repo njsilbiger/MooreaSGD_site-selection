@@ -1,0 +1,53 @@
+﻿
+metadata
+ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
+1,,,2021-05-28T04:12:08Z,,-17.519630966708064,-149.91392500698566,-17.514458997175097,-149.91246596910059,
+
+author
+ID,name,email,
+
+copyright
+year,license,author,
+
+link
+metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
+1,,,,,,,"Garmin International",,http://www.garmin.com,
+
+rte
+ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
+
+rtept
+ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
+
+wpt
+ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
+1,-17.519630966708064,-149.91293401457369,-18.818069000000001,2021-05-25T19:45:37Z,,,"B41",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T19:45:37Z,
+2,-17.51534597016871,-149.91303401067853,54.428725999999997,2021-05-26T01:48:25Z,,,"B410",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-26T01:48:25Z,
+3,-17.515059979632497,-149.91330097429454,16.076263000000001,2021-05-26T02:27:13Z,,,"B411",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-26T02:27:13Z,
+4,-17.514458997175097,-149.91392500698566,20.959351000000002,2021-05-26T03:05:44Z,,,"B412",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-26T03:05:44Z,
+5,-17.519072983413935,-149.91290400736034,-20.265915,2021-05-25T20:37:17Z,,,"B42",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T20:37:17Z,
+6,-17.518603010103106,-149.91277400404215,32.374465999999998,2021-05-25T21:04:26Z,,,"B43",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T21:04:26Z,
+7,-17.518023988232017,-149.91253201849759,24.667389,2021-05-25T21:44:21Z,,,"B44",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T21:44:21Z,
+8,-17.517413031309843,-149.91252698935568,38.095627,2021-05-25T22:24:51Z,,,"B45",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T22:24:51Z,
+9,-17.517098039388657,-149.91246596910059,117.35466,2021-05-25T23:05:23Z,,,"B46",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T23:05:23Z,
+10,-17.516683973371983,-149.91260795854032,18.901495000000001,2021-05-25T23:44:53Z,,,"B47",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-25T23:44:53Z,
+11,-17.516293963417411,-149.91270200349391,-32.434826000000001,2021-05-26T00:27:05Z,,,"B48",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-26T00:27:05Z,
+12,-17.515743020921946,-149.91281700320542,95.500465000000005,2021-05-26T01:07:14Z,,,"B49",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-26T01:07:14Z,
+
+Address
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
+
+PhoneNumber
+wptID,Category,value,
+
+Categories
+wptID,Category,
+
+trk
+ID,name,cmt,desc,src,number,type,DisplayColor,
+
+trkseg
+ID,trkID,
+
+trkpt
+ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,

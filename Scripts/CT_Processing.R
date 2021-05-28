@@ -35,14 +35,14 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","May2021","Cond_temp","Csv_files","Calibrated_csv","05232021_commongarden") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","May2021","Cond_temp","Raw_HOBO","Raw_csv","052421_Cabral_Array") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "052221" # logger date used in file name(s)
+file.date <- "052421" # logger date used in file name(s)
 
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","commongarden") # Output file path
+path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array","052421") # Output file path
 
 
 ###################################
@@ -50,8 +50,8 @@ path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","commongarden") 
 ###################################
 
 # Log dates
-start.date <- ymd('2021-05-22')
-end.date <- ymd('2021-05-23')
+start.date <- ymd('2021-05-24')
+end.date <- ymd('2021-05-27')
 
 
 ###################################
@@ -212,7 +212,7 @@ for(i in 1:n1) {
         
         calibration<-CT_two_cal(data = C1, high.ref = high.ref[1], low.ref = low.ref[1], high.ref.temp = high.ref.temp[1], low.ref.temp = low.ref.temp[1],
                                 startHigh = startHigh, endHigh = endHigh, startLow = startLow, endLow = endLow,
-                                date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity, EC_probe = ec.cal) %>% 
+                                date = C1$date, temp = C1$TempInSitu, EC.logger = C1$E_Conductivity, EC.cal = ec.cal) %>% 
           rename(EC_Cal.1 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                  TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
                  TempInSitu = TempInSitu_Cal) %>%  # rename calibrated temperature readings, calibrated to secondary probe, if available
@@ -230,8 +230,8 @@ for(i in 1:n1) {
           ec.cal = TRUE
         } else {ec.cal = FALSE}
         
-        preCal<-CT_one_cal(data = C1, cal.ref = C2$cond_uS[1], cal.ref.temp = C2$temp_C[1], date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity,
-                           startCal = startHigh[1], endCal = endHigh[1], EC_probe = ec.cal) %>% 
+        preCal<-CT_one_cal(data = C1, cal.ref = C2$cond_uS[1], cal.ref.temp = C2$temp_C[1], date = C1$date, temp = C1$TempInSitu, EC.logger = C1$E_Conductivity,
+                           startCal = startHigh[1,], endCal = endHigh[1,], EC.cal = ec.cal) %>% 
           rename(EC_Cal.1 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                  TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
                  TempInSitu = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
@@ -244,8 +244,8 @@ for(i in 1:n1) {
         } else {
           ec.cal = FALSE}
         
-        postCal<-CT_one_cal(data = C1, cal.ref = C2$cond_uS[2], cal.ref.temp = C2$temp_C[2], date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity,
-                            startCal = startHigh[2], endCal = endHigh[2], EC_probe = ec.cal) %>% 
+        postCal<-CT_one_cal(data = C1, cal.ref = C2$cond_uS[2], cal.ref.temp = C2$temp_C[2], date = C1$date, temp = C1$TempInSitu, EC.logger = C1$E_Conductivity,
+                            startCal = startHigh[2,], endCal = endHigh[2,], EC.cal = ec.cal) %>% 
           rename(EC_Cal.2 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                  TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
                  TempInSitu = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
@@ -269,10 +269,10 @@ for(i in 1:n1) {
         ec.cal = TRUE
       } else {ec.cal = FALSE}  
         
-      preCal<-CT_two_cal(data = C1, date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity,
+      preCal<-CT_two_cal(data = C1, date = C1$date, temp = C1$TempInSitu, EC.logger = C1$E_Conductivity,
                        high.Ref = C2$cond_uS, low.Ref = C2$cond_uS, 
                        startHigh = startHigh[1], endHigh = endHigh[1], 
-                       startLow = startLow[1], endLow = endLow[1], EC_probe = probe.cal) %>% 
+                       startLow = startLow[1], endLow = endLow[1], EC.cal = probe.cal) %>% 
         rename(EC_Cal.1 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
                TempInSitu = TempInSitu_Cal) # rename calibrated temperature readings, calibrated to secondary probe, if available
@@ -285,10 +285,10 @@ for(i in 1:n1) {
         ec.cal = TRUE
       } else {ec.cal = FALSE}  
       
-      postCal<-CT_two_cal(data = C1, date = C1$date, temp = C1$TempInSitu, EC = C1$E_Conductivity,
+      postCal<-CT_two_cal(data = C1, date = C1$date, temp = C1$TempInSitu, EC.logger = C1$E_Conductivity,
                           high.Ref = C2$cond_uS, low.Ref = C2$cond_uS, 
                           startHigh = startHigh[2], endHigh = endHigh[2], 
-                          startLow = startLow[2], endLow = endLow[2], EC_probe = probe.cal) %>% 
+                          startLow = startLow[2], endLow = endLow[2], EC.cal = probe.cal) %>% 
         rename(EC_Cal.2 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
                TempInSitu = TempInSitu_Cal) %>%  # rename calibrated temperature readings, calibrated to secondary probe, if available
@@ -303,10 +303,10 @@ for(i in 1:n1) {
     
   
   # Calculate Practical Salinity using gsw package with PSS-78 equation
-  if(singleCal == TRUE){
+ # if(singleCal == TRUE){
   calibration <- calibration %>%
     mutate(Salinity = gsw_SP_from_C(C = EC_Cal.1*0.001, t = TempInSitu, p = Pres_dbar))
-  } #else {
+#  } #else {
   #   model <- lm(EC.Cal.1 ~ EC.Cal.2)
   # }
   
@@ -370,8 +370,8 @@ for(i in 1:n2) {
     mutate(time_end = ymd_hm(time_end))
     
   C1<-C1 %>% 
-    filter(between(date, cg.start[1], cg.end[1]) |
-           between(date, launch.start[1], launch.end[1]))
+    filter(between(date, cg.start[1,], cg.end[1,]) |
+           between(date, launch.start[1,], launch.end[1,]))
   
   # pull out original CT serial name
   sn <- CalLog %>% 
