@@ -360,6 +360,7 @@ for(i in 1:n2) {
     filter(type == 'cg') %>% 
     select(time_end)%>% 
     mutate(time_end = ymd_hm(time_end))
+  
   launch.start<-C2 %>% 
     filter(type == 'log') %>% 
     select(time_start)%>% 
@@ -368,10 +369,7 @@ for(i in 1:n2) {
     filter(type == 'log') %>% 
     select(time_end)%>% 
     mutate(time_end = ymd_hm(time_end))
-    
-  C1<-C1 %>% 
-    filter(between(date, cg.start[1,], cg.end[1,]) |
-           between(date, launch.start[1,], launch.end[1,]))
+  
   
   # pull out original CT serial name
   sn <- CalLog %>% 
@@ -381,14 +379,32 @@ for(i in 1:n2) {
   
   C1 <- C1 %>% 
     mutate(Serial = sn)
-
+  
+  median<-CalLog %>% 
+    filter(between(date,cg.start[1,],cg.end[1,])) %>% 
+    drop_na(EC_Cal.1) %>% 
+    summarise(median = median(Salinity)) %>% 
+    as.numeric()
+  
+  off<-C1 %>% 
+    filter(between(date,cg.start[1,], cg.end[1,])) %>%
+    drop_na(EC_Cal.1) %>% 
+    summarise(offset = mean(Salinity) - median) %>% 
+    as.numeric()
+  
+  
+  C1<-C1 %>% 
+    mutate(Salinity_off = Salinity + off)
+  
+  C1<-C1 %>% 
+    filter(between(date, launch.start[1,], launch.end[1,]))
   
   # Create Plot and save to list p
   p[[i]] <- C1 %>% 
-    ggplot(aes(x = date, y = Salinity, color = TempInSitu)) + 
+    ggplot(aes(x = date, y = Salinity_off, color = TempInSitu)) + 
     geom_point() + 
     theme_bw() +
-    labs(x = "Date", color = "Temperature (C)") +
+    labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") +
     ggtitle(sn)
   
   
