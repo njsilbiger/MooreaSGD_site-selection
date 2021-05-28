@@ -53,7 +53,7 @@ CondArrayData_Surface <- files_surface %>%
   left_join(gps_surface) %>% # Join the cond data with the gps data
   mutate(Surf_Benth = "Surface") %>% # add a column for surface 
   select(date, Serial, TempInSitu, Salinity, Surf_Benth, Latitude, Longitude ) %>%
- mutate(Salinity_off = ifelse(Serial == "CT_354" & Salinity_off < 33, NA, Salinity ) ) %>% # remove weird spike that isnt real
+ mutate(Salinity = ifelse(Serial == "CT_354" & Salinity < 33, NA, Salinity ) ) %>% # remove weird spike that isnt real
   filter(Serial != "CT_345") # was exposed during low tide
 
 # Cabral
@@ -75,7 +75,7 @@ CondArray_all <- bind_rows(CondArrayData_Benthic, CondArrayData_Surface, CondArr
 #Surface samples
 CondArray_all %>%
   filter(Surf_Benth == "Surface") %>%
-  ggplot(aes(x = date, y = Salinity_off, color = TempInSitu, group = Serial)) +
+  ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
   geom_line()+
   facet_wrap(~Serial)+
   scale_color_viridis_c()+
@@ -107,6 +107,7 @@ CondArray_all %>%
 CondArray_all %>%
   filter(Surf_Benth == "Cabral") %>%
   drop_na(Longitude) %>%
+  filter(Salinity>20) %>% # remove bad points
   ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
   geom_line()+
   facet_wrap(~Serial)+
@@ -117,12 +118,14 @@ CondArray_all %>%
        x = "",
        color = "Temperature")+
   theme_bw()+
-  ggsave(here("Output","May2021","Spatial_array_plots","BenthicData.png"), width = 11, height = 6)
+  ggsave(here("Output","May2021","Spatial_array_plots","CabralData.png"), width = 11, height = 6)
 
 
 ### Everything on top of each other faceted by benthic and surface 
 CondArray_all %>%
-  ggplot(aes(x = date, y = Salinity_off, color = TempInSitu, group = Serial)) +
+  drop_na(Longitude) %>%
+  filter(Salinity>20) %>% # remove bad points
+  ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
   geom_line()+
   facet_wrap(~Surf_Benth, scales = "free_x")+
   scale_color_viridis_c()+
@@ -131,7 +134,7 @@ CondArray_all %>%
        x = "",
        color = "Temperature")+
   theme_bw()+
-  ggsave(here("Output","May2021","Spatial_array_plots","BenthicAndSurfaceData.png"), width = 6, height = 3)
+  ggsave(here("Output","May2021","Spatial_array_plots","BenthicAndSurfaceData.png"), width = 9, height = 3)
 
 # # get hourly averages
 # CondArrayData_hourly<- CondArrayData %>%
@@ -155,9 +158,9 @@ ArrayMap1<-get_map(M_coords, maptype = 'satellite', zoom = 18)
 
 Cond_summary<-CondArray_all %>%
   group_by(Serial, Surf_Benth, Latitude, Longitude) %>%
-  summarise(Sal_min = min(Salinity_off, na.rm = TRUE),
-            Sal_med = median(Salinity_off, na.rm = TRUE),
-            Sal_mean = mean(Salinity_off, na.rm=TRUE)) %>%
+  summarise(Sal_min = min(Salinity, na.rm = TRUE),
+            Sal_med = median(Salinity, na.rm = TRUE),
+            Sal_mean = mean(Salinity, na.rm=TRUE)) %>%
   drop_na()
 
 
@@ -182,6 +185,20 @@ ArrayMapmed<- ggmap(ArrayMap1)+
   scale_color_viridis_c() +
   facet_wrap(~Surf_Benth) +
   ggsave(here("Output","May2021","Spatial_array_plots","Map_Salinity_med.png"), width = 7, height = 3)
+
+##Cabral
+M_coords2<-data.frame(lon =	mean(CondArrayData_Cabral$Longitude, na.rm = TRUE), lat = mean(CondArrayData_Cabral$Latitude, na.rm = TRUE))
+ArrayMap2<-get_map(M_coords2, maptype = 'satellite', zoom = 18)
+
+ArrayMapmed_cabral<- ggmap(ArrayMap2)+
+  geom_point(data = Cond_summary %>% filter(Surf_Benth=="Cabral"), mapping = aes(x=Longitude, y=Latitude, color = Sal_med), size = 2)+
+  xlab("")+
+  ylab("")+
+  labs(title = "Median Salinity over 3 days",
+       color = "Salinity")+
+  scale_color_viridis_c() +
+  #facet_wrap(~Surf_Benth) +
+  ggsave(here("Output","May2021","Spatial_array_plots","Map_Salinity_med_Cabral.png"), width = 10, height = 5)
 
 
 # ArrayMap<- ggmap(ArrayMap1)+
