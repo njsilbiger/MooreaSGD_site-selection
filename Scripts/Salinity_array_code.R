@@ -11,25 +11,32 @@ library(ggrepel)
 
 ### Read in the data ####
 
-# read in the benthic data
+# read in the benthic data Vararie
 file_loc_benthic<-here("Data","May2021","Cond_temp","Csv_files", "QC", "Spatial_Array","051621")
 
 
 files_benthic <- dir(path = file_loc_benthic,pattern = ".csv")
 
-#GPS
+
+#GPS Vararie
 gps_benthic<-read_csv(here("Data","May2021","GPS","Logger_Spatial_Array","Varari_CT_Benthic_Array_051621.csv"))
 
 
-# read in the surface array data
+# read in the surface array data Varari
 file_loc_surface<-here("Data","May2021","Cond_temp","Csv_files", "QC", "Spatial_Array","051921")
 
 files_surface <- dir(path = file_loc_surface,pattern = ".csv")
 
-#GPS
+#GPS Varari
 
 gps_surface<-read_csv(here("Data","May2021","GPS","Logger_Spatial_Array","Varari_CT_Surface_Array_051921.csv"))
 
+# Cabral
+file_loc_cabral<-here("Data","May2021","Cond_temp","Csv_files", "QC", "Spatial_Array","052421")
+
+files_cabral <- dir(path = file_loc_cabral,pattern = ".csv")
+
+gps_cabral<-read_csv(here("Data","May2021","GPS","Logger_Spatial_Array","Cabral_Spatial_Array_05242021.csv"))
 
 # read in the cond data ####
 CondArrayData_Benthic <- files_benthic %>%
@@ -37,7 +44,7 @@ CondArrayData_Benthic <- files_benthic %>%
   map_df(~ read_csv(file.path(file_loc_benthic, .)),.id = "filename") %>%
   left_join(gps_benthic) %>% # Join the cond data with the gps data
   mutate(Surf_Benth = "Benthic") %>% # add a column for benthic
-  select(date, Serial, TempInSitu, Salinity_off, Surf_Benth, Latitude, Longitude)
+  select(date, Serial, TempInSitu, Salinity, Surf_Benth, Latitude, Longitude)
 
 ## Read in the surface data 
 CondArrayData_Surface <- files_surface %>%
@@ -45,14 +52,21 @@ CondArrayData_Surface <- files_surface %>%
   map_df(~ read_csv(file.path(file_loc_surface, .)),.id = "filename") %>%
   left_join(gps_surface) %>% # Join the cond data with the gps data
   mutate(Surf_Benth = "Surface") %>% # add a column for surface 
-  select(date, Serial, TempInSitu, Salinity_off, Surf_Benth, Latitude, Longitude ) %>%
- mutate(Salinity_off = ifelse(Serial == "CT_354" & Salinity_off < 33, NA, Salinity_off ) ) %>% # remove weird spike that isnt real
+  select(date, Serial, TempInSitu, Salinity, Surf_Benth, Latitude, Longitude ) %>%
+ mutate(Salinity_off = ifelse(Serial == "CT_354" & Salinity_off < 33, NA, Salinity ) ) %>% # remove weird spike that isnt real
   filter(Serial != "CT_345") # was exposed during low tide
 
+# Cabral
+CondArrayData_Cabral <- files_cabral %>%
+  set_names()%>% # set's the id of each list to the file name
+  map_df(~ read_csv(file.path(file_loc_cabral, .)),.id = "filename") %>%
+  left_join(gps_cabral) %>% # Join the cond data with the gps data
+  mutate(Surf_Benth = "Cabral") %>% # add a column for surface 
+  select(date, Serial, TempInSitu, Salinity, Surf_Benth, Latitude, Longitude ) 
 
 ## Bind them together
 
-CondArray_all <- bind_rows(CondArrayData_Benthic, CondArrayData_Surface) %>%
+CondArray_all <- bind_rows(CondArrayData_Benthic, CondArrayData_Surface, CondArrayData_Cabral) %>%
   mutate(time = format(date, format = "%H:%M:%S"))
   
 
@@ -74,15 +88,31 @@ CondArray_all %>%
   ggsave(here("Output","May2021","Spatial_array_plots","SurfaceData.png"), width = 11, height = 6)
 
 ## Benthic figure
-#Surface samples
 CondArray_all %>%
   filter(Surf_Benth == "Benthic") %>%
-   ggplot(aes(x = date, y = Salinity_off, color = TempInSitu, group = Serial)) +
+   ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
   geom_line()+
   facet_wrap(~Serial)+
   scale_color_viridis_c()+
   scale_x_datetime(date_labels = "%H %M %S")+
   labs(title = "Benthic (2021-05-16 : 2021-05-18)",
+       y = "Salinity (corrected)",
+       x = "",
+       color = "Temperature")+
+  theme_bw()+
+  ggsave(here("Output","May2021","Spatial_array_plots","BenthicData.png"), width = 11, height = 6)
+
+
+#Cabral
+CondArray_all %>%
+  filter(Surf_Benth == "Cabral") %>%
+  drop_na(Longitude) %>%
+  ggplot(aes(x = date, y = Salinity, color = TempInSitu, group = Serial)) +
+  geom_line()+
+  facet_wrap(~Serial)+
+  scale_color_viridis_c()+
+  scale_x_datetime(date_labels = "%H %M %S")+
+  labs(title = "Cabral (2021-05-24 : 2021-05-27)",
        y = "Salinity (corrected)",
        x = "",
        color = "Temperature")+
