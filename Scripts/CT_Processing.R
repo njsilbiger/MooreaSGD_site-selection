@@ -35,14 +35,14 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","May2021","Cond_temp","Raw_HOBO","Raw_csv","052421_Cabral_Array") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","May2021","Cond_temp","Raw_HOBO","Raw_csv","052521_Cabral_RAD") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "052421" # logger date used in file name(s)
+file.date <- "052521" # logger date used in file name(s)
 
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array","052421") # Output file path
+path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","RAD_Spatial_Survey","052521") # Output file path
 
 
 ###################################
@@ -50,8 +50,8 @@ path.output<-here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array",
 ###################################
 
 # Log dates
-start.date <- ymd('2021-05-24')
-end.date <- ymd('2021-05-27')
+start.date <- ymd('2021-05-25')
+end.date <- ymd('2021-05-25')
 
 
 ###################################
@@ -360,6 +360,7 @@ for(i in 1:n2) {
     filter(type == 'cg') %>% 
     select(time_end)%>% 
     mutate(time_end = ymd_hm(time_end))
+  
   launch.start<-C2 %>% 
     filter(type == 'log') %>% 
     select(time_start)%>% 
@@ -368,10 +369,7 @@ for(i in 1:n2) {
     filter(type == 'log') %>% 
     select(time_end)%>% 
     mutate(time_end = ymd_hm(time_end))
-    
-  C1<-C1 %>% 
-    filter(between(date, cg.start[1,], cg.end[1,]) |
-           between(date, launch.start[1,], launch.end[1,]))
+  
   
   # pull out original CT serial name
   sn <- CalLog %>% 
@@ -381,14 +379,32 @@ for(i in 1:n2) {
   
   C1 <- C1 %>% 
     mutate(Serial = sn)
-
+  
+  median<-CalLog %>% 
+    filter(between(date,cg.start[1,],cg.end[1,])) %>% 
+    drop_na(EC_Cal.1) %>% 
+    summarise(median = median(Salinity)) %>% 
+    as.numeric()
+  
+  off<-C1 %>% 
+    filter(between(date,cg.start[1,], cg.end[1,])) %>%
+    drop_na(EC_Cal.1) %>% 
+    summarise(offset = mean(Salinity) - median) %>% 
+    as.numeric()
+  
+  
+  C1<-C1 %>% 
+    mutate(Salinity_off = Salinity + off)
+  
+  C1<-C1 %>% 
+    filter(between(date, launch.start[1,], launch.end[1,]))
   
   # Create Plot and save to list p
   p[[i]] <- C1 %>% 
-    ggplot(aes(x = date, y = Salinity, color = TempInSitu)) + 
+    ggplot(aes(x = date, y = Salinity_off, color = TempInSitu)) + 
     geom_point() + 
     theme_bw() +
-    labs(x = "Date", color = "Temperature (C)") +
+    labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") +
     ggtitle(sn)
   
   

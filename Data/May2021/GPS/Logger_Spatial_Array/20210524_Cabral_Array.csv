@@ -1,61 +1,39 @@
-﻿
-metadata
-ID,name,desc,time,keywords,minlat,minlon,maxlat,maxlon,
-1,,,2021-05-28T04:01:21Z,,-17.516835015267134,-149.91333500482142,-17.515673032030463,-149.91253503598273,
-
-author
-ID,name,email,
-
-copyright
-year,license,author,
-
-link
-metadataID,authorID,wptID,rteptID,trkptID,rteID,trkID,text,type,href,
-1,,,,,,,"Garmin International",,http://www.garmin.com,
-
-rte
-ID,name,cmt,desc,src,number,type,IsAutoNamed,DisplayColor,TransportationMode,TripName,Date,DayNumber,
-
-rtept
-ID,rteID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,DepartureTime,StopDuration,ArrivalTime,CalculationMode,ElevationMode,NamedRoad_Name,NamedRoad_Id,NamedRoad_ProductId,TransportationMode,
-
-wpt
-ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime,
-1,-17.51652798615396,-149.91253503598273,15.141332999999999,2021-05-24T21:14:06Z,,,"CABRAL SLED",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:14:06Z,
-2,-17.516046026721597,-149.9131599906832,-2.313469,2021-05-24T20:17:36Z,,,"CT320C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:17:36Z,
-3,-17.515888027846813,-149.91329502314329,13.574536999999999,2021-05-24T21:01:05Z,,,"CT321C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:01:05Z,
-4,-17.515673032030463,-149.91317298263311,7.34245,2021-05-24T21:07:30Z,,,"CT322C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:07:30Z,
-5,-17.51644198782742,-149.91289998404682,16.451049999999999,2021-05-24T20:35:01Z,,,"CT325C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:35:01Z,
-6,-17.516086008399725,-149.91305597126484,14.713946,2021-05-24T20:20:01Z,,,"CT327C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:20:01Z,
-7,-17.515721982344985,-149.91327700205147,15.229699999999999,2021-05-24T21:05:23Z,,,"CT329C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:05:23Z,
-8,-17.516609039157629,-149.9127210304141,15.232561,2021-05-24T20:38:00Z,,,"CT332C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:38:00Z,
-9,-17.516091959550977,-149.91292898543179,13.246390999999999,2021-05-24T20:21:12Z,,,"CT334C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:21:12Z,
-10,-17.516672993078828,-149.91256998851895,13.788206000000001,2021-05-24T20:39:21Z,,,"CT335C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:39:21Z,
-11,-17.516115009784698,-149.91256001405418,17.094470999999999,2021-05-24T20:26:04Z,,,"CT336C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:26:04Z,
-12,-17.516705011948943,-149.91312998346984,16.887073999999998,2021-05-24T20:50:07Z,,,"CT337C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:50:07Z,
-13,-17.516128001734614,-149.91270200349391,15.361211000000001,2021-05-24T20:23:39Z,,,"CT338C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:23:39Z,
-14,-17.515985006466508,-149.91333500482142,16.083206000000001,2021-05-24T20:58:32Z,,,"CT339C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:58:32Z,
-15,-17.516524968668818,-149.91255498491228,15.204148999999999,2021-05-24T21:13:44Z,,,"CT341C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T21:13:44Z,
-16,-17.516338974237442,-149.91290995851159,16.277836000000001,2021-05-24T20:32:47Z,,,"CT343C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:32:47Z,
-17,-17.516835015267134,-149.91262698546052,18.602512000000001,2021-05-24T20:45:03Z,,,"CT345C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:45:03Z,
-18,-17.516829986125231,-149.91282697767019,12.715057,2021-05-24T20:42:13Z,,,"CT354C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:42:13Z,
-19,-17.516426984220743,-149.91322201676667,17.597424,2021-05-24T20:54:06Z,,,"CT355C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:54:06Z,
-20,-17.516281977295876,-149.91286603733897,15.076506999999999,2021-05-24T20:29:33Z,,,"CT740C",,,,"Flag, Blue","user",,,,,,,,,,,SymbolAndName,,,2021-05-24T20:29:33Z,
-
-Address
-wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,
-
-PhoneNumber
-wptID,Category,value,
-
-Categories
-wptID,Category,
-
-trk
-ID,name,cmt,desc,src,number,type,DisplayColor,
-
-trkseg
-ID,trkID,
-
-trkpt
+﻿ID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Proximity,Temperature,Depth,DisplayMode,Samples,Expiration,CreationTime
+1,-17.51652799,-149.912535,15.141333,2021-05-24T21:14:06Z,,,CABRAL SLED,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T21:14:06Z
+2,-17.51604603,-149.91316,-2.313469,2021-05-24T20:17:36Z,,,CT320C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:17:36Z
+3,-17.51588803,-149.913295,13.574537,2021-05-24T21:01:05Z,,,CT321C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T21:01:05Z
+4,-17.51567303,-149.913173,7.34245,2021-05-24T21:07:30Z,,,CT322C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T21:07:30Z
+5,-17.51644199,-149.9129,16.45105,2021-05-24T20:35:01Z,,,CT325C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:35:01Z
+6,-17.51608601,-149.913056,14.713946,2021-05-24T20:20:01Z,,,CT327C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:20:01Z
+7,-17.51572198,-149.913277,15.2297,2021-05-24T21:05:23Z,,,CT329C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T21:05:23Z
+8,-17.51660904,-149.912721,15.232561,2021-05-24T20:38:00Z,,,CT332C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:38:00Z
+9,-17.51609196,-149.912929,13.246391,2021-05-24T20:21:12Z,,,CT334C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:21:12Z
+10,-17.51667299,-149.91257,13.788206,2021-05-24T20:39:21Z,,,CT335C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:39:21Z
+11,-17.51611501,-149.91256,17.094471,2021-05-24T20:26:04Z,,,CT336C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:26:04Z
+12,-17.51670501,-149.91313,16.887074,2021-05-24T20:50:07Z,,,CT337C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:50:07Z
+13,-17.516128,-149.912702,15.361211,2021-05-24T20:23:39Z,,,CT338C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:23:39Z
+14,-17.51598501,-149.913335,16.083206,2021-05-24T20:58:32Z,,,CT339C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:58:32Z
+15,-17.51652497,-149.912555,15.204149,2021-05-24T21:13:44Z,,,CT341C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T21:13:44Z
+16,-17.51633897,-149.91291,16.277836,2021-05-24T20:32:47Z,,,CT343C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:32:47Z
+17,-17.51683502,-149.912627,18.602512,2021-05-24T20:45:03Z,,,CT345C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:45:03Z
+18,-17.51682999,-149.912827,12.715057,2021-05-24T20:42:13Z,,,CT354C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:42:13Z
+19,-17.51642698,-149.913222,17.597424,2021-05-24T20:54:06Z,,,CT355C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:54:06Z
+20,-17.51628198,-149.912866,15.076507,2021-05-24T20:29:33Z,,,CT740C,,,,"Flag, Blue",user,,,,,,,,,,,SymbolAndName,,,2021-05-24T20:29:33Z
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+Address,,,,,,,,,,,,,,,,,,,,,,,,,,
+wptID,StreetAddress1,StreetAddress2,City,State,Country,PostalCode,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+PhoneNumber,,,,,,,,,,,,,,,,,,,,,,,,,,
+wptID,Category,value,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+Categories,,,,,,,,,,,,,,,,,,,,,,,,,,
+wptID,Category,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+trk,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID,name,cmt,desc,src,number,type,DisplayColor,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+trkseg,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID,trkID,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+trkpt,,,,,,,,,,,,,,,,,,,,,,,,,,
 ID,trksegID,lat,lon,ele,time,magvar,geoidheight,name,cmt,desc,src,sym,type,fix,sat,hdop,vdop,pdop,ageofdgpsdata,dgpsid,Temperature,Depth,wtemp,hr,cad,
