@@ -134,11 +134,12 @@ CondArray_all %>%
   filter(Salinity>30) %>% # remove bad points
   mutate(day = date(date)) %>%
 # unite("day_sun", day,sun)%>%
-  filter(day == ymd('2021-05-24') ) %>%
+  filter(day == ymd('2021-05-27') ) %>%
   ggplot(aes(x = depth, y = Salinity, color = sun)) +
   geom_point()+
   geom_smooth(method = "lm")+
-  facet_wrap(~Serial, scales = 'free_y') 
+  facet_wrap(~Serial, scales = 'free_y') +
+  ggsave(here("Output","May2021","Spatial_array_plots","CabralData27.png"), width = 6, height = 6)
 
 ## everything just cabral on 5_24
 CondArray_all %>%
@@ -165,10 +166,11 @@ CondArray_all %>%
   filter(Salinity>20) %>% # remove bad points
   mutate(day = date(date)) %>%
   # unite("day_sun", day,sun)%>%
- # filter(day == ymd('2021-05-24') ) %>%
+ # filter(day == ymd('2021-05-27') ) %>%
   
   ggplot(aes(x = date, y = depth, color = TempInSitu)) +
-  geom_line()
+  geom_line()+
+  ggsave(here("Output","May2021","Spatial_array_plots","Cabraldepth.png"), width = 6, height = 6)
   
 ### Everything on top of each other faceted by benthic and surface 
 CondArray_all %>%
@@ -251,6 +253,17 @@ ArrayMapmed_cabral<- ggmap(ArrayMap2)+
   #facet_wrap(~Surf_Benth) +
   ggsave(here("Output","May2021","Spatial_array_plots","Map_Salinity_med_Cabral.png"), width = 10, height = 5)
 
+
+##### Spatial bilge data #####
+cabral_bilge_cond1<-read_csv(here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array","052521", "QC_CT_350_052521.csv"))
+cabral_bilge_cond2<-read_csv(here("Data","May2021","Cond_temp","Csv_files","QC","Spatial_Array","052521", "QC_CT_346_052521.csv"))
+
+
+gps_bilge_cabral<-read_csv(here("Data","May2021","GPS","RAD_Site_Survey","Cabral_RAD_Spatial_GPS.csv"))
+
+
+cabral_bilge <- bind_rows(cabral_bilge_cond1, cabral_bilge_cond2) %>%
+  right_join(gps_bilge_cabral)
 
 # ArrayMap<- ggmap(ArrayMap1)+
 #   geom_point(data = CondArrayData_hourly, mapping = aes(x=long, y=lat, color = Sal_hour), size = 2, alpha = .60)+
