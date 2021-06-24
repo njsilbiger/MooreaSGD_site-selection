@@ -35,12 +35,12 @@ rm(list=ls())
 path.cal<-here("Data","May2021","Cond_temp") # Logger calibration file path
 path.log<-here("Data","May2021","Cond_temp") # Logger in situ file path (CT and Water Level files)
 path.WL<-here("Data","May2021","Depth")
-file.date <- "051321" # logger date used in file name(s)
+file.date <- "052521" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Output","May2021","QC","Spatial","051321") # Output file path
-
+file.output<-here("Data","May2021","Cond_temp","QC","RAD_Spatial_Survey","Spatial","052521") # Output file path; Spatial vs Timeseries survey
+fig.output<-here("Output")
 
 ###################################
 ### Logger Serial Numbers
@@ -54,8 +54,8 @@ WL_Serial <- "876"
 ###################################
 
 # Log dates
-start.date <- ymd('2021-05-12')
-end.date <- ymd('2021-05-13')
+start.date <- ymd('2021-05-14')
+end.date <- ymd('2021-05-14')
 
 ###################################
 ### Import calibration and launch records
@@ -256,15 +256,13 @@ launch.log <- launch.log %>%
   
   # Plot CTD data
   p<-list()
-  p[[1]]<-CTD.data %>% 
-    filter(Salinity > 28) %>% 
+  p[[1]]<-CTD.data %>%
     ggplot(aes(x = date, y = Salinity, color = TempInSitu)) + 
     geom_line() + 
     theme_bw() +
     labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") +
     ggtitle(paste("CT",CT_Serial,"Salinity", file.date))
   p[[2]]<-CTD.data %>% 
-    filter(Salinity > 28) %>% 
     ggplot(aes(x = date, y = Depth, color = Salinity)) + 
     geom_point() + 
     scale_y_reverse() +
@@ -280,7 +278,7 @@ launch.log <- launch.log %>%
     ggtitle(paste("WL",WL_Serial,"Depth", file.date))
   
   # Save all plots in a single dated pdf
-  pdf(paste0(path.output,"/",file.date,"CT_",CT_Serial,"_CTD_plots.pdf"), onefile = TRUE)
+  pdf(paste0(path.output,"/CTD_plots",file.date,"_CT_",CT_Serial,".pdf"), onefile = TRUE)
   for (i in seq(length(p))) {
     tplot <- p[[i]]
     print(tplot)

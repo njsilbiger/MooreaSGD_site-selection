@@ -303,10 +303,10 @@ for(i in 1:n1) {
     
   
   # Calculate Practical Salinity using gsw package with PSS-78 equation
- # if(singleCal == TRUE){
+# if(singleCal == TRUE){
   calibration <- calibration %>%
     mutate(Salinity = gsw_SP_from_C(C = EC_Cal.1*0.001, t = TempInSitu, p = Pres_dbar))
-#  } #else {
+# } #else {
   #   model <- lm(EC.Cal.1 ~ EC.Cal.2)
   # }
   
@@ -404,7 +404,8 @@ for(i in 1:n2) {
     ggplot(aes(x = date, y = Salinity_off, color = TempInSitu)) + 
     geom_point() + 
     theme_bw() +
-    labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") +
+    labs(x = "Date", color = "Temperature (C)", y = "Salinity (psu)") + 
+    scale_y_continuous(breaks = scales::pretty_breaks(n = 7))+
     ggtitle(sn)
   
   
