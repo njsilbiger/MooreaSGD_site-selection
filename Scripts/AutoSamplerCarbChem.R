@@ -32,6 +32,7 @@ data_sum %>%
 
 
 data_sum %>%
+  filter(probe =="p_h_cmore") %>%
   ggplot(aes(x = time_in_bag,y = pH_mean, color = hg_cl2, shape = probe))+
   geom_point(position = position_dodge(width = 0.3), size = 3)+
   geom_errorbar(aes(ymin = pH_mean-pH_SE, ymax = pH_mean+pH_SE), width = 0.2,position = position_dodge(width = 0.3))+
