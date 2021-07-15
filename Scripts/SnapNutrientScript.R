@@ -10,11 +10,22 @@ library(tidyverse)
 library(patchwork)
 library(ggmap)
 library(viridis)
+library(maptools)
+library(kriging)
+library(ggnewscale)
+library(wql)
 
 ### read in data ####
 NutData<-read_csv(here("Data","May2021", "Nutrients", "Nutrient_Snap_May2021.csv"))
 Locations<-read_csv(here("Data","May2021","GPS","Experimental_Locations", "Sandwich_Locations.csv"))
 
+
+#### convert cond and temp to salinity
+
+NutData <- NutData %>%
+  mutate(Salinity = ec2pss(ec = Conductivity, t = Temperature, p = 0))
+
+### make some plots####
 
 p1<-NutData %>%
   right_join(Locations) %>%
@@ -61,8 +72,8 @@ p4<-NutData %>%
 p1/p2/p3
 
 ##### Make Maps #########
-API<-names(read_table(here("Data","API.txt")))
-register_google(key = API) ### use your own API
+#API<-names(read_table(here("Data","API.txt")))
+#register_google(key = API) ### use your own API
 
 
 # mean lat and long for the maps
@@ -110,3 +121,67 @@ Map_C2<-ggmap(ArrayMap2)+
 
 
 (Map_V1 + Map_V2)/(Map_C1 + Map_C2) 
+
+
+### Make a spatial kriging file with polygon layers ####
+### Bring in the polygons for the sites
+#Varari
+V_kml <- getKMLcoordinates(kmlfile=here("Data","Polygons","Varari_Polygon.kml"), ignoreAltitude=T)
+#Cabral
+C_kml <- getKMLcoordinates(kmlfile=here("Data","Polygons","Cabral_Polygon.kml"), ignoreAltitude=T)
+
+
+# Run the kriging
+
+VData <- AllData %>%
+  filter(Location == 'Varari')
+
+krig1 <- kriging(VData$lon, VData$lat, VData$Silicate, pixels=500,polygons=V_kml) ###pixels controls how fine or course you want the prediction data frame to be
+krig2 <- krig1$map
+
+
+CData <- AllData %>%
+  filter(Location == 'Cabral') %>%
+  select(Top_Plate_ID, lon, lat, Phosphate, Silicate, Nitrite, Ammonia)
+
+krig3 <- kriging(CData$lon, CData$lat, CData$Silicate, pixels=500,polygons=C_kml, lags = 3) ###pixels controls how fine or course you want the prediction data frame to be
+krig4 <- krig3$map
+
+
+
+## make the map
+# Varari
+V_krig_map<-ggmap(ArrayMap1)+
+  geom_point(data=krig2, aes(x=x, y=y, colour=pred), size=4, alpha=0.5) + 
+  geom_point(data = VData, aes(x=lon, y=lat))+
+  scale_color_viridis_c(name = "Silicate", option = "plasma")+
+  coord_sf() +
+  theme(axis.line=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank()) +  
+  theme(panel.grid.major = element_line(color = 'white', linetype = "dashed",size = 0.5),
+        plot.background=element_rect(fill='white'))+
+  ggtitle("Varari")
+
+ggsave(plot = V_krig_map, filename = here("Output","May2021","Spatial_array_plots","v_krig_map.png"))
+
+# Cabral
+C_krig_map<-ggmap(ArrayMap2)+
+  geom_point(data=krig4, aes(x=x, y=y, colour=pred), size=4, alpha=0.5) + 
+  geom_point(data = CData, aes(x=lon, y=lat))+
+  scale_color_viridis_c(name = "Silicate", option = "plasma")+
+  coord_sf() +
+  theme(axis.line=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank()) +  
+  theme(panel.grid.major = element_line(color = 'white', linetype = "dashed",size = 0.5),
+        plot.background=element_rect(fill='white'))+
+  ggtitle("Cabral")
+
+ggsave(plot = C_krig_map, filename = here("Output","May2021","Spatial_array_plots","C_krig_map.png"))
