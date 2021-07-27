@@ -20,8 +20,8 @@ filename<-'pHSpec_Data.csv' # data
 
 ## Temp and Salinity ----------
 #Temeperataure pH was run at IN THE LAB
-Temperature<-25
-Salinity<-34 # note if you have a range of salinities then import a file with all salinities and modify script below 
+#Temperature<-25
+#Salinity<-34 # note if you have a range of salinities then import a file with all salinities and modify script below 
 
 ### Temperature in situ (either in the aquarium or in the field)#####
 ## If you want to calculate insitu pH then enter TRUE in the statement below and the filename with the temperature files, if not enter FALSE
@@ -36,7 +36,7 @@ dye_slope<--0.5959
 ##### Dont change anything below here #####
 
 # Read in the Sample IDs
-Data<-read_csv(paste0(foldername,'/',filename))
+AllData<-read_csv(paste0(foldername,'/',filename))
 
 ### Run pH Analysis ##################
 
@@ -50,9 +50,11 @@ pHData<-AllData %>%
   
   # Calculate Tris data
   Tris<- pHData %>%
+    filter(CowTagID=="Tris") %>%
     mutate(
-      pHtris = as.numeric(tris(S= rep(34.5,nrow(pHData)),T=rep(Temperature,nrow(pHData)))), ## calculate pH of tris)
-  pHtris_error = abs(((pHtris-pH_in_lab)/pHtris)*100)) # calculate error from tris
+      pHtris = as.numeric(tris(S= rep(34.5,n()),T=rep(mean(TempInSpec),n()))), ## calculate pH of tris)
+  pHtris_error = abs(((pHtris-pH_in_lab)/pHtris)*100)) %>% # calculate error from tris
+      select(CowTagID,Tide, Day_Night, SamplingTime, pH_in_lab, pHtris, pHtris_error)
   
 
 # run this block if calculating in situ pH
@@ -70,7 +72,7 @@ pHData<-AllData %>%
   if(CalculateInSitu==TRUE){
     pHData %>% 
       select(CowTagID,Tide, Day_Night,Date, pHinsitu)%>% 
-      group_by(CowTagID,Tide, Day_Night,Date, pHinsitu)%>%
+      group_by(CowTagID,Tide, Day_Night,Date)%>%
       summarise(pHmean = mean(pHinsitu, na.rm=TRUE), SE = sd(pHinsitu, na.rm=TRUE)/n())%>%
       write_table(.,paste0(foldername,'/',"pH_simple_",filename))
   }
@@ -78,7 +80,7 @@ pHData<-AllData %>%
   if(CalculateInSitu==FALSE){
     pHData %>% 
       select(CowTagID,Tide, Day_Night,Date, pH_in_lab)%>% 
-      group_by(CowTagID,Tide, Day_Night,Date, pH_in_lab)%>%
+      group_by(CowTagID,Tide, Day_Night,Date)%>%
       summarise(pHmean = mean(pH_in_lab, na.rm=TRUE), SE = sd(pH_in_lab, na.rm=TRUE)/n())%>%
       write_table(.,paste0(foldername,'/',"pH_simple_",filename))
   }
