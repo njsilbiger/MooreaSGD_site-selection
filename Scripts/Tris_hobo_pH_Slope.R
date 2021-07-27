@@ -5,7 +5,7 @@ library(seacarb)
 library(broom)
 library(here)
 here()
-rm(list=ls())
+
 
 foldername<-'Data/20201028/'
 filename<-'pH_196_2020-11-12.csv'

@@ -3,7 +3,7 @@
 
 # created: 1-20-2020 by Danielle Barnas
 
-rm(list=ls())
+
 library(tidyverse)
 library(cowplot)
 

@@ -23,8 +23,6 @@ library(here)
 library(gridExtra)
 library(mooreasgd)
 
-rm(list=ls())
-
 
 ###################################
 ### File Paths
