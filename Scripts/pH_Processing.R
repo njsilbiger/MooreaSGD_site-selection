@@ -30,12 +30,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","pH") # Logger in situ file path (CT and Water Level files)
-file.date <- "011821" # logger date used in file name(s)
+path.log<-here("Data","August2021","Varari_Sled", "20210803","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "20210804" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Output","QC","Timeseries","011821") # Output file path
+path.output<-here("Data","August2021","Varari_Sled", "20210803","QC_files") # Output file path
 
 
 ###################################
