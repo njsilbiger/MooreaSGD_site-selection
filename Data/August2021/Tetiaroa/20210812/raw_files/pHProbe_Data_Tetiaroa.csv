@@ -1,0 +1,15 @@
+Site,Seep_Control,TimeCode,Tide,Day_Night,Date,SamplingTime,TempInLab,mV,Salinity,TempInSitu,TrisCalDate,Notes
+Tetiaroa_1,Seep,A,Low,Day,8/12/2021,10:30,27,-80.3,37.72,28.4,8/10/2021,
+Tetiaroa_1,Control,A,Low,Day,8/12/2021,10:30,27.1,-79.9,37.53,29.77,8/10/2021,
+Tetiaroa_1,Seep,C,High,Day,8/12/2021,16:30,25.8,-79.5,37,28.27,8/10/2021,
+Tetiaroa_1,Seep,D,Mid,Night,8/12/2021,19:30,26.2,-79.9,37.22,27.41,8/10/2021,
+Tetiaroa_1,Seep,G,High,Night,8/13/2021,4:30,26.17,-80.1,37.17,26.34,8/10/2021,
+Tetiaroa_1,Seep,H,Mid,Day,8/13/2021,7:30,26.37,-78.3,37.16,26.38,8/10/2021,
+Tetiaroa_1,Control,B,Mid,Day,8/12/2021,13:30,26.35,-82.7,37.34,30.84,8/10/2021,
+Tetiaroa_1,Control,C,High,Day,8/12/2021,16:30,26.4,-82.5,37.29,28.87,8/10/2021,
+Tetiaroa_1,Control,D,Mid,Night,8/12/2021,19:30,26.39,-82,37.37,27.84,8/10/2021,
+Tetiaroa_1,Control,E,Low,Night,8/12/2021,22:30,26.37,-80.5,37.19,26.94,8/10/2021,
+Tetiaroa_1,Control,F,Mid,Night,8/13/2021,1:30,26.66,-81.7,37.27,26.9,8/10/2021,
+Tetiaroa_1,Control,G,High,Night,8/13/2021,4:30,26.5,-79.9,37.11,26.38,8/10/2021,
+Tetiaroa_1,Control,H,Mid,Day,8/13/2021,7:30,26.64,-79.8,37.17,26.47,8/10/2021,
+Tetiaroa_2,Lake,Lake,,Day,8/13/2021,11:00,24.9,-152.2,2.7,26,8/10/2021,Bottle filtered in fridge
