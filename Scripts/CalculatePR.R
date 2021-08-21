@@ -42,7 +42,7 @@ file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE)
 
 
 #Load your respiration data file, with all the times, water volumes(mL), algal biomass weight (dry weight) (g)
-Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespirometryMetadata.csv"))
+Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespoMetadata_updated.csv"))
 #View(Sample.Info)
 
 ##### Make sure times are consistent ####
