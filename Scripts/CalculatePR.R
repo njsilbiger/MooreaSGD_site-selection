@@ -40,11 +40,6 @@ file.names<-basename(list.files(path = path.p, pattern = "csv$", recursive = TRU
 #basename above removes the subdirectory name from the file, re-nale as file.names.full
 file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE) 
 
-#generate a 3 column dataframe with specific column names
-# data is in umol.L.sec
-Respo.R<- data.frame(matrix(NA, nrow=length(file.names)*2, ncol=4))
-colnames(Respo.R) <- c("FileName","Intercept", "umol.L.sec","Temp.C")
-#View(Respo.R)
 
 #Load your respiration data file, with all the times, water volumes(mL), algal biomass weight (dry weight) (g)
 Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespirometryMetadata.csv"))
@@ -57,20 +52,37 @@ Sample.Info$start.time <- as.POSIXct(Sample.Info$start.time,format="%H:%M:%S", t
 Sample.Info$stop.time <- as.POSIXct(Sample.Info$stop.time,format="%H:%M:%S", tz = "") #convert time from character to time
 
 #view(Sample.Info)
+## There are some extra files from repeats so I added this line to only select the ones in the actual metadata sheet
+filenames_final<-strsplit(file.names, '.csv') %>% # extract the filename
+  unlist() %>% # make it a vector
+  tibble() %>% # now a tibble so I can filter easily in the pipe
+  filter(. %in% Sample.Info$FileName) %>% # only keep the file names that are on the metadatasheet
+  pull(.) # make it a vector again
+
+#generate a 3 column dataframe with specific column names
+# data is in umol.L.sec
+Respo.R<- data.frame(matrix(NA, nrow=length(filenames_final), ncol=4))
+colnames(Respo.R) <- c("FileName","Intercept", "umol.L.sec","Temp.C")
+#View(Respo.R)
+
 
 ###forloop#####
-for (i in 1: length(file.names.full)) {
-  FRow<-which(Sample.Info$FileName==strsplit(file.names[i], '.csv')) #stringsplit this renames our file
-  Respo.Data1 <-read_csv(file.path(path.p, file.names.full[i]), skip = 1) %>%
+for (i in 1: length(filenames_final)) {
+  FRow<-which(Sample.Info$FileName==filenames_final[i]) #stringsplit this renames our file
+  Respo.Data1 <-read_csv(file.path(path.p, paste0(filenames_final[i],'.csv')), skip = 1) %>%
     select(Time,Value,Temp) %>% # keep only what we need
     mutate(Time = as.POSIXct(Time, format="%H:%M:%S", tz = "")) %>% # covert time
     drop_na() # drop NAs
   
-  Respo.Data1 <- Respo.Data1[-c(1:120),] %>% #we want to start at minute 2 to avoid any noise from the start of the trial
+  Respo.Data1 <- Respo.Data1 %>%
+    filter(between(Time, Sample.Info$start.time[FRow], Sample.Info$stop.time[FRow])) # select only data between start and stop time
+  
+  Respo.Data1 <-  Respo.Data1[-c(1:120),] %>% #we want to start at minute 2 to avoid any noise from the start of the trial
        mutate(sec = 1:n())  #create a new column for every second for the regression
 
     #Get the filename without the .csv
-  rename<- sub(".csv","", file.names[i]) 
+  #rename<- sub(".csv","", filenames_final[i]) 
+  rename<-  filenames_final[i]
   
   
   ### plot and export the raw data ####
