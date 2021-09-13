@@ -6,7 +6,7 @@
 #### Reference: https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 #### Reference: https://www.aqion.de/site/112
 
-# Author: Danielle Barnas
+# Author: Danielle Barnas  
 # created: 9-23-2020
 # modified: 8-23-2021
 
@@ -35,14 +35,14 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Cond_temp","Raw_HOBO","Raw_csv","Varari","07232021") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","August2021","Cond_temp","Raw_HOBO","HOBO","Varari","07232021","hobocsv") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
 file.date <- "07232021" # date used in naming file(s)
-
+hobo.csv <- TRUE # TRUE if csv has been processed and calibrated through HOBOware
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Cond_temp","QC_files","Varari_07232021") # Output file path
+path.output<-here("Data","August2021","Cond_temp","QC_files","Varari_07232021","hobocsv") # Output file path
 
 
 ###################################
@@ -87,7 +87,7 @@ Pres_dbar<-10 # surface pressure in decibar
 # condCal<-CT_cleanup(data.path = path.cal, path.pattern = c(file.date,"csv$"), tf.write = F)
 
 # In Situ Conductivity files
-condLog<-CT_cleanup(data.path = path.log, path.pattern = c("csv$"), tf.write = F)
+condLog<-CT_cleanup(data.path = path.log, path.pattern = c("csv$"), tf.write = F, hobo.cal = hobo.csv)
 
 ############################################################
 ### Parse date and time
@@ -114,7 +114,7 @@ launch.log <- launch.log %>%
   unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
   unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
 
-
+if(hobo.csv == FALSE){
 ############################################################
 ### Calibration
 ############################################################
@@ -397,8 +397,13 @@ for(i in 1:n1) {
   CalLog <- CalLog %>% 
     rbind(calibration) # add i'th logger's data to running dataframe
 }
-
-
+} else { # end of calibration if hobo.csv = FALSE
+  CalLog <- condLog %>%
+    separate(col = 'LoggerID', into = c(NA,'ID'), sep = "_", remove = FALSE) %>%  # needs to be standardized - relies on consistent file naming
+    rename(LoggerID = ID,
+           FullLoggerID = LoggerID,
+           E_Cond = E_Conductivity)
+}
 ############################################################
 ### In Situ Logger Data
 ############################################################
