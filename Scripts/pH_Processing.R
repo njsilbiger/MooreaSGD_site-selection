@@ -31,7 +31,7 @@ library(mooreasgd)
 ### Input
 # Path to folder storing logger .csv files
 path.log<-here("Data","August2021","Varari_Sled", "20210825","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "20210825" # logger date used in file name(s)
+file.date <- "20210826" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
@@ -49,8 +49,8 @@ pH_Serial <- "197"
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-08')
-end.date <- ymd('2021-08-10')
+start.date <- ymd('2021-08-11')
+end.date <- ymd('2021-8-25')
 
 # do you want to plot a graph?
 plotgraph<-'no'
