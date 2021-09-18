@@ -5,6 +5,7 @@
 
 #### Reference: https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 #### Reference: https://www.aqion.de/site/112
+#### Reference: https://oceanobservatories.org/wp-content/uploads/2015/10/1341-00040_Data_Product_SPEC_PRACSAL_OOI.pdf
 
 # Author: Danielle Barnas  
 # created: 9-23-2020
@@ -35,14 +36,14 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Cond_temp","Raw_HOBO","HOBO","Varari","07232021","hobocsv") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","August2021","Cond_temp","Raw_HOBO","Raw_csv","Cabral","08152021") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "07232021" # date used in naming file(s)
-hobo.csv <- TRUE # TRUE if csv has been processed and calibrated through HOBOware
+file.date <- "08152021" # date used in naming file(s)
+hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Cond_temp","QC_files","Varari_07232021","hobocsv") # Output file path
+path.output<-here("Data","August2021","Cond_temp","QC_files","Cabral_08152021") # Output file path
 
 
 ###################################
@@ -50,8 +51,8 @@ path.output<-here("Data","August2021","Cond_temp","QC_files","Varari_07232021","
 ###################################
 
 # Log dates
-start.date <- ymd('2021-06-07')
-end.date <- ymd('2021-07-23')
+start.date <- ymd('2021-06-08')
+end.date <- ymd('2021-08-15')
 
 
 ###################################
