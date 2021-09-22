@@ -32,13 +32,13 @@ rm(list=ls())
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","August2021","Varari_Sled","20210803","raw_files")
-file.date <- "080321" # logger date 
+path.WL<-here("Data","August2021","Cabral_Sled","20210808","raw_files")
+file.date <- "080821" # logger date 
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","August2021","Varari_Sled","20210803","QC_files") # Output file path; Spatial vs Timeseries survey
-fig.output<-here("Data","August2021","Varari_Sled","20210803")
+file.output<-here("Data","August2021","Cabral_Sled","20210808","QC_files") # Output file path; Spatial vs Timeseries survey
+#fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
 ### Logger Serial Numbers
@@ -51,8 +51,8 @@ WL_Serial <- "870"
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-04')
-end.date <- ymd('2021-08-08')
+start.date <- ymd('2021-08-08')
+end.date <- ymd('2021-08-10')
 
 ###################################
 ### Import calibration and launch records
@@ -108,22 +108,22 @@ presLog<-presLog %>%
   filter(between(date, launch.log$time_start[[1]], launch.log$time_end[[1]]))
 
 # Plot Depth data
-p<-list()
-p[[1]]<-presLog %>% 
-  ggplot(aes(x = date, y = Depth, color = TempInSitu)) + 
-  geom_point() + 
-  scale_y_reverse() +
-  theme_bw() +
-  labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
-  ggtitle(paste("WL",WL_Serial,"Depth", file.date))
-
-# Save all plots in a single dated pdf
-pdf(paste0(fig.output,"/Depth_plot",file.date,"_WL_",WL_Serial,".pdf"), onefile = TRUE)
-for (i in seq(length(p))) {
-  tplot <- p[[i]]
-  print(tplot)
-}
-dev.off()
+# p<-list()
+# p[[1]]<-presLog %>% 
+#   ggplot(aes(x = date, y = Depth, color = TempInSitu)) + 
+#   geom_point() + 
+#   scale_y_reverse() +
+#   theme_bw() +
+#   labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
+#   ggtitle(paste("WL",WL_Serial,"Depth", file.date))
+# 
+# # Save all plots in a single dated pdf
+# pdf(paste0(fig.output,"/Depth_plot",file.date,"_WL_",WL_Serial,".pdf"), onefile = TRUE)
+# for (i in seq(length(p))) {
+#   tplot <- p[[i]]
+#   print(tplot)
+# }
+# dev.off()
 
 
 write.csv(presLog, paste0(file.output,"/QC_WL_",file.date,"_WL_",WL_Serial,".csv"))

@@ -36,14 +36,15 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Cond_temp","Raw_HOBO","Raw_csv","Cabral","08152021") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","August2021","Varari_Sled","20210811","raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "08152021" # date used in naming file(s)
+file.date <- "08112021" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
+csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Cond_temp","QC_files","Cabral_08152021") # Output file path
+path.output<-here("Data","August2021","Varari_Sled","20210811","QC_files") # Output file path
 
 
 ###################################
@@ -51,8 +52,8 @@ path.output<-here("Data","August2021","Cond_temp","QC_files","Cabral_08152021") 
 ###################################
 
 # Log dates
-start.date <- ymd('2021-06-08')
-end.date <- ymd('2021-08-15')
+start.date <- ymd('2021-08-11')
+end.date <- ymd('2021-08-25')
 
 
 ###################################
@@ -88,7 +89,7 @@ Pres_dbar<-10 # surface pressure in decibar
 # condCal<-CT_cleanup(data.path = path.cal, path.pattern = c(file.date,"csv$"), tf.write = F)
 
 # In Situ Conductivity files
-condLog<-CT_cleanup(data.path = path.log, path.pattern = c("csv$"), tf.write = F, hobo.cal = hobo.csv)
+condLog<-CT_cleanup(data.path = path.log, path.pattern = csv.pattern, tf.write = F, hobo.cal = hobo.csv)
 
 ############################################################
 ### Parse date and time
@@ -102,8 +103,8 @@ calibration.log <- calibration.log %>%
   unite(col = 'time_in', date,time_in, sep = " ", remove = F) %>% # unite while maintaining separate date column
   unite(col = 'time_out', date,time_out, sep = " ", remove = F) %>% 
   mutate(date = mdy(date)) %>% 
-  mutate(time_in = mdy_hm(time_in)) %>% # assumes time is entered as hours and minutes (H:M) only
-  mutate(time_out = mdy_hm(time_out)) %>% 
+  mutate(time_in = mdy_hms(time_in)) %>% # assumes time is entered as hours and minutes (H:M) only
+  mutate(time_out = mdy_hms(time_out)) %>% 
   filter(date == start.date & pre_post == "pre" | date == end.date & pre_post == "post") # filter only current pre- and post-calibration dates
 
 ## in situ
@@ -451,7 +452,7 @@ for(i in 1:n2) {
   launch.end<-C2.b %>% 
     #filter(type == 'log') %>% 
     select(Time_retrieved)%>% 
-    mutate(Time_retrieved = ymd_hm(Time_retrieved))
+    mutate(Time_retrieved = ymd_hms(Time_retrieved))
   
   
   # pull out original CT serial name
