@@ -11,12 +11,12 @@ library(lubridate)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Cabral_Sled", "20210808","raw_files", "PAR") # Logger in situ file path 
+path.log<-here("Data","August2021","Cabral_Sled","20210808","raw_files", "PAR") # Logger in situ file path 
 file.date <- "20210808" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Cabral_Sled", "20210808","QC_files") # Output file path
+path.output<-here("Data","August2021","Cabral_Sled","20210808","QC_files") # Output file path
 
 
 ###################################
@@ -63,8 +63,7 @@ PARData<-files %>%
   set_names()%>% # set's the id of each list to the file name
   map_df(~read_csv(., skip = 3, col_names = c("TimeSec","BatteryVolts","Temperature","PAR","Ax","Ay","Az"),
                    col_types = list("d","d","d","d","d","d","d"),),.id = "filename") %>%
-  mutate(date = as_datetime(TimeSec, tz = "UTC"),
-         date = with_tz(date, "Pacific/Tahiti")) %>%
+  mutate(date = as_datetime(TimeSec, tz = "UTC")-hours(10)) %>%
   select(date, PAR, Temperature)
   
 
@@ -73,3 +72,6 @@ write_csv(PARData, file = here(path.output, paste0("PAR_",file.date,".csv")))
 
 ggplot(PARData, aes(x = date, y = PAR))+
   geom_line()
+
+
+
