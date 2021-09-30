@@ -199,3 +199,9 @@ C14,,Low,Day,8/10/2021,7:00,25.6,-69.9,36.69,,,,8/10/2021,bottle
 C15,,Low,Day,8/10/2021,7:00,25.8,-70.6,36.95,,,,8/10/2021,bottle
 CSEEP,M,Low,Day,8/10/2021,7:00,25.5,-67.8,33.26,,,,8/10/2021,bottle
 Offshore,,,,8/10/2021,14:00,27.56,-77.2,37.51,,,,8/10/2021,"bottle.  Offshore of the ""pile mooring"""
+Cabral_Roadside_Endmember,,,Day,6/11/2021,NA,21.568,-43.5,,,,,,refridgerated
+Cabral_Inland_Endmember,,,Day,6/11/2021,NA,21.655,-29.5,,,,,,refridgerated
+CSEEP_filtered,A,,,8/9/2021,7:00,21.238,-50.4,,,,,,"refridgerated, has HgCl counterpart"
+Varari_Well_1,,,,8/5/2021,,21.192,9.559,,,,,,refridgerated
+Varari_Well_2,,,,8/5/2021,,21.482,-65.6,,,,,,refridgerated
+Varari_Well_3,,,,8/5/2021,,21.173,-61.7,,,,,,refridgerated
