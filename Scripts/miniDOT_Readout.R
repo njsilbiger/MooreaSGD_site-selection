@@ -1,69 +1,75 @@
+# MiniDot Readout
+# Updated by Nyssa Silbiger 
+# 10/4/2021
+# Uncalibrated for now
+
 
 library(tidyverse)
 library(lubridate)
-library(ggpubr)
-library(ggpmisc)
+library(here)
 
-########################
-# File Names
-########################
 
-Serial<-735719 # Logger's serial number ID
-filename_cat<-'Cat_01_17-19_21.csv' # concatenated data from miniDOT Logger
-Launch<-'2021-01-17 10:24:00' # Maintain date time format "2020-03-04 14:15:00"
-Retrieval<-'2021-01-19 10:08:00' # Maintain date time format "2020-03-04 21:30:00"
-Date <- 011921 # today's date
+### Input
+# Path to folder storing logger .csv files
+path.log<-here("Data","August2021","Varari_Sled","20210811","raw_files", "miniDOT") # Logger in situ file path 
+file.date <- "20210811" # logger date used in file name(s)
 
-#################################################################################
-# DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
-#################################################################################
+### Output
+# Path to store logger files
+path.output<-here("Data","August2021","Varari_Sled","20210811","QC_files") # Output file path
+
+
+###################################
+### Logger Serial Numbers
+###################################
+
+DO_Serial <- "658"
+
+###################################
+### Logger Launch and Retrieval dates
+###################################
+
+# Log dates
+start.date <- ymd('2021-08-11')
+end.date <- ymd('2021-08-25')
+
+# do you want to plot a graph?
+plotgraph<-'no'
+
+##############################
+## DO NOT CHANGE ANYTHING BELOW
+################################
+
+
+###################################
+### Import calibration and launch records
+###################################
+
+# Read in files that are updated with calibration and launch information
+launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
+  filter(Log_Type == "DO")%>%
+  mutate(time_start = mdy_hm(time_start), # convert to time
+         time_end = mdy_hm(time_end),
+         start  = date(time_start), # extract the date
+         end = date(time_end)) %>%
+  filter(Serial == paste0("DO_",DO_Serial), # pull out the right serial number
+         start == ymd(start.date),
+         end == ymd(end.date))
 
 # Tidy Concatenation Data
-Concat_Data <- read_csv(paste0('Data/miniDOT/',filename_cat),
-                        col_names = FALSE,
-                        skip=9) #skips first 9 rows containing instrument information
-# Split merged cell into column headings
-# note that all vectors are character type
-Concat_Data <- separate(Concat_Data,"X1", into=c("Unix_Timestamp_second","UTC_Date_Time","date",
-                                                 "Battery_volts","TempInSitu","DO_mg_L","DO_Saturation_percent",
-                                                 "Q"), sep=",", remove=TRUE)
-# Convert date to date and time vector type
-Concat_Data$date <- Concat_Data$date %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
+files <- dir(path = path.log, pattern = ".txt", full.names = TRUE)
 
-# Convert character strings to double number type
-Concat_Data$Battery_volts <- Concat_Data$Battery_volts %>%
-  parse_double(na=c("","NA"),locale = default_locale(), trim_ws = TRUE)
-Concat_Data$TempInSitu <- Concat_Data$TempInSitu %>%
-  parse_double(na=c("","NA"),locale = default_locale(), trim_ws = TRUE)
-Concat_Data$DO_mg_L<- Concat_Data$DO_mg_L %>%
-  parse_double(na=c("","NA"),locale = default_locale(), trim_ws = TRUE)
-Concat_Data$DO_Saturation_percent <- Concat_Data$DO_Saturation_percent %>%
-  parse_double(na=c("","NA"),locale = default_locale(), trim_ws = TRUE)
-Concat_Data$Q <- Concat_Data$Q %>%
-  parse_double(na=c("","NA"),locale = default_locale(), trim_ws = TRUE)
+DOData<-files %>%
+  set_names()%>% # set's the id of each list to the file name
+  map_df(~read_csv(., skip = 3, col_names = c("TimeSec","BatteryVolts","Temperature","DO_mg_L","Q"),
+                   col_types = list("d","d","d","d","d"),),.id = "filename") %>%
+  mutate(date = as_datetime(TimeSec, tz = "UTC")-hours(10)) %>%
+  select(date, DO_mg_L, Temperature) %>%
+  filter(date >launch.log$time_start & date < launch.log$time_end)
 
-# Filter data to only include deployment data
-Launch <- Launch %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
-Retrieval <- Retrieval %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
-Concat_Data <- Concat_Data %>%
-  filter(between(date,Launch,Retrieval))
-View(Concat_Data)
 
-# Create simple csv file
-write_csv(Concat_Data,paste0('Data/miniDOT/',Date,'_miniDOT_',Serial,'.csv'))
+write_csv(DOData, file = here(path.output, paste0("DO_",file.date,".csv")))
 
-# Plot the data
-Concat_Data %>% # this is the dataframe
-  ggplot(aes(x= date, y= TempInSitu))+   #setup plot with x and y data
-  geom_line() #+ #adding lines
-Concat_Data %>% # this is the dataframe
-  ggplot(aes(x= date, y= DO_mg_L))+   #setup plot with x and y data
-  #ggplot(aes(x=PST, y= Temp_degC))+
-  geom_line()# + #adding lines
-# scale_y_continuous(sec.axis = sec_axis('Temp_degC', name=derive()))
+
+ggplot(DOData, aes(x = date, y = DO_mg_L))+
+  geom_line()

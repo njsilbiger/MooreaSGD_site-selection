@@ -11,12 +11,12 @@ library(lubridate)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Cabral_Sled","20210808","raw_files", "PAR") # Logger in situ file path 
-file.date <- "20210808" # logger date used in file name(s)
+path.log<-here("Data","August2021","Varari_Sled","20210804","raw_files", "PAR") # Logger in situ file path 
+file.date <- "20210804" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Cabral_Sled","20210808","QC_files") # Output file path
+path.output<-here("Data","August2021","Varari_Sled","20210804","QC_files") # Output file path
 
 
 ###################################
@@ -30,8 +30,8 @@ PAR_Serial <- "224"
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-08')
-end.date <- ymd('2021-8-10')
+start.date <- ymd('2021-08-04')
+end.date <- ymd('2021-8-08')
 
 # do you want to plot a graph?
 plotgraph<-'no'
@@ -64,7 +64,8 @@ PARData<-files %>%
   map_df(~read_csv(., skip = 3, col_names = c("TimeSec","BatteryVolts","Temperature","PAR","Ax","Ay","Az"),
                    col_types = list("d","d","d","d","d","d","d"),),.id = "filename") %>%
   mutate(date = as_datetime(TimeSec, tz = "UTC")-hours(10)) %>%
-  select(date, PAR, Temperature)
+  select(date, PAR, Temperature)%>%
+  filter(date >launch.log$time_start & date < launch.log$time_end)
   
 
 write_csv(PARData, file = here(path.output, paste0("PAR_",file.date,".csv")))
