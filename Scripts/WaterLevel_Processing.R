@@ -23,21 +23,18 @@ library(here)
 library(gridExtra)
 library(mooreasgd)
 
-rm(list=ls())
-
-
 ###################################
 ### File Paths
 ###################################
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","August2021","Cabral_Sled","20210808","raw_files")
-file.date <- "080821" # logger date 
+path.WL<-here("Data","August2021","Cabral_Sled","20210826","raw_files")
+file.date <- "082621" # logger date 
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","August2021","Cabral_Sled","20210808","QC_files") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","August2021","Cabral_Sled","20210826","QC_files") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
@@ -51,8 +48,8 @@ WL_Serial <- "870"
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-08')
-end.date <- ymd('2021-08-10')
+start.date <- ymd('2021-08-27')
+end.date <- ymd('2021-09-5')
 
 ###################################
 ### Import calibration and launch records
