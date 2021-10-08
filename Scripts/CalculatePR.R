@@ -43,6 +43,10 @@ file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE)
 
 #Load your respiration data file, with all the times, water volumes(mL), algal biomass weight (dry weight) (g)
 Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespoMetadata_updated.csv"))
+#read in raw biomass data
+#filter out sand
+#summarize raw biomass data by tile with summerize function sum
+#biomass associated with each tile name, then right join it with sample info. right join it by plateID, top_bottom,..
 #View(Sample.Info)
 
 ##### Make sure times are consistent ####
@@ -65,6 +69,8 @@ Respo.R<- data.frame(matrix(NA, nrow=length(filenames_final), ncol=4))
 colnames(Respo.R) <- c("FileName","Intercept", "umol.L.sec","Temp.C")
 #View(Respo.R)
 
+#create loop that runs through files and plots full timeseries to identify times that are either gaps or other problems/noise
+#do this in different script file
 
 ###forloop#####
 for (i in 1: length(filenames_final)) {
@@ -75,7 +81,9 @@ for (i in 1: length(filenames_final)) {
     drop_na() # drop NAs
   
   Respo.Data1 <- Respo.Data1 %>%
-    filter(between(Time, Sample.Info$start.time[FRow], Sample.Info$stop.time[FRow])) # select only data between start and stop time
+    filter(between(Time, max(Time)-60*21,max(Time)-60*1)) #taking last 20 minutes, from 21st to the last minute
+  #filter(between(Time, Sample.Info$start.time[FRow], Sample.Info$stop.time[FRow])) # select only data between start and stop time
+    
   
   Respo.Data1 <-  Respo.Data1[-c(1:120),] %>% #we want to start at minute 2 to avoid any noise from the start of the trial
        mutate(sec = 1:n())  #create a new column for every second for the regression
@@ -116,8 +124,8 @@ for (i in 1: length(filenames_final)) {
   # Print across two pages so use baseplot to create the pdf
   pdf(paste0(here("Output","August2021","RespoOutput"),"/", rename,"thinning.pdf"))
   
-  p1+p2 # use patchwork to bring the raw and thinned data together
   plot(Regs) # plot the results of Regs
+  p1+p2 # use patchwork to bring the raw and thinned data together
   dev.off()
   
   # fill in all the O2 consumption and rate data
