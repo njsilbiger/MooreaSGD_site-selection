@@ -125,7 +125,7 @@ for (i in 1: length(filenames_final)) {
   pdf(paste0(here("Output","August2021","RespoOutput"),"/", rename,"thinning.pdf"))
   
   plot(Regs) # plot the results of Regs
-  p1+p2 # use patchwork to bring the raw and thinned data together
+  plot(p1+p2) # use patchwork to bring the raw and thinned data together
   dev.off()
   
   # fill in all the O2 consumption and rate data
