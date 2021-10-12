@@ -1,29 +1,29 @@
-﻿Site,Seep_Control,TimeCode,Tide,Day_Night,Date,SamplingTime,TempInLab,mV,Salinity,TempInSitu,TrisCalDate,Notes
-Tetiaroa_1,Seep,A,Low,Day,8/12/2021,10:30,27,-80.3,37.72,28.4,8/10/2021,
-Tetiaroa_1,Control,A,Low,Day,8/12/2021,10:30,27.1,-79.9,37.53,29.77,8/10/2021,
-Tetiaroa_1,Seep,C,High,Day,8/12/2021,16:30,25.8,-79.5,37,28.27,8/10/2021,
-Tetiaroa_1,Seep,D,Mid,Night,8/12/2021,19:30,26.2,-79.9,37.22,27.41,8/10/2021,
-Tetiaroa_1,Seep,G,High,Night,8/13/2021,4:30,26.17,-80.1,37.17,26.34,8/10/2021,
-Tetiaroa_1,Seep,H,Mid,Day,8/13/2021,7:30,26.37,-78.3,37.16,26.38,8/10/2021,
-Tetiaroa_1,Control,B,Mid,Day,8/12/2021,13:30,26.35,-82.7,37.34,30.84,8/10/2021,
-Tetiaroa_1,Control,C,High,Day,8/12/2021,16:30,26.4,-82.5,37.29,28.87,8/10/2021,
-Tetiaroa_1,Control,D,Mid,Night,8/12/2021,19:30,26.39,-82,37.37,27.84,8/10/2021,
-Tetiaroa_1,Control,E,Low,Night,8/12/2021,22:30,26.37,-80.5,37.19,26.94,8/10/2021,
-Tetiaroa_1,Control,F,Mid,Night,8/13/2021,1:30,26.66,-81.7,37.27,26.9,8/10/2021,
-Tetiaroa_1,Control,G,High,Night,8/13/2021,4:30,26.5,-79.9,37.11,26.38,8/10/2021,
-Tetiaroa_1,Control,H,Mid,Day,8/13/2021,7:30,26.64,-79.8,37.17,26.47,8/10/2021,
-Tetiaroa_2,Lake,Lake,,Day,8/13/2021,11:00,24.9,-152.2,2.7,39.09,8/10/2021,Bottle filtered in fridge
-Tetiaroa_2,Control,C,Low,Day,8/13/2021,18:00,25.28,-80.5,36.85,28.14,8/10/2021,High wave day
-Tetiaroa_2,Control,D,Mid,Night,8/13/2021,21:00,25.94,-80,37.25,27.37,8/10/2021,High wave day
-Tetiaroa_2,Control,E,High,Night,8/14/2021,0:00,25.9,-79.1,37.08,26.81,8/10/2021,High wave day
-Tetiaroa_2,Control,F,Mid,Night,8/14/2021,3:00,25.84,-78.1,37.11,26.34,8/10/2021,High wave day
-Tetiaroa_2,Control,G,Low,Day,8/14/2021,6:00,25.93,-77.1,37.15,26.08,8/10/2021,High wave day
-Tetiaroa_2,Control,H,Mid,Day,8/14/2021,9:00,25.87,-76.4,37.04,26.25,8/10/2021,High wave day
-Tetiaroa_2,Seep,A,High,Day,8/13/2021,12:00,26.26,-77.8,37.22,29,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,B,Mid,Day,8/13/2021,15:00,26.36,-79.2,37.19,29.04,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,C,Low,Day,8/13/2021,18:00,26.24,-79.5,37.06,28.18,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,D,Mid,Night,8/13/2021,21:00,26.04,-79.4,37.16,27.45,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,E,High,Night,8/14/2021,0:00,26.39,-77.2,37.05,26.68,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,F,Mid,Night,8/14/2021,3:00,26.39,-75.4,37.04,26.12,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,G,Low,Day,8/14/2021,6:00,26.25,-74.8,37.01,25.82,8/10/2021,High wave day/Tons of organic matter
-Tetiaroa_2,Seep,H,Mid,Day,8/14/2021,9:00,26.32,-73.8,36.78,26.08,8/10/2021,High wave day/Tons of organic matter
+﻿Site,Seep_Control,TimeCode,Tide,Day_Night,Date,SamplingTime,TempInLab,mV,Salinity,TempInSitu,TA,Salinity_In_Lab,TrisCalDate,Notes
+Tetiaroa_1,Seep,A,Low,Day,8/12/21,10:30,27,-80.3,37.72,28.4,,,8/10/21,
+Tetiaroa_1,Control,A,Low,Day,8/12/21,10:30,27.1,-79.9,37.53,29.77,2355.26165,,8/10/21,
+Tetiaroa_1,Seep,C,High,Day,8/12/21,16:30,25.8,-79.5,37,28.27,2330.242076,,8/10/21,
+Tetiaroa_1,Seep,D,Mid,Night,8/12/21,19:30,26.2,-79.9,37.22,27.41,2297.764161,,8/10/21,
+Tetiaroa_1,Seep,G,High,Night,8/13/21,04:30,26.17,-80.1,37.17,26.34,2295.08739,,8/10/21,
+Tetiaroa_1,Seep,H,Mid,Day,8/13/21,07:30,26.37,-78.3,37.16,26.38,2305.760489,,8/10/21,
+Tetiaroa_1,Control,B,Mid,Day,8/12/21,13:30,26.35,-82.7,37.34,30.84,2338.967459,,8/10/21,
+Tetiaroa_1,Control,C,High,Day,8/12/21,16:30,26.4,-82.5,37.29,28.87,2311.97293,,8/10/21,
+Tetiaroa_1,Control,D,Mid,Night,8/12/21,19:30,26.39,-82,37.37,27.84,2347.710248,,8/10/21,
+Tetiaroa_1,Control,E,Low,Night,8/12/21,22:30,26.37,-80.5,37.19,26.94,2332.078854,,8/10/21,
+Tetiaroa_1,Control,F,Mid,Night,8/13/21,01:30,26.66,-81.7,37.27,26.9,2325.981147,,8/10/21,
+Tetiaroa_1,Control,G,High,Night,8/13/21,04:30,26.5,-79.9,37.11,26.38,2293.199265,,8/10/21,
+Tetiaroa_1,Control,H,Mid,Day,8/13/21,07:30,26.64,-79.8,37.17,26.47,2293.308553,,8/10/21,
+Tetiaroa_2,Lake,Lake,,Day,8/13/21,11:00,24.9,-152.2,2.7,39.09,,,8/10/21,Bottle filtered in fridge
+Tetiaroa_2,Control,C,Low,Day,8/13/21,18:00,25.28,-80.5,36.85,28.14,,,8/10/21,High wave day
+Tetiaroa_2,Control,D,Mid,Night,8/13/21,21:00,25.94,-80,37.25,27.37,,,8/10/21,High wave day
+Tetiaroa_2,Control,E,High,Night,8/14/21,00:00,25.9,-79.1,37.08,26.81,,,8/10/21,High wave day
+Tetiaroa_2,Control,F,Mid,Night,8/14/21,03:00,25.84,-78.1,37.11,26.34,,,8/10/21,High wave day
+Tetiaroa_2,Control,G,Low,Day,8/14/21,06:00,25.93,-77.1,37.15,26.08,,,8/10/21,High wave day
+Tetiaroa_2,Control,H,Mid,Day,8/14/21,09:00,25.87,-76.4,37.04,26.25,,,8/10/21,High wave day
+Tetiaroa_2,Seep,A,High,Day,8/13/21,12:00,26.26,-77.8,37.22,29,2342.71932,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,B,Mid,Day,8/13/21,15:00,26.36,-79.2,37.19,29.04,2327.61412,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,C,Low,Day,8/13/21,18:00,26.24,-79.5,37.06,28.18,2330.917775,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,D,Mid,Night,8/13/21,21:00,26.04,-79.4,37.16,27.45,2341.272044,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,E,High,Night,8/14/21,00:00,26.39,-77.2,37.05,26.68,2337.620193,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,F,Mid,Night,8/14/21,03:00,26.39,-75.4,37.04,26.12,2367.903964,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,G,Low,Day,8/14/21,06:00,26.25,-74.8,37.01,25.82,2387.752357,,8/10/21,High wave day/Tons of organic matter
+Tetiaroa_2,Seep,H,Mid,Day,8/14/21,09:00,26.32,-73.8,36.78,26.08,2401.648308,,8/10/21,High wave day/Tons of organic matter
