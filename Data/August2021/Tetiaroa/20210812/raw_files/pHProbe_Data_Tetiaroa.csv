@@ -12,13 +12,13 @@ Tetiaroa_1,Control,E,Low,Night,8/12/21,22:30,26.37,-80.5,37.19,26.94,2332.078854
 Tetiaroa_1,Control,F,Mid,Night,8/13/21,01:30,26.66,-81.7,37.27,26.9,2325.981147,,8/10/21,
 Tetiaroa_1,Control,G,High,Night,8/13/21,04:30,26.5,-79.9,37.11,26.38,2293.199265,,8/10/21,
 Tetiaroa_1,Control,H,Mid,Day,8/13/21,07:30,26.64,-79.8,37.17,26.47,2293.308553,,8/10/21,
-Tetiaroa_2,Lake,Lake,,Day,8/13/21,11:00,24.9,-152.2,2.7,39.09,,,8/10/21,Bottle filtered in fridge
+Tetiaroa_2,Lake,Lake,,Day,8/13/21,11:00,24.9,-152.2,2.7,39.09,2522.855183,,8/10/21,"Bottle filtered in fridge, CRM 1.06%"
 Tetiaroa_2,Control,C,Low,Day,8/13/21,18:00,25.28,-80.5,36.85,28.14,,,8/10/21,High wave day
-Tetiaroa_2,Control,D,Mid,Night,8/13/21,21:00,25.94,-80,37.25,27.37,,,8/10/21,High wave day
-Tetiaroa_2,Control,E,High,Night,8/14/21,00:00,25.9,-79.1,37.08,26.81,,,8/10/21,High wave day
-Tetiaroa_2,Control,F,Mid,Night,8/14/21,03:00,25.84,-78.1,37.11,26.34,,,8/10/21,High wave day
-Tetiaroa_2,Control,G,Low,Day,8/14/21,06:00,25.93,-77.1,37.15,26.08,,,8/10/21,High wave day
-Tetiaroa_2,Control,H,Mid,Day,8/14/21,09:00,25.87,-76.4,37.04,26.25,,,8/10/21,High wave day
+Tetiaroa_2,Control,D,Mid,Night,8/13/21,21:00,25.94,-80,37.25,27.37,2347.310865,,8/10/21,"High wave day, Refridgerated, CRM 1.06%"
+Tetiaroa_2,Control,E,High,Night,8/14/21,00:00,25.9,-79.1,37.08,26.81,2350.190023,,8/10/21,"High wave day, Refridgerated, CRM 1.06%"
+Tetiaroa_2,Control,F,Mid,Night,8/14/21,03:00,25.84,-78.1,37.11,26.34,2313.235886,,8/10/21,"High wave day, Refridgerated, CRM 1.06%"
+Tetiaroa_2,Control,G,Low,Day,8/14/21,06:00,25.93,-77.1,37.15,26.08,2375.989509,,8/10/21,"High wave day, Refridgerated, CRM 1.06%"
+Tetiaroa_2,Control,H,Mid,Day,8/14/21,09:00,25.87,-76.4,37.04,26.25,2401.86963,,8/10/21,"High wave day, Refridgerated, CRM 1.06%"
 Tetiaroa_2,Seep,A,High,Day,8/13/21,12:00,26.26,-77.8,37.22,29,2342.71932,,8/10/21,High wave day/Tons of organic matter
 Tetiaroa_2,Seep,B,Mid,Day,8/13/21,15:00,26.36,-79.2,37.19,29.04,2327.61412,,8/10/21,High wave day/Tons of organic matter
 Tetiaroa_2,Seep,C,Low,Day,8/13/21,18:00,26.24,-79.5,37.06,28.18,2330.917775,,8/10/21,High wave day/Tons of organic matter

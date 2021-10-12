@@ -143,7 +143,7 @@ C18,,Low,Day,8/9/21,07:00,25.4,-75.2,36.67,,2304.675049,,8/3/21,0,bottle
 C17,,Low,Day,8/9/21,07:00,25.18,-67.6,36.44,,2347.220464,,8/3/21,0,bottle
 C19,,Low,Day,8/9/21,07:00,25.41,-74.6,36.75,,2340.570692,,8/3/21,0,bottle
 C20,,Low,Day,8/9/21,07:00,25.91,-67.2,36.59,,2345.786101,,8/3/21,0,bottle
-CSEEP,Bottle1,Low,Day,8/9/21,07:00,24.31,-39.5,9.78,,,,8/3/21,,bottle
+CSEEP,Bottle1,Low,Day,8/9/21,07:00,24.31,-39.5,9.78,,2118.700716,,8/3/21,0,"bottle, CRM 1.06%"
 CSEEP,A,Low,Night,8/8/21,19:00,24.68,-68.9,32.85,,,,8/3/21,,
 CSEEP,B,Mid,Night,8/8/21,22:00,27.3,-69.2,36.3,,2279.452864,,8/3/21,0,
 CSEEP,C,High,Night,8/9/21,01:00,26.83,-71.5,36.51,,2311.939864,,8/3/21,0,
@@ -171,7 +171,7 @@ C2,,High,Day,8/9/21,13:00,28.15,-79.4,37.27,,2294.598471,,8/3/21,0,
 C7,,High,Day,8/9/21,13:00,26.85,-78.4,36.98,,2326.879723,,8/3/21,0,
 C14,,High,Day,8/9/21,13:00,26.45,-78.7,36.68,,2289.657979,,8/3/21,0,
 CSEEP,bottle2,High,Day,8/9/21,13:00,26.69,-79.9,36.36,,2297.607256,,8/3/21,0,bottle
-CSPRING,Land,High,Day,8/9/21,13:00,24.9,-9.1,3.205,,,,8/3/21,,bottle
+CSPRING,Land,High,Day,8/9/21,13:00,24.9,-9.1,3.205,,1746.199674,,8/3/21,0,"bottle, has filtered counterpart, CRM 1.06%"
 C3,,Low,Night,8/9/21,19:00,24.85,-75.6,36.55,,2305.413099,,8/10/21,0,
 C18,,Low,Night,8/9/21,19:00,25.38,-76.6,36.92,,2311.484276,,8/10/21,1,
 C16,,Low,Night,8/9/21,19:00,25.34,-76.4,36.48,,2276.492556,,8/10/21,0,
@@ -199,9 +199,10 @@ C14,,Low,Day,8/10/21,07:00,25.6,-69.9,36.69,,2306.582317,,8/10/21,0,bottle
 C15,,Low,Day,8/10/21,07:00,25.8,-70.6,36.95,,2292.997625,,8/10/21,0,bottle
 CSEEP,M,Low,Day,8/10/21,07:00,25.5,-67.8,33.26,,2306.726303,,8/10/21,0,bottle
 Offshore,,,,8/10/21,14:00,27.56,-77.2,37.51,,2363.175628,,8/10/21,0,"bottle.  Offshore of the ""pile mooring"""
-Cabral_Roadside_Endmember,,,Day,6/11/21,NA,21.568,-43.5,,,,,,,refridgerated
-Cabral_Inland_Endmember,,,Day,6/11/21,NA,21.655,-29.5,,,,,,,refridgerated
-CSEEP_filtered,A,,,8/9/21,07:00,21.238,-50.4,,,,,,,"refridgerated, has HgCl counterpart"
-Varari_Well_1,,,,8/5/21,,21.192,9.559,,,,,,,refridgerated
-Varari_Well_2,,,,8/5/21,,21.482,-65.6,,,,,,,refridgerated
-Varari_Well_3,,,,8/5/21,,21.173,-61.7,,,,,,,refridgerated
+Cabral_Roadside_Endmember,,,Day,6/11/21,NA,21.568,-43.5,,,1675.000363,,,,"Refridgerated, CRM 1.06%"
+Cabral_Inland_Endmember,,,Day,6/11/21,NA,21.655,-29.5,,,1593.126176,,,,"Refridgerated, CRM 1.06%"
+CSEEP_filtered,A,,,8/9/21,07:00,21.238,-50.4,,,2131.983254,,,,"refridgerated, has HgCl counterpart, CRM 1.06%"
+Varari_Well_1,,,,8/5/21,,21.192,9.559,,,5398.542523,,,,"Refridgerated, CRM 1.06%"
+Varari_Well_2,,,,8/5/21,,21.482,-65.6,,,5377.549655,,,0,"Refridgerated, CRM 1.06%"
+Varari_Well_3,,,,8/5/21,,21.173,-61.7,,,5377.936753,,,0,"Refridgerated, CRM 1.06%"
+CSEEP_filtered,Land,High,Day,8/9/21,,,,,,1742.275481,,,,"refridgerated, has HgCl counterpart, CRM 1.06%"
