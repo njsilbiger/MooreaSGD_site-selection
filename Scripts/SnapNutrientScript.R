@@ -264,4 +264,5 @@ ggsave(plot = C_krig_map_del15N, filename = here("Output","May2021","Spatial_arr
 
 
 
-(V_krig_map + V_krig_map_del15N)/(C_krig_map+C_krig_map_del15N)
+plot_all<-(V_krig_map + V_krig_map_del15N)/(C_krig_map+C_krig_map_del15N)
+ggsave(plot = plot_all, filename = here("Output","May2021","Spatial_array_plots","allkrig_map.png"))
