@@ -43,10 +43,19 @@ file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE)
 
 #Load your respiration data file, with all the times, water volumes(mL), algal biomass weight (dry weight) (g)
 Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespoMetadata_updated.csv"))
+
+#calculate total biomass
+#insert script here (see TotalBiomass.R)
+
 #read in raw biomass data
-#filter out sand
+Biomass.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","TotalBiomass.csv"))
+#fill in biomass from Biomass.Info in TotalBiomass column in Sample.Info CHECK IF CODE RIGHT
+#Sample.Info[i,11] <- Biomass$Biomass.Info[1,c(2)]
+
+#notes that need to be removed
 #summarize raw biomass data by tile with summerize function sum
 #biomass associated with each tile name, then right join it with sample info. right join it by plateID, top_bottom,..
+
 #View(Sample.Info)
 
 ##### Make sure times are consistent ####
