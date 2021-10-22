@@ -14,37 +14,13 @@ Biomass.Info <-select(Biomass.Info, -notes)
 #Change column names
 colnames(Biomass.Info) <- c("Tile","Group", "Total_Weight","Boat_Weight")
 
-#create new column with biomass
-Biomass.Info <- Biomass.Info %>%
-  mutate(Biomass = Total_Weight-Boat_Weight)
-
-#filter out sand
-Biomass.Info <- filter(Biomass.Info, !grepl("SAND",Group))
-
-#separate Tile into 2 columns: PlateID and Other
-Biomass.Info <- separate(Biomass.Info, Tile, c("PlateID", "Other"), -2)
-
-#Remove Other column
-Biomass.Info <- select(Biomass.Info, -Other)
-
-#consolidate duplicate rows 
-Biomass.Info <- aggregate(Biomass ~ PlateID, data=Biomass.Info, sum)
-
-#export total biomass in csv file
-write_csv(Biomass.Info,here("Data","August2021","CommunityRespoData","TotalBiomass.csv") )
-
-#Merge these data into the P/R script, use right join
-#Or write directly into Sample.Info?
-
-
-
-
-#slimline code #not working
+#Get total biomass for each tile
 Biomass.Total <- Biomass.Info %>% 
-  select(Biomass.Info, -notes) %>%  #delete column notes
-  colnames(Biomass.Info) <- c("Tile","Group", "Total_Weight","Boat_Weight") %>% #Change column names
   mutate(Biomass = Total_Weight-Boat_Weight) %>% #create new column with biomass
-  filter(Biomass.Info, !grepl("SAND",Group)) %>%  #filter out sand
-  separate(Biomass.Info, Tile, c("PlateID", "Other"), -2) %>%  #separate Tile into 2 columns: PlateID and Other
-  select(Biomass.Info, -Other) %>%  #delete Other column
-  aggregate(Biomass ~ PlateID, data=Biomass.Info, sum) #consolidate duplicate rows
+  filter(!grepl("SAND",Group)) %>%  #filter out sand
+  separate(Tile, c("PlateID", "Other"), -2) %>%  #separate Tile into 2 columns: PlateID and Other
+  select(-Other) %>%  #delete Other column
+  group_by(PlateID) %>% #group duplicate plates
+  summarise(Biomass=sum(Biomass)) #summarize duplicate rows
+
+

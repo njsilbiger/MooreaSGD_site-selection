@@ -44,17 +44,11 @@ file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE)
 #Load your respiration data file, with all the times, water volumes(mL), algal biomass weight (dry weight) (g)
 Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespoMetadata_updated.csv"))
 
-#calculate total biomass
-#insert script here (see TotalBiomass.R)
-
-#read in raw biomass data
-Biomass.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","TotalBiomass.csv"))
-#fill in biomass from Biomass.Info in TotalBiomass column in Sample.Info CHECK IF CODE RIGHT
-#Sample.Info[i,11] <- Biomass$Biomass.Info[1,c(2)]
-
-#notes that need to be removed
-#summarize raw biomass data by tile with summerize function sum
-#biomass associated with each tile name, then right join it with sample info. right join it by plateID, top_bottom,..
+#import biomass data
+Sample.Info <- select(Sample.Info, -TotalBiomass) #remove empty column totalbiomass
+source(here("Scripts","TotalBiomass.R")) #read in raw biomass data
+Sample.Info <- Sample.Info %>%
+  left_join(Biomass.Total, PlateID = PlateID) #left join biomass data by PlateID
 
 #View(Sample.Info)
 
@@ -78,8 +72,7 @@ Respo.R<- data.frame(matrix(NA, nrow=length(filenames_final), ncol=4))
 colnames(Respo.R) <- c("FileName","Intercept", "umol.L.sec","Temp.C")
 #View(Respo.R)
 
-#create loop that runs through files and plots full timeseries to identify times that are either gaps or other problems/noise
-#do this in different script file
+
 
 ###forloop#####
 for (i in 1: length(filenames_final)) {
@@ -176,25 +169,29 @@ Respo.R_Normalized <- Respo.R %>%
   select(Light_Dark, blank.rate = umol.sec) %>% # only keep what we need and rename the blank rate column
   right_join(Respo.R) %>% # join with the respo data %>%
   mutate(umol.sec.corr = umol.sec - blank.rate, # subtract the blank rates from the raw rates
-         mmol.gram.hr = 0.001*(umol.sec.corr*3600)/TotalBiomass)  %>% # convert to mmol g hr-1
+         mmol.gram.hr = 0.001*(umol.sec.corr*3600)/Biomass)  %>% # convert to mmol g hr-1
   filter(BLANK ==0) %>% # remove all the blank data
-  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, TotalBiomass, mmol.gram.hr) #keep only what we need
+  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr) #keep only what we need
 
 #View(Respo.R_Normalized)
 
-# pivot the data so that light and dark have their own column for net P and R
+
+# pivot the data so that light and dark have their own column for net P and R 
+#NOT WORKING# 2 issues
+#Issue 1: Because of tiles that were rerun twice on the same date (V17, C33, C34, C39)
+#Issue 2: C37 is missing Light file for 8/18/21 but has complete (light and dark) for rerun on 8/21/21
 Respo.R_Normalized<- Respo.R_Normalized %>%
   pivot_wider(names_from = Light_Dark, values_from = mmol.gram.hr) %>%
   rename(Respiration = Dark , NetPhoto = Light) %>% # rename the columns
-  mutate(Respiration = - Respiration, # Make respiration positive
-         GrossPhoto = Respiration + NetPhoto
-         )
+  mutate(Respiration = - Respiration) %>%  # Make respiration positive
+  mutate(GrossPhoto = Respiration + NetPhoto)
 
-
-
+#remove FileName
+Respo.R_Normalized <-select(Respo.R_Normalized, -FileName)
 
 write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates.csv") ) # export all the uptake rates
-#View(Respo.R)
+#View(Respo.R_Normalised)
 
-
+#Remove duplicate tileruns to have file for analysis
+#write_cvs normalised final runs for analysis
 
