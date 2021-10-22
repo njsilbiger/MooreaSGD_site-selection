@@ -1,4 +1,4 @@
-CowTagID,SeepCode,Tide,Day_Night,Date,Salinity_In_Lab,SamplingTime,TempInLab,mV,Salinity,TempInSitu,TA,TrisCalDate,No_Junk_Run,Notes,Salinity_Calibration_Date,Location
+CowTagID,SeepCode,Tide,Day_Night,Date,Salinity_In_Lab,SamplingTime,TempInLab,mV,Salinity,TempInSitu,TA,TrisCalDate,No_Junk_Run,Notes_carb,Salinity_Calibration_Date,Location
 Cabral_Inland_Endmember,NA,NA,Day,6/11/2021,0.652,NA,21.655,-29.5,NA,NA,1593.126176,8/10/2021,NA,"Refridgerated, CRM 1.06%",10/1/2021,Cabral
 Cabral_Roadside_Endmember,NA,NA,Day,6/11/2021,0.938,NA,21.568,-43.5,NA,NA,1675.000363,8/10/2021,NA,"Refridgerated, CRM 1.06%",10/1/2021,Cabral
 CSEEP,A,Low,Night,8/8/2021,32.75,19:00:00,24.68,-68.9,32.85,NA,NA,8/3/2021,NA,NA,10/1/2021,Cabral
