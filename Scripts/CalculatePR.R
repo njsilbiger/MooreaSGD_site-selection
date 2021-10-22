@@ -186,8 +186,6 @@ Respo.R_Normalized<- Respo.R_Normalized %>%
   mutate(Respiration = - Respiration) %>%  # Make respiration positive
   mutate(GrossPhoto = Respiration + NetPhoto)
 
-#remove FileName
-Respo.R_Normalized <-select(Respo.R_Normalized, -FileName)
 
 write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates.csv") ) # export all the uptake rates
 #View(Respo.R_Normalised)
