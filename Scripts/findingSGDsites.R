@@ -12,10 +12,10 @@ library(ggrepel)
 library(geodist)
 
 ## read in data ####
-path<-here::here("Data", "water_column_nutrients_Aug_2020_compiled_final.csv")
+path<-here::here("Data", "SiteSelectionInfo", "water_column_nutrients_Aug_2020_compiled_final.csv")
 NutData<-read_csv(path) # Silicate/Nutrients data from Tom Adams
-HablerData<-read_csv(here::here("Data", "Tahiti_Moorea_coordinates_Habler.csv"))## sites from Habler et al
-FisherData<-read_csv(here::here("Data", "SGD_sites_Jean.csv")) ## Sites from Fishers
+HablerData<-read_csv(here::here("Data", "SiteSelectionInfo","Tahiti_Moorea_coordinates_Habler.csv"))## sites from Habler et al
+FisherData<-read_csv(here::here("Data","SiteSelectionInfo", "SGD_sites_Jean.csv")) ## Sites from Fishers
 
 ### Process ####
 
