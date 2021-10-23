@@ -171,25 +171,42 @@ Respo.R_Normalized <- Respo.R %>%
   mutate(umol.sec.corr = umol.sec - blank.rate, # subtract the blank rates from the raw rates
          mmol.gram.hr = 0.001*(umol.sec.corr*3600)/Biomass)  %>% # convert to mmol g hr-1
   filter(BLANK ==0) %>% # remove all the blank data
-  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr) #keep only what we need
+  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr, chamber.channel) #keep only what we need
 
 #View(Respo.R_Normalized)
 
+#create new column with unique identifier per tile per light/dark
+Respo.R_Normalized<- Respo.R_Normalized %>%
+  unite(Batch, c(PlateID, chamber.channel), remove=FALSE)
 
 # pivot the data so that light and dark have their own column for net P and R 
-#NOT WORKING# Issue identified and working on solving them
-#Issue 1: Because of tiles that were rerun twice on the same date (V17, C33, C34, C39) => create column with unique identifier per light/dark batch
-#Issue 2: C37 is missing Light file for 8/18/21 => this is due to typo in raw file name, should be fixed when raw file name is corrected
+#NEED TO FIX: C37 is missing Light file for 8/18/21 => this is due to typo in raw file name, should be fixed when raw file name is corrected
 Respo.R_Normalized<- Respo.R_Normalized %>%
   pivot_wider(names_from = Light_Dark, values_from = mmol.gram.hr) %>%
   rename(Respiration = Dark , NetPhoto = Light) %>% # rename the columns
   mutate(Respiration = - Respiration) %>%  # Make respiration positive
-  mutate(GrossPhoto = Respiration + NetPhoto)
-
+  mutate(GrossPhoto = Respiration + NetPhoto) %>% 
+  select(Date, PlateID, CowTagID, Top_Bottom, Site, Biomass, Respiration, NetPhoto, GrossPhoto, Batch) #keep only what we need
 
 write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates.csv") ) # export all the uptake rates
 #View(Respo.R_Normalised)
 
-#Remove duplicate tileruns to have file for analysis
-#write_cvs normalised final runs for analysis
+#Remove duplicate tile runs to have file for analysis
+#check which tiles have duplicates
+Respo.R_Normalized$PlateID <- factor(Respo.R_Normalized$PlateID)
+summary(Respo.R_Normalized$PlateID)
+# Cabral: C23, C24, C25, C27, C29, C30, C31, C33 (x2), C34 (x2), C35, C36, C37, C38, C39 (x2)
+# Varari: V17, V24, V29, V30, V38
+
+#make decision which to exclude based on pdf files
+
+#exclude files by batch name
+Respo.R_Normalized_FinalSelection <-Respo.R_Normalized[!(Respo.R_Normalized$Batch=="XXX" | 
+                                                         Respo.R_Normalized$Batch=="XXX" |
+                                                         Respo.R_Normalized$Batch=="XXX" | 
+                                                         Respo.R_Normalized$Batch=="XXX" |
+                                                         Respo.R_Normalized$Batch=="XXX"),]
+#write csv
+write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates.csv") ) # export uptake rates of final selection
+
 
