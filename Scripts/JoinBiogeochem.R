@@ -28,22 +28,27 @@ write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC.csv"))
 
 ## Some plots
 
-Carb %>%
-  filter(Location != "Offshore") %>%
-ggplot(aes(x = Salinity_In_Lab, y = TA))+
-  geom_point(aes(color = Day_Night))+
-  facet_wrap(~Location)
-
-
 AllChemData %>%
-  filter(Location != "Offshore") %>%
-  ggplot(aes(x = log(Silicate_umolL), y = log(NN_umolL), color = Plate_Seep))+
-  geom_point()+
-  facet_wrap(~Location, scales = "free")
+  filter(Location != "Offshore",
+         Plate_Seep %in% c("Plate","Seep","Spring")) %>%
+  ggplot(aes(x = log(Silicate_umolL), y = log(NN_umolL)))+
+  geom_point(aes(color = Plate_Seep))+
+ # geom_smooth(method = "lm")+
+  facet_wrap(~Location, scales = "free")+
+  theme_bw()
 
 AllChemData %>%
   filter(Location != "Offshore",
          Plate_Seep %in% c("Plate","Seep","Spring")) %>%
-  ggplot(aes(x = Silicate_umolL, y = Salinity, color = Plate_Seep))+
-  geom_point()+
-  facet_wrap(~Location, scales = "free")
+  ggplot(aes(x = Silicate_umolL, y = Salinity))+
+  geom_point(aes(color = Plate_Seep))+
+  geom_smooth(method = "lm")+
+  facet_wrap(~Location, scales = "free")+
+  theme_bw()
+
+AllChemData %>%
+  filter(Location != "Offshore") %>%
+  ggplot(aes(x = Salinity, y = TA))+
+  geom_point(aes(color = Plate_Seep))+
+  facet_wrap(~Location, scales = "free")+
+  theme_bw()
