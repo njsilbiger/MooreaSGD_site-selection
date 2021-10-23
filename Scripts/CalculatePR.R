@@ -177,9 +177,9 @@ Respo.R_Normalized <- Respo.R %>%
 
 
 # pivot the data so that light and dark have their own column for net P and R 
-#NOT WORKING# 2 issues
-#Issue 1: Because of tiles that were rerun twice on the same date (V17, C33, C34, C39)
-#Issue 2: C37 is missing Light file for 8/18/21 but has complete (light and dark) for rerun on 8/21/21
+#NOT WORKING# Issue identified and working on solving them
+#Issue 1: Because of tiles that were rerun twice on the same date (V17, C33, C34, C39) => create column with unique identifier per light/dark batch
+#Issue 2: C37 is missing Light file for 8/18/21 => this is due to typo in raw file name, should be fixed when raw file name is corrected
 Respo.R_Normalized<- Respo.R_Normalized %>%
   pivot_wider(names_from = Light_Dark, values_from = mmol.gram.hr) %>%
   rename(Respiration = Dark , NetPhoto = Light) %>% # rename the columns
