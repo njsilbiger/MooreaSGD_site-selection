@@ -9,7 +9,7 @@ library(lubridate)
 
 ## Read in files ###
 
-Carb<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))
+Carb<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated.csv"))
 Nuts <- read_csv(here("Data","August2021","Nutrients", "Nutrients_Watersampling_Aug21.csv"))
 Sites<-read_csv(here("Data","Sandwich_Locations_Final.csv"))
 
@@ -20,9 +20,9 @@ AllChemData <- Carb %>%
   full_join(Nuts) %>%
   full_join(Sites) %>%
   mutate(Date = mdy(Date),
-         SamplingTime = hms(SamplingTime),
+         #SamplingTime = hms(SamplingTime),
          DateTime = ymd_hms(paste(Date,SamplingTime))) %>%
-  select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, Plate_Seep, Date, Time = SamplingTime, DateTime, Tide, Day_Night, Salinity = Salinity_In_Lab,Temperature = TempInSitu, TA, Phosphate_umolL, Silicate_umolL, NN_umolL = Nitrite_umolL, Ammonia_umolL ) 
+  select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, Plate_Seep, Date, Time = SamplingTime, DateTime, Tide, Day_Night, Salinity,Temperature = TempInSitu, TA, Phosphate_umolL, Silicate_umolL, NN_umolL = Nitrite_umolL, Ammonia_umolL ) 
 
 write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC.csv"))
 
