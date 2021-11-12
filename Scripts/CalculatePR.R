@@ -181,7 +181,6 @@ Respo.R_Normalized<- Respo.R_Normalized %>%
   unite(Batch, c(PlateID, chamber.channel), remove=FALSE)
 
 # pivot the data so that light and dark have their own column for net P and R 
-#NEED TO FIX: C37 is missing Light file for 8/18/21 => this is due to typo in raw file name, should be fixed when raw file name is corrected
 Respo.R_Normalized<- Respo.R_Normalized %>%
   pivot_wider(names_from = Light_Dark, values_from = mmol.gram.hr) %>%
   rename(Respiration = Dark , NetPhoto = Light) %>% # rename the columns
