@@ -1,6 +1,7 @@
 # Cleaned Respo Code for plate community P/R #####
 # Created by Nyssa Silbiger
 # Edited on 7/22/2021
+# Edited by Hendrikje Jorissen on 11/11/21
 
 #Install Packages 
 
@@ -195,18 +196,39 @@ write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCo
 #check which tiles have duplicates
 Respo.R_Normalized$PlateID <- factor(Respo.R_Normalized$PlateID)
 summary(Respo.R_Normalized$PlateID)
-# Cabral: C23, C24, C25, C27, C29, C30, C31, C33 (x2), C34 (x2), C35, C36, C37, C38, C39 (x2)
+# Cabral: C21, C23, C24, C25, C27, C29, C30, C31, C33 (x2), C34 (x2), C35, C36, C37, C38, C39 (x2), C40
 # Varari: V17, V24, V29, V30, V38
 
 #make decision which to exclude based on pdf files
 
 #exclude files by batch name
-Respo.R_Normalized_FinalSelection <-Respo.R_Normalized[!(Respo.R_Normalized$Batch=="XXX" | 
-                                                         Respo.R_Normalized$Batch=="XXX" |
-                                                         Respo.R_Normalized$Batch=="XXX" | 
-                                                         Respo.R_Normalized$Batch=="XXX" |
-                                                         Respo.R_Normalized$Batch=="XXX"),]
+Respo.R_Normalized_FinalSelection <-Respo.R_Normalized[!(Respo.R_Normalized$Batch=="C23_5" | 
+                                                         Respo.R_Normalized$Batch=="C24_7" |
+                                                         Respo.R_Normalized$Batch=="C25_10"| 
+                                                         Respo.R_Normalized$Batch=="C21_9" |
+                                                         Respo.R_Normalized$Batch=="C40_2"|
+                                                         Respo.R_Normalized$Batch=="C27_8" |
+                                                         Respo.R_Normalized$Batch=="C29_8" | 
+                                                         Respo.R_Normalized$Batch=="C30_7" |
+                                                         Respo.R_Normalized$Batch=="C31_3" | 
+                                                         Respo.R_Normalized$Batch=="C33_3" |
+                                                         Respo.R_Normalized$Batch=="C33_4" |
+                                                         Respo.R_Normalized$Batch=="C34_6" | 
+                                                         Respo.R_Normalized$Batch=="C34_5" |
+                                                         Respo.R_Normalized$Batch=="C35_2" |
+                                                         Respo.R_Normalized$Batch=="C36_9" | 
+                                                         Respo.R_Normalized$Batch=="C37_1" |
+                                                         Respo.R_Normalized$Batch=="C38_9" |
+                                                         Respo.R_Normalized$Batch=="C39_9" | 
+                                                         Respo.R_Normalized$Batch=="V17_3" |
+                                                         Respo.R_Normalized$Batch=="V24_1" |
+                                                         Respo.R_Normalized$Batch=="V29_7" | 
+                                                         Respo.R_Normalized$Batch=="V30_3" |
+                                                         Respo.R_Normalized$Batch=="V38_2"),]
+
+Respo.R_Normalized_FinalSelection <-Respo.R_Normalized_FinalSelection[!(Respo.R_Normalized_FinalSelection$Batch=="C39_1" & Respo.R_Normalized_FinalSelection$Date=="8/21/21" ),] 
+
 #write csv
-write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates.csv") ) # export uptake rates of final selection
+write_csv(Respo.R_Normalized_FinalSelection,here("Data","August2021","CommunityRespoData","PRCommunityRates_FinalSelection.csv") ) # export uptake rates of final selection
 
 
