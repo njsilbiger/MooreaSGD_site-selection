@@ -1,0 +1,61 @@
+﻿priority,data_folder,sub_folder,file_name,variable_name,unit,description
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,CowTagID,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,SeepCode,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,Tide,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,Day_Night,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,Date,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,Salinity_In_Lab,psu,salinity of water samples recorded at GUMP in Mo'orea
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,SamplingTime,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,TempInLab,C,temperature of water samples recorded at CSUN
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,mV,mV,mV of water samples recorded at GUMP in Mo'orea
+High,August2021,CarbonateChemistry,salinity_tetiaroa_2021_10_01,Salinity,psu,
+High,August2021,CommunityRespoData,CommunityRespoMetadata_updated,block,NA,name of respirometry run
+High,August2021,CommunityRespoData,CommunityRespoMetadata_updated,Top_Bottom,NA,top or bottom of sandwich
+High,August2021,CommunityRespoData,CommunityRespoMetadata_updated,Placement,NA,placement of tile on plate
+High,August2021,CommunityRespoData,CommunityRespoMetadata_updated,TotalBiomass,g,
+High,August2021,CommunityRespoData,CommunityRespoMetadata_updated,VolumeRecorded,mL,
+High,August2021,CommunityRespoData,AlgalBiomassMetadata,group,NA,algal functional group
+High,August2021,CommunityRespoData,AlgalBiomassMetadata,total weight,g,algae and weigh boat
+High,August2021,CommunityRespoData,AlgalBiomassMetadata,boat weight,g,only weigh boat
+High,August2021,CommunityRespoData,PRCommunityRates,Biomass,g,
+High,August2021,CommunityRespoData,PRCommunityRates,Respiration,,
+High,August2021,CommunityRespoData,PRCommunityRates,NetPhoto,,
+High,August2021,CommunityRespoData,PRCommunityRates,GrossPhoto,,
+,August2021,YSI,common_garden_20210723.csv,Conductivity_C-us/cm,C-us/cm,
+,August2021,YSI,common_garden_20210723.csv,Salinity_SAL-PSU,psu,
+,August2021,YSI,common_garden_20210723.csv,Temperature_C,C,
+,August2021,NA,Allbiogeochemdata_QC.csv,Salinity,psu,
+,August2021,NA,Allbiogeochemdata_QC.csv,Temperature,C,
+,August2021,NA,Allbiogeochemdata_QC.csv,TA,,
+,August2021,NA,Allbiogeochemdata_QC.csv,Phosphate_umolL,umolL,
+,August2021,NA,Allbiogeochemdata_QC.csv,Silicate_umolL,umolL,
+,August2021,NA,Allbiogeochemdata_QC.csv,NN_umolL,umolL,
+,August2021,NA,Allbiogeochemdata_QC.csv,Ammonia_umolL,umolL,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,ALK,,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,R*R,,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,Vsample,,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,Vsample,,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,A Vol,mL,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,Alk,,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,pH_CMORE,,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,Temp,C-us/cm,
+,AutosamplerTest,NA,AutoSamplerCarbChem.csv,pH_Craig,,
+,SiteSelectionInfo,NA,water_column_nutrients_Aug_2020_compiled_final.csv,Phosphate,,
+,SiteSelectionInfo,NA,water_column_nutrients_Aug_2020_compiled_final.csv,Silicate,,
+,SiteSelectionInfo,NA,water_column_nutrients_Aug_2020_compiled_final.csv,Nitrite_plus_Nitrate,,
+,SiteSelectionInfo,NA,water_column_nutrients_Aug_2020_compiled_final.csv,Ammonia,,
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,Salinity,psu,salinity of water samples recorded at CSUN
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,TempInSitu,C,CT logger in situ
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,TA,,total alkalinity recorded at CSUN
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,TrisCalDate,NA,date of tris calibration 
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,No_Junk_Run,NA,1 if sample was one of the two first samples in a run with no initial junk samples 
+High,August2021,CarbonateChemistry,pHProbe_Data.csv,Salinity_Calibration_Date,NA,
+,August2021,CarbonateChemistry,TrisCalibrationLog.csv,TrisCalDate,NA,date of tris calibration 
+,August2021,CarbonateChemistry,TrisCalibrationLog.csv,TTris,C,temperature of tris at calibration
+,August2021,CarbonateChemistry,TrisCalibrationLog.csv,mVTris,mV,mV of tris at calibration
+,August2021,CarbonateChemistry,TrisCalibrationLog.csv,HOBO_Orion,NA,instrument used for calibration
+,August2021,CarbonateChemistry,salinity_tetiaroa_2021_10_01.csv,Site,NA,site of water sample collection
+,August2021,CarbonateChemistry,salinity_tetiaroa_2021_10_01.csv,Control_Seep,NA,treatment
+,August2021,CarbonateChemistry,salinity_tetiaroa_2021_10_01.csv,Seep_Code,NA,time grouping of water sample collection 
+,August2021,CarbonateChemistry,salinity_tetiaroa_2021_10_01.csv,Date,NA,date of water sample collection
+,August2021,CarbonateChemistry,salinity_tetiaroa_2021_10_01.csv,Salinity,psu,salinity of water sample collected in tetiaroa
