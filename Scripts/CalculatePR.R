@@ -43,7 +43,7 @@ file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE)
 
 
 #Load your respiration data file, with all the times, water volumes(mL), algal biomass weight (dry weight) (g)
-Sample.Info <- read.csv(file = here("Data","August2021","CommunityRespoData","CommunityRespoMetadata_updated.csv"))
+Sample.Info <- read_csv(file = here("Data","August2021","CommunityRespoData","CommunityRespoMetadata_updated.csv"))
 
 #import biomass data
 Sample.Info <- select(Sample.Info, -TotalBiomass) #remove empty column totalbiomass
@@ -164,7 +164,7 @@ Respo.R<-Respo.R %>%
 #View(Respo.R)
 
 Respo.R_Normalized <- Respo.R %>%
-  group_by(Light_Dark, BLANK)%>% # also add block here if one blank per block
+  group_by(Light_Dark, block, BLANK)%>% # also add block here if one blank per block
   summarise(umol.sec = mean(umol.sec, na.rm=TRUE)) %>%
   filter(BLANK ==1)%>% # only keep the actual blanks
   select(Light_Dark, blank.rate = umol.sec) %>% # only keep what we need and rename the blank rate column
