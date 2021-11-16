@@ -172,13 +172,15 @@ Respo.R_Normalized <- Respo.R %>%
   mutate(umol.sec.corr = umol.sec - blank.rate, # subtract the blank rates from the raw rates
          mmol.gram.hr = 0.001*(umol.sec.corr*3600)/Biomass)  %>% # convert to mmol g hr-1
   filter(BLANK ==0) %>% # remove all the blank data
-  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr, chamber.channel) #keep only what we need
-
+  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr, chamber.channel) %>%  #keep only what we need
+  ungroup()
+  
 #View(Respo.R_Normalized)
 
 #create new column with unique identifier per tile per light/dark
 Respo.R_Normalized<- Respo.R_Normalized %>%
-  unite(Batch, c(PlateID, chamber.channel), remove=FALSE)
+  unite(Batch, c(PlateID, chamber.channel), remove=FALSE) %>% 
+  select(-block)
 
 # pivot the data so that light and dark have their own column for net P and R 
 Respo.R_Normalized<- Respo.R_Normalized %>%
@@ -188,7 +190,7 @@ Respo.R_Normalized<- Respo.R_Normalized %>%
   mutate(GrossPhoto = Respiration + NetPhoto) %>% 
   select(Date, PlateID, CowTagID, Top_Bottom, Site, Biomass, Respiration, NetPhoto, GrossPhoto, Batch) #keep only what we need
 
-write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates.csv") ) # export all the uptake rates
+write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates_blankperblock.csv") ) # export all the uptake rates
 #View(Respo.R_Normalised)
 
 #Remove duplicate tile runs to have file for analysis
@@ -228,6 +230,6 @@ Respo.R_Normalized_FinalSelection <-Respo.R_Normalized[!(Respo.R_Normalized$Batc
 Respo.R_Normalized_FinalSelection <-Respo.R_Normalized_FinalSelection[!(Respo.R_Normalized_FinalSelection$Batch=="C39_1" & Respo.R_Normalized_FinalSelection$Date=="8/21/21" ),] 
 
 #write csv
-write_csv(Respo.R_Normalized_FinalSelection,here("Data","August2021","CommunityRespoData","PRCommunityRates_FinalSelection.csv") ) # export uptake rates of final selection
+write_csv(Respo.R_Normalized_FinalSelection,here("Data","August2021","CommunityRespoData","PRCommunityRates_blankperblock_FinalSelection.csv") ) # export uptake rates of final selection
 
 
