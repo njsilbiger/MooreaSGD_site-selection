@@ -190,6 +190,36 @@ Respo.R_Normalized<- Respo.R_Normalized %>%
   mutate(GrossPhoto = Respiration + NetPhoto) %>% 
   select(Date, PlateID, CowTagID, Top_Bottom, Site, Biomass, Respiration, NetPhoto, GrossPhoto, Batch) #keep only what we need
 
+#Calculate Raw Respiration Rates (not using biomass to normalise)
+
+Respo.R_Raw <- Respo.R %>%
+  group_by(Light_Dark, block, BLANK)%>% # also add block here if one blank per block
+  summarise(umol.sec = mean(umol.sec, na.rm=TRUE)) %>%
+  filter(BLANK ==1)%>% # only keep the actual blanks
+  select(Light_Dark, blank.rate = umol.sec) %>% # only keep what we need and rename the blank rate column
+  right_join(Respo.R) %>% # join with the respo data %>%
+  mutate(umol.sec.corr = umol.sec - blank.rate, # subtract the blank rates from the raw rates
+         mmol.hr = 0.001*(umol.sec.corr*3600))  %>% # convert to mmol g hr-1
+  filter(BLANK ==0) %>% # remove all the blank data
+  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.hr, chamber.channel) %>%  #keep only what we need
+  ungroup()
+#create new column with unique identifier per tile per light/dark
+Respo.R_Raw<- Respo.R_Raw %>%
+  unite(Batch, c(PlateID, chamber.channel), remove=FALSE) %>% 
+  select(-block)
+# pivot the data so that light and dark have their own column for net P and R 
+Respo.R_Raw<- Respo.R_Raw %>%
+  pivot_wider(names_from = Light_Dark, values_from = mmol.hr) %>%
+  rename(Respiration_Raw = Dark , NetPhoto_Raw = Light) %>% # rename the columns
+  mutate(Respiration_Raw = - Respiration_Raw) %>%  # Make respiration positive
+  mutate(GrossPhoto_Raw = Respiration_Raw + NetPhoto_Raw) %>% 
+  select(Batch, Date, Respiration_Raw, NetPhoto_Raw, GrossPhoto_Raw) #keep only what we need
+
+#left join raw respiration rates
+Respo.R_Normalized <- Respo.R_Normalized %>%
+  left_join(Respo.R_Raw, Batch = Batch) #left join biomass data by PlateID
+
+
 write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates_blankperblock.csv") ) # export all the uptake rates
 #View(Respo.R_Normalised)
 
