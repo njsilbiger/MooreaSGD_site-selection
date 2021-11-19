@@ -69,12 +69,12 @@ High,21-Aug,,,,,
 ,,CommunityRespoData,AlgalBiomassMetadata,group,NA,algal functional group
 ,,CommunityRespoData,AlgalBiomassMetadata,total weight,g,algae and weigh boat
 ,,,,boat weight,g,only weigh boat
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+,21-Aug,CarbonateChemistry,pHProbe_Data.csv,Salinity,,
+,21-Aug,CarbonateChemistry,pHProbe_Data.csv,TempInSitu,,
+,21-Aug,CarbonateChemistry,pHProbe_Data.csv,TA,,
+,21-Aug,CarbonateChemistry,pHProbe_Data.csv,TrisCalDate,,
+,21-Aug,CarbonateChemistry,pHProbe_Data.csv,No_Junk_Run,,
+,21-Aug,CarbonateChemistry,pHProbe_Data.csv,Salinity_Calibration_Date,,
 ,,,,,,
 ,,,,,,
 ,,,,,,
