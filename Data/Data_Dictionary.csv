@@ -9,66 +9,6 @@ High,21-Aug,CarbonateChemistry,pHProbe_Data.csv,SamplingTime,,
 High,21-Aug,CarbonateChemistry,pHProbe_Data.csv,TempInLab,C,temperature of water samples recorded at CSUN
 High,21-Aug,CarbonateChemistry,pHProbe_Data.csv,mV,mV,mV of water samples recorded at GUMP in Mo'orea
 High,21-Aug,CarbonateChemistry,salinity_tetiaroa_2021_10_01,Salinity,psu,
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,block,NA,respirometry run
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Date,NA,date of run
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,FileName,NA,name of file output 
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,PlateID,NA,ID of algal turf plate
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,CowTagID,NA,cow tag ID
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Top_Bottom,NA,location of plate on sandwich
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Placement,NA,location of tile on plate
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Species,NA,species present on tile
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Light_Dark,NA,light conditions of respirometry run
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Site,NA,site where plates were left out
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,TotalBiomass,g,weight of total algal biomass on plate
-High,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,volume,mL,standard or expected volume of liquid in respirometry chamber
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,AutosamplerTest,,,,,
-,SiteSelectionInfo,,,,,
-,SiteSelectionInfo,,,,,
-,SiteSelectionInfo,,,,,
-,SiteSelectionInfo,,,,,
-High,21-Aug,,,,,
-High,21-Aug,,,,,
-High,21-Aug,,,,,
-High,21-Aug,,,,,
-High,21-Aug,,,,,
-High,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,,,,,
-,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,chamber.channel,NA,channel of respirometry chamber
-,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,BLANK,NA,indicating control chambers without tile
-,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,start.time,NA,start time of 20 minute respirometry run
-,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,stop.time,NA,end time of 20 minute respirometry run
-,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,VolumeRecorded,NA,measured volume of liquid in respirometry chamber
-,21-Aug,CommunityRespoData,CommunityRespoMetadata_updated.csv,Redone,NA,indication of repeated respirometry runs
-,21-Aug,CommunityRespoData,AlgalBiomassMetadata,tile,NA,
-,,CommunityRespoData,AlgalBiomassMetadata,group,NA,algal functional group
-,,CommunityRespoData,AlgalBiomassMetadata,total weight,g,algae and weigh boat
-,,,,boat weight,g,only weigh boat
 ,21-Aug,CarbonateChemistry,pHProbe_Data.csv,Salinity,,
 ,21-Aug,CarbonateChemistry,pHProbe_Data.csv,TempInSitu,,
 ,21-Aug,CarbonateChemistry,pHProbe_Data.csv,TA,,
@@ -79,10 +19,10 @@ High,21-Aug,,,,,
 ,21-Aug,CarbonateChemistry,TrisCalibrationLog.csv,Ttris,,
 ,21-Aug,CarbonateChemistry,TrisCalibrationLog.csv,mVTris,,
 ,21-Aug,CarbonateChemistry,TrisCalibrationLog.csv,HOBO_Orion,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+,21-Aug,CarbonateChemistry,salinity_tetiaroa_2021_10_01,Site,,
+,21-Aug,CarbonateChemistry,salinity_tetiaroa_2021_10_01,Control_Seep,,
+,21-Aug,CarbonateChemistry,salinity_tetiaroa_2021_10_01,Seep_Code,,
+,21-Aug,CarbonateChemistry,salinity_tetiaroa_2021_10_01,Date,,
 ,,,,,,
 ,,,,,,
 ,,,,,,
