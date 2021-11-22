@@ -16,13 +16,32 @@ Sites<-read_csv(here("Data","Sandwich_Locations_Final.csv"))
 
 ### join everything #####
 
-AllChemData <- Carb %>%
+AllChemData1 <- Sites %>%
+  full_join(Carb)  ## Need to do this in two steps because otherwise some of the lat/longs are missing because of unequal samples between the carb and nutrient data
+
+AllChemData<-Sites %>%
   full_join(Nuts) %>%
-  full_join(Sites) %>%
-  mutate(Date = mdy(Date),
+  full_join(AllChemData1)%>%
+   mutate(Date = mdy(Date),
          #SamplingTime = hms(SamplingTime),
          DateTime = ymd_hms(paste(Date,SamplingTime))) %>%
-  select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, Plate_Seep, Date, Time = SamplingTime, DateTime, Tide, Day_Night, Salinity,Temperature = TempInSitu, TA, Phosphate_umolL, Silicate_umolL, NN_umolL = Nitrite_umolL, Ammonia_umolL ) 
+  select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, Plate_Seep, Date, Time = SamplingTime, DateTime, Tide, Day_Night, Salinity,Temperature = TempInSitu, TA,pH, Phosphate_umolL, Silicate_umolL, NN_umolL = Nitrite_umolL, Ammonia_umolL ) 
+
+
+## Because there are 3 samples that have nutrient data, but not TA/pH data, they are missing dates and times in the join.  I am adding them manually below
+
+AllChemData %>%
+  filter(is.na(Time))
+
+AllChemData$DateTime[AllChemData$CowTagID=="V3"& AllChemData$Tide =="High"& AllChemData$Day_Night == "Night"]<-mdy_hms("8/5/2021 00:00:00")
+AllChemData$Time[AllChemData$CowTagID=="V3"& AllChemData$Tide =="High"& AllChemData$Day_Night == "Night"]<-"00:00:00"
+
+AllChemData$DateTime[AllChemData$CowTagID=="V7"& AllChemData$Tide =="High"& AllChemData$Day_Night == "Night"]<-mdy_hms("8/5/2021 00:00:00")
+AllChemData$Time[AllChemData$CowTagID=="V7"& AllChemData$Tide =="High"& AllChemData$Day_Night == "Night"]<-"00:00:00"
+
+AllChemData$DateTime[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"]<-mdy_hms("8/9/2021 19:00:00")
+AllChemData$Time[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"]<-"19:00:00"
+
 
 write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC.csv"))
 
