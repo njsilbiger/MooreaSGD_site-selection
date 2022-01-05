@@ -89,7 +89,7 @@ Pres_dbar<-10 # surface pressure in decibar
 # condCal<-CT_cleanup(data.path = path.cal, path.pattern = c(file.date,"csv$"), tf.write = F)
 
 # In Situ Conductivity files
-condLog<-CT_cleanup(data.path = path.log, path.pattern = csv.pattern, tf.write = F, hobo.cal = hobo.csv)
+condLog<-CT_cleanup(data.path = path.log, output.path=path.output, path.pattern = csv.pattern, tf.write = F, hobo.cal = hobo.csv)
 
 ############################################################
 ### Parse date and time
@@ -132,7 +132,7 @@ CalLog<-tibble(date = as.POSIXct(NA),
                LoggerID = as.character(),
                FullLoggerID = as.character(),
                TempInSitu = as.numeric(),
-               E_Cond = as.numeric(),
+               ECond.mS.cm = as.numeric(),
                #EC_Cal.1 = as.numeric(),
                #EC_Cal.2 = as.numeric(),
                Salinity_psu = as.numeric())
@@ -146,73 +146,73 @@ for(i in 1:n1) {
   sn.a<-as.character(sn.a[i,]) # i'th serial number
   
   # filter by the i'th serial number
-  C1.a<-condLog %>% 
+  C1.cal<-condLog %>% # C1: full in situ log; will be reduced to calibration logs
     filter(LoggerID == stringr::str_subset(condLog$LoggerID, pattern = sn.a))
-  C2.a<-calibration.log %>% 
+  C2.cal<-calibration.log %>% # C2: shows calibration log relevant to LoggerID and datetime of calibration
     filter(LoggerID == stringr::str_subset(calibration.log$LoggerID, pattern = sn.a)) %>% 
     arrange(time_in) # order data by increasing date and time
   
   # pull out calibration times
-  startHigh <- C2.a %>%
+  startHigh <- C2.cal %>%
     filter(cond_HL == 'H') %>% 
     select(time_in)
-  endHigh <- C2.a %>%
+  endHigh <- C2.cal %>%
     filter(cond_HL == 'H') %>% 
     select(time_out)
-  startLow <- C2.a %>%
+  startLow <- C2.cal %>%
     filter(cond_HL == 'L') %>% 
     select(time_in)
-  endLow <- C2.a %>%
+  endLow <- C2.cal %>%
     filter(cond_HL == 'L') %>% 
     select(time_out)
   
   
-  if(nrow(C2.a) == 1){ 
+  if(nrow(C2.cal) == 1){ 
     
     # specify whether calibration reference is an electrical conductivity or specific conductance value
-    if(C2.a$EC_SC == 'EC'){
+    if(C2.cal$EC_SC == 'EC'){
       ec.cal = TRUE
     } else {ec.cal = FALSE}
     
     # single time point calibration
-    calibration<-CT_one_cal(data = C1.a, 
-                            cal.ref = C2.a$cond_uS[1], 
-                            cal.ref.temp = C2.a$temp_C[1], 
+    calibration<-CT_one_cal(data = C1.cal, 
+                            cal.ref = C2.cal$cond_uS[1], 
+                            cal.ref.temp = C2.cal$temp_C[1], 
                             startCal = startHigh, 
                             endCal = endHigh, 
-                            date = C1.a$date, 
-                            temp = C1.a$TempInSitu, 
-                            EC.logger = C1.a$E_Conductivity, 
+                            date = C1.cal$date, 
+                            temp = C1.cal$TempInSitu, 
+                            EC.logger = C1.cal$E_Conductivity, 
                             EC.cal = ec.cal) %>% 
-      rename(E_Cond = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
-             TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
+      select(date, LoggerID, TempInSitu_Cal, EC_Cal) %>% # only keep calibrated values and what we need
+      rename(ECond.mS.cm = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
              TempInSitu = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
     
 
-  } else if(nrow(distinct(C2.a,date,cond_HL)) == 2){
+  } else if(nrow(distinct(C2.cal,date,cond_HL)) == 2){
     
     # both High and Low calibration solutions present: two-point calibration
-    if(nrow(distinct(C2.a,cond_HL)) == 2){ 
+    if(nrow(distinct(C2.cal,cond_HL)) == 2){ 
       
       # specify whether calibration reference is an electrical conductivity or specific conductance value
-      if(C2.a$EC_SC[1] == 'EC'){ # assuming if one point is EC, the second is also EC
+      if(C2.cal$EC_SC[1] == 'EC'){ # assuming if one point is EC, the second is also EC
         ec.cal = TRUE
       } else {ec.cal = FALSE}  
       
-      high.ref<-C2.a %>% 
+      high.ref<-C2.cal %>% 
         filter(cond_HL == 'H') %>% 
         select(cond_uS)
-      low.ref<-C2.a %>% 
+      low.ref<-C2.cal %>% 
         filter(cond_HL == 'L') %>% 
         select(cond_uS)
-      high.ref.temp<-C2.a %>% 
+      high.ref.temp<-C2.cal %>% 
         filter(cond_HL == 'H') %>% 
         select(temp_C)
-      low.ref.temp<-C2.a %>% 
+      low.ref.temp<-C2.cal %>% 
         filter(cond_HL == 'L') %>% 
         select(temp_C)
       
-      calibration<-CT_two_cal(data = C1.a, 
+      calibration<-CT_two_cal(data = C1.cal, 
                               high.ref = high.ref[1], 
                               low.ref = low.ref[1], 
                               high.ref.temp = high.ref.temp[1], 
@@ -221,31 +221,30 @@ for(i in 1:n1) {
                               endHigh = endHigh[2,], 
                               startLow = startLow[1,], 
                               endLow = endLow[2,],
-                              date = C1.a$date, 
-                              temp = C1.a$TempInSitu, 
-                              EC.logger = C1.a$E_Conductivity, 
+                              date = C1.cal$date, 
+                              temp = C1.cal$TempInSitu, 
+                              EC.logger = C1.cal$E_Conductivity, 
                               EC.cal = ec.cal) %>% 
-        rename(E_Cond = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
+        rename(ECond.mS.cm = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                TempInSitu_logger = TempInSitu, # rename logger's temperature readings column
                TempInSitu = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
       
-    } else if(nrow(distinct(C2.a,cond_HL)) == 1){
+    } else if(nrow(distinct(C2.cal,cond_HL)) == 1){
       
       # only High or Low calibration solutions present: double calibration times at single calibration reference each time
       
       ## PRECAL
       # specify whether calibration reference is an electrical conductivity or specific conductance value
-      if(C2.a$EC_SC[1] == 'EC'){
+      if(C2.cal$EC_SC[1] == 'EC'){
         ec.cal = TRUE
       } else {ec.cal = FALSE}
       
-      preCal<-CT_one_cal(data = C1.a, 
-                         cal.ref = C2.a$cond_uS[1], 
-                         cal.ref.temp = C2.a$temp_C[1], 
-                         date = C1.a$date, 
-                         temp = C1.a$TempInSitu, 
-                         EC.logger = C1.a$E_Conductivity,
-                         #cal.datetime = startHigh[1,]
+      preCal<-CT_one_cal(data = C1.cal, 
+                         cal.ref = C2.cal$cond_uS[1], 
+                         cal.ref.temp = C2.cal$temp_C[1], 
+                         date = C1.cal$date, 
+                         temp = C1.cal$TempInSitu, 
+                         EC.logger = C1.cal$E_Conductivity,
                          startCal = startHigh[1,],
                          endCal = endHigh[1,],
                          EC.cal = ec.cal) %>% 
@@ -256,17 +255,17 @@ for(i in 1:n1) {
       
       ## POSTCAL
       # specify whether calibration reference is an electrical conductivity or specific conductance value
-      if(C2.a$EC_SC[2] == 'EC'){
+      if(C2.cal$EC_SC[2] == 'EC'){
         ec.cal = TRUE
       } else {
         ec.cal = FALSE}
       
-      postCal<-CT_one_cal(data = C1.a, 
-                          cal.ref = C2.a$cond_uS[2], 
-                          cal.ref.temp = C2.a$temp_C[2], 
-                          date = C1.a$date, 
-                          temp = C1.a$TempInSitu, 
-                          EC.logger = C1.a$E_Conductivity,
+      postCal<-CT_one_cal(data = C1.cal, 
+                          cal.ref = C2.cal$cond_uS[2], 
+                          cal.ref.temp = C2.cal$temp_C[2], 
+                          date = C1.cal$date, 
+                          temp = C1.cal$TempInSitu, 
+                          EC.logger = C1.cal$E_Conductivity,
                           startCal = startHigh[2,], 
                           endCal = endHigh[2,], 
                           EC.cal = ec.cal) %>% 
@@ -300,10 +299,10 @@ for(i in 1:n1) {
                drift.correction.temp=cumsum(drift.cor.temp.new)) %>% 
         select(-drift.cor.ec.new,-drift.cor.temp.new) %>% 
         mutate(TempInSitu = TempInSitu.1 + drift.correction.temp,
-               E_Cond = EC_Cal.1 + drift.correction.ec)
+               ECond.mS.cm = EC_Cal.1 + drift.correction.ec)
         
     }
-  } else if(nrow(distinct(C2.a,date,cond_HL)) == 4){
+  } else if(nrow(distinct(C2.cal,date,cond_HL)) == 4){
     
     # both High and Low calibration solutions present: two-point calibration
     # double time points for High and Low calibration: pre- and post- deployment calibrations
@@ -311,16 +310,16 @@ for(i in 1:n1) {
     ## PRECAL
     
     # specify whether calibration reference is an electrical conductivity or specific conductance value
-    if(C2.a$EC_SC[1] == 'EC'){ # assuming if one point is EC, the second is also EC
+    if(C2.cal$EC_SC[1] == 'EC'){ # assuming if one point is EC, the second is also EC
       ec.cal = TRUE
     } else {ec.cal = FALSE}  
     
-    preCal<-CT_two_cal(data = C1.a, 
-                       date = C1.a$date, 
-                       temp = C1.a$TempInSitu, 
+    preCal<-CT_two_cal(data = C1.cal, 
+                       date = C1.cal$date, 
+                       temp = C1.cal$TempInSitu, 
                        EC.logger = C1$E_Conductivity,
-                       high.Ref = C2.a$cond_uS, 
-                       low.Ref = C2.a$cond_uS, 
+                       high.Ref = C2.cal$cond_uS, 
+                       low.Ref = C2.cal$cond_uS, 
                        startHigh = startHigh[1], 
                        endHigh = endHigh[1], 
                        startLow = startLow[1], 
@@ -334,16 +333,16 @@ for(i in 1:n1) {
     ## POSTCAL
     
     # specify whether calibration reference is an electrical conductivity or specific conductance value
-    if(C2.a$EC_SC[3] == 'EC'){ # assuming if one point is EC, the second is also EC
+    if(C2.cal$EC_SC[3] == 'EC'){ # assuming if one point is EC, the second is also EC
       ec.cal = TRUE
     } else {ec.cal = FALSE}  
     
-    postCal<-CT_two_cal(data = C1.a, 
-                        date = C1.a$date, 
-                        temp = C1.a$TempInSitu, 
-                        EC.logger = C1.a$E_Conductivity,
-                        high.Ref = C2.a$cond_uS, 
-                        low.Ref = C2.a$cond_uS, 
+    postCal<-CT_two_cal(data = C1.cal, 
+                        date = C1.cal$date, 
+                        temp = C1.cal$TempInSitu, 
+                        EC.logger = C1.cal$E_Conductivity,
+                        high.Ref = C2.cal$cond_uS, 
+                        low.Ref = C2.cal$cond_uS, 
                         startHigh = startHigh[2], 
                         endHigh = endHigh[2], 
                         startLow = startLow[2], 
@@ -379,7 +378,7 @@ for(i in 1:n1) {
              drift.correction.temp=cumsum(drift.cor.temp.new)) %>% 
       select(-drift.cor.ec.new,-drift.cor.temp.new) %>% 
       mutate(TempInSitu = TempInSitu.1 + drift.correction.temp,
-             E_Cond = EC_Cal.1 + drift.correction.ec)
+             ECond.mS.cm = EC_Cal.1 + drift.correction.ec)
     
   } 
   
@@ -388,13 +387,13 @@ for(i in 1:n1) {
   
   # Calculate Practical Salinity using gsw package with PSS-78 equation
   calibration <- calibration %>%
-    mutate(Salinity_psu = gsw_SP_from_C(C = E_Cond*0.001, t = TempInSitu, p = Pres_dbar))
+    mutate(Salinity_psu = gsw_SP_from_C(C = ECond.mS.cm*0.001, t = TempInSitu, p = Pres_dbar))
   
   # Create column for FullLoggerID vs LoggerID
   calibration <- calibration %>% 
     rename(FullLoggerID = LoggerID) %>% 
     mutate(LoggerID = sn.a) %>% 
-    select(date, LoggerID, FullLoggerID, TempInSitu, E_Cond, Salinity_psu)
+    select(date, LoggerID, FullLoggerID, TempInSitu, ECond.mS.cm, Salinity_psu)
   
   CalLog <- CalLog %>% 
     rbind(calibration) # add i'th logger's data to running dataframe
@@ -404,7 +403,7 @@ for(i in 1:n1) {
     separate(col = 'LoggerID', into = c(NA,'ID'), sep = "_", remove = FALSE) %>%  # needs to be standardized - relies on consistent file naming
     rename(LoggerID = ID,
            FullLoggerID = LoggerID,
-           E_Cond = E_Conductivity)
+           ECond.mS.cm = E_Conductivity)
 }
 ############################################################
 ### In Situ Logger Data
@@ -420,7 +419,7 @@ Log <-tibble(date = as.POSIXct(NA),
              LoggerID = as.character(),
              FullLoggerID = as.character(),
              TempInSitu = as.numeric(),
-             E_Cond = as.numeric(),
+             ECond.mS.cm = as.numeric(),
              #EC_Cal.1 = as.numeric(),
              #EC_Cal.2 = as.numeric(),
              Salinity_psu = as.numeric())
@@ -430,27 +429,25 @@ p <- list()
 
 # Pull out in situ logger data
 for(i in 1:n2) {
-  
+
   sn.b <- launch.log %>% # vector of all serial numbers
     distinct(LoggerID) #%>% 
   #separate(col = 'LoggerID', into = c(NA,'LoggerID'), sep = "_")
   sn.b <- as.character(sn.b[i,]) # i'th serial number
   
   # filter by the i'th serial number
-  C1.b<-CalLog %>% 
+  C1.log<-CalLog %>% 
     filter(LoggerID == str_subset(CalLog$LoggerID, pattern = sn.b)) #%>% 
   #mutate(LoggerID = paste0("CT_",sn.b)) # make serial the same for easy join
-  C2.b<-launch.log %>% 
+  C2.log<-launch.log %>% 
     filter(LoggerID == str_subset(launch.log$LoggerID, pattern = sn.b)) %>% 
     distinct()
   
   
-  launch.start<-C2.b %>% 
-    #filter(type == 'log') %>% 
+  launch.start<-C2.log %>% 
     select(Time_launched)%>% 
     mutate(Time_launched = ymd_hms(Time_launched))
-  launch.end<-C2.b %>% 
-    #filter(type == 'log') %>% 
+  launch.end<-C2.log %>% 
     select(Time_retrieved)%>% 
     mutate(Time_retrieved = ymd_hms(Time_retrieved))
   
@@ -461,33 +458,21 @@ for(i in 1:n2) {
     select(LoggerID)
   sn.b <- as.character(sn.b[1,]) # character string of full serial name
   
-  C1.b <- C1.b %>% 
+  C1.log <- C1.log %>% 
     mutate(LoggerID = sn.b)
   
-  # median<-CalLog %>% 
-  #   filter(between(date,cg.start[1,],cg.end[1,])) %>% 
-  #   drop_na(EC_Cal.1) %>% 
-  #   summarise(median = median(Salinity_psu)) %>% 
-  #   as.numeric()
-  
-  # off<-C1.b %>% 
-  #   filter(between(date,cg.start[1,], cg.end[1,])) %>%
-  #   drop_na(EC_Cal.1) %>% 
-  #   summarise(offset = mean(Salinity) - median) %>% 
-  #   as.numeric()
-  # C1<-C1 %>% 
-  #   mutate(Salinity_off = Salinity + off)
+
   
   ## REWRITE CALIBRATION OFFSET FROM START TO END DRIFT
   # 1. Calculate Specific Conductance at time 1 and 2 of calibration
   # 2. Calculate drift 
   
   
-  C1.b<-C1.b %>% 
+  C1.log<-C1.log %>% 
     filter(between(date, launch.start[1,], launch.end[1,]))
   
   # Create Plot and save to list p
-  p[[i]] <- C1.b %>% 
+  p[[i]] <- C1.log %>% 
     ggplot(aes(x = date, y = Salinity_psu, color = TempInSitu)) + 
     geom_point() + 
     theme_bw() +
@@ -496,15 +481,15 @@ for(i in 1:n2) {
     ggtitle(sn.b)
   
   
-  #write.csv(C1.b, paste0(path.output,"/QC_",sn.b,".csv")) # write csv file for each Logger
+  #write.csv(C1.log, paste0(path.output,"/QC_",sn.b,".csv")) # write csv file for each Logger
   
   Log<-Log %>% 
-    rbind(C1.b) %>% 
+    rbind(C1.log) %>% 
     distinct()
   
 }
 
-write.csv(Log, paste0(path.output,"/Full_CT_",file.date,".csv")) # write csv file for full set of logger data
+write_csv(Log, paste0(path.output,"/Full_CT_",file.date,".csv")) # write csv file for full set of logger data
 
 # Save all plots in a single dated pdf
 pdf(paste0(path.output,"/",file.date,"_CT_plots.pdf"), onefile = TRUE)
