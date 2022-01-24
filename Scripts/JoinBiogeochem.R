@@ -1,6 +1,7 @@
 ### Script to join all the biogeochemistry data from August! ##
 ### Nyssa Silbiger
 ### 10/22/2021
+### updated 1/24/2021
 
 ####### load libraries #####
 library(here)
@@ -12,6 +13,7 @@ library(lubridate)
 Carb<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated.csv"))
 Nuts <- read_csv(here("Data","August2021","Nutrients", "Nutrients_Watersampling_Aug21.csv"))
 Sites<-read_csv(here("Data","Sandwich_Locations_Final.csv"))
+fDOM<-read_csv(here("Data","August2021","fDOM","Moorea_SGD_2021_fDOM.csv"))
 
 
 ### join everything #####
@@ -22,10 +24,15 @@ AllChemData1 <- Sites %>%
 AllChemData<-Sites %>%
   full_join(Nuts) %>%
   full_join(AllChemData1)%>%
+  full_join(fDOM)%>%
    mutate(Date = mdy(Date),
          #SamplingTime = hms(SamplingTime),
          DateTime = ymd_hms(paste(Date,SamplingTime))) %>%
-  select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, Plate_Seep, Date, Time = SamplingTime, DateTime, Tide, Day_Night, Salinity,Temperature = TempInSitu, TA,pH, Phosphate_umolL, Silicate_umolL, NN_umolL = Nitrite_umolL, Ammonia_umolL ) 
+  select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, 
+         Plate_Seep, Date, Time = SamplingTime, DateTime, Tide, Day_Night, Salinity,
+         Temperature = TempInSitu, TA,pH, Phosphate_umolL, Silicate_umolL, 
+         NN_umolL = Nitrite_umolL, Ammonia_umolL,M_C,	HIX,	MarineHumic_Like,
+         VisibleHumidic_Like,	Tryptophan_Like,	Tyrosine_Like,	Lignin_Like) 
 
 
 ## Because there are 3 samples that have nutrient data, but not TA/pH data, they are missing dates and times in the join.  I am adding them manually below
@@ -42,6 +49,9 @@ AllChemData$Time[AllChemData$CowTagID=="V7"& AllChemData$Tide =="High"& AllChemD
 AllChemData$DateTime[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"]<-mdy_hms("8/9/2021 19:00:00")
 AllChemData$Time[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"]<-"19:00:00"
 
+# The offshore sample is probably not good because it was sitting in the heat... the TA values dont make a lot of sense so removing here
+AllChemData<-AllChemData %>%
+  filter(CowTagID !="Offshore")
 
 write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC.csv"))
 
