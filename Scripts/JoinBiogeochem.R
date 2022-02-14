@@ -10,7 +10,7 @@ library(lubridate)
 
 ## Read in files ###
 
-Carb<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated.csv"))
+Carb<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated_POcorrect.csv"))
 Nuts <- read_csv(here("Data","August2021","Nutrients", "Nutrients_Watersampling_Aug21.csv"))
 Sites<-read_csv(here("Data","Sandwich_Locations_Final.csv"))
 fDOM<-read_csv(here("Data","August2021","fDOM","Moorea_SGD_2021_fDOM.csv"))
@@ -53,7 +53,7 @@ AllChemData$Time[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemD
 AllChemData<-AllChemData %>%
   filter(CowTagID !="Offshore")
 
-write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC.csv"))
+write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC2.csv"))
 
 ## Some plots
 
@@ -79,5 +79,21 @@ AllChemData %>%
   filter(Location != "Offshore") %>%
   ggplot(aes(x = Salinity, y = TA))+
   geom_point(aes(color = Plate_Seep))+
+  facet_wrap(~Location, scales = "free")+
+  theme_bw()
+
+
+AllChemData %>%
+  filter(Plate_Seep == "Plate") %>%
+  ggplot(aes(y = pH, x = Silicate_umolL))+
+  geom_point(aes(color = Day_Night, shape = Tide))+
+  facet_wrap(~Location, scales = "free")+
+  theme_bw()
+
+
+AllChemData %>%
+  filter(Plate_Seep == "Seep") %>%
+  ggplot(aes(y = pH, x = Tide))+
+  geom_boxplot(aes(color = Day_Night))+
   facet_wrap(~Location, scales = "free")+
   theme_bw()

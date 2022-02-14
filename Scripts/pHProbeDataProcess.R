@@ -14,6 +14,15 @@ pHcalib<-read_csv(here("Data","August2021","CarbonateChemistry","TrisCalibration
 # pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))
 pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))%>%
   mutate(TrisCalDate = mdy(TrisCalDate))
+# pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_SEEP_2022_02_10.csv"))%>%
+#   mutate(TrisCalDate = mdy(TrisCalDate))
+
+# Needed for phosphate data
+NutData<-read_csv(here("Data","August2021","Nutrients","Nutrients_Watersampling_Aug21.csv")) 
+
+pHData<-left_join(pHData,NutData) 
+
+
 
 ## take the mV calibration files by each date and use them to calculate pH
 pHSlope<-pHcalib %>%
@@ -36,16 +45,22 @@ NoTA<-which(is.na(pHSlope$TA))
 
 pHSlope$TA[NoTA]<-2300
 
+NoPO<-which(is.na(pHSlope$Phosphate_umolL))
+pHSlope$Phosphate_umolL[NoPO]<-0
+
+
 #Now calculate pH
 pHSlope <-pHSlope%>%
-  mutate(pH_insitu = pHinsi(pH = pH, ALK = TA, Tinsi = TempInSitu, Tlab = TempInLab, S = Salinity_In_Lab, k1k2 = "m10", kf = "dg")) %>%
+  mutate(pH_insitu = pHinsi(pH = pH, ALK = TA, Tinsi = TempInSitu, Tlab = TempInLab, 
+                            S = Salinity_In_Lab,Pt = Phosphate_umolL, k1k2 = "m10", kf = "dg")) %>%
   select(!pH) %>% # I only need the in situ pH calculation so remove this
   rename(pH = pH_insitu) %>% # rename it 
   ungroup() %>%
   select(Date, CowTagID,SeepCode, Tide, Day_Night, SamplingTime,Salinity=Salinity_In_Lab, pH, TempInSitu, TA, Notes) # keep what I want
 
 pHSlope$TA[NoTA]<-NA # make TA na again for the missing values
+
   #select(Date, CowTagID,Tide, Day_Night, SamplingTime,Salinity,pH, pH_insitu, TempInSitu) ## need to calculate pH insi then it is done
 
 ## write the data
-write_csv(x = pHSlope, file = here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated.csv"))
+write_csv(x = pHSlope, file = here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated_POcorrect.csv"))
