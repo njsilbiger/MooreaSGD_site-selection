@@ -53,7 +53,7 @@ AllChemData$Time[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemD
 AllChemData<-AllChemData %>%
   filter(CowTagID !="Offshore")
 
-write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC2.csv"))
+write_csv(AllChemData ,here("Data","August2021","Allbiogeochemdata_QC.csv"))
 
 ## Some plots
 
