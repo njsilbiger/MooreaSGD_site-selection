@@ -17,12 +17,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Cabral_Sled", "20210826","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "20210826" # logger date used in file name(s)
+path.log<-here("Data","August2021","Varari_Sled", "20210811","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "20210811" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Cabral_Sled", "20210826","QC_files") # Output file path
+path.output<-here("Data","August2021","Varari_Sled", "20210811","QC_files") # Output file path
 
 
 ###################################
@@ -36,8 +36,8 @@ pH_Serial <- "197"
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-27')
-end.date <- ymd('2021-9-05')
+start.date <- ymd('2021-08-11')
+end.date <- ymd('2021-08-25')
 
 # do you want to plot a graph?
 plotgraph<-'no'
@@ -122,7 +122,7 @@ pHSlope<-pHcalib %>%
   mutate(mVTris = TempInSitu*TTris + `(Intercept)`) %>% # calculate the mV of the tris at temperature in which the pH of samples were measured
   mutate(pH_total = pH(Ex=mV,Etris=mVTris,S=Salinity_lab,T=TempInSitu)) %>% # calculate pH of the samples using the pH seacarb function
   #mutate(pH_insitu = pHinsi(pH = pH, ALK = TA_Raw, Tinsi = TempInSitu, Tlab = Temp, S = Salinity_lab_Silbiger)) %>%
-  select(date,TempInSitu,pH,mV,pH_total,mVTris) 
+  select(date,TempInSitu,pH_NBS = pH,mV,pH_total,mVTris) 
 
 View(pHSlope)
 
@@ -141,6 +141,6 @@ if(plotgraph=='yes'){
   
 ## write the data
 # write out the clean data
-write_csv(pHLog, paste0(path.output,"/QC_pH_",file.date,"_pHtot_",pH_Serial,".csv"))
+write_csv(pHSlope, paste0(path.output,"/QC_pH_",file.date,"_pHtot_",pH_Serial,".csv"))
 
 
