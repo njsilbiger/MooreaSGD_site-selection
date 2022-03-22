@@ -1,0 +1,9 @@
+Sled deployed at seep in Varari at 13:00 on 3/14/22 and retrieved at ~12:00 on 3/20/22. Sled calibrated in the field, one point calibration.
+PAR offset for 3/14/22 deployment: 
+** PAR date & time: 2022-01-11 16:46:06 
+** Actual date & time: 2022-03-13 17:23:37
+
+Sled was moved to more accurate seep location (CSEEPMarch2022 coordinates) and re-deployed on 3/20/22 at 19:00. Sled calibrated in the field. 
+PAR offset for 3/20/22 deployment:
+** PAR date & time: 2022-01-18 16:26:36
+** Actual date & time: 2022-03-20 17:04:08
