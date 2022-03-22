@@ -179,11 +179,11 @@ DO_658,DO,3/14/22 15:00,3/20/22 10:00,log,varari sled
 PAR_224,PAR,3/14/22 15:00,3/20/22 10:00,log,varari sled
 LUX_848,LUX,3/14/22 15:00,3/20/22 10:00,log,varari sled
 LUX_845,LUX,3/14/22 15:00,3/20/22 10:00,log,varari sled
-CT_335,CT,3/20/22 19:00,,,varari sled
-PH_196,PH,3/20/22 19:00,,,varari sled
-WL_872,WL,3/20/22 19:00,,,varari sled
-DO_658,DO,3/20/22 19:00,,,varari sled
-PAR_224,PAR,3/20/22 19:00,,,varari sled
-LUX_848,LUX,3/20/22 19:00,,,varari sled
-LUX_845,LUX,3/20/22 19:00,,,varari sled
-CT_338,CT,3/20/22 19:00,,,varari RAD
+CT_335,CT,3/20/22 19:00,,log,varari sled
+PH_196,PH,3/20/22 19:00,,log,varari sled
+WL_872,WL,3/20/22 19:00,,log,varari sled
+DO_658,DO,3/20/22 19:00,,log,varari sled
+PAR_224,PAR,3/20/22 19:00,,log,varari sled
+LUX_848,LUX,3/20/22 19:00,,log,varari sled
+LUX_845,LUX,3/20/22 19:00,,log,varari sled
+CT_338,CT,3/20/22 19:00,,log,varari RAD
