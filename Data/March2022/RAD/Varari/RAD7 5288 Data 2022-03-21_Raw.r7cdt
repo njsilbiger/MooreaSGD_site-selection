@@ -1,0 +1,84 @@
+/*------------------------- File Info ----------------------------
+
+CAPTURE version: 6.2.0
+Platform: Windows
+Date: 2022-03-21T12:47:48
+
+---------------------- End of File Info -----------------------*/
+
+>Special SPrOn
+Special SPrOn 
+>Data Com 11
+Data Com 11
+Data transfer...
+222,22,03,21,11,03, 29.,   4.6,48.3, 0.0,41.4, 3.5,2218, 9, 33.2,10, 2,6.21, 50,134, 11.41102, 8.554721,255
+223,22,03,21,11,08, 28.,   4.6,57.2, 3.6,35.7, 0.0,2218, 9, 33.2, 8, 2,6.21, 50,134, 14.12024, 9.042438,255
+224,22,03,21,11,13, 22.,   4.6,40.9, 0.0,59.1, 0.0,2218, 9, 33.5, 8, 2,6.21, 50,134, 7.942637, 7.346547,255
+225,22,03,21,11,18, 17.,   4.6,41.2, 0.0,47.1, 0.0,2218, 9, 33.5, 7, 2,6.21, 50,134, 6.177606, 6.75729,255
+>Data Print 11
+Data Print 11
+1101 11.4+-8.55 p Sniff 
+  MON 21-MAR-22 11:03
+  33.2`C RH:10% B:6.21V 
+Total Counts:  29.
+Livetime:    4.6min
+A: 3.01+-2.10 cpm  48.3%
+B: 0.00+-0.86 cpm   0.0%
+C: 2.58+-1.98 cpm  41.4%
+D: 0.22+-1.04 cpm   3.5%
+O: 0.43+-1.18 cpm   6.9%
+1102 14.1+-9.04 p Sniff 
+  MON 21-MAR-22 11:08
+  33.2`C RH: 8% B:6.21V 
+Total Counts:  28.
+Livetime:    4.6min
+A: 3.46+-2.22 cpm  57.2%
+B: 0.22+-1.04 cpm   3.6%
+C: 2.16+-1.87 cpm  35.7%
+D: 0.00+-0.86 cpm   0.0%
+O: 0.22+-1.04 cpm   3.6%
+1103 7.94+-7.35 p Sniff 
+  MON 21-MAR-22 11:13
+  33.5`C RH: 8% B:6.21V 
+Total Counts:  22.
+Livetime:    4.6min
+A: 1.95+-1.80 cpm  40.9%
+B: 0.00+-0.86 cpm   0.0%
+C: 2.81+-2.05 cpm  59.1%
+D: 0.00+-0.86 cpm   0.0%
+O: 0.00+-0.86 cpm   0.0%
+1104 6.18+-6.76 p Sniff 
+  MON 21-MAR-22 11:18
+  33.5`C RH: 7% B:6.21V 
+Total Counts:  17.
+Livetime:    4.6min
+A: 1.51+-1.66 cpm  41.2%
+B: 0.00+-0.86 cpm   0.0%
+C: 1.73+-1.73 cpm  47.1%
+D: 0.00+-0.86 cpm   0.0%
+O: 0.43+-1.18 cpm  11.8%
+>Special SPrOff
+Special SPrOff 
+>
+Special Ident
+Special Ident
+DURRIDGE  RAD7
+Vers Vers 3.1a 151208
+Model 716
+Serial 05288
+Calib 18-MAR-21
+
+>Special Version
+Special Version
+Version: 0311
+>Special GetCal
+Special GetCal 
+Thoron 122
+Sniff 245
+Normal 514
+RH 34536
+Spill 869
+Escale 11175
+Temp 249
+Year 121
+>

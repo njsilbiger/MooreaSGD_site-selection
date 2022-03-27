@@ -1,0 +1,2169 @@
+/*------------------------- File Info ----------------------------
+
+CAPTURE version: 6.2.0
+Platform: Windows
+Date: 2022-03-26T15:48:16
+
+------------------------ Printer Output -----------------------
+
+1401 0.00+-3.51 p Sniff
+  THU 24-MAR-22 15:06
+  29.6`C RH:34% B:6.27V
+  L: 2   HV:2218V, 9%
+Total Counts: 0.
+Livetime:   4.6min
+A: 0.00+-0.86 cpm 0.0%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.00+-0.86 cpm 0.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 100.0%
+
+1402 0.88+-4.24 p Sniff
+  THU 24-MAR-22 15:11
+  29.6`C RH:15% B:6.27V
+  L: 2   HV:2218V, 9%
+Total Counts: 2.
+Livetime:   4.6min
+A: 0.22+-1.04 cpm 50.0%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.22+-1.04 cpm 50.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1403 2.63+-5.27 p Sniff
+  THU 24-MAR-22 15:16
+  29.9`C RH:11% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 3.
+Livetime:   4.6min
+A: 0.65+-1.29 cpm 100.0%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.00+-0.86 cpm 0.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1404 0.88+-4.24 p Sniff
+  THU 24-MAR-22 15:21
+  29.9`C RH:10% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 1.
+Livetime:   4.6min
+A: 0.22+-1.04 cpm 100.0%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.00+-0.86 cpm 0.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1405 0.89+-4.28 p Sniff
+  THU 24-MAR-22 16:01
+  33.9`C RH:7% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 3.
+Livetime:   4.6min
+A: 0.22+-1.05 cpm 33.3%
+B: 0.00+-0.87 cpm 0.0%
+C: 0.22+-1.05 cpm 33.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.22+-1.05 cpm 33.4%
+
+1406 4.41+-6.09 p Sniff
+  THU 24-MAR-22 16:06
+  33.9`C RH:7% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 8.
+Livetime:   4.6min
+A: 1.08+-1.49 cpm 62.5%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.43+-1.18 cpm 25.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 12.5%
+
+1407 17.7+-9.9 p Sniff
+  THU 24-MAR-22 16:11
+  34.2`C RH:7% B:6.27V
+  L: 2   HV:2218V, 9%
+Total Counts: 26.
+Livetime:   4.6min
+A: 4.32+-2.41 cpm 76.9%
+B: 0.22+-1.04 cpm 3.9%
+C: 1.08+-1.49 cpm 19.2%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm -0.0%
+
+1408 16.8+-9.7 p Sniff
+  THU 24-MAR-22 16:16
+  33.9`C RH:7% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 21.
+Livetime:   4.6min
+A: 4.11+-2.37 cpm 90.5%
+B: 0.22+-1.04 cpm 4.8%
+C: 0.00+-0.86 cpm 0.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 4.7%
+
+1409 15.0+-9.25 p Sniff
+  THU 24-MAR-22 16:21
+  33.9`C RH:7% B:6.27V
+  L: 2   HV:2218V, 9%
+Total Counts: 24.
+Livetime:   4.6min
+A: 3.68+-2.27 cpm 70.8%
+B: 0.22+-1.04 cpm 4.2%
+C: 0.43+-1.18 cpm 8.3%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.86+-1.40 cpm 16.7%
+
+1410 26.5+-11.6 p Sniff
+  THU 24-MAR-22 16:26
+  33.9`C RH:7% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 38.
+Livetime:   4.6min
+A: 6.49+-2.84 cpm 79.0%
+B: 0.22+-1.04 cpm 2.6%
+C: 0.43+-1.18 cpm 5.3%
+D: 0.00+-0.86 cpm 0.0%
+O: 1.08+-1.49 cpm 13.1%
+
+1411 28.4+-12.0 p Sniff
+  THU 24-MAR-22 16:31
+  33.9`C RH:7% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 43.
+Livetime:   4.6min
+A: 6.96+-2.93 cpm 74.4%
+B: 0.00+-0.87 cpm 0.0%
+C: 1.09+-1.50 cpm 11.6%
+D: 0.22+-1.05 cpm 2.3%
+O: 1.09+-1.50 cpm 11.7%
+
+1412 29.3+-12.1 p Sniff
+  THU 24-MAR-22 16:36
+  33.5`C RH:6% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 46.
+Livetime:   4.6min
+A: 7.17+-2.97 cpm 71.8%
+B: 0.43+-1.19 cpm 4.4%
+C: 1.30+-1.59 cpm 13.1%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.09+-1.50 cpm 10.7%
+
+1413 45.3+-14.6 p Sniff
+  THU 24-MAR-22 16:41
+  33.5`C RH:7% B:6.27V
+  L: 2   HV:2218V, 9%
+Total Counts: 59.
+Livetime:   4.6min
+A: 11.1+-3.57 cpm 86.5%
+B: 0.00+-0.87 cpm 0.0%
+C: 1.09+-1.50 cpm 8.5%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.65+-1.30 cpm 5.0%
+
+1414 39.9+-13.8 p Sniff
+  THU 24-MAR-22 16:46
+  33.2`C RH:6% B:6.27V
+  L: 2   HV:2201V, 9%
+Total Counts: 55.
+Livetime:   4.6min
+A: 9.8+-3.38 cpm 81.8%
+B: 0.00+-0.87 cpm 0.0%
+C: 1.09+-1.50 cpm 9.1%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.09+-1.50 cpm 9.1%
+
+1415 52.6+-15.6 p Sniff
+  THU 24-MAR-22 16:51
+  33.2`C RH:6% B:6.27V
+  L: 2   HV:2218V, 9%
+Total Counts: 74.
+Livetime:   4.5min
+A: 12.9+-3.82 cpm 79.7%
+B: 0.00+-0.87 cpm 0.0%
+C: 2.84+-2.07 cpm 17.6%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.44+-1.19 cpm 2.7%
+
+1416 42.8+-14.3 p Sniff
+  THU 24-MAR-22 16:56
+  33.2`C RH:6% B:6.27V
+  L: 2   HV:2218V, 8%
+Total Counts: 76.
+Livetime:   4.5min
+A: 10.5+-3.50 cpm 63.2%
+B: 0.00+-0.87 cpm 0.0%
+C: 5.46+-2.67 cpm 32.9%
+D: 0.22+-1.06 cpm 1.3%
+O: 0.44+-1.19 cpm 2.6%
+
+1417 54.4+-15.8 p Sniff
+  THU 24-MAR-22 17:01
+  32.9`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 79.
+Livetime:   4.5min
+A: 13.3+-3.88 cpm 77.2%
+B: 0.22+-1.06 cpm 1.3%
+C: 2.84+-2.07 cpm 16.5%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.87+-1.41 cpm 5.0%
+
+1418 63.3+-16.9 p Sniff
+  THU 24-MAR-22 17:06
+  32.9`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 98.
+Livetime:   4.5min
+A: 15.5+-4.15 cpm 72.5%
+B: 0.00+-0.87 cpm 0.0%
+C: 4.37+-2.44 cpm 20.4%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.53+-1.67 cpm 7.1%
+
+1419 60.7+-16.6 p Sniff
+  THU 24-MAR-22 17:11
+  32.6`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 102.
+Livetime:   4.5min
+A: 14.9+-4.07 cpm 66.7%
+B: 0.22+-1.06 cpm 1.0%
+C: 6.56+-2.87 cpm 29.4%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.66+-1.31 cpm 2.9%
+
+1420 47.3+-14.9 p Sniff
+  THU 24-MAR-22 17:16
+  32.6`C RH:6% B:6.27V
+  L: 2   HV:2236V, 9%
+Total Counts: 87.
+Livetime:   4.5min
+A: 11.6+-3.65 cpm 60.9%
+B: 0.00+-0.87 cpm 0.0%
+C: 6.34+-2.83 cpm 33.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.09+-1.51 cpm 5.8%
+
+1421 50.0+-15.3 p Sniff
+  THU 24-MAR-22 17:21
+  32.3`C RH:6% B:6.24V
+  L: 2   HV:2201V, 8%
+Total Counts: 95.
+Livetime:   4.5min
+A: 12.2+-3.74 cpm 59.0%
+B: 0.00+-0.87 cpm 0.0%
+C: 7.43+-3.02 cpm 35.8%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.09+-1.51 cpm 5.2%
+
+1422 57.4+-16.3 p Sniff
+  THU 24-MAR-22 17:26
+  32.3`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 104.
+Livetime:   4.5min
+A: 14.1+-3.98 cpm 61.6%
+B: 0.22+-1.06 cpm 1.0%
+C: 8.13+-3.15 cpm 35.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.44+-1.20 cpm 1.8%
+
+1423 41.9+-14.1 p Sniff
+  THU 24-MAR-22 17:32
+  32.3`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 75.
+Livetime:   4.5min
+A: 10.3+-3.47 cpm 62.7%
+B: 0.00+-0.87 cpm 0.0%
+C: 5.46+-2.67 cpm 33.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.66+-1.31 cpm 4.0%
+
+1424 33.0+-12.8 p Sniff
+  THU 24-MAR-22 17:37
+  32.3`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 75.
+Livetime:   4.5min
+A: 8.09+-3.13 cpm 49.3%
+B: 0.00+-0.87 cpm 0.0%
+C: 8.09+-3.13 cpm 49.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.22+-1.06 cpm 1.4%
+
+1425 9.8+-7.92 p Sniff
+  THU 24-MAR-22 17:42
+  32.0`C RH:6% B:6.24V
+  L: 2   HV:2218V, 8%
+Total Counts: 55.
+Livetime:   4.6min
+A: 2.39+-1.94 cpm 20.0%
+B: 0.22+-1.05 cpm 1.8%
+C: 9.13+-3.29 cpm 76.4%
+D: 0.22+-1.05 cpm 1.8%
+O:  196+-13.5 cpm 0.0%
+
+1426 7.10+-7.10 p Sniff
+  THU 24-MAR-22 17:47
+  32.0`C RH:6% B:6.24V
+  L: 2   HV:2218V, 8%
+Total Counts: 60.
+Livetime:   4.6min
+A: 1.74+-1.74 cpm 13.3%
+B: 0.43+-1.19 cpm 3.3%
+C: 10.4+-3.48 cpm 80.0%
+D: 0.22+-1.05 cpm 1.7%
+O: 0.22+-1.05 cpm 1.7%
+
+1427 7.99+-7.39 p Sniff
+  THU 24-MAR-22 17:52
+  31.7`C RH:6% B:6.24V
+  L: 2   HV:2236V, 9%
+Total Counts: 39.
+Livetime:   4.6min
+A: 1.96+-1.81 cpm 23.1%
+B: 0.22+-1.05 cpm 2.6%
+C: 6.09+-2.78 cpm 71.8%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.22+-1.05 cpm 2.5%
+
+1428 5.32+-6.79 p Sniff
+  THU 24-MAR-22 17:57
+  31.7`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 49.
+Livetime:   4.6min
+A: 1.52+-1.66 cpm 14.3%
+B: 0.00+-0.87 cpm 0.0%
+C: 8.70+-3.22 cpm 81.6%
+D: 0.22+-1.05 cpm 2.1%
+O: 0.22+-1.05 cpm 2.0%
+
+1429 9.8+-7.92 p Sniff
+  THU 24-MAR-22 18:02
+  31.7`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 53.
+Livetime:   4.6min
+A: 2.39+-1.94 cpm 20.8%
+B: 0.22+-1.05 cpm 1.9%
+C: 8.48+-3.18 cpm 73.6%
+D: 0.22+-1.05 cpm 1.9%
+O: 0.22+-1.05 cpm 1.8%
+
+1430 3.55+-5.74 p Sniff
+  THU 24-MAR-22 18:07
+  31.4`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 51.
+Livetime:   4.6min
+A: 0.87+-1.41 cpm 7.9%
+B: 0.65+-1.30 cpm 5.9%
+C: 8.91+-3.25 cpm 80.4%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.65+-1.30 cpm 5.8%
+
+1431 4.44+-6.12 p Sniff
+  THU 24-MAR-22 18:12
+  31.4`C RH:6% B:6.24V
+  L: 2   HV:2236V, 9%
+Total Counts: 42.
+Livetime:   4.6min
+A: 1.09+-1.50 cpm 11.9%
+B: 0.00+-0.87 cpm 0.0%
+C: 8.04+-3.11 cpm 88.1%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.00+-0.87 cpm 0.0%
+
+1432 3.55+-5.74 p Sniff
+  THU 24-MAR-22 18:17
+  31.1`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 40.
+Livetime:   4.6min
+A: 0.87+-1.41 cpm 10.0%
+B: 0.65+-1.30 cpm 7.5%
+C: 7.17+-2.97 cpm 82.5%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.00+-0.87 cpm 0.0%
+
+1433 5.32+-6.47 p Sniff
+  THU 24-MAR-22 18:22
+  31.1`C RH:6% B:6.24V
+  L: 2   HV:2201V, 9%
+Total Counts: 41.
+Livetime:   4.6min
+A: 1.30+-1.59 cpm 14.6%
+B: 0.43+-1.19 cpm 4.9%
+C: 6.96+-2.93 cpm 78.1%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.22+-1.05 cpm 2.4%
+
+1434 7.10+-7.10 p Sniff
+  THU 24-MAR-22 18:27
+  30.8`C RH:6% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 46.
+Livetime:   4.6min
+A: 1.74+-1.74 cpm 17.4%
+B: 0.00+-0.87 cpm 0.0%
+C: 7.83+-3.08 cpm 78.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.43+-1.19 cpm 4.3%
+
+1435 2.65+-5.30 p Sniff
+  THU 24-MAR-22 18:32
+  30.8`C RH:6% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 34.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 8.8%
+B: 0.22+-1.04 cpm 3.0%
+C: 6.27+-2.80 cpm 85.3%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 2.9%
+
+1436 5.30+-6.43 p Sniff
+  THU 24-MAR-22 18:37
+  30.5`C RH:6% B:6.24V
+  L: 2   HV:2236V, 9%
+Total Counts: 32.
+Livetime:   4.6min
+A: 1.30+-1.58 cpm 18.8%
+B: 0.22+-1.04 cpm 3.1%
+C: 4.97+-2.55 cpm 71.9%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.43+-1.18 cpm 6.2%
+
+1437 3.53+-5.71 p Sniff
+  THU 24-MAR-22 18:42
+  30.5`C RH:5% B:6.24V
+  L: 2   HV:2201V, 9%
+Total Counts: 29.
+Livetime:   4.6min
+A: 0.86+-1.40 cpm 13.8%
+B: 0.22+-1.04 cpm 3.5%
+C: 5.19+-2.59 cpm 82.8%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm -0.1%
+
+1438 1.77+-4.82 p Sniff
+  THU 24-MAR-22 18:47
+  30.2`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 21.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 9.5%
+B: 0.22+-1.04 cpm 4.8%
+C: 3.89+-2.32 cpm 85.7%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1439 6.21+-6.79 p Sniff
+  THU 24-MAR-22 18:52
+  30.2`C RH:5% B:6.24V
+  L: 2   HV:2218V, 9%
+Total Counts: 36.
+Livetime:   4.6min
+A: 1.52+-1.66 cpm 19.5%
+B: 0.00+-0.87 cpm 0.0%
+C: 6.09+-2.78 cpm 77.8%
+D: 0.22+-1.05 cpm 2.8%
+O: 0.00+-0.87 cpm -0.1%
+
+1440 8.87+-7.66 p Sniff
+  THU 24-MAR-22 18:57
+  30.2`C RH:5% B:6.21V
+  L: 2   HV:2218V, 8%
+Total Counts: 38.
+Livetime:   4.6min
+A: 2.17+-1.88 cpm 26.3%
+B: 0.00+-0.87 cpm 0.0%
+C: 5.87+-2.74 cpm 71.1%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.22+-1.05 cpm 2.6%
+
+1441 1.77+-4.82 p Sniff
+  THU 24-MAR-22 19:02
+  29.9`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 21.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 9.5%
+B: 0.22+-1.04 cpm 4.8%
+C: 3.89+-2.32 cpm 85.7%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1442 2.65+-5.30 p Sniff
+  THU 24-MAR-22 19:07
+  29.9`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 23.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 13.1%
+B: 0.00+-0.86 cpm 0.0%
+C: 4.11+-2.37 cpm 82.6%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 4.3%
+
+1443 4.41+-6.09 p Sniff
+  THU 24-MAR-22 19:12
+  29.9`C RH:6% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 26.
+Livetime:   4.6min
+A: 1.08+-1.49 cpm 19.2%
+B: 0.00+-0.86 cpm 0.0%
+C: 4.32+-2.41 cpm 76.9%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 3.9%
+
+1444 1.77+-5.71 p Sniff
+  THU 24-MAR-22 19:17
+  29.6`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 28.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 10.7%
+B: 0.43+-1.18 cpm 7.2%
+C: 4.54+-2.46 cpm 75.0%
+D: 0.43+-1.18 cpm 7.2%
+O: 99.2+-9.7 cpm -0.1%
+
+1445 4.41+-6.09 p Sniff
+  THU 24-MAR-22 19:22
+  29.6`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 21.
+Livetime:   4.6min
+A: 1.08+-1.49 cpm 23.8%
+B: 0.22+-1.04 cpm 4.8%
+C: 3.24+-2.16 cpm 71.4%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1446 3.53+-5.71 p Sniff
+  THU 24-MAR-22 19:27
+  29.6`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 15.
+Livetime:   4.6min
+A: 0.86+-1.40 cpm 26.7%
+B: 0.00+-0.86 cpm 0.0%
+C: 2.38+-1.93 cpm 73.3%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1447 4.41+-6.09 p Sniff
+  THU 24-MAR-22 19:32
+  29.6`C RH:5% B:6.21V
+  L: 2   HV:2201V, 9%
+Total Counts: 15.
+Livetime:   4.6min
+A: 1.08+-1.49 cpm 33.3%
+B: 0.00+-0.86 cpm 0.0%
+C: 2.16+-1.87 cpm 66.7%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1448 1.77+-4.82 p Sniff
+  THU 24-MAR-22 19:37
+  29.3`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 14.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 14.3%
+B: 0.00+-0.86 cpm 0.0%
+C: 2.38+-1.93 cpm 78.6%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 7.1%
+
+1449 6.18+-6.76 p Sniff
+  THU 24-MAR-22 19:42
+  29.3`C RH:5% B:6.21V
+  L: 2   HV:2218V, 8%
+Total Counts: 23.
+Livetime:   4.6min
+A: 1.51+-1.66 cpm 30.4%
+B: 0.00+-0.86 cpm 0.0%
+C: 3.46+-2.22 cpm 69.6%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1450 2.65+-5.30 p Sniff
+  THU 24-MAR-22 19:47
+  29.3`C RH:5% B:6.21V
+  L: 2   HV:2236V, 9%
+Total Counts: 13.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 23.1%
+B: 0.00+-0.86 cpm 0.0%
+C: 2.16+-1.87 cpm 76.9%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1451 0.88+-4.26 p Sniff
+  THU 24-MAR-22 19:52
+  29.3`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 17.
+Livetime:   4.6min
+A: 0.22+-1.04 cpm 5.9%
+B: 0.22+-1.04 cpm 5.9%
+C: 2.81+-2.05 cpm 76.5%
+D: 0.22+-1.04 cpm 5.9%
+O: 0.22+-1.04 cpm 5.8%
+
+1452 1.77+-4.82 p Sniff
+  THU 24-MAR-22 19:57
+  29.3`C RH:5% B:6.18V
+  L: 2   HV:2201V, 9%
+Total Counts: 13.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 15.4%
+B: 0.22+-1.04 cpm 7.7%
+C: 2.16+-1.87 cpm 76.9%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1453 5.30+-6.43 p Sniff
+  THU 24-MAR-22 20:02
+  29.0`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 17.
+Livetime:   4.6min
+A: 1.30+-1.58 cpm 35.3%
+B: 0.00+-0.86 cpm 0.0%
+C: 2.16+-1.87 cpm 58.8%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 5.9%
+
+1454 2.65+-5.30 p Sniff
+  THU 24-MAR-22 20:07
+  29.0`C RH:5% B:6.21V
+  L: 2   HV:2218V, 8%
+Total Counts: 8.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 37.5%
+B: 0.22+-1.04 cpm 12.5%
+C: 0.86+-1.40 cpm 50.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1455 1.77+-4.82 p Sniff
+  THU 24-MAR-22 20:12
+  29.0`C RH:5% B:6.18V
+  L: 2   HV:2236V, 9%
+Total Counts: 14.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 14.3%
+B: 0.22+-1.04 cpm 7.2%
+C: 1.95+-1.80 cpm 64.3%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.43+-1.18 cpm 14.2%
+
+1456 0.88+-4.26 p Sniff
+  THU 24-MAR-22 20:17
+  29.0`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 7.
+Livetime:   4.6min
+A: 0.22+-1.04 cpm 14.3%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.30+-1.58 cpm 85.7%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1457 2.65+-5.30 p Sniff
+  THU 24-MAR-22 20:22
+  29.0`C RH:5% B:6.21V
+  L: 2   HV:2218V, 8%
+Total Counts: 10.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 30.0%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.51+-1.66 cpm 70.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1458 2.65+-5.30 p Sniff
+  THU 24-MAR-22 20:27
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2201V, 9%
+Total Counts: 14.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 21.4%
+B: 0.00+-0.86 cpm 0.0%
+C: 2.38+-1.93 cpm 78.6%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1459 2.65+-5.30 p Sniff
+  THU 24-MAR-22 20:32
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2236V, 9%
+Total Counts: 8.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 37.5%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.08+-1.49 cpm 62.5%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1460 0.88+-4.26 p Sniff
+  THU 24-MAR-22 20:37
+  28.7`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 9.
+Livetime:   4.6min
+A: 0.22+-1.04 cpm 11.1%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.51+-1.66 cpm 77.8%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 11.1%
+
+1461 2.65+-5.30 p Sniff
+  THU 24-MAR-22 20:42
+  28.7`C RH:5% B:6.18V
+  L: 2   HV:2218V, 8%
+Total Counts: 11.
+Livetime:   4.6min
+A: 0.65+-1.30 cpm 27.3%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.51+-1.66 cpm 63.6%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 9.1%
+
+1462 1.77+-4.82 p Sniff
+  THU 24-MAR-22 20:47
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 7.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 28.6%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.86+-1.40 cpm 57.2%
+D: 0.22+-1.04 cpm 14.3%
+O: 0.00+-0.86 cpm -0.1%
+
+1463 1.77+-4.82 p Sniff
+  THU 24-MAR-22 20:52
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 7.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 28.6%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.08+-1.49 cpm 71.4%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1464 1.77+-4.82 p Sniff
+  THU 24-MAR-22 20:57
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 9.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 22.2%
+B: 0.00+-0.86 cpm 0.0%
+C: 1.30+-1.58 cpm 66.7%
+D: 0.22+-1.04 cpm 11.1%
+O: 0.00+-0.86 cpm 0.0%
+
+1465 1.76+-4.80 p Sniff
+  THU 24-MAR-22 21:02
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2236V, 9%
+Total Counts: 6.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 33.3%
+B: 0.00+-0.86 cpm 0.0%
+C: 0.65+-1.29 cpm 50.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.22+-1.04 cpm 16.7%
+
+1466 0.88+-4.24 p Sniff
+  THU 24-MAR-22 21:07
+  28.7`C RH:5% B:6.21V
+  L: 2   HV:2218V, 8%
+Total Counts: 4.
+Livetime:   4.6min
+A: 0.22+-1.04 cpm 25.0%
+B: 0.22+-1.04 cpm 25.0%
+C: 0.43+-1.18 cpm 50.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1467 1.77+-4.82 p Sniff
+  THU 24-MAR-22 21:12
+  28.4`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 5.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 40.0%
+B: 0.22+-1.04 cpm 20.0%
+C: 0.43+-1.18 cpm 40.0%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.0%
+
+1468 1.77+-4.82 p Sniff
+  THU 24-MAR-22 21:17
+  28.4`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 6.
+Livetime:   4.6min
+A: 0.43+-1.18 cpm 33.3%
+B: 0.43+-1.18 cpm 33.3%
+C: 0.43+-1.18 cpm 33.3%
+D: 0.00+-0.86 cpm 0.0%
+O: 0.00+-0.86 cpm 0.1%
+
+1469 36.4+-13.3 p Sniff
+  THU 24-MAR-22 21:22
+  28.4`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 48.
+Livetime:   4.6min
+A: 8.91+-3.25 cpm 85.4%
+B: 0.00+-0.87 cpm 0.0%
+C: 1.52+-1.66 cpm 14.6%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.00+-0.87 cpm 0.0%
+
+1470 53.2+-15.6 p Sniff
+  THU 24-MAR-22 21:27
+  28.4`C RH:5% B:6.18V
+  L: 2   HV:2236V, 9%
+Total Counts: 72.
+Livetime:   4.6min
+A: 13.0+-3.83 cpm 83.3%
+B: 0.22+-1.05 cpm 1.4%
+C: 1.30+-1.59 cpm 8.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.09+-1.50 cpm 7.0%
+
+1471 51.5+-15.4 p Sniff
+  THU 24-MAR-22 21:32
+  28.4`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 63.
+Livetime:   4.6min
+A: 12.6+-3.77 cpm 92.1%
+B: 0.00+-0.87 cpm 0.0%
+C: 1.09+-1.50 cpm 7.9%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.00+-0.87 cpm 0.0%
+
+1472 64.2+-17.0 p Sniff
+  THU 24-MAR-22 21:37
+  28.4`C RH:5% B:6.18V
+  L: 2   HV:2236V, 10%
+Total Counts: 85.
+Livetime:   4.5min
+A: 15.7+-4.17 cpm 84.7%
+B: 0.00+-0.87 cpm 0.0%
+C: 2.40+-1.95 cpm 13.0%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.44+-1.19 cpm 2.3%
+
+1473 55.3+-15.9 p Sniff
+  THU 24-MAR-22 21:42
+  28.4`C RH:5% B:6.18V
+  L: 2   HV:2201V, 8%
+Total Counts: 75.
+Livetime:   4.5min
+A: 13.6+-3.91 cpm 82.7%
+B: 0.22+-1.06 cpm 1.3%
+C: 2.62+-2.01 cpm 16.0%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.00+-0.87 cpm 0.0%
+
+1474 38.2+-13.5 p Sniff
+  THU 24-MAR-22 21:47
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 63.
+Livetime:   4.6min
+A: 9.35+-3.32 cpm 68.3%
+B: 0.00+-0.87 cpm 0.0%
+C: 3.04+-2.12 cpm 22.2%
+D: 0.22+-1.05 cpm 1.6%
+O: 1.09+-1.50 cpm 7.9%
+
+1475 66.0+-17.3 p Sniff
+  THU 24-MAR-22 21:52
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 8%
+Total Counts: 101.
+Livetime:   4.5min
+A: 16.4+-4.25 cpm 74.3%
+B: 0.22+-1.06 cpm 1.0%
+C: 3.72+-2.29 cpm 16.8%
+D: 0.22+-1.06 cpm 1.0%
+O: 1.53+-1.67 cpm 6.9%
+
+1476 50.9+-15.4 p Sniff
+  THU 24-MAR-22 21:57
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 88.
+Livetime:   4.5min
+A: 12.5+-3.77 cpm 64.8%
+B: 0.44+-1.19 cpm 2.3%
+C: 5.46+-2.67 cpm 28.4%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.87+-1.41 cpm 4.5%
+
+1477 65.1+-17.1 p Sniff
+  THU 24-MAR-22 22:02
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 108.
+Livetime:   4.5min
+A: 16.0+-4.20 cpm 67.6%
+B: 0.44+-1.19 cpm 1.9%
+C: 5.90+-2.75 cpm 25.0%
+D: 0.22+-1.06 cpm 0.9%
+O: 1.09+-1.51 cpm 4.6%
+
+1478 55.3+-15.9 p Sniff
+  THU 24-MAR-22 22:07
+  28.1`C RH:5% B:6.21V
+  L: 2   HV:2218V, 9%
+Total Counts: 88.
+Livetime:   4.5min
+A: 13.6+-3.91 cpm 70.5%
+B: 0.00+-0.87 cpm 0.0%
+C: 5.25+-2.62 cpm 27.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.44+-1.19 cpm 2.2%
+
+1479 61.9+-16.8 p Sniff
+  THU 24-MAR-22 22:12
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 8%
+Total Counts: 117.
+Livetime:   4.5min
+A: 15.2+-4.12 cpm 59.0%
+B: 0.66+-1.32 cpm 2.6%
+C: 7.47+-3.04 cpm 29.1%
+D: 0.22+-1.06 cpm 0.9%
+O: 2.20+-1.90 cpm 8.4%
+
+1480 53.5+-15.7 p Sniff
+  THU 24-MAR-22 22:17
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 96.
+Livetime:   4.5min
+A: 13.1+-3.85 cpm 62.5%
+B: 0.00+-0.87 cpm 0.0%
+C: 6.34+-2.83 cpm 30.2%
+D: 0.00+-0.87 cpm 0.0%
+O: 1.53+-1.67 cpm 7.3%
+
+1481 65.5+-17.2 p Sniff
+  THU 24-MAR-22 22:22
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 120.
+Livetime:   4.5min
+A: 16.0+-4.22 cpm 60.8%
+B: 0.22+-1.06 cpm 0.8%
+C: 9.23+-3.32 cpm 35.0%
+D: 0.22+-1.06 cpm 0.8%
+O: 0.66+-1.32 cpm 2.6%
+
+1482 65.5+-17.2 p Sniff
+  THU 24-MAR-22 22:27
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 115.
+Livetime:   4.5min
+A: 16.0+-4.22 cpm 63.5%
+B: 0.00+-0.88 cpm 0.0%
+C: 8.57+-3.22 cpm 33.9%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.32 cpm 2.6%
+
+1483 61.0+-16.7 p Sniff
+  THU 24-MAR-22 22:32
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 105.
+Livetime:   4.5min
+A: 15.0+-4.09 cpm 64.8%
+B: 0.00+-0.88 cpm 0.0%
+C: 7.47+-3.04 cpm 32.4%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.32 cpm 2.8%
+
+1484 53.8+-15.8 p Sniff
+  THU 24-MAR-22 22:38
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 115.
+Livetime:   4.5min
+A: 13.2+-3.87 cpm 52.2%
+B: 0.66+-1.32 cpm 2.6%
+C: 10.6+-3.52 cpm 41.8%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.42 cpm 3.4%
+
+1485 56.5+-16.1 p Sniff
+  THU 24-MAR-22 22:43
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2201V, 8%
+Total Counts: 117.
+Livetime:   4.5min
+A: 13.9+-3.96 cpm 53.9%
+B: 0.22+-1.06 cpm 0.9%
+C: 11.0+-3.58 cpm 42.7%
+D: 0.22+-1.06 cpm 0.9%
+O: 0.44+-1.20 cpm 1.6%
+
+1486 62.8+-16.9 p Sniff
+  THU 24-MAR-22 22:48
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 8%
+Total Counts: 135.
+Livetime:   4.5min
+A: 15.4+-4.14 cpm 51.9%
+B: 0.00+-0.88 cpm 0.0%
+C: 13.6+-3.93 cpm 45.9%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.32 cpm 2.2%
+
+1487 51.1+-15.6 p Sniff
+  THU 24-MAR-22 22:53
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 111.
+Livetime:   4.5min
+A: 12.8+-3.82 cpm 52.3%
+B: 0.66+-1.32 cpm 2.7%
+C: 10.1+-3.45 cpm 41.5%
+D: 0.22+-1.06 cpm 0.9%
+O: 0.66+-1.32 cpm 2.6%
+
+1488 53.8+-15.9 p Sniff
+  THU 24-MAR-22 22:58
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 116.
+Livetime:   4.5min
+A: 13.4+-3.90 cpm 52.6%
+B: 0.00+-0.88 cpm 0.0%
+C: 10.8+-3.55 cpm 42.3%
+D: 0.22+-1.06 cpm 0.9%
+O: 1.10+-1.52 cpm 4.2%
+
+1489 49.3+-15.5 p Sniff
+  THU 24-MAR-22 23:03
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 114.
+Livetime:   4.5min
+A: 12.3+-3.76 cpm 49.1%
+B: 0.44+-1.20 cpm 1.8%
+C: 11.0+-3.58 cpm 43.9%
+D: 0.66+-1.32 cpm 2.6%
+O: 0.66+-1.32 cpm 2.6%
+
+1490 60.4+-16.7 p Sniff
+  THU 24-MAR-22 23:08
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 8%
+Total Counts: 140.
+Livetime:   4.5min
+A: 14.8+-4.09 cpm 47.9%
+B: 0.44+-1.21 cpm 1.4%
+C: 13.9+-3.98 cpm 45.0%
+D: 0.22+-1.07 cpm 0.7%
+O: 1.55+-1.69 cpm 5.0%
+
+1491 80.3+-18.9 p Sniff
+  THU 24-MAR-22 23:13
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 167.
+Livetime:   4.5min
+A: 19.7+-4.64 cpm 53.3%
+B: 0.88+-1.43 cpm 2.4%
+C: 15.0+-4.11 cpm 40.7%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.10+-1.52 cpm 3.0%
+
+1492 51.1+-15.5 p Sniff
+  THU 24-MAR-22 23:18
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 118.
+Livetime:   4.5min
+A: 12.5+-3.79 cpm 48.3%
+B: 0.00+-0.88 cpm 0.0%
+C: 12.8+-3.82 cpm 49.2%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.32 cpm 2.5%
+
+1493 68.6+-17.6 p Sniff
+  THU 24-MAR-22 23:23
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 140.
+Livetime:   4.5min
+A: 16.8+-4.32 cpm 54.3%
+B: 0.00+-0.88 cpm 0.0%
+C: 13.9+-3.98 cpm 45.0%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.22+-1.07 cpm 0.7%
+
+1494 72.2+-18.0 p Sniff
+  THU 24-MAR-22 23:28
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 145.
+Livetime:   4.5min
+A: 17.7+-4.42 cpm 55.2%
+B: 0.44+-1.21 cpm 1.4%
+C: 12.6+-3.81 cpm 39.3%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.33+-1.61 cpm 4.1%
+
+1495 52.9+-15.7 p Sniff
+  THU 24-MAR-22 23:33
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 117.
+Livetime:   4.5min
+A: 13.0+-3.84 cpm 50.4%
+B: 0.00+-0.88 cpm 0.0%
+C: 11.7+-3.67 cpm 45.3%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 4.3%
+
+1496 55.9+-16.1 p Sniff
+  THU 24-MAR-22 23:38
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 146.
+Livetime:   4.5min
+A: 13.7+-3.95 cpm 42.5%
+B: 1.10+-1.52 cpm 3.4%
+C: 16.4+-4.27 cpm 50.7%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 3.4%
+
+1497 56.5+-16.1 p Sniff
+  THU 24-MAR-22 23:43
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 8%
+Total Counts: 134.
+Livetime:   4.5min
+A: 13.9+-3.96 cpm 47.0%
+B: 0.00+-0.88 cpm 0.0%
+C: 14.1+-3.98 cpm 47.8%
+D: 0.22+-1.06 cpm 0.8%
+O: 1.32+-1.60 cpm 4.4%
+
+1498 56.8+-16.2 p Sniff
+  THU 24-MAR-22 23:48
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2236V, 9%
+Total Counts: 138.
+Livetime:   4.5min
+A: 13.9+-3.98 cpm 45.7%
+B: 0.66+-1.33 cpm 2.2%
+C: 15.3+-4.14 cpm 50.0%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.33 cpm 2.1%
+
+1499 55.6+-16.0 p Sniff
+  THU 24-MAR-22 23:53
+  28.1`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 125.
+Livetime:   4.5min
+A: 13.6+-3.93 cpm 49.6%
+B: 0.00+-0.88 cpm 0.0%
+C: 13.6+-3.93 cpm 49.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.22+-1.06 cpm 0.8%
+
+1501 71.3+-17.9 p Sniff
+  THU 24-MAR-22 23:58
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2201V, 8%
+Total Counts: 165.
+Livetime:   4.5min
+A: 17.5+-4.40 cpm 47.9%
+B: 0.22+-1.07 cpm 0.6%
+C: 17.5+-4.40 cpm 47.9%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.33+-1.61 cpm 3.6%
+
+1502 81.2+-19.0 p Sniff
+  FRI 25-MAR-22 00:03
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 160.
+Livetime:   4.5min
+A: 19.9+-4.66 cpm 56.3%
+B: 0.66+-1.33 cpm 1.9%
+C: 13.5+-3.92 cpm 38.1%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.33+-1.61 cpm 3.7%
+
+1503 61.3+-16.8 p Sniff
+  FRI 25-MAR-22 00:08
+  28.1`C RH:4% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 154.
+Livetime:   4.5min
+A: 15.0+-4.11 cpm 44.2%
+B: 0.88+-1.43 cpm 2.6%
+C: 17.5+-4.40 cpm 51.3%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.33 cpm 1.9%
+
+1504 57.7+-16.3 p Sniff
+  FRI 25-MAR-22 00:13
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 138.
+Livetime:   4.5min
+A: 14.1+-4.01 cpm 46.4%
+B: 0.44+-1.21 cpm 1.5%
+C: 14.4+-4.03 cpm 47.1%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.55+-1.69 cpm 5.0%
+
+1505 51.1+-15.8 p Sniff
+  FRI 25-MAR-22 00:18
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2201V, 9%
+Total Counts: 125.
+Livetime:   4.5min
+A: 13.0+-3.84 cpm 47.2%
+B: 0.44+-1.20 cpm 1.6%
+C: 12.3+-3.76 cpm 44.8%
+D: 1.10+-1.52 cpm 4.0%
+O: 0.66+-1.32 cpm 2.4%
+
+1506 70.4+-17.8 p Sniff
+  FRI 25-MAR-22 00:23
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 8%
+Total Counts: 167.
+Livetime:   4.5min
+A: 17.2+-4.37 cpm 46.7%
+B: 1.33+-1.61 cpm 3.6%
+C: 16.6+-4.30 cpm 44.9%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.77+-1.77 cpm 4.8%
+
+1507 61.3+-16.8 p Sniff
+  FRI 25-MAR-22 00:28
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 8%
+Total Counts: 141.
+Livetime:   4.5min
+A: 15.0+-4.11 cpm 48.2%
+B: 0.22+-1.07 cpm 0.7%
+C: 15.0+-4.11 cpm 48.2%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.43 cpm 2.9%
+
+1508 63.7+-17.0 p Sniff
+  FRI 25-MAR-22 00:33
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 131.
+Livetime:   4.5min
+A: 15.6+-4.17 cpm 54.2%
+B: 0.00+-0.88 cpm 0.0%
+C: 12.1+-3.73 cpm 42.0%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 3.8%
+
+1509 51.1+-15.5 p Sniff
+  FRI 25-MAR-22 00:38
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 8%
+Total Counts: 130.
+Livetime:   4.5min
+A: 12.5+-3.79 cpm 43.9%
+B: 0.22+-1.06 cpm 0.8%
+C: 14.5+-4.04 cpm 50.8%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.32+-1.60 cpm 4.5%
+
+1510 55.9+-16.1 p Sniff
+  FRI 25-MAR-22 00:43
+  28.4`C RH:5% B:6.12V
+  L: 2   HV:2218V, 8%
+Total Counts: 146.
+Livetime:   4.5min
+A: 13.7+-3.95 cpm 42.5%
+B: 0.44+-1.21 cpm 1.4%
+C: 16.8+-4.32 cpm 52.1%
+D: 0.22+-1.07 cpm 0.7%
+O: 1.10+-1.52 cpm 3.3%
+
+1511 63.7+-17.0 p Sniff
+  FRI 25-MAR-22 00:48
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 8%
+Total Counts: 130.
+Livetime:   4.5min
+A: 15.6+-4.17 cpm 54.6%
+B: 0.22+-1.06 cpm 0.8%
+C: 11.9+-3.70 cpm 41.6%
+D: 0.22+-1.06 cpm 0.8%
+O: 0.66+-1.32 cpm 2.2%
+
+1512 63.1+-17.0 p Sniff
+  FRI 25-MAR-22 00:53
+  28.4`C RH:5% B:6.18V
+  L: 2   HV:2218V, 9%
+Total Counts: 158.
+Livetime:   4.5min
+A: 15.5+-4.17 cpm 44.3%
+B: 0.22+-1.07 cpm 0.6%
+C: 17.2+-4.37 cpm 49.4%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.77+-1.77 cpm 5.1%
+
+1513 59.2+-16.5 p Sniff
+  FRI 25-MAR-22 00:58
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 8%
+Total Counts: 130.
+Livetime:   4.5min
+A: 14.5+-4.04 cpm 50.8%
+B: 0.66+-1.32 cpm 2.3%
+C: 12.8+-3.82 cpm 44.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.32 cpm 2.3%
+
+1514 80.7+-19.0 p Sniff
+  FRI 25-MAR-22 01:03
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 168.
+Livetime:   4.5min
+A: 19.8+-4.66 cpm 53.0%
+B: 0.44+-1.21 cpm 1.2%
+C: 16.0+-4.24 cpm 42.9%
+D: 0.00+-0.89 cpm 0.0%
+O: 1.11+-1.53 cpm 2.9%
+
+1515 62.2+-17.0 p Sniff
+  FRI 25-MAR-22 01:08
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 8%
+Total Counts: 151.
+Livetime:   4.5min
+A: 15.5+-4.17 cpm 46.4%
+B: 0.44+-1.21 cpm 1.3%
+C: 16.4+-4.27 cpm 49.0%
+D: 0.22+-1.07 cpm 0.7%
+O: 0.88+-1.43 cpm 2.6%
+
+1516 64.0+-17.1 p Sniff
+  FRI 25-MAR-22 01:13
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 146.
+Livetime:   4.5min
+A: 15.7+-4.19 cpm 48.6%
+B: 1.10+-1.52 cpm 3.4%
+C: 15.0+-4.11 cpm 46.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.44+-1.21 cpm 1.4%
+
+1517 71.3+-17.9 p Sniff
+  FRI 25-MAR-22 01:18
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 159.
+Livetime:   4.5min
+A: 17.5+-4.40 cpm 49.7%
+B: 0.66+-1.33 cpm 1.9%
+C: 16.6+-4.30 cpm 47.2%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.44+-1.21 cpm 1.2%
+
+1518 66.7+-17.4 p Sniff
+  FRI 25-MAR-22 01:23
+  28.4`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 154.
+Livetime:   4.5min
+A: 16.4+-4.27 cpm 48.1%
+B: 0.66+-1.33 cpm 2.0%
+C: 15.7+-4.19 cpm 46.1%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.33+-1.61 cpm 3.8%
+
+1519 63.1+-17.0 p Sniff
+  FRI 25-MAR-22 01:28
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 155.
+Livetime:   4.5min
+A: 15.5+-4.17 cpm 45.2%
+B: 0.00+-0.88 cpm 0.0%
+C: 17.5+-4.40 cpm 51.0%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.33+-1.61 cpm 3.8%
+
+1520 61.3+-16.8 p Sniff
+  FRI 25-MAR-22 01:33
+  28.4`C RH:5% B:6.12V
+  L: 2   HV:2218V, 8%
+Total Counts: 147.
+Livetime:   4.5min
+A: 15.0+-4.11 cpm 46.3%
+B: 0.44+-1.21 cpm 1.4%
+C: 15.5+-4.17 cpm 47.6%
+D: 0.22+-1.07 cpm 0.7%
+O: 1.33+-1.61 cpm 4.0%
+
+1521 61.3+-16.8 p Sniff
+  FRI 25-MAR-22 01:38
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 8%
+Total Counts: 154.
+Livetime:   4.5min
+A: 15.0+-4.11 cpm 44.2%
+B: 0.22+-1.07 cpm 0.7%
+C: 17.9+-4.44 cpm 52.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.43 cpm 2.5%
+
+1522 53.2+-15.8 p Sniff
+  FRI 25-MAR-22 01:43
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 9%
+Total Counts: 138.
+Livetime:   4.5min
+A: 13.0+-3.87 cpm 42.8%
+B: 0.22+-1.07 cpm 0.7%
+C: 16.8+-4.32 cpm 55.1%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.44+-1.21 cpm 1.4%
+
+1523 74.9+-18.4 p Sniff
+  FRI 25-MAR-22 01:48
+  28.4`C RH:5% B:6.12V
+  L: 2   HV:2218V, 9%
+Total Counts: 163.
+Livetime:   4.5min
+A: 18.6+-4.52 cpm 51.5%
+B: 0.00+-0.88 cpm 0.0%
+C: 14.6+-4.06 cpm 40.5%
+D: 0.44+-1.21 cpm 1.2%
+O: 2.43+-1.97 cpm 6.8%
+
+1524 66.2+-17.4 p Sniff
+  FRI 25-MAR-22 01:53
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 8%
+Total Counts: 167.
+Livetime:   4.5min
+A: 16.2+-4.27 cpm 43.7%
+B: 0.44+-1.21 cpm 1.2%
+C: 18.7+-4.54 cpm 50.3%
+D: 0.00+-0.89 cpm 0.0%
+O: 1.78+-1.78 cpm 4.8%
+
+1525 60.4+-16.7 p Sniff
+  FRI 25-MAR-22 01:58
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 9%
+Total Counts: 153.
+Livetime:   4.5min
+A: 14.8+-4.09 cpm 43.8%
+B: 1.33+-1.61 cpm 3.9%
+C: 16.8+-4.32 cpm 49.7%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.43 cpm 2.6%
+
+1526 78.5+-18.7 p Sniff
+  FRI 25-MAR-22 02:03
+  28.1`C RH:4% B:6.12V
+  L: 2   HV:2218V, 8%
+Total Counts: 164.
+Livetime:   4.5min
+A: 19.2+-4.59 cpm 53.1%
+B: 0.22+-1.07 cpm 0.6%
+C: 16.6+-4.30 cpm 45.7%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.22+-1.07 cpm 0.6%
+
+1527 62.2+-16.9 p Sniff
+  FRI 25-MAR-22 02:08
+  28.1`C RH:5% B:6.15V
+  L: 2   HV:2218V, 9%
+Total Counts: 146.
+Livetime:   4.5min
+A: 15.3+-4.14 cpm 47.3%
+B: 0.44+-1.21 cpm 1.4%
+C: 15.5+-4.17 cpm 48.0%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 3.3%
+
+1528 63.1+-17.1 p Sniff
+  FRI 25-MAR-22 02:13
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 9%
+Total Counts: 143.
+Livetime:   4.5min
+A: 15.7+-4.19 cpm 49.7%
+B: 0.66+-1.33 cpm 2.1%
+C: 14.1+-4.01 cpm 44.8%
+D: 0.22+-1.07 cpm 0.7%
+O: 0.88+-1.43 cpm 2.7%
+
+1529 72.2+-18.0 p Sniff
+  FRI 25-MAR-22 02:18
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 9%
+Total Counts: 155.
+Livetime:   4.5min
+A: 17.7+-4.42 cpm 51.6%
+B: 0.00+-0.88 cpm 0.0%
+C: 15.9+-4.22 cpm 46.5%
+D: 0.22+-1.07 cpm 0.7%
+O: 0.44+-1.21 cpm 1.2%
+
+1530 70.7+-18.0 p Sniff
+  FRI 25-MAR-22 02:23
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 9%
+Total Counts: 172.
+Livetime:   4.5min
+A: 17.6+-4.42 cpm 45.9%
+B: 0.67+-1.33 cpm 1.8%
+C: 18.2+-4.49 cpm 47.7%
+D: 0.44+-1.21 cpm 1.2%
+O: 1.33+-1.62 cpm 3.4%
+
+1531 58.6+-16.5 p Sniff
+  FRI 25-MAR-22 02:28
+  28.1`C RH:5% B:6.09V
+  L: 2   HV:2218V, 8%
+Total Counts: 158.
+Livetime:   4.5min
+A: 14.4+-4.03 cpm 41.2%
+B: 0.22+-1.07 cpm 0.6%
+C: 18.8+-4.54 cpm 53.8%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.33+-1.61 cpm 3.8%
+
+1532 75.8+-18.5 p Sniff
+  FRI 25-MAR-22 02:33
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2201V, 9%
+Total Counts: 157.
+Livetime:   4.5min
+A: 18.8+-4.54 cpm 54.2%
+B: 0.22+-1.07 cpm 0.6%
+C: 13.3+-3.89 cpm 38.2%
+D: 0.44+-1.21 cpm 1.3%
+O: 1.99+-1.84 cpm 5.7%
+
+1533 56.8+-16.3 p Sniff
+  FRI 25-MAR-22 02:38
+  28.1`C RH:5% B:6.09V
+  L: 2   HV:2218V, 9%
+Total Counts: 139.
+Livetime:   4.5min
+A: 14.1+-4.01 cpm 46.1%
+B: 0.66+-1.33 cpm 2.2%
+C: 15.0+-4.11 cpm 48.9%
+D: 0.44+-1.21 cpm 1.5%
+O: 0.44+-1.21 cpm 1.3%
+
+1534 55.0+-16.0 p Sniff
+  FRI 25-MAR-22 02:43
+  28.1`C RH:5% B:6.09V
+  L: 2   HV:2218V, 9%
+Total Counts: 152.
+Livetime:   4.5min
+A: 13.5+-3.92 cpm 40.1%
+B: 0.22+-1.07 cpm 0.7%
+C: 19.0+-4.56 cpm 56.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.43 cpm 2.6%
+
+1535 69.5+-17.7 p Sniff
+  FRI 25-MAR-22 02:48
+  28.1`C RH:5% B:6.12V
+  L: 2   HV:2218V, 8%
+Total Counts: 155.
+Livetime:   4.5min
+A: 17.0+-4.35 cpm 49.7%
+B: 0.22+-1.07 cpm 0.7%
+C: 15.9+-4.22 cpm 46.5%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 3.1%
+
+1536 77.6+-18.6 p Sniff
+  FRI 25-MAR-22 02:53
+  28.1`C RH:4% B:6.09V
+  L: 2   HV:2201V, 8%
+Total Counts: 154.
+Livetime:   4.5min
+A: 19.0+-4.56 cpm 55.9%
+B: 0.44+-1.21 cpm 1.3%
+C: 13.9+-3.98 cpm 40.9%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.66+-1.33 cpm 1.9%
+
+1537 68.6+-17.6 p Sniff
+  FRI 25-MAR-22 02:58
+  27.8`C RH:4% B:6.09V
+  L: 2   HV:2236V, 9%
+Total Counts: 161.
+Livetime:   4.5min
+A: 16.8+-4.32 cpm 47.2%
+B: 0.22+-1.07 cpm 0.6%
+C: 17.5+-4.40 cpm 49.1%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 3.1%
+
+1538 70.7+-18.1 p Sniff
+  FRI 25-MAR-22 03:03
+  27.8`C RH:4% B:6.09V
+  L: 2   HV:2218V, 9%
+Total Counts: 171.
+Livetime:   4.5min
+A: 17.6+-4.42 cpm 46.2%
+B: 0.89+-1.44 cpm 2.4%
+C: 18.0+-4.47 cpm 47.4%
+D: 0.67+-1.33 cpm 1.8%
+O: 0.89+-1.44 cpm 2.2%
+
+1539 76.7+-18.5 p Sniff
+  FRI 25-MAR-22 03:08
+  27.8`C RH:5% B:6.09V
+  L: 2   HV:2218V, 8%
+Total Counts: 155.
+Livetime:   4.5min
+A: 18.8+-4.54 cpm 54.9%
+B: 0.66+-1.33 cpm 1.9%
+C: 13.7+-3.95 cpm 40.0%
+D: 0.22+-1.07 cpm 0.7%
+O: 0.88+-1.43 cpm 2.5%
+
+1540 82.5+-19.2 p Sniff
+  FRI 25-MAR-22 03:13
+  27.8`C RH:4% B:6.06V
+  L: 2   HV:2201V, 9%
+Total Counts: 176.
+Livetime:   4.5min
+A: 20.2+-4.71 cpm 51.7%
+B: 0.22+-1.07 cpm 0.6%
+C: 18.0+-4.47 cpm 46.0%
+D: 0.22+-1.07 cpm 0.6%
+O: 0.44+-1.21 cpm 1.1%
+
+1541 72.6+-18.2 p Sniff
+  FRI 25-MAR-22 03:18
+  27.8`C RH:5% B:6.06V
+  L: 2   HV:2218V, 9%
+Total Counts: 170.
+Livetime:   4.5min
+A: 18.0+-4.47 cpm 47.7%
+B: 0.22+-1.07 cpm 0.6%
+C: 16.9+-4.34 cpm 44.7%
+D: 0.44+-1.21 cpm 1.2%
+O: 2.22+-1.92 cpm 5.8%
+
+1542 76.2+-18.5 p Sniff
+  FRI 25-MAR-22 03:23
+  27.8`C RH:5% B:6.06V
+  L: 2   HV:2236V, 9%
+Total Counts: 179.
+Livetime:   4.5min
+A: 18.7+-4.54 cpm 46.9%
+B: 0.22+-1.07 cpm 0.6%
+C: 20.0+-4.68 cpm 50.3%
+D: 0.00+-0.89 cpm 0.0%
+O: 0.89+-1.44 cpm 2.2%
+
+1543 67.7+-17.5 p Sniff
+  FRI 25-MAR-22 03:28
+  27.8`C RH:5% B:6.06V
+  L: 2   HV:2218V, 8%
+Total Counts: 159.
+Livetime:   4.5min
+A: 16.6+-4.30 cpm 47.2%
+B: 0.66+-1.33 cpm 1.9%
+C: 16.1+-4.24 cpm 45.9%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.55+-1.69 cpm 4.4%
+
+1544 88.0+-19.8 p Sniff
+  FRI 25-MAR-22 03:33
+  27.8`C RH:5% B:6.09V
+  L: 2   HV:2218V, 9%
+Total Counts: 185.
+Livetime:   4.5min
+A: 21.6+-4.84 cpm 52.4%
+B: 0.22+-1.07 cpm 0.6%
+C: 19.1+-4.59 cpm 46.5%
+D: 0.00+-0.89 cpm 0.0%
+O: 0.22+-1.07 cpm 0.5%
+
+1545 55.9+-16.2 p Sniff
+  FRI 25-MAR-22 03:38
+  27.8`C RH:4% B:6.06V
+  L: 2   HV:2218V, 9%
+Total Counts: 151.
+Livetime:   4.5min
+A: 13.9+-3.98 cpm 41.7%
+B: 0.66+-1.33 cpm 2.0%
+C: 16.8+-4.32 cpm 50.3%
+D: 0.44+-1.21 cpm 1.3%
+O: 1.55+-1.69 cpm 4.7%
+
+1546 59.9+-17.0 p Sniff
+  FRI 25-MAR-22 03:43
+  27.8`C RH:4% B:6.06V
+  L: 2   HV:2236V, 9%
+Total Counts: 176.
+Livetime:   4.5min
+A: 15.1+-4.14 cpm 38.6%
+B: 0.22+-1.07 cpm 0.6%
+C: 22.2+-4.91 cpm 56.8%
+D: 0.89+-1.44 cpm 2.3%
+O: 0.67+-1.33 cpm 1.7%
+
+1547 73.1+-18.1 p Sniff
+  FRI 25-MAR-22 03:49
+  27.5`C RH:5% B:6.03V
+  L: 2   HV:2218V, 9%
+Total Counts: 167.
+Livetime:   4.5min
+A: 17.9+-4.44 cpm 48.5%
+B: 0.22+-1.07 cpm 0.6%
+C: 17.5+-4.40 cpm 47.3%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.33+-1.61 cpm 3.6%
+
+1548 55.9+-16.1 p Sniff
+  FRI 25-MAR-22 03:54
+  27.8`C RH:4% B:6.06V
+  L: 2   HV:2201V, 9%
+Total Counts: 140.
+Livetime:   4.5min
+A: 13.7+-3.95 cpm 44.3%
+B: 0.22+-1.07 cpm 0.7%
+C: 15.9+-4.22 cpm 51.4%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.10+-1.52 cpm 3.6%
+
+1549 63.1+-17.0 p Sniff
+  FRI 25-MAR-22 03:59
+  27.8`C RH:4% B:6.09V
+  L: 2   HV:2201V, 9%
+Total Counts: 154.
+Livetime:   4.5min
+A: 15.5+-4.17 cpm 45.5%
+B: 0.22+-1.07 cpm 0.7%
+C: 16.8+-4.32 cpm 49.4%
+D: 0.00+-0.88 cpm 0.0%
+O: 1.55+-1.69 cpm 4.4%
+
+1550 75.3+-18.4 p Sniff
+  FRI 25-MAR-22 04:04
+  27.8`C RH:4% B:6.03V
+  L: 2   HV:2218V, 8%
+Total Counts: 177.
+Livetime:   4.5min
+A: 18.4+-4.52 cpm 46.9%
+B: 0.44+-1.21 cpm 1.1%
+C: 19.1+-4.59 cpm 48.6%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.11+-1.53 cpm 2.8%
+
+1551 65.8+-17.3 p Sniff
+  FRI 25-MAR-22 04:09
+  27.5`C RH:5% B:6.06V
+  L: 2   HV:2218V, 8%
+Total Counts: 162.
+Livetime:   4.5min
+A: 16.1+-4.24 cpm 45.1%
+B: 0.44+-1.21 cpm 1.2%
+C: 18.3+-4.49 cpm 51.2%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.43 cpm 2.5%
+
+1552 66.7+-17.5 p Sniff
+  FRI 25-MAR-22 04:14
+  27.5`C RH:4% B:6.00V
+  L: 2   HV:2218V, 8%
+Total Counts: 164.
+Livetime:   4.5min
+A: 16.6+-4.30 cpm 45.7%
+B: 0.44+-1.21 cpm 1.2%
+C: 16.1+-4.24 cpm 44.5%
+D: 0.22+-1.07 cpm 0.6%
+O: 2.87+-2.10 cpm 8.0%
+
+1553 54.1+-15.9 p Sniff
+  FRI 25-MAR-22 04:19
+  27.5`C RH:4% B:6.06V
+  L: 2   HV:2218V, 8%
+Total Counts: 141.
+Livetime:   4.5min
+A: 13.3+-3.89 cpm 42.6%
+B: 0.44+-1.21 cpm 1.4%
+C: 16.1+-4.24 cpm 51.8%
+D: 0.22+-1.07 cpm 0.7%
+O: 1.10+-1.52 cpm 3.5%
+
+1554 71.3+-17.9 p Sniff
+  FRI 25-MAR-22 04:24
+  27.5`C RH:4% B:6.06V
+  L: 2   HV:2236V, 9%
+Total Counts: 161.
+Livetime:   4.5min
+A: 17.5+-4.40 cpm 49.1%
+B: 0.22+-1.07 cpm 0.6%
+C: 16.1+-4.24 cpm 45.4%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.55+-1.69 cpm 4.3%
+
+1555 82.5+-19.3 p Sniff
+  FRI 25-MAR-22 04:29
+  27.5`C RH:4% B:6.03V
+  L: 1   HV:2218V, 8%
+Total Counts: 180.
+Livetime:   4.5min
+A: 20.4+-4.73 cpm 51.1%
+B: 0.44+-1.21 cpm 1.1%
+C: 17.3+-4.39 cpm 43.3%
+D: 0.22+-1.07 cpm 0.6%
+O: 1.56+-1.70 cpm 3.9%
+
+1556 75.3+-18.4 p Sniff
+  FRI 25-MAR-22 04:34
+  27.5`C RH:4% B:6.06V
+  L: 2   HV:2218V, 9%
+Total Counts: 178.
+Livetime:   4.5min
+A: 18.4+-4.52 cpm 46.6%
+B: 0.89+-1.44 cpm 2.3%
+C: 18.7+-4.54 cpm 47.2%
+D: 0.00+-0.89 cpm 0.0%
+O: 1.56+-1.70 cpm 3.9%
+
+1557 50.5+-15.4 p Sniff
+  FRI 25-MAR-22 04:39
+  27.5`C RH:5% B:6.03V
+  L: 2   HV:2218V, 8%
+Total Counts: 146.
+Livetime:   4.5min
+A: 12.4+-3.78 cpm 38.4%
+B: 0.44+-1.21 cpm 1.4%
+C: 18.3+-4.49 cpm 56.9%
+D: 0.22+-1.07 cpm 0.7%
+O: 0.88+-1.43 cpm 2.6%
+
+1558 51.4+-15.5 p Sniff
+  FRI 25-MAR-22 04:44
+  27.5`C RH:4% B:6.00V
+  L: 2   HV:2218V, 8%
+Total Counts: 136.
+Livetime:   4.5min
+A: 12.6+-3.81 cpm 41.9%
+B: 0.22+-1.07 cpm 0.7%
+C: 16.4+-4.27 cpm 54.4%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.88+-1.43 cpm 3.0%
+
+1559 48.7+-15.2 p Sniff
+  FRI 25-MAR-22 04:49
+  27.5`C RH:4% B:6.03V
+  L: 1   HV:2201V, 9%
+Total Counts: 138.
+Livetime:   4.5min
+A: 11.9+-3.72 cpm 39.1%
+B: 0.22+-1.07 cpm 0.7%
+C: 18.1+-4.47 cpm 59.4%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.22+-1.07 cpm 0.8%
+
+1560 52.6+-16.1 p Sniff
+  FRI 25-MAR-22 04:54
+  27.5`C RH:4% B:6.03V
+  L: 1   HV:2218V, 9%
+Total Counts: 170.
+Livetime:   4.5min
+A: 13.3+-3.92 cpm 35.3%
+B: 0.44+-1.21 cpm 1.2%
+C: 21.8+-4.87 cpm 57.7%
+D: 0.89+-1.44 cpm 2.4%
+O: 1.33+-1.62 cpm 3.4%
+
+1561 39.5+-13.8 p Sniff
+  FRI 25-MAR-22 04:59
+  27.5`C RH:4% B:6.00V
+  L: 2   HV:2218V, 8%
+Total Counts: 97.
+Livetime:   4.5min
+A: 9.7+-3.39 cpm 45.4%
+B: 0.22+-1.06 cpm 1.0%
+C: 10.8+-3.55 cpm 50.5%
+D: 0.22+-1.06 cpm 1.0%
+O: 0.44+-1.20 cpm 2.1%
+
+1562 29.6+-12.3 p Sniff
+  FRI 25-MAR-22 05:04
+  27.5`C RH:4% B:6.00V
+  L: 1   HV:2218V, 9%
+Total Counts: 103.
+Livetime:   4.5min
+A: 7.25+-3.00 cpm 32.1%
+B: 0.22+-1.06 cpm 1.0%
+C: 14.7+-4.06 cpm 65.1%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.44+-1.20 cpm 1.8%
+
+1563 21.5+-10.8 p Sniff
+  FRI 25-MAR-22 05:09
+  27.5`C RH:4% B:6.00V
+  L: 1   HV:2218V, 9%
+Total Counts: 116.
+Livetime:   4.5min
+A: 5.27+-2.64 cpm 20.7%
+B: 0.44+-1.20 cpm 1.7%
+C: 19.8+-4.63 cpm 77.6%
+D: 0.00+-0.88 cpm 0.0%
+O: 0.00+-0.88 cpm 0.0%
+
+1564 15.2+-9.35 p Sniff
+  FRI 25-MAR-22 05:14
+  27.5`C RH:4% B:5.97V
+  L: 1   HV:2218V, 8%
+Total Counts: 87.
+Livetime:   4.5min
+A: 3.72+-2.29 cpm 19.6%
+B: 0.00+-0.87 cpm 0.0%
+C: 14.4+-4.02 cpm 75.9%
+D: 0.22+-1.06 cpm 1.2%
+O: 0.66+-1.31 cpm 3.3%
+
+1565 18.7+-10.2 p Sniff
+  FRI 25-MAR-22 05:19
+  27.5`C RH:4% B:5.97V
+  L: 1   HV:2218V, 8%
+Total Counts: 94.
+Livetime:   4.5min
+A: 4.59+-2.49 cpm 22.4%
+B: 0.66+-1.31 cpm 3.2%
+C: 14.9+-4.07 cpm 72.4%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.44+-1.19 cpm 2.0%
+
+1566 14.3+-9.14 p Sniff
+  FRI 25-MAR-22 05:24
+  27.5`C RH:4% B:5.97V
+  L: 1   HV:2218V, 9%
+Total Counts: 89.
+Livetime:   4.5min
+A: 3.50+-2.24 cpm 18.0%
+B: 0.87+-1.41 cpm 4.5%
+C: 14.6+-4.04 cpm 75.3%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.44+-1.19 cpm 2.2%
+
+1567 17.0+-9.8 p Sniff
+  FRI 25-MAR-22 05:29
+  27.5`C RH:4% B:5.91V
+  L: 1   HV:2218V, 9%
+Total Counts: 76.
+Livetime:   4.5min
+A: 4.15+-2.39 cpm 25.0%
+B: 0.66+-1.31 cpm 4.0%
+C: 11.2+-3.59 cpm 67.1%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.66+-1.31 cpm 3.9%
+
+1568 13.4+-9.14 p Sniff
+  FRI 25-MAR-22 05:34
+  27.5`C RH:4% B:5.85V
+  L: 2   HV:2236V, 9%
+Total Counts: 91.
+Livetime:   4.5min
+A: 3.50+-2.24 cpm 17.6%
+B: 0.44+-1.19 cpm 2.2%
+C: 15.3+-4.12 cpm 76.9%
+D: 0.22+-1.06 cpm 1.1%
+O: 0.44+-1.19 cpm 2.2%
+
+1569 10.7+-8.22 p Sniff
+  FRI 25-MAR-22 05:39
+  27.5`C RH:4% B:5.81V
+  L: 2   HV:2201V, 9%
+Total Counts: 70.
+Livetime:   4.5min
+A: 2.62+-2.01 cpm 17.2%
+B: 0.22+-1.06 cpm 1.4%
+C: 12.0+-3.71 cpm 78.6%
+D: 0.22+-1.06 cpm 1.4%
+O: 0.22+-1.06 cpm 1.4%
+
+1570 13.4+-8.92 p Sniff
+  FRI 25-MAR-22 05:44
+  27.5`C RH:4% B:5.78V
+  L: 1   HV:2218V, 9%
+Total Counts: 81.
+Livetime:   4.5min
+A: 3.28+-2.19 cpm 18.5%
+B: 0.22+-1.06 cpm 1.2%
+C: 13.6+-3.91 cpm 76.6%
+D: 0.22+-1.06 cpm 1.2%
+O: 0.44+-1.19 cpm 2.5%
+
+1571 19.6+-10.3 p Sniff
+  FRI 25-MAR-22 05:49
+  27.5`C RH:4% B:5.78V
+  L: 1   HV:2218V, 9%
+Total Counts: 77.
+Livetime:   4.5min
+A: 4.81+-2.53 cpm 28.6%
+B: 0.00+-0.87 cpm 0.0%
+C: 12.0+-3.71 cpm 71.4%
+D: 0.00+-0.87 cpm 0.0%
+O: 0.00+-0.87 cpm 0.0%
+
+---------------------- End of File Info -----------------------*/
+
+fileName = RAD7 5288 Data 2022-03-25
+fileDescription = 
+fileDataTags = 
+fileFormat = CDT vers 1.1
+linesContainingFatalErrors = 
+RAD7CalibrationDate = 2021-03-18T00:00:00
+RAD7FirmwareVers = Vers 3.1a 151208
+RAD7Model = 716
+RAD7RADLINKVersion = 0311
+RAD7SerialNumber = 05288
+RAD7CalibrationValCBSpillFactor = 869
+RAD7CalibrationValEScale = 11175
+RAD7CalibrationValRelativeHumidity = 34536
+RAD7CalibrationValSensitivityNORMAL = 514
+RAD7CalibrationValSensitivitySNIFF = 245
+RAD7CalibrationValSensitivityTHORON = 122
+RAD7CalibrationValTemp = 249
+RAD7CalibrationValYear = 121
+dataIsFromMultipleRAD7s = False
+sourceRAD7SNs = 05288
+includeEmbeddedRAD7Profile = True
+embeddedRAD7ProfileBASpillFactor = 0.025000000
+embeddedRAD7ProfileCBSpillFactorDataSource = 1
+embeddedRAD7ProfileCBSpillFactor = 0.013259888
+embeddedRAD7ProfileEffectiveDate = 2021-03-18T00:00:00
+embeddedRAD7ProfileMyRAD7ProfileSource = 1
+embeddedRAD7ProfileName = RAD7 05288 [2021-03-18]
+embeddedRAD7ProfileNORMALSensitivityVal = 0.514000000
+embeddedRAD7ProfileNORMALSensitivityUnit = 4
+embeddedRAD7ProfileRadonSensitivityDataSource = 1
+embeddedRAD7ProfileSerialNumber = 05288
+embeddedRAD7ProfileSNIFFSensitivityVal = 0.245000000
+embeddedRAD7ProfileSNIFFSensitivityUnit = 4
+embeddedRAD7ProfileSpecifyEffectiveDate = True
+embeddedRAD7ProfileSpecifySerialNumber = True
+embeddedRAD7ProfileThoronSensitivityDataSource = 1
+embeddedRAD7ProfileTHORONSensitivityVal = 0.122000000
+embeddedRAD7ProfileTHORONSensitivityUnit = 4
+recordDates = 2022-03-24T15:06:00, 2022-03-24T15:11:00, 2022-03-24T15:16:00, 2022-03-24T15:21:00, 2022-03-24T16:01:00, 2022-03-24T16:06:00, 2022-03-24T16:11:00, 2022-03-24T16:16:00, 2022-03-24T16:21:00, 2022-03-24T16:26:00, 2022-03-24T16:31:00, 2022-03-24T16:36:00, 2022-03-24T16:41:00, 2022-03-24T16:46:00, 2022-03-24T16:51:00, 2022-03-24T16:56:00, 2022-03-24T17:01:00, 2022-03-24T17:06:00, 2022-03-24T17:11:00, 2022-03-24T17:16:00, 2022-03-24T17:21:00, 2022-03-24T17:26:00, 2022-03-24T17:32:00, 2022-03-24T17:37:00, 2022-03-24T17:42:00, 2022-03-24T17:47:00, 2022-03-24T17:52:00, 2022-03-24T17:57:00, 2022-03-24T18:02:00, 2022-03-24T18:07:00, 2022-03-24T18:12:00, 2022-03-24T18:17:00, 2022-03-24T18:22:00, 2022-03-24T18:27:00, 2022-03-24T18:32:00, 2022-03-24T18:37:00, 2022-03-24T18:42:00, 2022-03-24T18:47:00, 2022-03-24T18:52:00, 2022-03-24T18:57:00, 2022-03-24T19:02:00, 2022-03-24T19:07:00, 2022-03-24T19:12:00, 2022-03-24T19:17:00, 2022-03-24T19:22:00, 2022-03-24T19:27:00, 2022-03-24T19:32:00, 2022-03-24T19:37:00, 2022-03-24T19:42:00, 2022-03-24T19:47:00, 2022-03-24T19:52:00, 2022-03-24T19:57:00, 2022-03-24T20:02:00, 2022-03-24T20:07:00, 2022-03-24T20:12:00, 2022-03-24T20:17:00, 2022-03-24T20:22:00, 2022-03-24T20:27:00, 2022-03-24T20:32:00, 2022-03-24T20:37:00, 2022-03-24T20:42:00, 2022-03-24T20:47:00, 2022-03-24T20:52:00, 2022-03-24T20:57:00, 2022-03-24T21:02:00, 2022-03-24T21:07:00, 2022-03-24T21:12:00, 2022-03-24T21:17:00, 2022-03-24T21:22:00, 2022-03-24T21:27:00, 2022-03-24T21:32:00, 2022-03-24T21:37:00, 2022-03-24T21:42:00, 2022-03-24T21:47:00, 2022-03-24T21:52:00, 2022-03-24T21:57:00, 2022-03-24T22:02:00, 2022-03-24T22:07:00, 2022-03-24T22:12:00, 2022-03-24T22:17:00, 2022-03-24T22:22:00, 2022-03-24T22:27:00, 2022-03-24T22:32:00, 2022-03-24T22:38:00, 2022-03-24T22:43:00, 2022-03-24T22:48:00, 2022-03-24T22:53:00, 2022-03-24T22:58:00, 2022-03-24T23:03:00, 2022-03-24T23:08:00, 2022-03-24T23:13:00, 2022-03-24T23:18:00, 2022-03-24T23:23:00, 2022-03-24T23:28:00, 2022-03-24T23:33:00, 2022-03-24T23:38:00, 2022-03-24T23:43:00, 2022-03-24T23:48:00, 2022-03-24T23:53:00, 2022-03-24T23:58:00, 2022-03-25T00:03:00, 2022-03-25T00:08:00, 2022-03-25T00:13:00, 2022-03-25T00:18:00, 2022-03-25T00:23:00, 2022-03-25T00:28:00, 2022-03-25T00:33:00, 2022-03-25T00:38:00, 2022-03-25T00:43:00, 2022-03-25T00:48:00, 2022-03-25T00:53:00, 2022-03-25T00:58:00, 2022-03-25T01:03:00, 2022-03-25T01:08:00, 2022-03-25T01:13:00, 2022-03-25T01:18:00, 2022-03-25T01:23:00, 2022-03-25T01:28:00, 2022-03-25T01:33:00, 2022-03-25T01:38:00, 2022-03-25T01:43:00, 2022-03-25T01:48:00, 2022-03-25T01:53:00, 2022-03-25T01:58:00, 2022-03-25T02:03:00, 2022-03-25T02:08:00, 2022-03-25T02:13:00, 2022-03-25T02:18:00, 2022-03-25T02:23:00, 2022-03-25T02:28:00, 2022-03-25T02:33:00, 2022-03-25T02:38:00, 2022-03-25T02:43:00, 2022-03-25T02:48:00, 2022-03-25T02:53:00, 2022-03-25T02:58:00, 2022-03-25T03:03:00, 2022-03-25T03:08:00, 2022-03-25T03:13:00, 2022-03-25T03:18:00, 2022-03-25T03:23:00, 2022-03-25T03:28:00, 2022-03-25T03:33:00, 2022-03-25T03:38:00, 2022-03-25T03:43:00, 2022-03-25T03:49:00, 2022-03-25T03:54:00, 2022-03-25T03:59:00, 2022-03-25T04:04:00, 2022-03-25T04:09:00, 2022-03-25T04:14:00, 2022-03-25T04:19:00, 2022-03-25T04:24:00, 2022-03-25T04:29:00, 2022-03-25T04:34:00, 2022-03-25T04:39:00, 2022-03-25T04:44:00, 2022-03-25T04:49:00, 2022-03-25T04:54:00, 2022-03-25T04:59:00, 2022-03-25T05:04:00, 2022-03-25T05:09:00, 2022-03-25T05:14:00, 2022-03-25T05:19:00, 2022-03-25T05:24:00, 2022-03-25T05:29:00, 2022-03-25T05:34:00, 2022-03-25T05:39:00, 2022-03-25T05:44:00, 2022-03-25T05:49:00
+RAD7Fields_01_TestNumbers = 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403
+RAD7Fields_02_Years = 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22
+RAD7Fields_03_Months = 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03
+RAD7Fields_04_Days = 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25
+RAD7Fields_05_Hours = 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 01, 02, 02, 02, 02, 02, 02, 02, 02, 02, 02, 02, 02, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 03, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 05, 05, 05, 05, 05, 05, 05, 05, 05, 05
+RAD7Fields_06_Minutes = 06, 11, 16, 21, 01, 06, 11, 16, 21, 26, 31, 36, 41, 46, 51, 56, 01, 06, 11, 16, 21, 26, 32, 37, 42, 47, 52, 57, 02, 07, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 02, 07, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 02, 07, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 02, 07, 12, 17, 22, 27, 32, 37, 42, 47, 52, 57, 02, 07, 12, 17, 22, 27, 32, 38, 43, 48, 53, 58, 03, 08, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 03, 08, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 03, 08, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 03, 08, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 03, 08, 13, 18, 23, 28, 33, 38, 43, 49, 54, 59, 04, 09, 14, 19, 24, 29, 34, 39, 44, 49, 54, 59, 04, 09, 14, 19, 24, 29, 34, 39, 44, 49
+RAD7Fields_07_TotalCounts = 0, 2, 3, 1, 3, 8, 26, 21, 24, 38, 43, 46, 59, 55, 74, 76, 79, 98, 102, 87, 95, 104, 75, 75, 55, 60, 39, 49, 53, 51, 42, 40, 41, 46, 34, 32, 29, 21, 36, 38, 21, 23, 26, 28, 21, 15, 15, 14, 23, 13, 17, 13, 17, 8, 14, 7, 10, 14, 8, 9, 11, 7, 7, 9, 6, 4, 5, 6, 48, 72, 63, 85, 75, 63, 101, 88, 108, 88, 117, 96, 120, 115, 105, 115, 117, 135, 111, 116, 114, 140, 167, 118, 140, 145, 117, 146, 134, 138, 125, 165, 160, 154, 138, 125, 167, 141, 131, 130, 146, 130, 158, 130, 168, 151, 146, 159, 154, 155, 147, 154, 138, 163, 167, 153, 164, 146, 143, 155, 172, 158, 157, 139, 152, 155, 154, 161, 171, 155, 176, 170, 179, 159, 185, 151, 176, 167, 140, 154, 177, 162, 164, 141, 161, 180, 178, 146, 136, 138, 170, 97, 103, 116, 87, 94, 89, 76, 91, 70, 81, 77
+RAD7Fields_08_LiveTimes = 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.6, 4.5, 4.5, 4.6, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5
+RAD7Fields_09_PercentOfTotalCountsInWindowsA = 0, 50, 100, 100, 33.3, 62.5, 76.9, 90.5, 70.8, 79, 74.4, 71.8, 86.5, 81.8, 79.7, 63.2, 77.2, 72.5, 66.7, 60.9, 59, 61.6, 62.7, 49.3, 20, 13.3, 23.1, 14.3, 20.8, 7.9, 11.9, 10, 14.6, 17.4, 8.8, 18.8, 13.8, 9.5, 19.5, 26.3, 9.5, 13.1, 19.2, 10.7, 23.8, 26.7, 33.3, 14.3, 30.4, 23.1, 5.9, 15.4, 35.3, 37.5, 14.3, 14.3, 30, 21.4, 37.5, 11.1, 27.3, 28.6, 28.6, 22.2, 33.3, 25, 40, 33.3, 85.4, 83.3, 92.1, 84.7, 82.7, 68.3, 74.3, 64.8, 67.6, 70.5, 59, 62.5, 60.8, 63.5, 64.8, 52.2, 53.9, 51.9, 52.3, 52.6, 49.1, 47.9, 53.3, 48.3, 54.3, 55.2, 50.4, 42.5, 47, 45.7, 49.6, 47.9, 56.3, 44.2, 46.4, 47.2, 46.7, 48.2, 54.2, 43.9, 42.5, 54.6, 44.3, 50.8, 53, 46.4, 48.6, 49.7, 48.1, 45.2, 46.3, 44.2, 42.8, 51.5, 43.7, 43.8, 53.1, 47.3, 49.7, 51.6, 45.9, 41.2, 54.2, 46.1, 40.1, 49.7, 55.9, 47.2, 46.2, 54.9, 51.7, 47.7, 46.9, 47.2, 52.4, 41.7, 38.6, 48.5, 44.3, 45.5, 46.9, 45.1, 45.7, 42.6, 49.1, 51.1, 46.6, 38.4, 41.9, 39.1, 35.3, 45.4, 32.1, 20.7, 19.6, 22.4, 18, 25, 17.6, 17.2, 18.5, 28.6
+RAD7Fields_10_PercentOfTotalCountsInWindowsB = 0, 0, 0, 0, 0, 0, 3.9, 4.8, 4.2, 2.6, 0, 4.4, 0, 0, 0, 0, 1.3, 0, 1, 0, 0, 1, 0, 0, 1.8, 3.3, 2.6, 0, 1.9, 5.9, 0, 7.5, 4.9, 0, 3, 3.1, 3.5, 4.8, 0, 0, 4.8, 0, 0, 7.2, 4.8, 0, 0, 0, 0, 0, 5.9, 7.7, 0, 12.5, 7.2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 20, 33.3, 0, 1.4, 0, 0, 1.3, 0, 1, 2.3, 1.9, 0, 2.6, 0, 0.8, 0, 0, 2.6, 0.9, 0, 2.7, 0, 1.8, 1.4, 2.4, 0, 0, 1.4, 0, 3.4, 0, 2.2, 0, 0.6, 1.9, 2.6, 1.5, 1.6, 3.6, 0.7, 0, 0.8, 1.4, 0.8, 0.6, 2.3, 1.2, 1.3, 3.4, 1.9, 2, 0, 1.4, 0.7, 0.7, 0, 1.2, 3.9, 0.6, 1.4, 2.1, 0, 1.8, 0.6, 0.6, 2.2, 0.7, 0.7, 1.3, 0.6, 2.4, 1.9, 0.6, 0.6, 0.6, 1.9, 0.6, 2, 0.6, 0.6, 0.7, 0.7, 1.1, 1.2, 1.2, 1.4, 0.6, 1.1, 2.3, 1.4, 0.7, 0.7, 1.2, 1, 1, 1.7, 0, 3.2, 4.5, 4, 2.2, 1.4, 1.2, 0
+RAD7Fields_11_PercentOfTotalCountsInWindowsC = 0, 50, 0, 0, 33.3, 25, 19.2, 0, 8.3, 5.3, 11.6, 13.1, 8.5, 9.1, 17.6, 32.9, 16.5, 20.4, 29.4, 33.3, 35.8, 35.6, 33.3, 49.3, 76.4, 80, 71.8, 81.6, 73.6, 80.4, 88.1, 82.5, 78.1, 78.3, 85.3, 71.9, 82.8, 85.7, 77.8, 71.1, 85.7, 82.6, 76.9, 75, 71.4, 73.3, 66.7, 78.6, 69.6, 76.9, 76.5, 76.9, 58.8, 50, 64.3, 85.7, 70, 78.6, 62.5, 77.8, 63.6, 57.2, 71.4, 66.7, 50, 50, 40, 33.3, 14.6, 8.3, 7.9, 13, 16, 22.2, 16.8, 28.4, 25, 27.3, 29.1, 30.2, 35, 33.9, 32.4, 41.8, 42.7, 45.9, 41.5, 42.3, 43.9, 45, 40.7, 49.2, 45, 39.3, 45.3, 50.7, 47.8, 50, 49.6, 47.9, 38.1, 51.3, 47.1, 44.8, 44.9, 48.2, 42, 50.8, 52.1, 41.6, 49.4, 44.6, 42.9, 49, 46.6, 47.2, 46.1, 51, 47.6, 52.6, 55.1, 40.5, 50.3, 49.7, 45.7, 48, 44.8, 46.5, 47.7, 53.8, 38.2, 48.9, 56.6, 46.5, 40.9, 49.1, 47.4, 40, 46, 44.7, 50.3, 45.9, 46.5, 50.3, 56.8, 47.3, 51.4, 49.4, 48.6, 51.2, 44.5, 51.8, 45.4, 43.3, 47.2, 56.9, 54.4, 59.4, 57.7, 50.5, 65.1, 77.6, 75.9, 72.4, 75.3, 67.1, 76.9, 78.6, 76.6, 71.4
+RAD7Fields_12_PercentOfTotalCountsInWindowsD = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.3, 0, 0, 0, 0, 1.3, 0, 0, 0, 0, 0, 0, 0, 0, 1.8, 1.7, 0, 2.1, 1.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2.8, 0, 0, 0, 0, 7.2, 0, 0, 0, 0, 0, 0, 5.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14.3, 0, 11.1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.6, 1, 0, 0.9, 0, 0.9, 0, 0.8, 0, 0, 0, 0.9, 0, 0.9, 0.9, 2.6, 0.7, 0.6, 0, 0, 0, 0, 0, 0.8, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0.7, 0.8, 0.6, 0, 0, 0.7, 0, 0, 0, 0, 0.7, 0, 0, 1.2, 0, 0, 0, 0, 0.7, 0.7, 1.2, 0.6, 1.3, 1.5, 0, 0, 0, 0, 1.8, 0.7, 0.6, 1.2, 0, 0.6, 0, 1.3, 2.3, 0, 0, 0, 0.6, 0, 0.6, 0.7, 0.6, 0.6, 0, 0.7, 0, 0, 2.4, 1, 0, 0, 1.2, 0, 0, 0, 1.1, 1.4, 1.2, 0
+RAD7Fields_13_HighVoltageLevels = 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2201, 2218, 2218, 2218, 2218, 2218, 2236, 2201, 2218, 2218, 2218, 2218, 2218, 2236, 2218, 2218, 2218, 2236, 2218, 2201, 2218, 2218, 2236, 2201, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2201, 2218, 2218, 2236, 2218, 2201, 2218, 2218, 2236, 2218, 2218, 2201, 2236, 2218, 2218, 2218, 2218, 2218, 2236, 2218, 2218, 2218, 2218, 2236, 2218, 2236, 2201, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2201, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2236, 2218, 2201, 2218, 2218, 2218, 2201, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2201, 2218, 2218, 2218, 2201, 2236, 2218, 2218, 2201, 2218, 2236, 2218, 2218, 2218, 2236, 2218, 2201, 2201, 2218, 2218, 2218, 2218, 2236, 2218, 2218, 2218, 2218, 2201, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2218, 2236, 2201, 2218, 2218
+RAD7Fields_14_HighVoltageDutyCycles = 9, 9, 8, 8, 8, 8, 9, 8, 9, 8, 8, 8, 9, 9, 9, 8, 9, 9, 9, 9, 8, 9, 9, 9, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 8, 9, 9, 9, 9, 9, 9, 9, 9, 8, 9, 9, 9, 9, 8, 9, 9, 8, 9, 9, 9, 8, 9, 9, 9, 9, 8, 9, 9, 9, 9, 9, 10, 8, 9, 8, 9, 9, 9, 8, 9, 9, 9, 9, 9, 8, 8, 9, 9, 9, 8, 9, 9, 9, 9, 9, 9, 8, 9, 9, 8, 9, 9, 9, 9, 8, 8, 9, 8, 8, 8, 9, 8, 9, 8, 9, 9, 9, 9, 8, 8, 9, 9, 8, 9, 8, 9, 9, 9, 9, 8, 9, 9, 9, 8, 8, 9, 9, 8, 9, 9, 9, 8, 9, 9, 9, 9, 9, 9, 8, 8, 8, 8, 9, 8, 9, 8, 8, 9, 9, 8, 9, 9, 8, 8, 9, 9, 9, 9, 9, 9
+RAD7Fields_15_RawTemperatures = 29.6, 29.6, 29.9, 29.9, 33.9, 33.9, 34.2, 33.9, 33.9, 33.9, 33.9, 33.5, 33.5, 33.2, 33.2, 33.2, 32.9, 32.9, 32.6, 32.6, 32.3, 32.3, 32.3, 32.3, 32, 32, 31.7, 31.7, 31.7, 31.4, 31.4, 31.1, 31.1, 30.8, 30.8, 30.5, 30.5, 30.2, 30.2, 30.2, 29.9, 29.9, 29.9, 29.6, 29.6, 29.6, 29.6, 29.3, 29.3, 29.3, 29.3, 29.3, 29, 29, 29, 29, 29, 28.7, 28.7, 28.7, 28.7, 28.7, 28.7, 28.7, 28.7, 28.7, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.4, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.4, 28.1, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.4, 28.1, 28.4, 28.1, 28.1, 28.4, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 28.1, 27.8, 27.8, 27.8, 27.8, 27.8, 27.8, 27.8, 27.8, 27.8, 27.8, 27.5, 27.8, 27.8, 27.8, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5, 27.5
+RAD7Fields_16_RelativeHumidities = 34, 15, 11, 10, 7, 7, 7, 7, 7, 7, 7, 6, 7, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4, 4, 4, 5, 4, 5, 5, 5, 5, 4, 4, 5, 4, 4, 4, 5, 4, 4, 4, 4, 4, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+RAD7Fields_17_LeakageCurrents = 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1
+RAD7Fields_18_BatteryVoltages = 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.27, 6.24, 6.24, 6.24, 6.27, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.24, 6.21, 6.24, 6.24, 6.21, 6.24, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.18, 6.21, 6.21, 6.18, 6.21, 6.21, 6.21, 6.21, 6.18, 6.18, 6.21, 6.21, 6.21, 6.21, 6.21, 6.21, 6.18, 6.18, 6.18, 6.21, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.21, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.18, 6.15, 6.15, 6.15, 6.15, 6.18, 6.15, 6.18, 6.15, 6.15, 6.18, 6.15, 6.15, 6.15, 6.15, 6.15, 6.15, 6.12, 6.15, 6.18, 6.15, 6.15, 6.15, 6.15, 6.15, 6.15, 6.15, 6.12, 6.12, 6.12, 6.12, 6.12, 6.12, 6.12, 6.15, 6.12, 6.12, 6.12, 6.09, 6.12, 6.09, 6.09, 6.12, 6.09, 6.09, 6.09, 6.09, 6.06, 6.06, 6.06, 6.06, 6.09, 6.06, 6.06, 6.03, 6.06, 6.09, 6.03, 6.06, 6, 6.06, 6.06, 6.03, 6.06, 6.03, 6, 6.03, 6.03, 6, 6, 6, 5.97, 5.97, 5.97, 5.91, 5.85, 5.81, 5.78, 5.78
+RAD7Fields_19_PumpCurrents = 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 40, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 40, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50
+RAD7Fields_20_FlagsBytes = 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134, 134
+RAD7Fields_21_RadonConcentrations = 0, 0.8777706, 2.633312, 0.8777706, 0.8873114, 4.412577, 17.65031, 16.76779, 15.00276, 26.47546, 28.39397, 29.28128, 45.25289, 39.92902, 52.63746, 42.8237, 54.42178, 63.34338, 60.6669, 47.2845, 49.96097, 57.41199, 41.93154, 33.00993, 9.760427, 7.098492, 7.985803, 5.32387, 9.760427, 3.549246, 4.436557, 3.549246, 5.32387, 7.098492, 2.647545, 5.29509, 3.53006, 1.76503, 6.211181, 8.873114, 1.76503, 2.647545, 4.412577, 1.76503, 4.412577, 3.53006, 4.412577, 1.76503, 6.177606, 2.647545, 0.8825151, 1.76503, 5.29509, 2.647545, 1.76503, 0.8825151, 2.647545, 2.647545, 2.647545, 0.8825151, 2.647545, 1.76503, 1.76503, 1.76503, 1.755541, 0.8777706, 1.76503, 1.76503, 36.37977, 53.23869, 51.46407, 64.23553, 55.31393, 38.15439, 66.01985, 50.85313, 65.1277, 55.31393, 61.8973, 53.52962, 65.48555, 65.48555, 61.00024, 53.82373, 56.51492, 62.79435, 51.13254, 53.82373, 49.33842, 60.43523, 80.27963, 51.13254, 68.5534, 72.16147, 52.92668, 55.92514, 56.51492, 56.82715, 55.61785, 71.25946, 81.18167, 61.33725, 57.72918, 51.13254, 70.35743, 61.33725, 63.69142, 51.13254, 55.92514, 63.69142, 63.14128, 59.20611, 80.72562, 62.23927, 64.0433, 71.25946, 66.74937, 63.14128, 61.33725, 61.33725, 53.21908, 74.86753, 66.21315, 60.43523, 78.4756, 62.23927, 63.14128, 72.16147, 70.74829, 58.6312, 75.76954, 56.82715, 55.02312, 69.45542, 77.57359, 68.5534, 70.74829, 76.67156, 82.53968, 72.56235, 76.19048, 67.65138, 87.98187, 55.92514, 59.86395, 73.06349, 55.92514, 63.14128, 75.28345, 65.84734, 66.74937, 54.1211, 71.25946, 82.53968, 75.28345, 50.51303, 51.41505, 48.70899, 52.60771, 39.47074, 29.60305, 21.52949, 15.16672, 18.73536, 14.27456, 16.95104, 13.3824, 10.70592, 13.3824, 19.62753
+RAD7Fields_22_RadonConcentrationUncertainties = 3.511083, 4.238252, 5.266623, 4.238252, 4.284319, 6.088454, 9.853414, 9.658484, 9.253419, 11.5923, 11.96905, 12.12236, 14.57161, 13.8107, 15.60561, 14.27456, 15.83407, 16.92478, 16.606, 14.89634, 15.25564, 16.25882, 14.14645, 12.78361, 7.922096, 7.098492, 7.386474, 6.794013, 7.922096, 5.7428, 6.121543, 5.7428, 6.469834, 7.098492, 5.29509, 6.434862, 5.711758, 4.822152, 6.794013, 7.660382, 4.822152, 5.29509, 6.088454, 5.711758, 6.088454, 5.711758, 6.088454, 4.822152, 6.75729, 5.29509, 4.26116, 4.822152, 6.434862, 5.29509, 4.822152, 4.26116, 5.29509, 5.29509, 5.29509, 4.26116, 5.29509, 4.822152, 4.822152, 4.822152, 4.796227, 4.238252, 4.822152, 4.822152, 13.27549, 15.63487, 15.40576, 17.02956, 15.94692, 13.54614, 17.33967, 15.3733, 17.13362, 15.94692, 16.80485, 15.72031, 17.22777, 17.22777, 16.69724, 15.80669, 16.14712, 16.91169, 15.57506, 15.92107, 15.45777, 16.68051, 18.91863, 15.45777, 17.63439, 18.04037, 15.69135, 16.12313, 16.14712, 16.23633, 16.03454, 17.93983, 19.01345, 16.78949, 16.34864, 15.80669, 17.83866, 16.78949, 17.01778, 15.45777, 16.12313, 17.01778, 17.00512, 16.47966, 19.02373, 17.00512, 17.11179, 17.93983, 17.42745, 17.00512, 16.78949, 16.78949, 15.77804, 18.43643, 17.41919, 16.68051, 18.7274, 16.89769, 17.11179, 18.04037, 18.03949, 16.4601, 18.53399, 16.34864, 16.00904, 17.73685, 18.63097, 17.63439, 18.14059, 18.53399, 19.2139, 18.24106, 18.53885, 17.53126, 19.77233, 16.23633, 16.99156, 18.14028, 16.12313, 17.00512, 18.44018, 17.32295, 17.53126, 15.89401, 17.93983, 19.30821, 18.44018, 15.42422, 15.54317, 15.18313, 16.09797, 13.82948, 12.25558, 10.76475, 9.35455, 10.15352, 9.141263, 9.764043, 9.141263, 8.217778, 8.921603, 10.34162
+RAD7Fields_23_Unitsbytes = 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255
+recordRAD7CalibrationDates = 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00, 2021-03-18T00:00:00
+recordRAD7FirmwareVersions = Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208, Vers 3.1a 151208
+recordRAD7Models = 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716, 716
+recordRAD7RADLINKVersions = 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311, 0311
+recordRAD7SerialNumbers = 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288, 05288
+recordRAD7CalibratedCBSpillFactors = 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869, 869
+recordRAD7CalibratedEScales = 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175, 11175
+recordRAD7CalibratedRelativeHumidities = 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536, 34536
+recordRAD7CalibratedSensitivitiesNORMALPCiL = 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514, 514
+recordRAD7CalibratedSensitivitiesSNIFFPCiL = 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245, 245
+recordRAD7CalibratedSensitivitiesTHORONPCiL = 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122, 122
+recordRAD7CalibratedTemps = 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249, 249
+recordRAD7CalibratedYears = 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121
+recordCycleNumbers = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71
+recordRunNumbers = 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15
+recordThoronConcentrations = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordThoronConcentrationUncertainties = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordContainsCPMInfoFromMediumPrintFormat = True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True
+recordCPMsWindowAFromPrintout = 0, 0.22, 0.65, 0.22, 0.22, 1.08, 4.32, 4.11, 3.68, 6.49, 6.96, 7.17, 11.1, 9.78, 12.9, 10.5, 13.3, 15.5, 14.9, 11.6, 12.2, 14.1, 10.3, 8.09, 2.39, 1.74, 1.96, 1.52, 2.39, 0.87, 1.09, 0.87, 1.3, 1.74, 0.65, 1.3, 0.86, 0.43, 1.52, 2.17, 0.43, 0.65, 1.08, 0.65, 1.08, 0.86, 1.08, 0.43, 1.51, 0.65, 0.22, 0.43, 1.3, 0.65, 0.43, 0.22, 0.65, 0.65, 0.65, 0.22, 0.65, 0.43, 0.43, 0.43, 0.43, 0.22, 0.43, 0.43, 8.91, 13, 12.6, 15.7, 13.6, 9.35, 16.4, 12.5, 16, 13.6, 15.2, 13.1, 16, 16, 15, 13.2, 13.9, 15.4, 12.8, 13.4, 12.3, 14.8, 19.7, 12.5, 16.8, 17.7, 13, 13.7, 13.9, 13.9, 13.6, 17.5, 19.9, 15, 14.1, 13, 17.2, 15, 15.6, 12.5, 13.7, 15.6, 15.5, 14.5, 19.8, 15.5, 15.7, 17.5, 16.4, 15.5, 15, 15, 13, 18.6, 16.2, 14.8, 19.2, 15.3, 15.7, 17.7, 17.6, 14.4, 18.8, 14.1, 13.5, 17, 19, 16.8, 17.6, 18.8, 20.2, 18, 18.7, 16.6, 21.6, 13.9, 15.1, 17.9, 13.7, 15.5, 18.4, 16.1, 16.6, 13.3, 17.5, 20.4, 18.4, 12.4, 12.6, 11.9, 13.3, 9.67, 7.25, 5.27, 3.72, 4.59, 3.5, 4.15, 3.5, 2.62, 3.28, 4.81
+recordCPMsWindowBFromPrintout = 0, 0, 0, 0, 0, 0, 0.22, 0.22, 0.22, 0.22, 0, 0.43, 0, 0, 0, 0, 0.22, 0, 0.22, 0, 0, 0.22, 0, 0, 0.22, 0.43, 0.22, 0, 0.22, 0.65, 0, 0.65, 0.43, 0, 0.22, 0.22, 0.22, 0.22, 0, 0, 0.22, 0, 0, 0.43, 0.22, 0, 0, 0, 0, 0, 0.22, 0.22, 0, 0.22, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0.22, 0.43, 0, 0.22, 0, 0, 0.22, 0, 0.22, 0.44, 0.44, 0, 0.66, 0, 0.22, 0, 0, 0.66, 0.22, 0, 0.66, 0, 0.44, 0.44, 0.88, 0, 0, 0.44, 0, 1.1, 0, 0.66, 0, 0.22, 0.66, 0.88, 0.44, 0.44, 1.33, 0.22, 0, 0.22, 0.44, 0.22, 0.22, 0.66, 0.44, 0.44, 1.1, 0.66, 0.66, 0, 0.44, 0.22, 0.22, 0, 0.44, 1.33, 0.22, 0.44, 0.66, 0, 0.67, 0.22, 0.22, 0.66, 0.22, 0.22, 0.44, 0.22, 0.89, 0.66, 0.22, 0.22, 0.22, 0.66, 0.22, 0.66, 0.22, 0.22, 0.22, 0.22, 0.44, 0.44, 0.44, 0.44, 0.22, 0.44, 0.89, 0.44, 0.22, 0.22, 0.44, 0.22, 0.22, 0.44, 0, 0.66, 0.87, 0.66, 0.44, 0.22, 0.22, 0
+recordCPMsWindowCFromPrintout = 0, 0.22, 0, 0, 0.22, 0.43, 1.08, 0, 0.43, 0.43, 1.09, 1.3, 1.09, 1.09, 2.84, 5.46, 2.84, 4.37, 6.56, 6.34, 7.43, 8.13, 5.46, 8.09, 9.13, 10.4, 6.09, 8.7, 8.48, 8.91, 8.04, 7.17, 6.96, 7.83, 6.27, 4.97, 5.19, 3.89, 6.09, 5.87, 3.89, 4.11, 4.32, 4.54, 3.24, 2.38, 2.16, 2.38, 3.46, 2.16, 2.81, 2.16, 2.16, 0.86, 1.95, 1.3, 1.51, 2.38, 1.08, 1.51, 1.51, 0.86, 1.08, 1.3, 0.65, 0.43, 0.43, 0.43, 1.52, 1.3, 1.09, 2.4, 2.62, 3.04, 3.72, 5.46, 5.9, 5.25, 7.47, 6.34, 9.23, 8.57, 7.47, 10.6, 11, 13.6, 10.1, 10.8, 11, 13.9, 15, 12.8, 13.9, 12.6, 11.7, 16.4, 14.1, 15.3, 13.6, 17.5, 13.5, 17.5, 14.4, 12.3, 16.6, 15, 12.1, 14.5, 16.8, 11.9, 17.2, 12.8, 16, 16.4, 15, 16.6, 15.7, 17.5, 15.5, 17.9, 16.8, 14.6, 18.7, 16.8, 16.6, 15.5, 14.1, 15.9, 18.2, 18.8, 13.3, 15, 19, 15.9, 13.9, 17.5, 18, 13.7, 18, 16.9, 20, 16.1, 19.1, 16.8, 22.2, 17.5, 15.9, 16.8, 19.1, 18.3, 16.1, 16.1, 16.1, 17.3, 18.7, 18.3, 16.4, 18.1, 21.8, 10.8, 14.7, 19.8, 14.4, 14.9, 14.6, 11.2, 15.3, 12, 13.6, 12
+recordCPMsWindowDFromPrintout = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0.22, 0, 0.22, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0.43, 0, 0, 0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0.22, 0, 0.22, 0, 0.22, 0, 0.22, 0, 0, 0, 0.22, 0, 0.22, 0.22, 0.66, 0.22, 0.22, 0, 0, 0, 0, 0, 0.22, 0, 0, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 0.22, 0.22, 0.22, 0, 0, 0.22, 0, 0, 0, 0, 0.22, 0, 0, 0.44, 0, 0, 0, 0, 0.22, 0.22, 0.44, 0.22, 0.44, 0.44, 0, 0, 0, 0, 0.67, 0.22, 0.22, 0.44, 0, 0.22, 0, 0.44, 0.89, 0, 0, 0, 0.22, 0, 0.22, 0.22, 0.22, 0.22, 0, 0.22, 0, 0, 0.89, 0.22, 0, 0, 0.22, 0, 0, 0, 0.22, 0.22, 0.22, 0
+recordCPMsWindowOFromPrintout = 0, 0, 0, 0, 0.22, 0.22, 0, 0.22, 0.86, 1.08, 1.09, 1.09, 0.65, 1.09, 0.44, 0.44, 0.87, 1.53, 0.66, 1.09, 1.09, 0.44, 0.66, 0.22, 196, 0.22, 0.22, 0.22, 0.22, 0.65, 0, 0, 0.22, 0.43, 0.22, 0.43, 0, 0, 0, 0.22, 0, 0.22, 0.22, 99.2, 0, 0, 0, 0.22, 0, 0, 0.22, 0, 0.22, 0, 0.43, 0, 0, 0, 0, 0.22, 0.22, 0, 0, 0, 0.22, 0, 0, 0, 0, 1.09, 0, 0.44, 0, 1.09, 1.53, 0.87, 1.09, 0.44, 2.2, 1.53, 0.66, 0.66, 0.66, 0.88, 0.44, 0.66, 0.66, 1.1, 0.66, 1.55, 1.1, 0.66, 0.22, 1.33, 1.1, 1.1, 1.32, 0.66, 0.22, 1.33, 1.33, 0.66, 1.55, 0.66, 1.77, 0.88, 1.1, 1.32, 1.1, 0.66, 1.77, 0.66, 1.11, 0.88, 0.44, 0.44, 1.33, 1.33, 1.33, 0.88, 0.44, 2.43, 1.78, 0.88, 0.22, 1.1, 0.88, 0.44, 1.33, 1.33, 1.99, 0.44, 0.88, 1.1, 0.66, 1.1, 0.89, 0.88, 0.44, 2.22, 0.89, 1.55, 0.22, 1.55, 0.67, 1.33, 1.1, 1.55, 1.11, 0.88, 2.87, 1.1, 1.55, 1.56, 1.56, 0.88, 0.88, 0.22, 1.33, 0.44, 0.44, 0, 0.66, 0.44, 0.44, 0.66, 0.44, 0.22, 0.44, 0
+recordCPMUncertaintiesWindowAFromPrintout = 0.86, 1.04, 1.29, 1.04, 1.05, 1.49, 2.41, 2.37, 2.27, 2.84, 2.93, 2.97, 3.57, 3.38, 3.82, 3.5, 3.88, 4.15, 4.07, 3.65, 3.74, 3.98, 3.47, 3.13, 1.94, 1.74, 1.81, 1.66, 1.94, 1.41, 1.5, 1.41, 1.59, 1.74, 1.3, 1.58, 1.4, 1.18, 1.66, 1.88, 1.18, 1.3, 1.49, 1.3, 1.49, 1.4, 1.49, 1.18, 1.66, 1.3, 1.04, 1.18, 1.58, 1.3, 1.18, 1.04, 1.3, 1.3, 1.3, 1.04, 1.3, 1.18, 1.18, 1.18, 1.18, 1.04, 1.18, 1.18, 3.25, 3.83, 3.77, 4.17, 3.91, 3.32, 4.25, 3.77, 4.2, 3.91, 4.12, 3.85, 4.22, 4.22, 4.09, 3.87, 3.96, 4.14, 3.82, 3.9, 3.76, 4.09, 4.64, 3.79, 4.32, 4.42, 3.84, 3.95, 3.96, 3.98, 3.93, 4.4, 4.66, 4.11, 4.01, 3.84, 4.37, 4.11, 4.17, 3.79, 3.95, 4.17, 4.17, 4.04, 4.66, 4.17, 4.19, 4.4, 4.27, 4.17, 4.11, 4.11, 3.87, 4.52, 4.27, 4.09, 4.59, 4.14, 4.19, 4.42, 4.42, 4.03, 4.54, 4.01, 3.92, 4.35, 4.56, 4.32, 4.42, 4.54, 4.71, 4.47, 4.54, 4.3, 4.84, 3.98, 4.14, 4.44, 3.95, 4.17, 4.52, 4.24, 4.3, 3.89, 4.4, 4.73, 4.52, 3.78, 3.81, 3.72, 3.92, 3.39, 3, 2.64, 2.29, 2.49, 2.24, 2.39, 2.24, 2.01, 2.19, 2.53
+recordCPMUncertaintiesWindowBFromPrintout = 0.86, 0.86, 0.86, 0.86, 0.87, 0.86, 1.04, 1.04, 1.04, 1.04, 0.87, 1.19, 0.87, 0.87, 0.87, 0.87, 1.06, 0.87, 1.06, 0.87, 0.87, 1.06, 0.87, 0.87, 1.05, 1.19, 1.05, 0.87, 1.05, 1.3, 0.87, 1.3, 1.19, 0.87, 1.04, 1.04, 1.04, 1.04, 0.87, 0.87, 1.04, 0.86, 0.86, 1.18, 1.04, 0.86, 0.86, 0.86, 0.86, 0.86, 1.04, 1.04, 0.86, 1.04, 1.04, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1.04, 1.04, 1.18, 0.87, 1.05, 0.87, 0.87, 1.06, 0.87, 1.06, 1.19, 1.19, 0.87, 1.32, 0.87, 1.06, 0.88, 0.88, 1.32, 1.06, 0.88, 1.32, 0.88, 1.2, 1.21, 1.43, 0.88, 0.88, 1.21, 0.88, 1.52, 0.88, 1.33, 0.88, 1.07, 1.33, 1.43, 1.21, 1.2, 1.61, 1.07, 0.88, 1.06, 1.21, 1.06, 1.07, 1.32, 1.21, 1.21, 1.52, 1.33, 1.33, 0.88, 1.21, 1.07, 1.07, 0.88, 1.21, 1.61, 1.07, 1.21, 1.33, 0.88, 1.33, 1.07, 1.07, 1.33, 1.07, 1.07, 1.21, 1.07, 1.44, 1.33, 1.07, 1.07, 1.07, 1.33, 1.07, 1.33, 1.07, 1.07, 1.07, 1.07, 1.21, 1.21, 1.21, 1.21, 1.07, 1.21, 1.44, 1.21, 1.07, 1.07, 1.21, 1.06, 1.06, 1.2, 0.87, 1.31, 1.41, 1.31, 1.19, 1.06, 1.06, 0.87
+recordCPMUncertaintiesWindowCFromPrintout = 0.86, 1.04, 0.86, 0.86, 1.05, 1.18, 1.49, 0.86, 1.18, 1.18, 1.5, 1.59, 1.5, 1.5, 2.07, 2.67, 2.07, 2.44, 2.87, 2.83, 3.02, 3.15, 2.67, 3.13, 3.29, 3.48, 2.78, 3.22, 3.18, 3.25, 3.11, 2.97, 2.93, 3.08, 2.8, 2.55, 2.59, 2.32, 2.78, 2.74, 2.32, 2.37, 2.41, 2.46, 2.16, 1.93, 1.87, 1.93, 2.22, 1.87, 2.05, 1.87, 1.87, 1.4, 1.8, 1.58, 1.66, 1.93, 1.49, 1.66, 1.66, 1.4, 1.49, 1.58, 1.29, 1.18, 1.18, 1.18, 1.66, 1.59, 1.5, 1.95, 2.01, 2.12, 2.29, 2.67, 2.75, 2.62, 3.04, 2.83, 3.32, 3.22, 3.04, 3.52, 3.58, 3.93, 3.45, 3.55, 3.58, 3.98, 4.11, 3.82, 3.98, 3.81, 3.67, 4.27, 3.98, 4.14, 3.93, 4.4, 3.92, 4.4, 4.03, 3.76, 4.3, 4.11, 3.73, 4.04, 4.32, 3.7, 4.37, 3.82, 4.24, 4.27, 4.11, 4.3, 4.19, 4.4, 4.17, 4.44, 4.32, 4.06, 4.54, 4.32, 4.3, 4.17, 4.01, 4.22, 4.49, 4.54, 3.89, 4.11, 4.56, 4.22, 3.98, 4.4, 4.47, 3.95, 4.47, 4.34, 4.68, 4.24, 4.59, 4.32, 4.91, 4.4, 4.22, 4.32, 4.59, 4.49, 4.24, 4.24, 4.24, 4.39, 4.54, 4.49, 4.27, 4.47, 4.87, 3.55, 4.06, 4.63, 4.02, 4.07, 4.04, 3.59, 4.12, 3.71, 3.91, 3.71
+recordCPMUncertaintiesWindowDFromPrintout = 0.86, 0.86, 0.86, 0.86, 0.87, 0.86, 0.86, 0.86, 0.86, 0.86, 1.05, 0.87, 0.87, 0.87, 0.87, 1.06, 0.87, 0.87, 0.87, 0.87, 0.87, 0.88, 0.87, 0.87, 1.05, 1.05, 0.87, 1.05, 1.05, 0.87, 0.87, 0.87, 0.87, 0.87, 0.86, 0.86, 0.86, 0.86, 1.05, 0.87, 0.86, 0.86, 0.86, 1.18, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1.04, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1.04, 0.86, 1.04, 0.86, 0.86, 0.86, 0.86, 0.87, 0.87, 0.87, 0.87, 0.87, 1.05, 1.06, 0.87, 1.06, 0.87, 1.06, 0.87, 1.06, 0.88, 0.88, 0.88, 1.06, 0.88, 1.06, 1.06, 1.32, 1.07, 1.07, 0.88, 0.88, 0.88, 0.88, 0.88, 1.06, 0.88, 0.88, 0.88, 0.88, 0.88, 0.88, 1.52, 0.88, 0.88, 0.88, 0.88, 1.07, 1.06, 1.07, 0.88, 0.89, 1.07, 0.88, 0.88, 0.88, 0.88, 1.07, 0.88, 0.88, 1.21, 0.89, 0.88, 0.88, 0.88, 1.07, 1.07, 1.21, 1.07, 1.21, 1.21, 0.88, 0.88, 0.88, 0.88, 1.33, 1.07, 1.07, 1.21, 0.89, 1.07, 0.89, 1.21, 1.44, 0.88, 0.88, 0.88, 1.07, 0.88, 1.07, 1.07, 1.07, 1.07, 0.89, 1.07, 0.88, 0.88, 1.44, 1.06, 0.88, 0.88, 1.06, 0.87, 0.87, 0.87, 1.06, 1.06, 1.06, 0.87
+recordCPMUncertaintiesWindowOFromPrintout = 0.86, 0.86, 0.86, 0.86, 1.05, 1.04, 0.86, 1.04, 1.4, 1.49, 1.5, 1.5, 1.3, 1.5, 1.19, 1.19, 1.41, 1.67, 1.31, 1.51, 1.51, 1.2, 1.31, 1.06, 13.5, 1.05, 1.05, 1.05, 1.05, 1.3, 0.87, 0.87, 1.05, 1.19, 1.04, 1.18, 0.86, 0.86, 0.87, 1.05, 0.86, 1.04, 1.04, 9.71, 0.86, 0.86, 0.86, 1.04, 0.86, 0.86, 1.04, 0.86, 1.04, 0.86, 1.18, 0.86, 0.86, 0.86, 0.86, 1.04, 1.04, 0.86, 0.86, 0.86, 1.04, 0.86, 0.86, 0.86, 0.87, 1.5, 0.87, 1.19, 0.87, 1.5, 1.67, 1.41, 1.51, 1.19, 1.9, 1.67, 1.32, 1.32, 1.32, 1.42, 1.2, 1.32, 1.32, 1.52, 1.32, 1.69, 1.52, 1.32, 1.07, 1.61, 1.52, 1.52, 1.6, 1.33, 1.06, 1.61, 1.61, 1.33, 1.69, 1.32, 1.77, 1.43, 1.52, 1.6, 1.52, 1.32, 1.77, 1.32, 1.53, 1.43, 1.21, 1.21, 1.61, 1.61, 1.61, 1.43, 1.21, 1.97, 1.78, 1.43, 1.07, 1.52, 1.43, 1.21, 1.62, 1.61, 1.84, 1.21, 1.43, 1.52, 1.33, 1.52, 1.44, 1.43, 1.21, 1.92, 1.44, 1.69, 1.07, 1.69, 1.33, 1.61, 1.52, 1.69, 1.53, 1.43, 2.1, 1.52, 1.69, 1.7, 1.7, 1.43, 1.43, 1.07, 1.62, 1.2, 1.2, 0.88, 1.31, 1.19, 1.19, 1.31, 1.19, 1.06, 1.19, 0.87
+recordAdditiveSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
+recordPerRecordSpectra = [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None], [None]
+recordBigBottleConfigAerationEfficiencyFactorVals = 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000
+recordBigBottleConfigAmbientAirRadonConcentrationValsPCiL = 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500
+recordBigBottleConfigBottleVolumesMl = 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0, 2500.0
+recordBigBottleConfigBrimFullWaterLossVolumesMl = 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+recordBigBottleConfigBubbleTrapVolumesMl = 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0, 51.0
+recordBigBottleConfigCustomDryingUnitVolsmL = 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0, 400.0
+recordBigBottleConfigCustomDRYSTIKVolsmL = 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0, 133.0
+recordBigBottleConfigCustomRAD7VolsmL = 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0, 800.0
+recordBigBottleConfigDryingUnitTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordbigBottleConfigDRYSTIKTypes = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordBigBottleConfigHeadSpacesMl = 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0
+recordBigBottleConfigRAD7Types = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordBigBottleConfigSpecifyAmbientAirRadon = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+recordBigBottleConfigTubingPlusAdaptorCapVolMl = 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0, 54.0
+recordRADAQUATemperatureRecordDelaysSeconds = 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800, 1800
+recordRadonInWaterCalculationFormulasUsed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordRadonMeasurementMethodsUsed = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordWaterProbeTemperatureRecordDelaysSeconds = 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200, 7200
+recordWaterSalinitiesPartsPerThousand = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordWaterTemperatureCelsiusFixedVals = 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20
+recordWaterTemperatureDataProfileNames = , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+recordWaterTemperatureDataSources = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordWaterTemperatureOffsetCelsiusFixedVals = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+recordAppliedWaterTemperaturesCelsius = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+recordAppliedWaterTemperaturesDelayedCelsius = -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
+RAD7RecordSetAnnotationData = {"RAD7RecordSetAnnotations":{}}
+
