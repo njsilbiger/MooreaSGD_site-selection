@@ -1,0 +1,66 @@
+Varari ReefCrest
+
+    20:00 3/26/22 - collected
+    02:00 3/27/22 - collected
+    08:00 3/27/22 - collected
+    14:00 3/27/22 - collected
+    20:00 3/27/22 - failed to collect both sides, SAS flood
+    02:00 3/28/22 - failed to collect both sides, SAS flood
+    08:00 3/28/22 - collected
+    14:00 3/28/22 - collected
+    20:00 3/28/22 - failed to collect both sides **
+    02:00 3/29/22 - failed to collect nutrient sample
+    08:00 3/29/22 - collected
+    14:00 3/29/22 - collected
+    20:00 3/29/22 - collected
+    02:00 3/30/22 - collected
+    20:00 3/30/22 - 
+    02:00 3/31/22 - 
+
+    * total 20:00 – 2
+    * total 02:00 – 2
+    * total 08:00 - 3
+    * total 14:00 - 3
+
+
+Cabral ReefCrest
+
+    19:00 3/28/22 - failed to collected, programming error
+    01:00 3/29/22 - collected
+    07:00 3/29/22 - failed to collect one side **
+    13:00 3/29/22 - **
+    19:00 3/29/22 - failed to collect both sides, SAS flood
+    01:00 3/30/22 - collected
+    07:00 3/30/22 - failed to collect both sides, SAS flood
+    13:00 3/30/22 - **
+    19:00 3/30/22 - collected, bottle
+    01:00 3/31/22 - 
+    07:00 3/31/22.- 
+
+    * total 19:00 - 1
+    * total 01:00 - 2
+    * total 07:00 - 0
+    * total 13:00 - 
+
+Cabral Pit
+
+    19:00 3/28/22 - failed to collected, programming error
+    01:00 3/29/22 - failed to collect
+    07:00 3/29/22 - collected, bottle
+    13:00 3/29/22 - collected, bottle
+    19:00 3/29/22 - collected
+    01:00 3/30/22 - collected
+    07:00 3/30/22 - collected, bottle
+    13:00 3/30/22 - collected, bottle   
+    19:00 3/30/22 - 
+    01:00 3/31/22 - 
+    07:00 3/31/22 - 
+
+    * total 19:00 - 2
+    * total 01:00 - 1
+    * total 07:00 - 2
+    * total 13:00 - 2
+
+
+
+        

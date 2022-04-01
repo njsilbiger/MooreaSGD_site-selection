@@ -165,13 +165,13 @@ PH_197,PH,8/27/21 12:30,9/5/21 12:00,log,
 CT_353,CT,8/27/21 12:30,9/5/21 12:00,log,
 WL_870,WL,8/27/21 12:30,9/5/21 12:00,log,
 DO_658,DO,8/27/21 12:30,9/5/21 12:00,log,
-CT_353,CT,3/14/22 09:00,,log,cabral sled
-PH_197,PH,3/14/22 09:00,,log,cabral sled
-WL_877,WL,3/14/22 09:00,,log,cabral sled
-DO_719,DO,3/14/22 09:00,,log,cabral sled
-LUX_870,LUX,3/14/22 09:00,,log,cabral sled
-LUX_858,LUX,3/14/22 09:00,,log,cabral sled
-LUX_838,LUX,3/14/22 09:00,,log,cabral sled
+CT_353,CT,3/14/22 09:00,3/29/22 17:30,log,cabral sled
+PH_197,PH,3/14/22 09:00,3/29/22 17:30,log,cabral sled
+WL_877,WL,3/14/22 09:00,3/29/22 17:30,log,cabral sled
+DO_719,DO,3/14/22 09:00,3/29/22 17:30,log,cabral sled
+LUX_870,LUX,3/14/22 09:00,3/29/22 17:30,log,cabral sled
+LUX_858,LUX,3/14/22 09:00,3/29/22 17:30,log,cabral sled
+LUX_838,LUX,3/14/22 09:00,3/29/22 17:30,log,cabral sled
 CT_335,CT,3/14/22 15:00,3/20/22 12:00,log,varari sled
 PH_196,PH,3/14/22 15:00,3/20/22 12:00,log,varari sled
 WL_872,WL,3/14/22 15:00,3/20/22 12:00,log,varari sled
@@ -179,11 +179,24 @@ DO_658,DO,3/14/22 15:00,3/20/22 12:00,log,varari sled
 PAR_224,PAR,3/14/22 15:00,3/20/22 12:00,log,varari sled
 LUX_848,LUX,3/14/22 15:00,3/20/22 12:00,log,varari sled
 LUX_845,LUX,3/14/22 15:00,3/20/22 12:00,log,varari sled
-CT_335,CT,3/20/22 19:00,,log,varari sled
+CT_335,CT,3/20/22 19:00,    ,log,varari sled
 PH_196,PH,3/20/22 19:00,,log,varari sled
 WL_872,WL,3/20/22 19:00,,log,varari sled
 DO_658,DO,3/20/22 19:00,,log,varari sled
 PAR_224,PAR,3/20/22 19:00,,log,varari sled
 LUX_848,LUX,3/20/22 19:00,,log,varari sled
 LUX_845,LUX,3/20/22 19:00,,log,varari sled
-CT_338,CT,3/20/22 19:00,,log,varari RAD
+LUX_202,LUX,3/27/22 08:00,,log,varari reefcrest
+LUX_865,LUX,3/26/22 19:00,3/29/22 08:00,log,varari reefcrest
+LUX_865,LUX,3/29/22 17:00,,log,varari reefcrest
+LUX_851,LUX,3/28/22 18:00,3/30/22 07:00,log,cabral reefcrest
+LUX_859,LUX,3/28/22 18:00,,log,cabral reefcrest
+LUX_860,LUX,3/28/22 18:00,,log,cabral pit
+LUX_985,LUX,3/28/22 18:00,,log,cabral pit
+CT_353,CT,3/29/22 09:00,3/29/22 19:30,log,cabral sled
+PH_197,PH,3/29/22 09:00,3/29/22 19:30,log,cabral sled
+WL_877,WL,3/29/22 09:00,3/29/22 19:30,log,cabral sled
+DO_719,DO,3/29/22 09:00,3/29/22 19:30,log,cabral sled
+LUX_870,LUX,3/29/22 09:00,3/29/22 19:30,log,cabral sled
+LUX_858,LUX,3/29/22 09:00,3/29/22 19:30,log,cabral sled
+LUX_838,LUX,3/29/22 09:00,3/29/22 19:30,log,cabral sled
