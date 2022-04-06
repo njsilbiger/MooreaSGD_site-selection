@@ -1,11 +1,16 @@
-Sled deployed at seep in Varari at 13:00 on 3/14/22 and retrieved at ~12:00 on 3/20/22. Sled calibrated in the field, one point calibration.
-PAR offset for 3/14/22 deployment: 
-** PAR date & time: 2022-01-11 16:46:06 
-** Actual date & time: 2022-03-13 17:23:37
+Sled deployed at seep in Varari at 13:00 on 2022-03-14 and retrieved at ~12:00 on 2022-03-20. Sled calibrated in the field, one point calibration. 
 
-Sled was moved to more accurate seep location (CSEEPMarch2022 coordinates) and re-deployed on 3/20/22 at 19:00. Sled calibrated in the field. 
-PAR offset for 3/20/22 deployment:
-** PAR date & time: 2022-01-18 16:26:36
-** Actual date & time: 2022-03-20 17:04:08
 
-test
+Sled was moved to more accurate seep location (CSEEPMarch2022 coordinates) and re-deployed on 2022-03-20 at 19:00. Sled calibrated in the field. Sled held at surface at 17:52 2022-03-20 and 12:10, 12:12, 12:14 on 2022-03-22. Sled retrieved at ~11:40 2022-03-22. Sled calibrated in the field. 
+
+
+Sled re-deployed on 2022-03-22 at 14:00. Held at surface 15:20, 15:22 on 2022-03-22. Sled retrieved on 2022-04-03 at 7:30. Held at surface 8:12, 8:14 on 2022-04-03. Sled calibrated in the field. Pressure logger won't allow for data processing in HOBO.
+
+
+Sled re-deployed on 2022-04-04 at 13:40. Held at surface 13:22, 13:24, 13:26 on 2022-04-04. Sled calibrated in the field. 
+
+
+
+
+
+
