@@ -1,4 +1,4 @@
-CowTagID,SeepCode,Tide,Day_Night,Date,Salinity_In_Lab,SamplingTime,TempInLab,mV,Salinity,TempInSitu,TA,TrisCalDate,No_Junk_Run,Notes,Salinity_Calibration_Date
+CowTagID,SeepCode,Tide,Day_Night,Date,Salinity_In_Lab,SamplingTime,TempInLab,mV,Notes,TempInSitu,TA,TrisCalDate,No_Junk_Run,Salinity,Salinity_Calibration_Date
 VSEEP,A,Mid,Night,3/21/2022,36.1,5:00,26.084,-69.2,,,,3/20/2022,,,
 VSEEP,B,Low,Day,3/21/2022,16.9,8:00,26.99,-25.2,,,,3/20/2022,,,
 V1,,Low,Day,3/21/2022,36.6,8:00,28.07,-71.2,,,,3/20/2022,,,
