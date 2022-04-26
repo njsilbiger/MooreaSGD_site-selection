@@ -36,15 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2021","Varari_Sled","20210811","raw_files") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","March2022","Varari_Sled","20220314","raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "08112021" # date used in naming output file(s)
+file.date <- "20220314" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
+ct.serial <- "335" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2021","Varari_Sled","20210811","QC_files") # Output file path
+path.output<-here("Data","March2022","Varari_Sled","20220314","QC_files") # Output file path
 
 
 ###################################
@@ -52,8 +53,8 @@ path.output<-here("Data","August2021","Varari_Sled","20210811","QC_files") # Out
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-11')
-end.date <- ymd('2021-08-25')
+start.date <- ymd('2022-03-14')
+end.date <- ymd('2022-03-20')
 
 
 ###################################
@@ -62,7 +63,7 @@ end.date <- ymd('2021-08-25')
 
 # Read in files that are updated with calibration and launch information
 calibration.log<-read_csv(here("Data","CT_Calibration_Log.csv")) # Calibration time logs
-launch.log<-read_csv(here("Data","August2021","Cond_temp","CTLoggerIDMetaData.csv")) # Launch time logs
+launch.log<-read_csv(here("Data","CTLoggerIDMetaData_Plates.csv")) # Launch time logs
 
 
 ###################################
@@ -89,7 +90,11 @@ Pres_dbar<-10 # surface pressure in decibar
 # condCal<-CT_cleanup(data.path = path.cal, path.pattern = c(file.date,"csv$"), tf.write = F)
 
 # In Situ Conductivity files
-condLog<-CT_cleanup(data.path = path.log, output.path=path.output, path.pattern = csv.pattern, tf.write = F, hobo.cal = hobo.csv)
+condLog<-CT_cleanup(data.path = path.log, output.path=path.output, path.pattern = csv.pattern, tf.write = F)
+
+# Run if temperature is in farenheit
+condLog <- condLog %>% 
+  mutate(TempInSitu = (TempInSitu - 32) * (5/9))
 
 ############################################################
 ### Parse date and time
@@ -106,6 +111,12 @@ calibration.log <- calibration.log %>%
   mutate(time_in = mdy_hms(time_in)) %>% # assumes time is entered as hours and minutes (H:M) only
   mutate(time_out = mdy_hms(time_out)) %>% 
   filter(date == start.date & pre_post == "pre" | date == end.date & pre_post == "post") # filter only current pre- and post-calibration dates
+
+# if selecting single CT from same calibration date
+if(exists('ct.serial') == T){
+  calibration.log <- calibration.log %>% 
+    filter(LoggerID == ct.serial)
+}
 
 ## in situ
 ## unite date to time columns and parse to POSIXct datetime
@@ -143,7 +154,7 @@ for(i in 1:n1) {
   sn.a<-calibration.log %>% # vector of all serial numbers
     distinct(LoggerID) #%>% # pull each distinct Serial number
   #separate(col = 'LoggerID', into = c(NA,'LoggerID'), sep = "_")
-  sn.a<-as.character(sn.a[i,]) # i'th serial number
+  sn.a<-as.character(sn.a[1,]) # i'th serial number
   
   # filter by the i'th serial number
   C1.cal<-condLog %>% # C1: full in situ log; will be reduced to calibration logs
