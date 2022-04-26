@@ -7,7 +7,7 @@ Sled was moved to more accurate seep location (CSEEPMarch2022 coordinates) and r
 Sled re-deployed on 2022-03-22 at 14:00. Held at surface 15:20, 15:22 on 2022-03-22. Sled retrieved on 2022-04-03 at 7:30. Held at surface 8:12, 8:14 on 2022-04-03. Sled calibrated in the field. Pressure logger won't allow for data processing in HOBO.
 
 
-Sled re-deployed on 2022-04-04 at 13:40. Held at surface 13:22, 13:24, 13:26 on 2022-04-04. Sled calibrated in the field. Sled removed at 11:15 on 2022-04-14. Sled held on surface at 12:25, 12:27, 12:29 on 2022-04-14.
+Sled re-deployed on 2022-04-04 at 13:40. Held at surface 13:22, 13:24, 13:26 on 2022-04-04. Sled calibrated in the field. Sled removed at 11:15 on 2022-04-14. Sled held on surface at 12:25, 12:27, 12:29 on 2022-04-14. Pressure logger won't allow for data processing in HOBO.
 
 
 
