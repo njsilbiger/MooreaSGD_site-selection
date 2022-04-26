@@ -1,9 +1,9 @@
-Sled deployed at Cabral at 19:00 on 2022-03-14 and moved closer to the seep (CSEEPMARCH2022) on 2022-03-29 at 17:55. Sled was moved by Airbnb inhabitants / Mr. Cabral prior to this, potentially on the 2022-03-25/27. Shortly after the 2022-03-29 move the sled was brought in and offloaded without stopping most loggers. Sled calibrated in the field. Third lux logger in place of PAR. Sled redeployed on 2022-03-29 at 19:30. 
-Sled retrieved on 2022-03-31 at 13:00. Water level hobo needs to be post processed. CT calibration point in separate folder. 
+Sled deployed at Cabral at 19:00 on 2022-03-14 and moved closer to the seep (CSEEPMARCH2022) on 2022-03-29 at 17:55. Sled was moved by Airbnb inhabitants / Mr. Cabral prior to this, potentially on the 2022-03-25/27. Shortly after the 2022-03-29 move the sled was brought in and offloaded without stopping most loggers. Sled calibrated in the field. Third lux logger in place of PAR. 
+
+Sled redeployed on 2022-03-29 at 19:30. Sled retrieved on 2022-03-31 at 13:00. Water level hobo needs to be post processed. CT calibration point in separate folder. 
 
 
 Sled redeployed on 2022-03-31 at 15:30 and retrieved on 2022-04-03 at 8:00. Held at 15:14, 15:16, 15:18 on 2022-03-31 and on 8:42, 8:44 on 2022-04-03. Pressure logger won't allow for data processing in HOBO. Sled calibrated in the field. 
 
-Sled redeployed on 2022-04-04 at 12:00. Held at 12:56, 12:58, 13:00 on 2022-04-04. Sled calibrated in the field. Sled moved somewhere around 24 hours by airbnb residents. to the beach. Sled removed on 2022-04-06 ~6:30 am. 
 
 
