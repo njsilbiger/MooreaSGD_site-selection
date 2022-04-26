@@ -154,7 +154,7 @@ for(i in 1:n1) {
   sn.a<-calibration.log %>% # vector of all serial numbers
     distinct(LoggerID) #%>% # pull each distinct Serial number
   #separate(col = 'LoggerID', into = c(NA,'LoggerID'), sep = "_")
-  sn.a<-as.character(sn.a[1,]) # i'th serial number
+  sn.a<-as.character(sn.a[i,]) # i'th serial number
   
   # filter by the i'th serial number
   C1.cal<-condLog %>% # C1: full in situ log; will be reduced to calibration logs
@@ -180,7 +180,7 @@ for(i in 1:n1) {
   
   if(nrow(C2.cal) == 1){ 
     
-    # specify whether calibration reference is an electrical conductivity or specific conductance value
+    # specify whether calibration reference is an electrical conductivity or specific conductance (temp-compensated) value
     if(C2.cal$EC_SC == 'EC'){
       ec.cal = TRUE
     } else {ec.cal = FALSE}
