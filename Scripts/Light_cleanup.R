@@ -45,7 +45,7 @@ path.output<-here("Data","March2022","Cabral_Sled","20220331","QC_files") # Outp
 ### Logger Serial Numbers
 ###################################
 
-Light_Serial <- "838"
+Light_Serial <- "870"
 
 ###################################
 ### Logger Launch and Retrieval dates
@@ -53,7 +53,7 @@ Light_Serial <- "838"
 
 # Log dates
 start.date <- ymd('2022-03-31')
-end.date <- ymd('2022-03-31')
+end.date <- ymd('2022-04-03')
 
 # do you want to plot a graph?
 plotgraph<-'no'
