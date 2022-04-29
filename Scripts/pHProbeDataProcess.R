@@ -9,10 +9,10 @@ library(here)
 library(lubridate)
 
 ## bring in pH calibration files and raw data files
-pHcalib<-read_csv(here("Data","August2021","CarbonateChemistry","TrisCalibrationLog.csv")) %>%
+pHcalib<-read_csv(here("Data","March2022","CarbonateChemistry","TrisCalibrationLog.csv")) %>%
   mutate(TrisCalDate = mdy(TrisCalDate))
-# pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))
-pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))%>%
+# pHData<-read_csv(here("Data","March2022","CarbonateChemistry","pHProbe_Data.csv"))
+pHData<-read_csv(here("Data","March2022","CarbonateChemistry","pHProbe_Data.csv"))%>%
   mutate(TrisCalDate = mdy(TrisCalDate))
 # pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_SEEP_2022_02_10.csv"))%>%
 #   mutate(TrisCalDate = mdy(TrisCalDate))
@@ -52,15 +52,15 @@ pHSlope$Phosphate_umolL[NoPO]<-0
 #Now calculate pH
 pHSlope <-pHSlope%>%
   mutate(pH_insitu = pHinsi(pH = pH, ALK = TA, Tinsi = TempInSitu, Tlab = TempInLab, 
-                            S = Salinity_In_Lab,Pt = Phosphate_umolL, k1k2 = "m10", kf = "dg")) %>%
+                            S = Salinity,Pt = Phosphate_umolL, k1k2 = "m10", kf = "dg")) %>%
   select(!pH) %>% # I only need the in situ pH calculation so remove this
   rename(pH = pH_insitu) %>% # rename it 
   ungroup() %>%
-  select(Date, CowTagID,SeepCode, Tide, Day_Night, SamplingTime,Salinity=Salinity_In_Lab, pH, TempInSitu, TA, Notes) # keep what I want
+  select(Date, CowTagID,SeepCode, Tide, Day_Night, SamplingTime,Salinity=Salinity, pH, TempInSitu, TA, Notes) # keep what I want
 
 pHSlope$TA[NoTA]<-NA # make TA na again for the missing values
 
   #select(Date, CowTagID,Tide, Day_Night, SamplingTime,Salinity,pH, pH_insitu, TempInSitu) ## need to calculate pH insi then it is done
 
 ## write the data
-write_csv(x = pHSlope, file = here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated_POcorrect.csv"))
+write_csv(x = pHSlope, file = here("Data","March2022","CarbonateChemistry","pHProbe_Data_calculated_NOTPOcorrect.csv"))
