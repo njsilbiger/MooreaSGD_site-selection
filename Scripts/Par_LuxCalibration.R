@@ -57,7 +57,7 @@ terms<-tidy(fit)
 
 ggplot(BothLight,aes(x = Lux+1, y = PAR+1))+
   geom_point() +
-  geom_line(aes(x = Lux+1, y = Y+1))+
+  geom_line(aes(x = Lux+1, y = Y+1), lwd = 3, color = "red")+
   coord_trans(x = "log", y = "log")
 
 
