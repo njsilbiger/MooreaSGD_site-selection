@@ -11,12 +11,12 @@ library(lubridate)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","March2022","Varari_Sled","20220322","raw_files", "PAR") # Logger in situ file path 
-file.date <- "20220322" # logger date used in file name(s)
+path.log<-here("Data","March2022","Varari_Sled","20220320","raw_files", "PAR") # Logger in situ file path 
+file.date <- "20220320" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","March2022","Varari_Sled","20220322","QC_files") # Output file path
+path.output<-here("Data","March2022","Varari_Sled","20220320","QC_files") # Output file path
 
 
 ###################################
@@ -30,8 +30,8 @@ PAR_Serial <- "224"
 ###################################
 
 # Log dates
-start.date <- ymd('2022-03-22')
-end.date <- ymd('2022-04-03')
+start.date <- ymd('2022-03-20')
+end.date <- ymd('2022-03-22')
 
 # do you want to plot a graph?
 plotgraph<-'no'
@@ -64,6 +64,7 @@ PARData<-files %>%
   map_df(~read_csv(., skip = 3, col_names = c("TimeSec","BatteryVolts","Temperature","PAR","Ax","Ay","Az"),
                    col_types = list("d","d","d","d","d","d","d"),),.id = "filename") %>%
   mutate(date = as_datetime(TimeSec, tz = "UTC")+days(61)+hours(1)-minutes(23)+seconds(31)) %>% # the dates were off....
+  mutate(date = date-hours(10))%>% # keeps being off by 10 hours and I don't know why...
   select(date, PAR, Temperature)%>%
   filter(date >launch.log$time_start & date < launch.log$time_end)
   
