@@ -9,7 +9,7 @@
 
 # Author: Danielle Barnas  
 # created: 9-23-2020
-# modified: 8-23-2021
+# modified: 5-2-2022
 
 ##########################################################################
 ##########################################################################
@@ -36,16 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","March2022","Varari_Sled","20220314","raw_files") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","March2022","Varari_Sled","20220404","raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "20220314" # date used in naming output file(s)
+file.date <- "20220404" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
 ct.serial <- "335" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","March2022","Varari_Sled","20220314","QC_files") # Output file path
+path.output<-here("Data","March2022","Varari_Sled","20220404","QC_files") # Output file path
 
 
 ###################################
@@ -53,8 +53,8 @@ path.output<-here("Data","March2022","Varari_Sled","20220314","QC_files") # Outp
 ###################################
 
 # Log dates
-start.date <- ymd('2022-03-14')
-end.date <- ymd('2022-03-20')
+start.date <- ymd('2022-04-04')
+end.date <- ymd('2022-04-14')
 
 
 ###################################
@@ -93,8 +93,7 @@ Pres_dbar<-10 # surface pressure in decibar
 condLog<-CT_cleanup(data.path = path.log, output.path=path.output, path.pattern = csv.pattern, tf.write = F)
 
 # Run if temperature is in farenheit
-condLog <- condLog %>% 
-  mutate(TempInSitu = (TempInSitu - 32) * (5/9))
+#condLog <- condLog %>% mutate(TempInSitu = (TempInSitu - 32) * (5/9))
 
 ############################################################
 ### Parse date and time
@@ -126,6 +125,12 @@ launch.log <- launch.log %>%
   filter(Date_launched == start.date | Date_retrieved == end.date) %>% # filter only current launch dates
   unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
   unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
+
+# if selecting single CT from same calibration date
+if(exists('ct.serial') == T){
+  launch.log <- launch.log %>% 
+    filter(LoggerID == ct.serial)
+}
 
 if(hobo.csv == FALSE){
 ############################################################
@@ -186,15 +191,15 @@ for(i in 1:n1) {
     } else {ec.cal = FALSE}
     
     # single time point calibration
-    calibration<-CT_one_cal(data = C1.cal, 
-                            cal.ref = C2.cal$cond_uS[1], 
-                            cal.ref.temp = C2.cal$temp_C[1], 
-                            startCal = startHigh, 
-                            endCal = endHigh, 
-                            date = C1.cal$date, 
-                            temp = C1.cal$TempInSitu, 
-                            EC.logger = C1.cal$E_Conductivity, 
-                            EC.cal = ec.cal) %>% 
+    calibration<-CT_one_cal(data = C1.cal,
+                            cal.ref = C2.cal$cond_uS[1],
+                            cal.ref.temp = C2.cal$temp_C[1],
+                            startCal = startHigh,
+                            endCal = endHigh,
+                            date = C1.cal$date,
+                            temp = C1.cal$TempInSitu,
+                            EC.logger = C1.cal$E_Conductivity,
+                            EC.cal = ec.cal) %>%
       select(date, LoggerID, TempInSitu_Cal, EC_Cal) %>% # only keep calibrated values and what we need
       rename(ECond.mS.cm = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
              TempInSitu = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
@@ -250,18 +255,20 @@ for(i in 1:n1) {
         ec.cal = TRUE
       } else {ec.cal = FALSE}
       
-      preCal<-CT_one_cal(data = C1.cal, 
-                         cal.ref = C2.cal$cond_uS[1], 
-                         cal.ref.temp = C2.cal$temp_C[1], 
-                         date = C1.cal$date, 
-                         temp = C1.cal$TempInSitu, 
+      preCal<-CT_one_cal(data = C1.cal,
+                         cal.ref = C2.cal$cond_uS[1],
+                         cal.ref.temp = C2.cal$temp_C[1],
+                         date = C1.cal$date,
+                         temp = C1.cal$TempInSitu,
                          EC.logger = C1.cal$E_Conductivity,
                          startCal = startHigh[1,],
                          endCal = endHigh[1,],
-                         EC.cal = ec.cal) %>% 
-        rename(EC_Cal.1 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
-               TempInSitu_logger.1 = TempInSitu, # rename logger's temperature readings column
-               TempInSitu.1 = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
+                         EC.cal = ec.cal) %>%
+     rename(EC_Cal.1 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
+             TempInSitu_logger.1 = TempInSitu, # rename logger's temperature readings column
+             TempInSitu.1 = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
+      
+      
       
       
       ## POSTCAL
@@ -271,16 +278,17 @@ for(i in 1:n1) {
       } else {
         ec.cal = FALSE}
       
-      postCal<-CT_one_cal(data = C1.cal, 
-                          cal.ref = C2.cal$cond_uS[2], 
-                          cal.ref.temp = C2.cal$temp_C[2], 
-                          date = C1.cal$date, 
-                          temp = C1.cal$TempInSitu, 
+      postCal<-CT_one_cal(data = C1.cal,
+                          cal.ref = C2.cal$cond_uS[2],
+                          cal.ref.temp = C2.cal$temp_C[2],
+                          date = C1.cal$date,
+                          temp = C1.cal$TempInSitu,
                           EC.logger = C1.cal$E_Conductivity,
-                          startCal = startHigh[2,], 
-                          endCal = endHigh[2,], 
-                          EC.cal = ec.cal) %>% 
-        rename(EC_Cal.2 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
+                          startCal = startHigh[2,],
+                          endCal = endHigh[2,],
+                          EC.cal = ec.cal) %>%
+      
+      rename(EC_Cal.2 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
                TempInSitu_logger.2 = TempInSitu, # rename logger's temperature readings column
                TempInSitu.2 = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
       
@@ -416,6 +424,7 @@ for(i in 1:n1) {
            FullLoggerID = LoggerID,
            ECond.mS.cm = E_Conductivity)
 }
+
 ############################################################
 ### In Situ Logger Data
 ############################################################
@@ -456,11 +465,13 @@ for(i in 1:n2) {
   
   
   launch.start<-C2.log %>% 
-    select(Time_launched)%>% 
-    mutate(Time_launched = ymd_hms(Time_launched))
+    select(Time_launched) %>%
+    as.character()
+  launch.start <- ymd_hms(launch.start)
   launch.end<-C2.log %>% 
     select(Time_retrieved)%>% 
-    mutate(Time_retrieved = ymd_hms(Time_retrieved))
+    as.character()
+  launch.end <- ymd_hms(launch.end)
   
   
   # pull out original CT serial name
@@ -472,15 +483,10 @@ for(i in 1:n2) {
   C1.log <- C1.log %>% 
     mutate(LoggerID = sn.b)
   
-
-  
-  ## REWRITE CALIBRATION OFFSET FROM START TO END DRIFT
-  # 1. Calculate Specific Conductance at time 1 and 2 of calibration
-  # 2. Calculate drift 
   
   
-  C1.log<-C1.log %>% 
-    filter(between(date, launch.start[1,], launch.end[1,]))
+  C1.log <- C1.log %>% 
+     filter(between(date, launch.start, launch.end))
   
   # Create Plot and save to list p
   p[[i]] <- C1.log %>% 
@@ -512,7 +518,6 @@ dev.off()
 
 ###########################################
 # End of Script
-
 
 
 ###########################################
