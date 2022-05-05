@@ -10,6 +10,8 @@ Sled re-deployed on 2022-03-22 at 14:00. Held at surface 15:20, 15:22 on 2022-03
 Sled re-deployed on 2022-04-04 at 13:40. Held at surface 13:22, 13:24, 13:26 on 2022-04-04. Sled calibrated in the field. Sled removed at 11:15 on 2022-04-14. Sled held on surface at 12:25, 12:27, 12:29 on 2022-04-14. Pressure logger won't allow for data processing in HOBO.
 
 
-
+Calibration notes (post-processing)
+3/14/2022 processed using 3/20/2022 pre calibration
+4/4/2022 processed using 3/22/2022 pre calibration
 
 
