@@ -1,14 +1,20 @@
 Serial,Log_Type,time_start,time_end,notes
+CT_335,CT,3/21/2022 12:08,3/22/2022 1:58,varari sled CT
+WL_872,WL,3/21/2022 12:08,3/22/2022 1:58,varari sled water level
 RAD_5632,RAD,3/21/2022 12:09,3/22/2022 1:57,varari
-CT_338,CT,3/21/2022 12:09,3/22/2022 1:57,varari bilge CT
-RAD_5288,RAD,3/24/2022 16:01,3/25/2022 5:49,varari
 CT_335,CT,3/24/2022 16:00,3/25/2022 5:50,varari sled CT
+WL_872,WL,3/24/2022 16:00,3/25/2022 5:50,varari sled water level
+RAD_5288,RAD,3/24/2022 16:01,3/25/2022 5:49,varari
 RAD_5288,RAD,3/28/2022 16:42,3/29/2022 6:00,varari - ben's rad; found with bilge pump off the pvc pipe at 6am. Believe it fell off at ~ 2:30am
 CT_335,CT,3/28/2022 16:42,3/29/2022 6:00,varari sled CT - ben's rad; found with bilge pump off the pvc pipe at 6am. Believe it fell off at ~ 2:30am
-RAD_4242,RAD,3/29/2022 6:19,3/29/2022 11:11,varari - rental rad
+WL_872,WL,3/28/2022 16:42,3/29/2022 6:00,varari sled water level
 CT_335,CT,3/29/2022 6:18,3/29/2022 11:12,varari sled CT
+WL_872,WL,3/29/2022 6:18,3/29/2022 11:12,varari sled water level
+RAD_4242,RAD,3/29/2022 6:19,3/29/2022 11:11,varari - rental rad
 RAD_5288,RAD,3/29/2022 19:50,3/30/2022 7:10,cabral - 04:00 input hose was disconnected from top of TAD aqua; reattached and zip tied and put panty hose on pump head
 RADT_738,RADT,3/29/2022 19:50,3/30/2022 7:10,cabral - 04:00 input hose was disconnected from top of TAD aqua; reattached and zip tied and put panty hose on pump head
+CT_353,CT,3/29/2022 20:00,3/31/2022 7:16,cabral sled CT
+WL_877,WL,3/29/2022 20:00,3/31/2022 7:16,cabral sled water level
 RAD_4242,RAD,3/30/2022 7:25,3/30/2022 9:26,cabral - 11:03 input hose disconnected from top of PVC pipe and zip tied on. Stern anchor came undone from float. Reattached. Also RH 25%. Replaced des and RH < 10% at 11:19am; 4pm unkinked input line. 13:30 swapped batteries; 18:10 swapped batteries; replaced desiccant at 18:15
 RADT_738,RADT,3/30/2022 7:25,3/30/2022 9:26,cabral - 11:03 input hose disconnected from top of PVC pipe and zip tied on. Stern anchor came undone from float. Reattached. Also RH 25%. Replaced des and RH < 10% at 11:19am; 4pm unkinked input line. 13:30 swapped batteries; 18:10 swapped batteries; replaced desiccant at 18:15
 RAD_4242,RAD,3/30/2022 12:06,3/30/2022 17:27,cabral - 11:03 input hose disconnected from top of PVC pipe and zip tied on. Stern anchor came undone from float. Reattached. Also RH 25%. Replaced des and RH < 10% at 11:19am; 4pm unkinked input line. 13:30 swapped batteries; 18:10 swapped batteries; replaced desiccant at 18:15
