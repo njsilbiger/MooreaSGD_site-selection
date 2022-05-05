@@ -29,26 +29,26 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","March2022","Varari_Sled","20220322","raw_files")
-file.date <- "20220322" # logger date 
+path.WL<-here("Data","March2022","Cabral_Sled","20220331","raw_files")
+file.date <- "20220329" # logger date 
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","March2022","Varari_Sled","20220322","QC_files") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","March2022","Cabral_Sled","20220331","QC_files") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-WL_Serial <- "872"
+WL_Serial <- "877"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2022-03-22')
+start.date <- ymd('2022-03-31')
 end.date <- ymd('2022-04-03')
 
 ###################################
