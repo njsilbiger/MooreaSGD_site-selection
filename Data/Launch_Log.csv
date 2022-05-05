@@ -179,13 +179,13 @@ DO_658,DO,3/14/2022 15:00,3/20/2022 12:00,log,varari sled
 PAR_224,PAR,3/14/2022 15:00,3/20/2022 12:00,log,varari sled
 LUX_848,LUX,3/14/2022 15:00,3/20/2022 12:00,log,varari sled
 LUX_845,LUX,3/14/2022 15:00,3/20/2022 12:00,log,varari sled
-CT_335,CT,3/20/2022 19:00,2/22/2022 11:40,log,varari sled
-PH_196,PH,3/20/2022 19:00,2/22/2022 11:40,log,varari sled
+CT_335,CT,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
+PH_196,PH,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
 WL_872,WL,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
-DO_658,DO,3/20/2022 19:00,2/22/2022 11:40,log,varari sled
-PAR_224,PAR,3/20/2022 19:00,2/22/2022 11:40,log,varari sled
-LUX_848,LUX,3/20/2022 19:00,2/22/2022 11:40,log,varari sled
-LUX_845,LUX,3/20/2022 19:00,2/22/2022 11:40,log,varari sled
+DO_658,DO,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
+PAR_224,PAR,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
+LUX_848,LUX,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
+LUX_845,LUX,3/20/2022 19:00,3/22/2022 11:40,log,varari sled
 LUX_869,LUX,3/27/2022 8:00,3/31/2022 8:00,log,varari reefcrest
 LUX_865,LUX,3/26/2022 19:00,3/29/2022 8:00,log,varari reefcrest
 LUX_865,LUX,3/29/2022 17:00,3/31/2022 6:30,log,varari reefcrest
@@ -214,13 +214,13 @@ DO_658,DO,4/4/2022 13:40,4/14/2022 11:55,log,varari sled
 PAR_224,PAR,4/4/2022 13:40,4/14/2022 11:55,log,varari sled
 LUX_848,LUX,4/4/2022 13:40,4/14/2022 11:55,log,varari sled
 LUX_845,LUX,4/4/2022 13:40,4/14/2022 11:55,log,varari sled
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
+CT_353,CT,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
+PH_197,PH,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
+WL_877,WL,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
+DO_719,DO,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
+LUX_870,LUX,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
+LUX_858,LUX,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
+LUX_838,LUX,3/31/2022 15:30,4/3/2022 8:00,log,cabral sled
 RAD_5632,RAD,3/21/2022 12:09,3/22/2022 1:57,,varari
 CT_338,CT,3/21/2022 12:09,3/22/2022 1:57,,varari bilge CT
 RAD_5288,RAD,3/24/2022 16:01,3/25/2022 5:49,,varari
