@@ -36,16 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","March2022","Cabral_Sled","20220329","raw_files") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","March2022","Cond_temp","Raw_HOBO","Raw_csv","Cabral","03282022") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "20220329" # date used in naming output file(s)
+file.date <- "20220328" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
-ct.serial <- "353" # if isolating one CT logger
+#ct.serial <- "353" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","March2022","Cabral_Sled","20220329","QC_files") # Output file path
+path.output<-here("Data","March2022","Cond_temp","QC_files","Cabral","03282022") # Output file path
 
 
 ###################################
@@ -53,8 +53,8 @@ path.output<-here("Data","March2022","Cabral_Sled","20220329","QC_files") # Outp
 ###################################
 
 # Log dates
-start.date <- ymd('2022-03-29')
-end.date <- ymd('2022-03-31')
+start.date <- ymd('2022-03-28')
+end.date <- ymd('2022-04-03')
 
 
 ###################################
@@ -92,8 +92,9 @@ Pres_dbar<-10 # surface pressure in decibar
 # In Situ Conductivity files
 condLog<-CT_cleanup(data.path = path.log, output.path=path.output, path.pattern = csv.pattern, tf.write = F)
 
-# Run if temperature is in farenheit
-#condLog <- condLog %>% mutate(TempInSitu = (TempInSitu - 32) * (5/9))
+# Run if temperature may be in farenheit
+condLog <- condLog %>%
+  mutate(TempInSitu = if_else(TempInSitu > 40, ((TempInSitu - 32) *5/9), TempInSitu)) # mutate if temp is higher than anticipated celcius in field
 
 ############################################################
 ### Parse date and time
@@ -111,6 +112,13 @@ calibration.log <- calibration.log %>%
   mutate(time_out = mdy_hms(time_out)) %>% 
   filter(date == start.date & pre_post == "pre" | date == end.date & pre_post == "post") # filter only current pre- and post-calibration dates
 
+# potential filters for sandwich loggers
+# calibration.log <- calibration.log %>%
+#   filter(notes == "Cabral CTs") %>%
+#   filter(notes != "Cabral Sled") %>%
+#   filter(pre_post == "post") #%>%
+#filter(LoggerID != "351") # Varari 3/18/2022
+
 # if selecting single CT from same calibration date
 if(exists('ct.serial') == T){
   calibration.log <- calibration.log %>% 
@@ -122,9 +130,13 @@ if(exists('ct.serial') == T){
 launch.log <- launch.log %>%
   mutate(Date_launched = mdy(Date_launched), # parse to date-time format
          Date_retrieved = mdy(Date_retrieved)) %>% 
-  filter(Date_launched == start.date | Date_retrieved == end.date) %>% # filter only current launch dates
+  filter(Date_launched == start.date & Date_retrieved == end.date) %>% # filter only current launch dates
   unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
   unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
+# launch.log <- launch.log %>% 
+#   filter(CowTagID != "Sled") #%>% 
+  #filter(LoggerID != "351") # Varari 3/18/2022
+
 
 # if selecting single CT from same calibration date
 if(exists('ct.serial') == T){
@@ -149,8 +161,6 @@ CalLog<-tibble(date = as.POSIXct(NA),
                FullLoggerID = as.character(),
                TempInSitu = as.numeric(),
                ECond.mS.cm = as.numeric(),
-               #EC_Cal.1 = as.numeric(),
-               #EC_Cal.2 = as.numeric(),
                Salinity_psu = as.numeric())
 
 # Filter out calibration date and time and return dataframe with all logger calibration logs
@@ -267,8 +277,6 @@ for(i in 1:n1) {
      rename(EC_Cal.1 = EC_Cal, # rename electrical conductivity column as .1 for first/only time point
              TempInSitu_logger.1 = TempInSitu, # rename logger's temperature readings column
              TempInSitu.1 = TempInSitu_Cal)  # rename calibrated temperature readings, calibrated to secondary probe, if available
-      
-      
       
       
       ## POSTCAL
@@ -399,9 +407,9 @@ for(i in 1:n1) {
       mutate(TempInSitu = TempInSitu.1 + drift.correction.temp,
              ECond.mS.cm = EC_Cal.1 + drift.correction.ec)
     
-  } 
+  } # end of calibration if-else statements
   
-  
+#####################################################
   
   
   # Calculate Practical Salinity using gsw package with PSS-78 equation
@@ -417,6 +425,7 @@ for(i in 1:n1) {
   CalLog <- CalLog %>% 
     rbind(calibration) # add i'th logger's data to running dataframe
 }
+
 } else { # end of calibration if hobo.csv = FALSE
   CalLog <- condLog %>%
     separate(col = 'LoggerID', into = c(NA,'ID'), sep = "_", remove = FALSE) %>%  # needs to be standardized - relies on consistent file naming
@@ -440,8 +449,6 @@ Log <-tibble(date = as.POSIXct(NA),
              FullLoggerID = as.character(),
              TempInSitu = as.numeric(),
              ECond.mS.cm = as.numeric(),
-             #EC_Cal.1 = as.numeric(),
-             #EC_Cal.2 = as.numeric(),
              Salinity_psu = as.numeric())
 
 # create list for storing plots
