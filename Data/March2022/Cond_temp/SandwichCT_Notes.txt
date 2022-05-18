@@ -1,0 +1,28 @@
+Calibration notes (post-processing)
+3/18/2022 processed using only post calibration
+- added in filter line to remove "pre" cal time from calibration.log
+- in same filter line, removed Sled loggers
+- also filtered out LoggerID 351: logger would not offload onto the computer. Only processed 19 loggers
+
+3/18/2022 Varari concerning loggers:
+- 322 too low
+- 347 too high
+- 324 NA
+
+3/23/2022 Varari:
+- Loggers in Farenheit (same as logged from 3/23 - 4/3); separated into own folder
+324
+325
+327
+330
+332 (only logged 3/23 - 3/27) moved back into first folder
+344
+346
+347
+350
+added filter to specify notes == Varari CTs
+- nearly all calibrations look very poor
+
+3/28/2022 Cabral:
+duplicate post calibration was removed. Removed EC = 55000 with Temp = 29.35degC
+cannot calibrate CT logs: loggers stopped recording 3/31 AM, but post-calibration indicates 4/3 PM calibration
