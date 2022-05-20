@@ -26,3 +26,75 @@ added filter to specify notes == Varari CTs
 3/28/2022 Cabral:
 duplicate post calibration was removed. Removed EC = 55000 with Temp = 29.35degC
 cannot calibrate CT logs: loggers stopped recording 3/31 AM, but post-calibration indicates 4/3 PM calibration
+- 
+
+New plan! 5/19/2022
+Try to calibrate the second set of Varari CT's with first calibration of same CT's
+Try to calibrate cabral CT's that were moved from Varai using first varari calibration of same CT's
+- For CT's moved from Varari to Cabral, removed 4/3/2022 post calibration for Cabral CT's and instead moved all 3/18/2022 Varari and 3/28/2022 Cabral files into one folder to calibrate whole file based on 3/22/2022 "post" calibration from Varari.
+- CT's moved from Varari to Cabral:
+	316, 321, 322, 332, 333, 340, 342, 348, 352, 354, 514, 739
+- In calibration log, calibration data was duplicated for loggers listed above for 3/22/2022 post cal, but in Notes, changed to Cabral CTs
+
+
+
+Deleted Varari CT calibration data (5/19/2022):
+340	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+342	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+354	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+352	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+739	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+514	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+316	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+333	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+332	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+348	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+322	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+321	3/27/2022	post	16:40	16:40	H	54600	SC	H	30.9	36	Varari CTs
+330	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+344	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+327	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+346	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+350	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+347	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+325	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+324	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
+
+Deleted Cabral CT calibration data (5/19/2022):
+340	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+354	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+328	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+332	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+349	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+345	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+333	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+323	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+321	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+342	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+316	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+348	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+514	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+739	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+515	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+320	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+338	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+352	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+322	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+318	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
+
+Still having issues 3/19/2022 at Cabral with:
+- 321 too low
+- 322 too low
+- 332 data truncated [fixed 3/19/2022]
+- 333 data truncated [fixed 3/19/2022]
+- 340 no data [fixed 3/19/2022]
+- 342 no data [fixed 3/19/2022]
+- 348 no data
+- 352 too low
+- 739 no data
+
+
+
+
+
+
