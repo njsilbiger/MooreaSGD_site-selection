@@ -82,5 +82,19 @@ Deleted Cabral CT calibration data (5/19/2022):
 322	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
 318	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
 
+Still having issues 3/19/2022 at Cabral with:
+- 321 too low
+- 322 too low
+- 332 data truncated [fixed 3/19/2022]
+- 333 data truncated [fixed 3/19/2022]
+- 340 no data [fixed 3/19/2022]
+- 342 no data [fixed 3/19/2022]
+- 348 no data
+- 352 too low
+- 739 no data
+
+
+
+
 
 
