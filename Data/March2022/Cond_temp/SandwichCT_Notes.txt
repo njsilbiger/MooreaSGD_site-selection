@@ -89,9 +89,9 @@ Still having issues 3/19/2022 at Cabral with:
 - 333 data truncated [fixed 3/19/2022]
 - 340 no data [fixed 3/19/2022]
 - 342 no data [fixed 3/19/2022]
-- 348 no data
-- 352 too low
-- 739 no data
+- 348 no data [fixed 3/19/2022]
+- 352 too low (using 8/11/2021 pre calibration) [adjusted, though still looks low]
+- 739 no data [fixed 3/19/2022]
 
 
 
