@@ -11,9 +11,11 @@ library(lubridate)
 ## Read in files ###
 
 Carb<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated_POcorrect.csv"))
-Nuts <- read_csv(here("Data","August2021","Nutrients", "Nutrients_Watersampling_Aug21.csv"))
+Nuts <- read_csv(here("Data","August2021","Nutrients", "Nutrients_Watersampling_Aug21.csv")) %>%
+  mutate(Date = mdy(Date))
 Sites<-read_csv(here("Data","Sandwich_Locations_Final.csv"))
-fDOM<-read_csv(here("Data","August2021","fDOM","Moorea_SGD_2021_fDOM.csv"))
+fDOM<-read_csv(here("Data","August2021","fDOM","Moorea_SGD_2021_fDOM.csv"))%>%
+  mutate(Date = mdy(Date))
 
 
 ### join everything #####
@@ -25,7 +27,7 @@ AllChemData<-Sites %>%
   full_join(Nuts) %>%
   full_join(AllChemData1)%>%
   full_join(fDOM)%>%
-   mutate(Date = mdy(Date),
+   mutate(#Date = mdy(Date),
          #SamplingTime = hms(SamplingTime),
          DateTime = ymd_hms(paste(Date,SamplingTime))) %>%
   select(Location,lat, lon, CowTagID, Top_Plate_ID, Bottom_Plate_ID, Jamie_Plate_ID, 
@@ -48,6 +50,10 @@ AllChemData$Time[AllChemData$CowTagID=="V7"& AllChemData$Tide =="High"& AllChemD
 
 AllChemData$DateTime[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"]<-mdy_hms("8/9/2021 19:00:00")
 AllChemData$Time[AllChemData$CowTagID=="C12"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"]<-"19:00:00"
+
+AllChemData$DateTime[AllChemData$CowTagID=="VSEEP"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"][1]<-mdy_hms("8/8/2021 18:30:00")
+AllChemData$Time[AllChemData$CowTagID=="VSEEP"& AllChemData$Tide =="Low"& AllChemData$Day_Night == "Night"][1]<-"18:30:00"
+
 
 # The offshore sample is probably not good because it was sitting in the heat... the TA values dont make a lot of sense so removing here
 AllChemData<-AllChemData %>%

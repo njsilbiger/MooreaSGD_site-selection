@@ -9,16 +9,19 @@ library(here)
 library(lubridate)
 
 ## bring in pH calibration files and raw data files
-pHcalib<-read_csv(here("Data","March2022","CarbonateChemistry","TrisCalibrationLog.csv")) %>%
+pHcalib<-read_csv(here("Data","August2021","CarbonateChemistry","TrisCalibrationLog.csv")) %>%
   mutate(TrisCalDate = mdy(TrisCalDate))
-# pHData<-read_csv(here("Data","March2022","CarbonateChemistry","pHProbe_Data.csv"))
-pHData<-read_csv(here("Data","March2022","CarbonateChemistry","pHProbe_Data.csv"))%>%
-  mutate(TrisCalDate = mdy(TrisCalDate))
+# pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))
+pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_Data.csv"))%>%
+  mutate(TrisCalDate = mdy(TrisCalDate),
+         Date = mdy(Date))
 # pHData<-read_csv(here("Data","August2021","CarbonateChemistry","pHProbe_SEEP_2022_02_10.csv"))%>%
 #   mutate(TrisCalDate = mdy(TrisCalDate))
 
 # Needed for phosphate data
-NutData<-read_csv(here("Data","August2021","Nutrients","Nutrients_Watersampling_Aug21.csv")) 
+NutData<-read_csv(here("Data","August2021","Nutrients","Nutrients_Watersampling_Aug21.csv")) %>%
+  select(CowTagID, Day_Night, Tide, Date, Phosphate_umolL, Silicate_umolL) %>%
+  mutate(Date = mdy(Date))
 
 pHData<-left_join(pHData,NutData) 
 
@@ -48,6 +51,9 @@ pHSlope$TA[NoTA]<-2300
 NoPO<-which(is.na(pHSlope$Phosphate_umolL))
 pHSlope$Phosphate_umolL[NoPO]<-0
 
+# If the salinity is missing from the TA measurements take the salinity from the field
+pHSlope$Salinity<-ifelse(is.na(pHSlope$Salinity), pHSlope$Salinity_In_Lab, pHSlope$Salinity)
+
 
 #Now calculate pH
 pHSlope <-pHSlope%>%
@@ -63,4 +69,4 @@ pHSlope$TA[NoTA]<-NA # make TA na again for the missing values
   #select(Date, CowTagID,Tide, Day_Night, SamplingTime,Salinity,pH, pH_insitu, TempInSitu) ## need to calculate pH insi then it is done
 
 ## write the data
-write_csv(x = pHSlope, file = here("Data","March2022","CarbonateChemistry","pHProbe_Data_calculated_NOTPOcorrect.csv"))
+write_csv(x = pHSlope, file = here("Data","August2021","CarbonateChemistry","pHProbe_Data_calculated_POcorrect.csv"))
