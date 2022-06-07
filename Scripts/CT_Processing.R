@@ -36,16 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","March2022","Cond_temp","Raw_HOBO","Raw_csv","Cabral","03282022") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","June2022","Varari_Sled","20220604", "raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "20220328" # date used in naming output file(s)
+file.date <- "20220604" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
-#ct.serial <- "353" # if isolating one CT logger
+ct.serial <- "332" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","March2022","Cond_temp","QC_files","Cabral","03282022") # Output file path
+path.output<-here("Data","June2022","Varari_Sled","20220604", "QC_files") # Output file path
 
 
 ###################################
@@ -53,8 +53,8 @@ path.output<-here("Data","March2022","Cond_temp","QC_files","Cabral","03282022")
 ###################################
 
 # Log dates
-start.date <- ymd('2022-03-28')
-end.date <- ymd('2022-04-03')
+start.date <- ymd_hm('2022-06-03 7:50')
+end.date <- ymd_hm('2022-06-04 8:14')
 
 
 ###################################
@@ -63,7 +63,7 @@ end.date <- ymd('2022-04-03')
 
 # Read in files that are updated with calibration and launch information
 calibration.log<-read_csv(here("Data","CT_Calibration_Log.csv")) # Calibration time logs
-launch.log<-read_csv(here("Data","CTLoggerIDMetaData_Plates.csv")) # Launch time logs
+launch.log<-read_csv(here("Data","Launch_Log.csv")) # Launch time logs
 
 
 ###################################
@@ -128,11 +128,11 @@ if(exists('ct.serial') == T){
 ## in situ
 ## unite date to time columns and parse to POSIXct datetime
 launch.log <- launch.log %>%
-  mutate(Date_launched = mdy(Date_launched), # parse to date-time format
-         Date_retrieved = mdy(Date_retrieved)) %>% 
-  filter(Date_launched == start.date & Date_retrieved == end.date) %>% # filter only current launch dates
-  unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
-  unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
+  mutate(Date_launched = mdy_hm(time_start), # parse to date-time format
+         Date_retrieved = mdy_hm(time_end)) %>% 
+  filter(Date_launched == start.date & Date_retrieved == end.date)# %>% # filter only current launch dates
+  #unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
+  #unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
 # launch.log <- launch.log %>% 
 #   filter(CowTagID != "Sled") #%>% 
   #filter(LoggerID != "351") # Varari 3/18/2022
@@ -141,7 +141,8 @@ launch.log <- launch.log %>%
 # if selecting single CT from same calibration date
 if(exists('ct.serial') == T){
   launch.log <- launch.log %>% 
-    filter(LoggerID == ct.serial)
+    separate(Serial, into = c('loggerTyle', 'Serial')) %>% 
+    filter(Serial == ct.serial)
 }
 
 if(hobo.csv == FALSE){
