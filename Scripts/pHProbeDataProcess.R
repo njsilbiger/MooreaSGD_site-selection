@@ -20,7 +20,7 @@ pHData<-read_csv(here("Data","March2022","CarbonateChemistry","pHProbe_Data.csv"
 
 # Needed for phosphate data
 NutData<-read_csv(here("Data","March2022","Nutrients","Nutrients_watersampling_Mar22.csv")) %>%
-  select(CowTagID, Day_Night, Tide, Date, Phosphate_umolL, NN_umolL=Nitrite_umolL, Ammonia_umolL, Silicate_umolL) %>%
+  select(CowTagID, SeepCode, Day_Night, Tide, Date, Phosphate_umolL, NN_umolL=Nitrite_umolL, Ammonia_umolL, Silicate_umolL) %>%
   mutate(Date = mdy(Date))
 
 pHData<-left_join(pHData,NutData) 
