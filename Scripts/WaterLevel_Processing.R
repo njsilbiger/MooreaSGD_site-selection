@@ -29,27 +29,27 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","August2021","Cabral_Sled","20210826","raw_files")
-file.date <- "082621" # logger date 
+path.WL<-here("Data","June2022","Varari_Sled","20220604","raw_files")
+file.date <- "20220604" # logger date 
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","August2021","Cabral_Sled","20210826","QC_files") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","June2022","Varari_Sled","20220604","QC_files") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-WL_Serial <- "870"
+WL_Serial <- "876"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2021-08-27')
-end.date <- ymd('2021-09-5')
+start.date <- ymd('2022-06-03')
+end.date <- ymd('2022-06-04')
 
 ###################################
 ### Import calibration and launch records
@@ -73,7 +73,7 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 
 
 # In Situ Pressure/Depth file
-presLog <- WL_cleanup(data.path = path.WL, path.pattern = "Pressure") %>% 
+presLog <- WL_cleanup(data.path = path.WL, path.pattern = "WL") %>% 
   rename(LoggerID = Serial)
 
 ############################################################
@@ -106,13 +106,13 @@ presLog<-presLog %>%
 
 # Plot Depth data
 # p<-list()
-# p[[1]]<-presLog %>% 
-#   ggplot(aes(x = date, y = Depth, color = TempInSitu)) + 
-#   geom_point() + 
-#   scale_y_reverse() +
-#   theme_bw() +
-#   labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
-#   ggtitle(paste("WL",WL_Serial,"Depth", file.date))
+presLog %>%
+  ggplot(aes(x = date, y = Depth, color = TempInSitu)) +
+  geom_line() +
+  scale_y_reverse() +
+  theme_bw() +
+  labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
+  ggtitle(paste("WL",WL_Serial,"Depth", file.date))
 # 
 # # Save all plots in a single dated pdf
 # pdf(paste0(fig.output,"/Depth_plot",file.date,"_WL_",WL_Serial,".pdf"), onefile = TRUE)
@@ -123,6 +123,6 @@ presLog<-presLog %>%
 # dev.off()
 
 
-write.csv(presLog, paste0(file.output,"/QC_WL_",file.date,"_WL_",WL_Serial,".csv"))
+write_csv(presLog, paste0(file.output,"/QC_WL_",file.date,"_WL_",WL_Serial,".csv"))
 
 

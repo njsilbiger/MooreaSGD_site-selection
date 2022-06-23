@@ -1,0 +1,17 @@
+Column Name,Description
+Location,Varari or Cabral
+lat,Latitude
+lon,Longitude
+CowTagID,Site ID number (20 per location)
+Plate_Seep,Plate is a reef site and Seep is directly at an SGD seep
+Date,Collection Date
+Time,Collection Time
+DateTime,Date Time
+Tide,High or Low tide
+Day_Night,Day or night sampling
+Salinity,PSU
+Temperature,Degrees C
+Phosphate_umolL,Phosphate umolL
+Silicate_umolL,Silicate umolL
+NN_umolL,Nitrate + Nitrite umol/L
+Ammonia_umolL,Ammonium umol/L
