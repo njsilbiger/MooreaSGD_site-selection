@@ -60,7 +60,7 @@ Deleted Varari CT calibration data (5/19/2022):
 325	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
 324	4/3/2022	post	14:20	14:20	H	57200	SC	H	30.4	37.9	Varari CTs
 
-Deleted Cabral CT calibration data (5/19/2022):
+Deleted Cabral CT calibration data (5/19/2022): [deleted because CT files are truncated at 3/31/2022. There is no 4/3 data]
 340	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
 354	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
 328	4/3/2022	post	18:00	18:00	H	55100	SC	H	29.8	36.3	Cabral CTs
@@ -94,6 +94,10 @@ Still having issues 3/19/2022 at Cabral with:
 - 739 no data [fixed 3/19/2022]
 
 
+Look into other Calibration points for:
+Cabral 3/28-4/3 (actually 3/31) loggers:
+318 (no matching calibration files from August or March)
+320 (no matching calibration files from August or March)
 
 
 
