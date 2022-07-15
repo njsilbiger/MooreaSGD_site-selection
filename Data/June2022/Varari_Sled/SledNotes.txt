@@ -1,6 +1,8 @@
 Sled deployed at seep in Varari at 7:50 on 2022-06-03, and held at surface from 7:28-7:31 on 2022-06-03. Sled moved by neighbors at 8:14 and removed at 11:30 on 2022-06-04. One point calibration, post-deployment. 
 
-Sled moved away from seep on 2022-06-11 a 10:30. Sled moved back to seep at 12:45 on 2022-06-13. 
+Sled deployed at seep in Varari at 10:00 on 2022-06-07. Calibrated in field, held at surface 9:42-9:46.  
+
+Sled moved away from seep on 2022-06-11 at 10:30; PAR was detached and miniDOT cap was on (fixed in situ). Sled moved back to seep at 12:45 on 2022-06-13.
 
 Sled moved away from seep on 2022-06-19 at 10:00. Sled moved back to seep at 9:45 on 2022-06-20.
 
