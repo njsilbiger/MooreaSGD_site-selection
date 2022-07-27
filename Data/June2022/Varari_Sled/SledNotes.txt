@@ -1,1 +1,38 @@
-Sled deployed at seep in Varari at 7:50 on 2022-06-03, and held at surface from 7:28-7:31 on 2022-06-03. Sled moved by neighbors at 8:14 and removed at 11:30 on 2022-06-04. One point calibration, post-deployment. Sled moved back to seep at 12:45 on 2022-06-13. 
+*note* PAR offset is the same as before, 
+actual date & time: 2022-03-13 17:23:37
+miniPAR date & time: 2022-01-11 16:46:06
+
+See screenshots in PAR folders for additional time/date comparisons
+----------------
+
+Sled deployed at seep in Varari at 7:50 on 2022-06-03, and held at surface from 7:28-7:31 on 2022-06-03. Sled moved by neighbors at 8:14 and removed at 11:30 on 2022-06-04. One point calibration, post-deployment. 
+
+----------------
+
+Sled deployed at seep in Varari at 10:00 on 2022-06-07. Calibrated in field, held at surface 9:42-9:46. One point calibration, pre-deployment.
+
+Sled moved away from seep on 2022-06-11 at 9:52; PAR was detached and miniDOT cap was on (fixed in situ). 
+
+Sled moved back to seep at 12:45 on 2022-06-13.
+Sled moved away from seep on 2022-06-19 at 9:36. Possible dip due to sedimentation on 6/16. 
+
+Sled moved back to seep at 10:00 on 2022-06-20.
+Sled moved away from seep on 2022-06-25 at 10:30.
+
+
+Sled moved back to seep at 11:30 on 2022-06-27. 
+Sled moved away from seep 9:00 on 2022-07-02.
+
+[additional hold at surface for depth calibration 2022-07-11 9:42-9:56]
+
+----------------
+
+Sled deployed 2022-07-17 8:14. Calibrated at Gump, held at surface 7:28-7:32 2022-07-17. Two point calibration. 
+Sled moved away from seep at 12:02 on 2022-07-22. 
+
+Sled moved back to seep for sampling at 6:04 on 2022-07-25. 
+Sled removed at 7:58 on 2022-07-25 due to waves. 
+
+[additional hold at surface for depth calibration 2022-07-22 14:42]
+
+----------------
