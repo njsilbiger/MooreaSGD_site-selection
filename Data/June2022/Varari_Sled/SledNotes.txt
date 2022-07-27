@@ -1,3 +1,10 @@
+*note* PAR offset is the same as before, 
+actual date & time: 2022-03-13 17:23:37
+miniPAR date & time: 2022-01-11 16:46:06
+
+See screenshots in PAR folders for additional time/date comparisons
+----------------
+
 Sled deployed at seep in Varari at 7:50 on 2022-06-03, and held at surface from 7:28-7:31 on 2022-06-03. Sled moved by neighbors at 8:14 and removed at 11:30 on 2022-06-04. One point calibration, post-deployment. 
 
 ----------------
@@ -27,3 +34,5 @@ Sled moved back to seep for sampling at 6:04 on 2022-07-25.
 Sled removed at 7:58 on 2022-07-25 due to waves. 
 
 [additional hold at surface for depth calibration 2022-07-22 14:42]
+
+----------------
