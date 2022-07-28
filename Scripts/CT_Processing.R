@@ -36,16 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","June2022","Varari_Sled","20220604", "raw_files") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","June2022","Varari_Sled","20220607", "raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "20220604" # date used in naming output file(s)
+file.date <- "20220607" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
 ct.serial <- "332" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","June2022","Varari_Sled","20220604", "QC_files") # Output file path
+path.output<-here("Data","June2022","Varari_Sled","20220607", "QC_files") # Output file path
 
 
 ###################################
@@ -53,8 +53,8 @@ path.output<-here("Data","June2022","Varari_Sled","20220604", "QC_files") # Outp
 ###################################
 
 # Log dates
-start.date <- ymd_hm('2022-06-03 7:50')
-end.date <- ymd_hm('2022-06-04 8:14')
+start.date <- ymd_hm('2022-06-07 10:00')
+end.date <- ymd_hm('2022-06-11 9:52')
 
 
 ###################################

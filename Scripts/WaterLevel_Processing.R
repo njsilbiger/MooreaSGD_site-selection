@@ -30,7 +30,7 @@ library(mooreasgd)
 ### Input
 # Path to folder storing logger .csv files
 path.WL<-here("Data","June2022","Varari_Sled","20220717","raw_files")
-file.date <- "20220607" # logger date 
+file.date <- "20220717" # logger date for plot
 
 ### Output
 # Path to store logger files
@@ -48,8 +48,8 @@ WL_Serial <- "876"
 ###################################
 
 # Log dates
-start.date <- ymd('2022-07-25')
-end.date <- ymd('2022-07-25')
+start.date <- ymd('2022-07-17')
+end.date <- ymd('2022-07-22')
 
 ###################################
 ### Import calibration and launch records
