@@ -47,9 +47,9 @@ file.names.full<-list.files(path = path.p, pattern = "csv$", recursive = TRUE)
 Sample.Info <- read_csv(file = here("Data","August2022","PlateCommunityRespoMetadata.csv"))
 
 #import biomass data
-Sample.Info <- select(Sample.Info, -TotalBiomass) #remove empty column totalbiomass
-source(here("Scripts","TotalBiomass.R")) #read in raw biomass data
-Sample.Info <- Sample.Info %>%
+#Sample.Info <- select(Sample.Info, -TotalBiomass) #remove empty column totalbiomass
+#source(here("Scripts","TotalBiomass.R")) #read in raw biomass data
+#Sample.Info <- Sample.Info %>%
   left_join(Biomass.Total, PlateID = PlateID) #left join biomass data by PlateID
 
 #View(Sample.Info)
