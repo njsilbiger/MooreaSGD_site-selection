@@ -50,7 +50,7 @@ Sample.Info <- read_csv(file = here("Data","August2022","PlateCommunityRespoMeta
 #Sample.Info <- select(Sample.Info, -TotalBiomass) #remove empty column totalbiomass
 #source(here("Scripts","TotalBiomass.R")) #read in raw biomass data
 #Sample.Info <- Sample.Info %>%
-  left_join(Biomass.Total, PlateID = PlateID) #left join biomass data by PlateID
+  #left_join(Biomass.Total, PlateID = PlateID) #left join biomass data by PlateID
 
 #View(Sample.Info)
 
@@ -149,7 +149,7 @@ Respo.R <- read_csv(here("Data","August2022","PlateCommunityRespoData","Respo.R.
 
 # Calculate Respiration rate
 
-Respo.R<-Respo.R %>% #PROBLEM almost all Sample.Info is lost when joining
+Respo.R<-Respo.R %>% #Fix one respo file name in A5, missing h in Ch
   drop_na(FileName) %>% # drop NAs
   left_join(Sample.Info) %>% # Join the raw respo calcuations with the metadata
   mutate(umol.sec = umol.L.sec*Volume) %>% #Account for chamber volume to convert from umol L-1 s-1 to umol s-1. This standardizes across water volumes (different because of coral size) and removes per Liter
@@ -180,8 +180,8 @@ Respo.R_Normalized <- Respo.R %>%
 
 #create new column with unique identifier per tile per light/dark
 Respo.R_Normalized<- Respo.R_Normalized %>%
-  unite(Batch, c(PlateID, chamber.channel), remove=FALSE) %>% 
-  select(-block)
+  unite(Batch, c(PlateID, Chamber_channel), remove=FALSE) %>% 
+  select(-Block)
 
 # pivot the data so that light and dark have their own column for net P and R 
 Respo.R_Normalized<- Respo.R_Normalized %>%
@@ -194,7 +194,7 @@ Respo.R_Normalized<- Respo.R_Normalized %>%
 #Calculate Raw Respiration Rates (not using biomass to normalise)
 
 Respo.R_Raw <- Respo.R %>%
-  group_by(Light_Dark, block, BLANK)%>% # also add block here if one blank per block
+  group_by(Light_Dark, Block, BLANK)%>% # also add block here if one blank per block
   summarise(umol.sec = mean(umol.sec, na.rm=TRUE)) %>%
   filter(BLANK ==1)%>% # only keep the actual blanks
   select(Light_Dark, blank.rate = umol.sec) %>% # only keep what we need and rename the blank rate column
@@ -202,12 +202,12 @@ Respo.R_Raw <- Respo.R %>%
   mutate(umol.sec.corr = umol.sec - blank.rate, # subtract the blank rates from the raw rates
          mmol.hr = 0.001*(umol.sec.corr*3600))  %>% # convert to mmol g hr-1
   filter(BLANK ==0) %>% # remove all the blank data
-  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.hr, chamber.channel) %>%  #keep only what we need
+  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.hr, Chamber_channel) %>%  #keep only what we need
   ungroup()
 #create new column with unique identifier per tile per light/dark
 Respo.R_Raw<- Respo.R_Raw %>%
-  unite(Batch, c(PlateID, chamber.channel), remove=FALSE) %>% 
-  select(-block)
+  unite(Batch, c(PlateID, Chamber_channel), remove=FALSE) %>% 
+  select(-Block)
 # pivot the data so that light and dark have their own column for net P and R 
 Respo.R_Raw<- Respo.R_Raw %>%
   pivot_wider(names_from = Light_Dark, values_from = mmol.hr) %>%
@@ -221,7 +221,7 @@ Respo.R_Normalized <- Respo.R_Normalized %>%
   left_join(Respo.R_Raw, Batch = Batch) #left join biomass data by PlateID
 
 
-write_csv(Respo.R_Normalized,here("Data","August2021","CommunityRespoData","PRCommunityRates_blankperblock.csv") ) # export all the uptake rates
+write_csv(Respo.R_Normalized,here("Data","August2022","PRPlateCommunityRates_blankperblock.csv") ) # export all the uptake rates
 #View(Respo.R_Normalised)
 
 #Remove duplicate tile runs to have file for analysis
