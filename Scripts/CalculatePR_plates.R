@@ -152,7 +152,7 @@ Respo.R <- read_csv(here("Data","August2022","PlateCommunityRespoData","Respo.R.
 Respo.R<-Respo.R %>%
   drop_na(FileName) %>% # drop NAs
   left_join(Sample.Info) %>% # Join the raw respo calcuations with the metadata
-  mutate(umol.sec = umol.L.sec*volume) %>% #Account for chamber volume to convert from umol L-1 s-1 to umol s-1. This standardizes across water volumes (different because of coral size) and removes per Liter
+  mutate(umol.sec = umol.L.sec*Volume) %>% #Account for chamber volume to convert from umol L-1 s-1 to umol s-1. This standardizes across water volumes (different because of coral size) and removes per Liter
   mutate_if(sapply(., is.character), as.factor) %>% #convert character columns to factors
   mutate(BLANK = as.factor(BLANK)) #make the blank column a factor
 
