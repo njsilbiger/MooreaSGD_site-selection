@@ -149,7 +149,7 @@ Respo.R <- read_csv(here("Data","August2022","PlateCommunityRespoData","Respo.R.
 
 # Calculate Respiration rate
 
-Respo.R<-Respo.R %>%
+Respo.R<-Respo.R %>% #PROBLEM Sample.Info is lost when joining
   drop_na(FileName) %>% # drop NAs
   left_join(Sample.Info) %>% # Join the raw respo calcuations with the metadata
   mutate(umol.sec = umol.L.sec*Volume) %>% #Account for chamber volume to convert from umol L-1 s-1 to umol s-1. This standardizes across water volumes (different because of coral size) and removes per Liter
