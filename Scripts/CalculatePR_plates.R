@@ -165,7 +165,7 @@ Respo.R<-Respo.R %>%
 #View(Respo.R)
 
 Respo.R_Normalized <- Respo.R %>%
-  group_by(Light_Dark, block, BLANK)%>% # also add block here if one blank per block
+  group_by(Light_Dark, Block, BLANK)%>% # also add block here if one blank per block
   summarise(umol.sec = mean(umol.sec, na.rm=TRUE)) %>%
   filter(BLANK ==1)%>% # only keep the actual blanks
   select(Light_Dark, blank.rate = umol.sec) %>% # only keep what we need and rename the blank rate column
@@ -173,7 +173,7 @@ Respo.R_Normalized <- Respo.R %>%
   mutate(umol.sec.corr = umol.sec - blank.rate, # subtract the blank rates from the raw rates
          mmol.gram.hr = 0.001*(umol.sec.corr*3600)/Biomass)  %>% # convert to mmol g hr-1
   filter(BLANK ==0) %>% # remove all the blank data
-  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr, chamber.channel) %>%  #keep only what we need
+  select(Date, PlateID, CowTagID, Top_Bottom,Light_Dark, Site, Biomass, mmol.gram.hr, Chamber_channel) %>%  #keep only what we need
   ungroup()
 
 #View(Respo.R_Normalized)
