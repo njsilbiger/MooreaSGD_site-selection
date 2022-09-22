@@ -173,13 +173,13 @@ A11,8/21/2022,RESPO_A11_Ch7_Dark_V9_082122_O2_O2,V9,V9,Top,Dark,Varari,,7,,0,10:
 A11,8/21/2022,RESPO_A11_Ch8_Dark_V20_082122_O2_O2,V20,V20,Top,Dark,Varari,,8,,0,10:10:00,11:20:00,,
 A11,8/21/2022,RESPO_A11_Ch9_Dark_V17_082122_O2_O2,V17,V17,Top,Dark,Varari,,9,,0,10:10:00,11:20:00,,
 A11,8/21/2022,RESPO_A11_Ch10_Dark_V14_082122_O2_O2,V14,V14,Top,Dark,Varari,,10,,0,10:10:00,11:20:00,,chamber 10 was still producing oxygen for the first 10 minutes of the dark period so extended the run 10 minutes
-A11,8/21/2022,RESPO_A12_Ch6_Light_blank_082122_O2_O2,blank,blank,Bottom,Light,Varari,,6,,1,12:18:00,13:18:00,,
-A11,8/21/2022,RESPO_A12_Ch7_Light_V29_082122_O2_O2,V29,V9,Bottom,Light,Varari,,7,,0,12:18:00,13:18:00,,
-A11,8/21/2022,RESPO_A12_Ch8_Light_V40_082122_O2_O2,V40,V20,Bottom,Light,Varari,,8,,0,12:18:00,13:18:00,,remove big peak at 48min
-A11,8/21/2022,RESPO_A12_Ch9_Light_V37_082122_O2_O2,V37,V17,Bottom,Light,Varari,,9,,0,12:18:00,13:18:00,,"erratic trendline, paused at 12:39, chamber was opened and sensor cleaned"
-A11,8/21/2022,RESPO_A12_Ch10_Light_V34_082122_O2_O2,V34,V14,Bottom,Light,Varari,,10,,0,12:18:00,13:18:00,,
-A11,8/21/2022,RESPO_A12_Ch6_Dark_blank_082122_O2_O2,blank,blank,Bottom,Dark,Varari,,6,,1,13:45:00,14:45,,
-A11,8/21/2022,RESPO_A12_Ch7_Dark_V29_082122_O2_O2,V29,V9,Bottom,Dark,Varari,,7,,0,13:45:00,14:45,,
-A11,8/21/2022,RESPO_A12_Ch8_Dark_V40_082122_O2_O2,V40,V20,Bottom,Dark,Varari,,8,,0,13:45:00,14:45,,
-A11,8/21/2022,RESPO_A12_Ch9_Dark_V37_082122_O2_O2,V37,V17,Bottom,Dark,Varari,,9,,0,13:45:00,14:45,,
-A11,8/21/2022,RESPO_A12_Ch10_Dark_V34_082122_O2_O2,V34,V14,Bottom,Dark,Varari,,10,,0,13:45:00,14:45,,
+A12,8/21/2022,RESPO_A12_Ch6_Light_blank_082122_O2_O2,blank,blank,Bottom,Light,Varari,,6,,1,12:18:00,13:18:00,,
+A12,8/21/2022,RESPO_A12_Ch7_Light_V29_082122_O2_O2,V29,V9,Bottom,Light,Varari,,7,,0,12:18:00,13:18:00,,
+A12,8/21/2022,RESPO_A12_Ch8_Light_V40_082122_O2_O2,V40,V20,Bottom,Light,Varari,,8,,0,12:18:00,13:18:00,,remove big peak at 48min
+A12,8/21/2022,RESPO_A12_Ch9_Light_V37_082122_O2_O2,V37,V17,Bottom,Light,Varari,,9,,0,12:18:00,13:18:00,,"erratic trendline, paused at 12:39, chamber was opened and sensor cleaned"
+A12,8/21/2022,RESPO_A12_Ch10_Light_V34_082122_O2_O2,V34,V14,Bottom,Light,Varari,,10,,0,12:18:00,13:18:00,,
+A12,8/21/2022,RESPO_A12_Ch6_Dark_blank_082122_O2_O2,blank,blank,Bottom,Dark,Varari,,6,,1,13:45:00,14:45,,
+A12,8/21/2022,RESPO_A12_Ch7_Dark_V29_082122_O2_O2,V29,V9,Bottom,Dark,Varari,,7,,0,13:45:00,14:45,,
+A12,8/21/2022,RESPO_A12_Ch8_Dark_V40_082122_O2_O2,V40,V20,Bottom,Dark,Varari,,8,,0,13:45:00,14:45,,
+A12,8/21/2022,RESPO_A12_Ch9_Dark_V37_082122_O2_O2,V37,V17,Bottom,Dark,Varari,,9,,0,13:45:00,14:45,,
+A12,8/21/2022,RESPO_A12_Ch10_Dark_V34_082122_O2_O2,V34,V14,Bottom,Dark,Varari,,10,,0,13:45:00,14:45,,
