@@ -30,12 +30,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","June2022","Varari_Sled", "20220604","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "20220604" # logger date used in file name(s)
+path.log<-here("Data","June2022","Varari_Sled", "20220603","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "20220603" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","June2022","Varari_Sled", "20220604","QC_files") # Output file path
+path.output<-here("Data","June2022","Varari_Sled", "20220603","QC_files") # Output file path
 
 
 ###################################
@@ -141,7 +141,7 @@ p[[1]]<-pHLog %>%
 
 
 # Save all plots in a single dated pdf
-pdf(paste0(path.output,"/",file.date,"_pH_plots.pdf"), onefile = TRUE)
+pdf(paste0(path.output,"/",file.date,"_pH_plot.pdf"), onefile = TRUE)
 for (i in seq(length(p))) {
   tplot <- p[[i]]
   print(tplot)
