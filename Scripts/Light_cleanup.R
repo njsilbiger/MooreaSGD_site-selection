@@ -33,27 +33,27 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","June2022","Varari_Sled","20220603","raw_files", "Lux") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","June2022","Varari_Sled","20220607","raw_files", "Lux") # Logger in situ file path (CT and Water Level files)
 file.date <- "20220607" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","June2022","Varari_Sled","20220603","QC_files", "QC_LUX") # Output file path
+path.output<-here("Data","June2022","Varari_Sled","20220607","QC_files", "QC_LUX") # Output file path
 
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-Light_Serial <- "870"
+Light_Serial <- "858"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2022-06-03')
-end.date <- ymd('2022-06-04')
+start.date <- ymd('2022-06-07')
+end.date <- ymd('2022-06-11')
 
 # do you want to plot a graph?
 plotgraph<-'yes'
