@@ -1,0 +1,48 @@
+============================================================
+Deployment   : 210833
+Current time : 8/3/2021 5:40:21 PM
+Start at     : 8/3/2021 5:43:00 PM
+Comment:
+Varari test new advanced parameters shallow deployment
+------------------------------------------------------------
+Measurement interval  (s) : 60
+Cell size            (mm) : 50
+Orientation               : UPLOOKING SHALLOW WATER
+Distance to surface   (m) : 2.00
+Pulse distance        (m) : 1.50
+Profile range         (m) : 1.40
+Horiz. vel. range   (m/s) : 0.61
+Vert. vel. range    (m/s) : 0.26
+Number of cells           : 28
+Average interval      (s) : 60
+Blanking distance     (m) : 0.050
+Measurement load      (%) : 40
+Samples per burst         : N/A
+Sampling rate        (Hz) : N/A
+Compass upd. rate     (s) : 60
+Coordinate System         : ENU
+Speed of sound      (m/s) : MEASURED
+Salinity            (ppt) : 35
+Analog input 1            : NONE
+Analog input 2            : NONE
+Analog input power out    : DISABLED
+File wrapping             : OFF
+TellTale                  : OFF
+Acoustic modem            : OFF
+Serial output             : OFF
+Baud rate                 : 9600
+------------------------------------------------------------
+Assumed duration   (days) : 2.0
+Battery utilization   (%) : 82.0
+Battery level         (V) : 11.6
+Recorder size        (MB) : 161
+Recorder free space  (MB) : 160.970
+Memory required      (MB) : 1.1
+------------------------------------------------------------
+Instrument ID             : AQD 2670
+Head ID                   : ASP 2348
+Firmware version          : 1.08 HR
+------------------------------------------------------------
+AquaProHR Version 1.11.03
+Copyright (C) Nortek AS
+============================================================
