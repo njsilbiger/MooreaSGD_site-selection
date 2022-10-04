@@ -1,0 +1,335 @@
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.prf]
+---------------------------------------------------------------------
+Number of measurements                2540
+Number of checksum errors             0
+Time of first measurement             3/25/2022 3:30:00 PM
+Time of last measurement              3/29/2022 4:18:57 AM
+
+User setup
+---------------------------------------------------------------------
+Measurement/Burst interval            120 sec
+Cell size                             50 mm
+Orientation                           UPLOOKING SHALLOW WATER
+Distance to surface                   2.00 m
+Extended velocity range               ON
+Pulse distance (Lag1)                 1.00 m
+Pulse distance (Lag2)                 0.33 m
+Profile range                         0.85 m
+Horizontal velocity range             0.91 m/s
+Vertical velocity range               0.39 m/s
+Number of cells                       17
+Average interval                      60 sec
+Blanking distance                     0.104 m
+Measurement load                      44 %
+Burst sampling                        OFF
+Samples per burst                     N/A
+Sampling rate                         N/A
+Compass update rate                   60 sec
+Analog input 1                        NONE
+Analog input 2                        NONE
+Power output                          DISABLED
+Powerlevel first ping                 HIGH-
+Powerlevel ping 2                     HIGH
+Coordinate system                     ENU
+Sound speed                           MEASURED
+Salinity                              35.0 ppt
+Number of beams                       3
+Number of pings per burst             18
+Software version                      1.11.03
+Deployment name                       210804
+Wrap mode                             OFF
+Deployment time                       3/25/2022 3:30:00 PM
+Comments                              Varari sampling second deployment start 25 March 2022
+System1                               9
+System2                               25
+System3                               8
+System4                               292
+System5                               512
+System9                               32
+System10                              0
+System11                              0
+System12                              0
+System13                              0
+System14                              60
+System16                              17
+System17                              2092
+System22                              3600
+System28                              1
+System29                              1
+System30                              20
+System31                              15618 15646 15673 15699
+System32 (PhaseToVel1)                256
+System33 (Ua1)                        32768
+System34 (Uah1)                       16384
+System35 (PhaseToVel2)                772
+System36 (Ua2)                        52591
+System37 (Uah2)                       59063
+System38 (Lag1)                       163
+System39 (Lag2)                       54
+System40 (T1Lag2)                     5
+System41 (T2Lag2)                     32
+System42 (T3Lag2)                     17
+System42                              0
+System43                              30
+System44                              0
+System45                              5
+Start command                         Recorder deployment
+CRC download                          ON
+
+Hardware configuration
+---------------------------------------------------------------------
+Serial number                         AQD 2670
+Internal code version                 13
+Hardware revision                     60 (})
+Recorder size                         161 MByte
+Firmware version                      1.08 HR
+Velocity range                        NORMAL
+
+Head configuration
+---------------------------------------------------------------------
+Pressure sensor                       YES
+Compass                               YES
+Tilt sensor                           YES
+System 1                              1
+Head frequency                        2000 kHz
+Serial number                         ASP 2348
+Transformation matrix                 1.5774 -0.7891 -0.7891
+                                      0.0000 -1.3662 1.3662
+                                      0.3677 0.3677 0.3677
+Magnetometer calibration matrix       0.9983 0.0000 0.0044
+                                      0.0000 1.0000 0.0344
+                                      0.0000 0.0000 1.0000
+Compass hard iron calibration         6 -36 0
+Pressure sensor calibration           0 0 3845 22458
+Number of beams                       3
+System5                               25 25 25 0
+System7                               -17587 541 11072 -66
+                                      -16572 -635 11084 377
+System8                               1 0 0
+                                      0 -1 0
+                                      0 0 -1
+System9                               1 0 0
+                                      0 1 0
+                                      0 0 1
+System10                              0 1 -1 0
+System11                              0 1 1 0
+System13                              11847 18809 19217 26822
+System14                              -7727 353 7600 -106
+                                      -7451 -674 8008 396
+System15                              32711 0 145 0
+                                      32767 1128 0 0
+                                      32767 6 -36 0
+                                      0 0 0 0
+System16                              0 0 0 0
+System17                              4550
+System18                              3600
+System19                              3600
+System20                              10000
+
+
+Current profile cell center distances from transducer head.
+Distances are in meters at nominal speed of sound (1500 m/s).
+       Beam    Vertical
+---------------------------------------------------------------------
+  1    0.170    0.154
+  2    0.225    0.204
+  3    0.280    0.254
+  4    0.336    0.304
+  5    0.391    0.354
+  6    0.446    0.404
+  7    0.501    0.454
+  8    0.556    0.504
+  9    0.612    0.554
+ 10    0.667    0.604
+ 11    0.722    0.654
+ 12    0.777    0.704
+ 13    0.832    0.754
+ 14    0.888    0.804
+ 15    0.943    0.854
+ 16    0.998    0.904
+ 17    1.053    0.954
+
+Data file format
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.v1]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Velocity Cell 1 (Beam1|X|East)   (m/s)
+ 4   Velocity Cell 2 (Beam1|X|East)   (m/s)
+     .
+     .
+ n   Velocity Cell n (Beam1|X|East)   (m/s)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.v2]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Velocity Cell 1 (Beam2|Y|North)  (m/s)
+ 4   Velocity Cell 2 (Beam2|Y|North)  (m/s)
+     .
+     .
+ n   Velocity Cell n (Beam2|Y|North)  (m/s)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.v3]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Velocity Cell 1 (Beam3|Z|Up)     (m/s)
+ 4   Velocity Cell 2 (Beam3|Z|Up)     (m/s)
+     .
+     .
+ n   Velocity Cell n (Beam3|Z|Up)     (m/s)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.hr2]
+ 1   Month                            (1-12)
+ 2   Day                              (1-31)
+ 3   Year
+ 4   Hour                             (0-23)
+ 5   Minute                           (0-59)
+ 6   Second                           (0-59.999)
+ 7   Velocity (Beam1)                 (m/s)
+ 8   Velocity (Beam2)                 (m/s)
+ 9   Velocity (Beam3)                 (m/s)
+10   Amplitude (Beam1)                (counts)
+11   Amplitude (Beam2)                (counts)
+12   Amplitude (Beam3)                (counts)
+13   Correlation (Beam1)              (%)
+14   Correlation (Beam2)              (%)
+15   Correlation (Beam3)              (%)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.a1]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Amplitude Cell 1 (Beam1)         (counts)
+ 4   Amplitude Cell 2 (Beam1)         (counts)
+     .
+     .
+ n   Amplitude Cell n (Beam1)         (counts)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.a2]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Amplitude Cell 1 (Beam2)         (counts)
+ 4   Amplitude Cell 2 (Beam2)         (counts)
+     .
+     .
+ n   Amplitude Cell n (Beam2)         (counts)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.a3]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Amplitude Cell 1 (Beam3)         (counts)
+ 4   Amplitude Cell 2 (Beam3)         (counts)
+     .
+     .
+ n   Amplitude Cell n (Beam3)         (counts)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.c1]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Correlation Cell 1 (Beam1)       (%)
+ 4   Correlation Cell 2 (Beam1)       (%)
+     .
+     .
+ n   Correlation Cell n (Beam1)       (%)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.c2]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Correlation Cell 1 (Beam2)       (%)
+ 4   Correlation Cell 2 (Beam2)       (%)
+     .
+     .
+ n   Correlation Cell n (Beam2)       (%)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.c3]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Correlation Cell 1 (Beam3)       (%)
+ 4   Correlation Cell 2 (Beam3)       (%)
+     .
+     .
+ n   Correlation Cell n (Beam3)       (%)
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.sen]
+ 1   Month                            (1-12)
+ 2   Day                              (1-31)
+ 3   Year
+ 4   Hour                             (0-23)
+ 5   Minute                           (0-59)
+ 6   Second                           (0-59.999)
+ 7   Burst counter
+ 8   Ensemble counter
+ 9   Error code
+10   Status code
+11   Battery voltage                  (V)
+12   Soundspeed                       (m/s)
+13   Heading                          (degrees)
+14   Pitch                            (degrees)
+15   Roll                             (degrees)
+16   Pressure                         (dbar)
+17   Temperature                      (degrees C)
+18   Analog input 1
+19   Analog input 2
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.dat]
+Header...
+ 1   Month                            (1-12)
+ 2   Day                              (1-31)
+ 3   Year
+ 4   Hour                             (0-23)
+ 5   Minute                           (0-59)
+ 6   Second                           (0-59)
+ 7   Error code
+ 8   Status code
+ 9   Battery voltage                  (V)
+10   Soundspeed                       (m/s)
+11   Heading                          (degrees)
+12   Pitch                            (degrees)
+13   Roll                             (degrees)
+14   Pressure                         (dbar)
+15   Temperature                      (degrees C)
+16   Analog input 1
+17   Analog input 2
+18   Number of beams
+19   Number of cells
+
+Velocity profile...
+ 1   Cell number
+ 2   Cell position                    (m)
+ 3   Velocity (Beam1|X|East)          (m/s)
+ 4   Velocity (Beam2|Y|North)         (m/s)
+ 5   Velocity (Beam3|Z|Up)            (m/s)
+ 6   Amplitude (Beam1)                (counts)
+ 7   Amplitude (Beam2)                (counts)
+ 8   Amplitude (Beam3)                (counts)
+ 9   Correlation (Beam1)              (%)
+ 10  Correlation (Beam2)              (%)
+ 11  Correlation (Beam3)              (%)
+ 12  Speed                            (m/s)
+ 13  Direction                        (degrees)
+ 14  Spare
+
+---------------------------------------------------------------------
+[C:\Users\Megan\Documents\GitHub\MooreaSGD_site-selection\Data\March2022\ADCP\220325_VarariSecondDeployment.csv]
+ 1   DateTime                         
+ 2   Battery voltage                  (V)
+ 3   Heading                          (degrees)
+ 4   Pitch                            (degrees)
+ 5   Roll                             (degrees)
+ 6   Pressure                         (dbar)
+ 7   Temperature                      (degrees C)
+ 8   Analog input 1
+ 9   Analog input 2
+10   Speed cell 1                     (m/s)
+11   Direction cell 1                 (degrees)
+10-11 repeated for all cells in profile.
