@@ -1,0 +1,346 @@
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.prf]
+---------------------------------------------------------------------
+Number of measurements                58350
+Number of checksum errors             0
+Time of first measurement             5/16/2021 12:30:00 PM
+Time of last measurement              5/17/2021 4:42:29 AM
+
+User setup
+---------------------------------------------------------------------
+Measurement/Burst interval            1 sec
+Cell size                             30 mm
+Orientation                           UPLOOKING SHALLOW WATER
+Distance to surface                   1.25 m
+Extended velocity range               OFF
+Pulse distance (Lag1)                 1.00 m
+Pulse distance (Lag2)                 0.00 m
+Profile range                         0.84 m
+Horizontal velocity range             0.30 m/s
+Vertical velocity range               0.13 m/s
+Number of cells                       28
+Average interval                      1 sec
+Blanking distance                     0.096 m
+Measurement load                      88 %
+Burst sampling                        OFF
+Samples per burst                     N/A
+Sampling rate                         N/A
+Compass update rate                   1 sec
+Analog input 1                        NONE
+Analog input 2                        NONE
+Power output                          DISABLED
+Powerlevel first ping                 HIGH-
+Powerlevel ping 2                     HIGH
+Coordinate system                     ENU
+Sound speed                           MEASURED
+Salinity                              35.0 ppt
+Number of beams                       3
+Number of pings per burst             36
+Software version                      1.11.03
+Deployment name                       210516
+Wrap mode                             OFF
+Deployment time                       5/16/2021 12:30:00 PM
+Comments                              Moorea West side deployment overnight.
+System1                               6
+System2                               21
+System3                               4
+System4                               292
+System5                               512
+System9                               34
+System10                              0
+System11                              0
+System12                              0
+System13                              0
+System14                              1
+System16                              28
+System17                              1255
+System22                              3600
+System28                              1
+System29                              1
+System30                              20
+System31                              15618 15646 15673 15699
+System32 (PhaseToVel1)                2556
+System33 (Ua1)                        32768
+System34 (Uah1)                       16384
+System35 (PhaseToVel2)                1
+System36 (Ua2)                        1
+System37 (Uah2)                       1
+System38 (Lag1)                       163
+System39 (Lag2)                       0
+System40 (T1Lag2)                     6
+System41 (T2Lag2)                     21
+System42 (T3Lag2)                     4
+System42                              0
+System43                              30
+System44                              0
+System45                              6
+Start command                         Recorder deployment
+CRC download                          ON
+
+Hardware configuration
+---------------------------------------------------------------------
+Serial number                         AQD 2670
+Internal code version                 13
+Hardware revision                     60 (})
+Recorder size                         161 MByte
+Firmware version                      1.08 HR
+Velocity range                        NORMAL
+
+Head configuration
+---------------------------------------------------------------------
+Pressure sensor                       YES
+Compass                               YES
+Tilt sensor                           YES
+System 1                              1
+Head frequency                        2000 kHz
+Serial number                         ASP 2348
+Transformation matrix                 1.5774 -0.7891 -0.7891
+                                      0.0000 -1.3662 1.3662
+                                      0.3677 0.3677 0.3677
+Magnetometer calibration matrix       0.9983 0.0000 0.0044
+                                      0.0000 1.0000 0.0344
+                                      0.0000 0.0000 1.0000
+Compass hard iron calibration         6 -36 0
+Pressure sensor calibration           0 0 3845 22458
+Number of beams                       3
+System5                               25 25 25 0
+System7                               -17587 541 11072 -66
+                                      -16572 -635 11084 377
+System8                               1 0 0
+                                      0 -1 0
+                                      0 0 -1
+System9                               1 0 0
+                                      0 1 0
+                                      0 0 1
+System10                              0 1 -1 0
+System11                              0 1 1 0
+System13                              11847 18809 19217 26822
+System14                              -7727 353 7600 -106
+                                      -7451 -674 8008 396
+System15                              32711 0 145 0
+                                      32767 1128 0 0
+                                      32767 6 -36 0
+                                      0 0 0 0
+System16                              0 0 0 0
+System17                              4550
+System18                              3600
+System19                              3600
+System20                              10000
+
+
+Current profile cell center distances from transducer head.
+Distances are in meters at nominal speed of sound (1500 m/s).
+       Beam    Vertical
+---------------------------------------------------------------------
+  1    0.139    0.126
+  2    0.172    0.156
+  3    0.205    0.186
+  4    0.238    0.216
+  5    0.271    0.246
+  6    0.304    0.276
+  7    0.338    0.306
+  8    0.371    0.336
+  9    0.404    0.366
+ 10    0.437    0.396
+ 11    0.470    0.426
+ 12    0.503    0.456
+ 13    0.536    0.486
+ 14    0.569    0.516
+ 15    0.602    0.546
+ 16    0.635    0.576
+ 17    0.669    0.606
+ 18    0.702    0.636
+ 19    0.735    0.666
+ 20    0.768    0.696
+ 21    0.801    0.726
+ 22    0.834    0.756
+ 23    0.867    0.786
+ 24    0.900    0.816
+ 25    0.933    0.846
+ 26    0.966    0.876
+ 27    1.000    0.906
+ 28    1.033    0.936
+
+Data file format
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.v1]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Velocity Cell 1 (Beam1|X|East)   (m/s)
+ 4   Velocity Cell 2 (Beam1|X|East)   (m/s)
+     .
+     .
+ n   Velocity Cell n (Beam1|X|East)   (m/s)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.v2]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Velocity Cell 1 (Beam2|Y|North)  (m/s)
+ 4   Velocity Cell 2 (Beam2|Y|North)  (m/s)
+     .
+     .
+ n   Velocity Cell n (Beam2|Y|North)  (m/s)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.v3]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Velocity Cell 1 (Beam3|Z|Up)     (m/s)
+ 4   Velocity Cell 2 (Beam3|Z|Up)     (m/s)
+     .
+     .
+ n   Velocity Cell n (Beam3|Z|Up)     (m/s)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.hr2]
+ 1   Month                            (1-12)
+ 2   Day                              (1-31)
+ 3   Year
+ 4   Hour                             (0-23)
+ 5   Minute                           (0-59)
+ 6   Second                           (0-59.999)
+ 7   Velocity (Beam1)                 (m/s)
+ 8   Velocity (Beam2)                 (m/s)
+ 9   Velocity (Beam3)                 (m/s)
+10   Amplitude (Beam1)                (counts)
+11   Amplitude (Beam2)                (counts)
+12   Amplitude (Beam3)                (counts)
+13   Correlation (Beam1)              (%)
+14   Correlation (Beam2)              (%)
+15   Correlation (Beam3)              (%)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.a1]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Amplitude Cell 1 (Beam1)         (counts)
+ 4   Amplitude Cell 2 (Beam1)         (counts)
+     .
+     .
+ n   Amplitude Cell n (Beam1)         (counts)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.a2]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Amplitude Cell 1 (Beam2)         (counts)
+ 4   Amplitude Cell 2 (Beam2)         (counts)
+     .
+     .
+ n   Amplitude Cell n (Beam2)         (counts)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.a3]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Amplitude Cell 1 (Beam3)         (counts)
+ 4   Amplitude Cell 2 (Beam3)         (counts)
+     .
+     .
+ n   Amplitude Cell n (Beam3)         (counts)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.c1]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Correlation Cell 1 (Beam1)       (%)
+ 4   Correlation Cell 2 (Beam1)       (%)
+     .
+     .
+ n   Correlation Cell n (Beam1)       (%)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.c2]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Correlation Cell 1 (Beam2)       (%)
+ 4   Correlation Cell 2 (Beam2)       (%)
+     .
+     .
+ n   Correlation Cell n (Beam2)       (%)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.c3]
+ 1   Burst counter
+ 2   Ensemble counter
+ 3   Correlation Cell 1 (Beam3)       (%)
+ 4   Correlation Cell 2 (Beam3)       (%)
+     .
+     .
+ n   Correlation Cell n (Beam3)       (%)
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.sen]
+ 1   Month                            (1-12)
+ 2   Day                              (1-31)
+ 3   Year
+ 4   Hour                             (0-23)
+ 5   Minute                           (0-59)
+ 6   Second                           (0-59.999)
+ 7   Burst counter
+ 8   Ensemble counter
+ 9   Error code
+10   Status code
+11   Battery voltage                  (V)
+12   Soundspeed                       (m/s)
+13   Heading                          (degrees)
+14   Pitch                            (degrees)
+15   Roll                             (degrees)
+16   Pressure                         (dbar)
+17   Temperature                      (degrees C)
+18   Analog input 1
+19   Analog input 2
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.dat]
+Header...
+ 1   Month                            (1-12)
+ 2   Day                              (1-31)
+ 3   Year
+ 4   Hour                             (0-23)
+ 5   Minute                           (0-59)
+ 6   Second                           (0-59)
+ 7   Error code
+ 8   Status code
+ 9   Battery voltage                  (V)
+10   Soundspeed                       (m/s)
+11   Heading                          (degrees)
+12   Pitch                            (degrees)
+13   Roll                             (degrees)
+14   Pressure                         (dbar)
+15   Temperature                      (degrees C)
+16   Analog input 1
+17   Analog input 2
+18   Number of beams
+19   Number of cells
+
+Velocity profile...
+ 1   Cell number
+ 2   Cell position                    (m)
+ 3   Velocity (Beam1|X|East)          (m/s)
+ 4   Velocity (Beam2|Y|North)         (m/s)
+ 5   Velocity (Beam3|Z|Up)            (m/s)
+ 6   Amplitude (Beam1)                (counts)
+ 7   Amplitude (Beam2)                (counts)
+ 8   Amplitude (Beam3)                (counts)
+ 9   Correlation (Beam1)              (%)
+ 10  Correlation (Beam2)              (%)
+ 11  Correlation (Beam3)              (%)
+ 12  Speed                            (m/s)
+ 13  Direction                        (degrees)
+ 14  Spare
+
+---------------------------------------------------------------------
+[G:\My Drive\Projects\Moorea-SGD\MooreaSGDcode\ADCP_processing\Data\210516_Varari.csv]
+ 1   DateTime                         
+ 2   Battery voltage                  (V)
+ 3   Heading                          (degrees)
+ 4   Pitch                            (degrees)
+ 5   Roll                             (degrees)
+ 6   Pressure                         (dbar)
+ 7   Temperature                      (degrees C)
+ 8   Analog input 1
+ 9   Analog input 2
+10   Speed cell 1                     (m/s)
+11   Direction cell 1                 (degrees)
+10-11 repeated for all cells in profile.

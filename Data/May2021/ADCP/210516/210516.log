@@ -1,0 +1,48 @@
+============================================================
+Deployment   : 210516
+Current time : 5/16/2021 11:38:22 AM
+Start at     : 5/16/2021 12:30:00 PM
+Comment:
+Moorea West side deployment overnight.
+------------------------------------------------------------
+Measurement interval  (s) : 1
+Cell size            (mm) : 30
+Orientation               : UPLOOKING SHALLOW WATER
+Distance to surface   (m) : 1.25
+Pulse distance        (m) : 1.00
+Profile range         (m) : 0.84
+Horiz. vel. range   (m/s) : 0.30
+Vert. vel. range    (m/s) : 0.13
+Number of cells           : 28
+Average interval      (s) : 1
+Blanking distance     (m) : 0.100
+Measurement load      (%) : 88
+Samples per burst         : N/A
+Sampling rate        (Hz) : N/A
+Compass upd. rate     (s) : 1
+Coordinate System         : ENU
+Speed of sound      (m/s) : MEASURED
+Salinity            (ppt) : 35
+Analog input 1            : NONE
+Analog input 2            : NONE
+Analog input power out    : DISABLED
+File wrapping             : OFF
+TellTale                  : OFF
+Acoustic modem            : OFF
+Serial output             : OFF
+Baud rate                 : 9600
+------------------------------------------------------------
+Assumed duration   (days) : 1.0
+Battery utilization   (%) : 42.0
+Battery level         (V) : 11.7
+Recorder size        (MB) : 161
+Recorder free space  (MB) : 160.321
+Memory required      (MB) : 32.3
+------------------------------------------------------------
+Instrument ID             : AQD 2670
+Head ID                   : ASP 2348
+Firmware version          : 1.08 HR
+------------------------------------------------------------
+AquaProHR Version 1.11.03
+Copyright (C) Nortek AS
+============================================================

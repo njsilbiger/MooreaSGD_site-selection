@@ -1,0 +1,48 @@
+============================================================
+Deployment   : Cabral
+Current time : 5/24/2021 6:24:41 AM
+Start at     : 5/24/2021 7:15:00 AM
+Comment:
+
+------------------------------------------------------------
+Measurement interval  (s) : 1
+Cell size            (mm) : 30
+Orientation               : UPLOOKING SHALLOW WATER
+Distance to surface   (m) : 1.25
+Pulse distance        (m) : 0.62
+Profile range         (m) : 0.48
+Horiz. vel. range   (m/s) : 0.48
+Vert. vel. range    (m/s) : 0.20
+Number of cells           : 16
+Average interval      (s) : 1
+Blanking distance     (m) : 0.100
+Measurement load      (%) : 96
+Samples per burst         : N/A
+Sampling rate        (Hz) : N/A
+Compass upd. rate     (s) : 1
+Coordinate System         : ENU
+Speed of sound      (m/s) : MEASURED
+Salinity            (ppt) : 36
+Analog input 1            : NONE
+Analog input 2            : NONE
+Analog input power out    : DISABLED
+File wrapping             : OFF
+TellTale                  : OFF
+Acoustic modem            : OFF
+Serial output             : OFF
+Baud rate                 : 9600
+------------------------------------------------------------
+Assumed duration   (days) : 2.0
+Battery utilization   (%) : 83.0
+Battery level         (V) : 11.9
+Recorder size        (MB) : 161
+Recorder free space  (MB) : 61.549
+Memory required      (MB) : 40.9
+------------------------------------------------------------
+Instrument ID             : AQD 2670
+Head ID                   : ASP 2348
+Firmware version          : 1.08 HR
+------------------------------------------------------------
+AquaProHR Version 1.11.03
+Copyright (C) Nortek AS
+============================================================
