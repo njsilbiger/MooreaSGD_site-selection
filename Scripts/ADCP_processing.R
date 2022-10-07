@@ -31,7 +31,7 @@ alongshore_heading <- c(306,346)  #northerly parallel to shore at (Varari, Cabra
 #do you want plots?
 plot.me <- FALSE
 
-meta <- read.csv(paste0(here("Data"),"/ADCP_metadata.csv"),sep=",")
+meta <- read.csv(here("Data","ADCP_metadata.csv"))
 meta$Begin <- as.POSIXct(mdy_hms(meta$Begin,tz="Pacific/Tahiti",truncated=1))
 meta$End <- as.POSIXct(mdy_hms(meta$End,tz="Pacific/Tahiti",truncated=1))
 meta$Data_start <- as.POSIXct(mdy_hms(meta$Data_start,tz="Pacific/Tahiti",truncated=1))
@@ -49,9 +49,11 @@ for (filenum in c(1:length(meta[,1]))) {
   longshore_offset <- 360 - ifelse(meta$Site[filenum]=="Varari",alongshore_heading[1],alongshore_heading[2])
   
   d.csv <- read.csv(paste0(here("Data",trip,"ADCP",id),"/",id,".csv"),sep=";")
-  d.csv$DateTime <- as.POSIXct(mdy_hms(d.csv$DateTime,tz="Pacific/Tahiti",truncated=1))
+  d.csv$DateTime <- as.POSIXct(mdy_hms(d.csv$DateTime,truncated=1,tz="Pacific/Tahiti"))
+  View(d.csv)
   #Truncate to usable data per metadata file
-  d.csv <- d.csv[d.csv$DateTime %within% interval(from, to),]
+#  d.csv <- d.csv[d.csv$DateTime %within% interval(from, to),]
+  d.csv <- d.csv %>% filter(DateTime %within% interval(from, to))
   
   #long-form data
   d.csv.l <-d.csv %>% 
@@ -63,10 +65,6 @@ for (filenum in c(1:length(meta[,1]))) {
     #select(!c("AnalogIn1","AnalogIn2","X","name")) %>% 
     select(!c("AnalogIn1":"name")) %>% 
     pivot_wider(names_from=c("meas"))
-  
-  #find the modal direction
-  h <- hist(d.csv.l$Direction,90,plot=FALSE)
-  h.mode <-h$mids[h$counts==max(h$counts)]
   
   #Decompose into northing and easting in each depth bin:datetime
   d.csv.l <-d.csv.l %>% 
@@ -83,6 +81,9 @@ for (filenum in c(1:length(meta[,1]))) {
            min.dir = Speed*sin(scale(Direction.tru,center=h.mode,scale=FALSE)/360*2*pi)
     )
   #View(d.csv.l)
+  #find the modal direction
+  h <- hist(d.csv.l$Direction.tru,90,plot=FALSE)
+  h.mode <-h$mids[h$counts==max(h$counts)]
   
   #average easting and northing across depth; then back-transform to average speed & direction
   d.summary <-d.csv.l %>%
@@ -93,7 +94,7 @@ for (filenum in c(1:length(meta[,1]))) {
   #View(d.summary)
   
   #write out files for each of the deployments
-  write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
+#  write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
   
   if (plot.me) {
   #check for instrument state
