@@ -100,8 +100,9 @@ for (filenum in c(1:length(meta[,1]))) {
   
   if (write.out==TRUE){
     #write out files for each of the deployments
-   write.csv(d.csv.l,paste0(here("Data",trip,"ADCP",id),"/",id,"_long.csv"))
-   write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
-   write.csv(d.summary.h,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary_hourly.csv"))
+    write.csv(d.csv,paste0(here("Data",trip,"ADCP",id),"/",id,"_trim.csv"))
+    write.csv(d.csv.l,paste0(here("Data",trip,"ADCP",id),"/",id,"_long.csv"))
+    write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
+    write.csv(d.summary.h,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary_hourly.csv"))
   }
 }
