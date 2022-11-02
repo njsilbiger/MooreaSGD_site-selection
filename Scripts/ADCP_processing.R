@@ -20,16 +20,13 @@
 library(tidyverse)
 library(here)
 library(lubridate)
-library(oce)
-library(plotrix)
-library(viridis)
+
+#do you want to write out new copies of the data?
+write.out <- FALSE
 
 #declination for Mo'orea
 declin <- 12.97
 alongshore_heading <- c(306,346)  #northerly parallel to shore at (Varari, Cabral)
-
-#do you want plots?
-plot.me <- FALSE
 
 meta <- read.csv(here("Data","ADCP_metadata.csv"))
 meta$Begin <- as.POSIXct(mdy_hms(meta$Begin,tz="Pacific/Tahiti",truncated=1))
@@ -50,11 +47,10 @@ for (filenum in c(1:length(meta[,1]))) {
   
   d.csv <- read.csv(paste0(here("Data",trip,"ADCP",id),"/",id,".csv"),sep=";")
   d.csv$DateTime <- as.POSIXct(mdy_hms(d.csv$DateTime,truncated=1,tz="Pacific/Tahiti"))
-  View(d.csv)
+  #View(d.csv)
   #Truncate to usable data per metadata file
-#  d.csv <- d.csv[d.csv$DateTime %within% interval(from, to),]
   d.csv <- d.csv %>% filter(DateTime %within% interval(from, to))
-  
+
   #long-form data
   d.csv.l <-d.csv %>% 
     pivot_longer(
@@ -76,109 +72,36 @@ for (filenum in c(1:length(meta[,1]))) {
            truN = Speed*cos((Direction.tru)/360*2*pi),
            truE = Speed*sin((Direction.tru)/360*2*pi),
            longshore = Speed*cos((Direction.shore)/360*2*pi),
-           crossshore = Speed*sin((Direction.shore)/360*2*pi),
-           maj.dir = Speed*cos(scale(Direction.tru,center=h.mode,scale=FALSE)/360*2*pi),
-           min.dir = Speed*sin(scale(Direction.tru,center=h.mode,scale=FALSE)/360*2*pi)
+           crossshore = Speed*sin((Direction.shore)/360*2*pi)
     )
   #View(d.csv.l)
   #find the modal direction
   h <- hist(d.csv.l$Direction.tru,90,plot=FALSE)
   h.mode <-h$mids[h$counts==max(h$counts)]
+  d.csv.l$maj.dir = d.csv.l$Speed*cos(scale(d.csv.l$Direction.tru,center=h.mode,scale=FALSE)/360*2*pi)
+  d.csv.l$min.dir = d.csv.l$Speed*sin(scale(d.csv.l$Direction.tru,center=h.mode,scale=FALSE)/360*2*pi)
   
   #average easting and northing across depth; then back-transform to average speed & direction
   d.summary <-d.csv.l %>%
     group_by(DateTime) %>%
-    summarize_at(vars(truN,truE,Pressure,Temperature,Heading,Pitch,Roll),mean) %>% 
-    mutate(Direction.Avg = atan(truE/truN)*180/pi,Speed.Avg = sqrt(truE^2+truN^2)) %>% 
-    rename(Northing = truN, Easting = truE)
+    summarize_at(vars(truN,truE,longshore,crossshore,Pressure,Temperature,Heading,Pitch,Roll),mean) %>% 
+    mutate(Direction = atan(truE/truN)*180/pi,Speed = sqrt(truE^2+truN^2)) %>%
+    mutate(Direction = ifelse (Direction<0,306+Direction,Direction)) %>% 
+    rename(Northing = truN, Easting = truE, Alongshore = longshore, Cross_shore = crossshore)
   #View(d.summary)
+
+  #make hourly summary for plotting; center around the hour (so subtract 30 min)
+  d.summary.h <- d.summary %>% 
+    group_by(Date=date(DateTime-minutes(30)),Hour = hour(DateTime-minutes(30))) %>% 
+    summarize_at(vars(Northing, Easting, Alongshore, Cross_shore,Pressure, Temperature, Direction,Speed),mean) %>% 
+    mutate(DateTime = ymd_hm(paste(Date,Hour,":00"))) %>%
+    ungroup %>% 
+    select(DateTime, Pressure, Temperature, Direction, Speed, Northing, Easting, Alongshore, Cross_shore)
   
-  #write out files for each of the deployments
-#  write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
-  
-  if (plot.me) {
-  #check for instrument state
-  par(mfrow = c(7,1))
-  oce.plot.ts(d.csv$DateTime,d.csv$Heading,type="l",ylab = "Heading")
-  oce.plot.ts(d.csv$DateTime,d.csv$Pitch,type="l",ylab = "Pitch")
-  oce.plot.ts(d.csv$DateTime,d.csv$Roll,type="l",ylab = "Roll")
-  oce.plot.ts(d.csv$DateTime,d.csv$Pressure,type="l",ylab = "Pressure")
-  oce.plot.ts(d.csv$DateTime,d.csv$Temperature,type="l",ylab = "Temperature")
-  oce.plot.ts(d.summary$DateTime,d.summary$Speed.Avg,type="l", ylab="Avg Speed")
-  feather.plot(r=d.summary$Speed.Avg,theta=d.summary$Direction.Avg,
-               fp.type="meteorological",use.arrows = FALSE)
-  
-  ##Plot speed and direction at 8 depth bins
-  # par(mfrow=c(8,1))
-  # for (i in seq(12,43,4)){
-  #   oce.plot.ts(d.csv$DateTime,d.csv[,i],type="l",ylab = names(d.csv[i]))
-  # }
-  # par(mfrow=c(8,1))
-  # for (i in seq(12,43,4)){
-  #   feather.plot(r=d.csv[,i],theta=d.csv[,i+1],
-  #                fp.type="meteorological",use.arrows = FALSE)
-  # }
-  
-  par(mfrow=c(2,2))
-  wr <- as.windrose(d.csv.l$truE,d.csv.l$truN)
-  plot(wr)
-  plot(d.csv.l$truN~d.csv.l$truE,type="p")
-  hist(d.csv.l$truN)
-  hist(d.csv.l$truE)
-  
-  par(mfrow=c(1,2))
-  hist(d.csv.l$Speed,100)
-  plot(d.csv.l$Speed ~ d.csv.l$Direction.tru)
-  
-  # par(mfrow=c(2,2))
-  # wr <- as.windrose(d.csv.l$maj.dir,d.csv.l$min.dir)
-  # plot(wr)
-  # plot(d.csv.l$maj.dir~d.csv.l$min.dir,type="p")
-  # hist(d.csv.l$maj.dir)
-  # hist(d.csv.l$min.dir)
-  
-  #heatmaps of magnitude, northing, and easting over time (really should be made with facet)
-  print(
-    d.csv.l %>%
-      ggplot(aes(x=DateTime, y=Distance, fill = Speed))+
-      scale_fill_viridis()+
-      geom_tile()
-  )
-  # print(
-  #   d.csv.l %>%
-  #     ggplot(aes(x=DateTime, y=Distance, fill = truN))+
-  #     scale_fill_gradient2(
-  #       low = "dark red",
-  #       mid = "white",
-  #       high = "dark blue",
-  #       midpoint = 0,
-  #       space = "Lab",
-  #       na.value = "grey50",
-  #       guide = "colourbar",
-  #       aesthetics = "fill"
-  #     )+
-  #     geom_tile()
-  # )
-  # 
-  # print(
-  #   d.csv.l %>%
-  #     ggplot(aes(x=DateTime, y=Distance, fill = truE))+
-  #     scale_fill_gradient2(
-  #       low = "dark red",
-  #       mid = "white",
-  #       high = "dark blue",
-  #       midpoint = 0,
-  #       space = "Lab",
-  #       na.value = "grey50",
-  #       guide = "colourbar",
-  #       aesthetics = "fill"
-  #     )+
-  #     geom_tile()
-  # )
-  
+  if (write.out==TRUE){
+    #write out files for each of the deployments
+   write.csv(d.csv.l,paste0(here("Data",trip,"ADCP",id),"/",id,"_long.csv"))
+   write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
+   write.csv(d.summary.h,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary_hourly.csv"))
   }
 }
-
-
-
-
