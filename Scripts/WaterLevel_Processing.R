@@ -29,12 +29,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","June2022","Varari_Sled","20220717","raw_files")
-file.date <- "20220717" # logger date for plot
+path.WL<-here("Data","August2022","Varari_Sled","20220822","raw_files")
+file.date <- "20220822" # logger date for plot
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","June2022","Varari_Sled","20220717","QC_files") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","August2022","Varari_Sled","20220822","QC_files") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
@@ -48,8 +48,8 @@ WL_Serial <- "876"
 ###################################
 
 # Log dates
-start.date <- ymd('2022-07-17')
-end.date <- ymd('2022-07-22')
+start.date <- ymd('2022-08-22')
+end.date <- ymd('2022-08-26')
 
 ###################################
 ### Import calibration and launch records
