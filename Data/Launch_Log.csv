@@ -297,8 +297,8 @@ PH_196,PH,8/8/22 14:40,8/12/22 11:44,log,varari sled
 WL_876,WL,8/8/22 14:40,8/12/22 11:44,log,varari sled
 DO_496,DO,8/8/22 14:40,8/12/22 11:44,log,varari sled
 PAR_327,PAR,8/8/22 14:40,8/12/22 11:44,log,varari sled
-LUX_870,LUX,8/8/22 14:40,8/12/22 11:44,log,varari sled
-LUX_858,LUX,8/8/22 14:40,8/12/22 11:44,log,varari sled
+LUX_870,LUX,8/8/22 14:40,8/12/22 01:00,log,varari sled
+LUX_858,LUX,8/8/22 14:40,8/12/22 01:00,log,varari sled
 CT_332,CT,8/15/22 13:00,8/19/22 13:00,log,varari sled
 PH_196,PH,8/15/22 13:00,8/19/22 13:00,log,varari sled
 WL_876,WL,8/15/22 13:00,8/19/22 13:00,log,varari sled
@@ -311,5 +311,4 @@ PH_196,PH,8/22/22 13:00,8/26/22 09:30,log,varari sled
 WL_876,WL,8/22/22 13:00,8/26/22 09:30,log,varari sled
 DO_496,DO,8/22/22 13:00,8/26/22 09:30,log,varari sled
 PAR_327,PAR,8/22/22 13:00,8/26/22 09:30,log,varari sled
-LUX_870,LUX,8/22/22 13:00,8/26/22 09:30,log,varari sled
-LUX_858,LUX,8/22/22 13:00,8/26/22 09:30,log,varari sled
+LUX_858,LUX,8/22/22 13:00,8/22/22 18:30,log,varari sled
