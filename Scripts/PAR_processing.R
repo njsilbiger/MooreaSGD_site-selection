@@ -11,30 +11,30 @@ library(lubridate)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","March2022","Varari_Sled","20220320","raw_files", "PAR") # Logger in situ file path 
-file.date <- "20220320" # logger date used in file name(s)
+path.log<-here("Data","June2022","Varari_Sled","20220717","raw_files", "PAR") # Logger in situ file path 
+file.date <- "20220717" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","March2022","Varari_Sled","20220320","QC_files") # Output file path
+path.output<-here("Data","June2022","Varari_Sled","20220717","QC_files") # Output file path
 
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-PAR_Serial <- "224"
+PAR_Serial <- "327"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2022-03-20')
-end.date <- ymd('2022-03-22')
+start.date <- ymd('2022-07-17')
+end.date <- ymd('2022-07-22')
 
 # do you want to plot a graph?
-plotgraph<-'no'
+plotgraph<-'yes'
 
 ##############################
 ## DO NOT CHANGE ANYTHING BELOW
