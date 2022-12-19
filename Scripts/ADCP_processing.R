@@ -74,27 +74,37 @@ for (filenum in c(1:length(meta[,1]))) {
            longshore = Speed*cos((Direction.shore)/360*2*pi),
            crossshore = Speed*sin((Direction.shore)/360*2*pi)
     )
-  #View(d.csv.l)
-  #find the modal direction
-  h <- hist(d.csv.l$Direction.tru,90,plot=FALSE)
-  h.mode <-h$mids[h$counts==max(h$counts)]
-  d.csv.l$maj.dir = d.csv.l$Speed*cos(scale(d.csv.l$Direction.tru,center=h.mode,scale=FALSE)/360*2*pi)
-  d.csv.l$min.dir = d.csv.l$Speed*sin(scale(d.csv.l$Direction.tru,center=h.mode,scale=FALSE)/360*2*pi)
-  
+  # #View(d.csv.l)
+
   #average easting and northing across depth; then back-transform to average speed & direction
   d.summary <-d.csv.l %>%
     group_by(DateTime) %>%
-    summarize_at(vars(truN,truE,longshore,crossshore,Pressure,Temperature,Heading,Pitch,Roll),mean) %>% 
-    mutate(Direction = atan(truE/truN)*180/pi,Speed = sqrt(truE^2+truN^2)) %>%
-    mutate(Direction = ifelse (Direction<0,306+Direction,Direction)) %>% 
-    rename(Northing = truN, Easting = truE, Alongshore = longshore, Cross_shore = crossshore)
-  #View(d.summary)
+    rename(Northing = truN, Easting = truE, Alongshore = longshore, Cross_shore = crossshore) %>% 
+    summarize_at(vars(Northing, Easting, Alongshore,Cross_shore,Pressure,Temperature,Heading,Pitch,Roll),mean) %>% 
+    mutate(Direction = atan(Easting/Northing)*180/pi +180*(Northing<0),
+           Speed = sqrt(Easting^2+Northing^2))
+ #View(d.summary)
+
+  # par(mfrow = c(2,2))
+  # wr <- as.windrose(d.summary$Easting,d.summary$Northing)
+  # plot(wr,convention="m",type="count")
+  # hist(d.summary$Easting,main="Easting")
+  # hist(d.summary$Northing,main="Northing")
+  # plot(d.summary$Northing~d.summary$Easting,type="p",main = paste("N v E",site, trip))
+  # 
+  # par(mfrow=c(1,2))
+  # hist(d.summary$Speed,100,main="Current Speed, m/s")
+  # plot(d.summary$Speed ~ d.summary$Direction, xlab="Direction", ylab = "Speed",
+  #      main = paste("Sp v Dir,",site,trip))
+  
 
   #make hourly summary for plotting; center around the hour (so subtract 30 min)
   d.summary.h <- d.summary %>% 
     group_by(Date=date(DateTime-minutes(30)),Hour = hour(DateTime-minutes(30))) %>% 
-    summarize_at(vars(Northing, Easting, Alongshore, Cross_shore,Pressure, Temperature, Direction,Speed),mean) %>% 
-    mutate(DateTime = ymd_hm(paste(Date,Hour,":00"))) %>%
+    summarize_at(vars(Northing, Easting, Alongshore, Cross_shore,Pressure, Temperature),mean) %>% 
+    mutate(DateTime = ymd_hm(paste(Date,Hour,":00")),
+           Direction = atan(Easting/Northing)*180/pi +180*(Northing<0),
+           Speed = sqrt(Easting^2+Northing^2)) %>%
     ungroup %>% 
     select(DateTime, Pressure, Temperature, Direction, Speed, Northing, Easting, Alongshore, Cross_shore)
   
