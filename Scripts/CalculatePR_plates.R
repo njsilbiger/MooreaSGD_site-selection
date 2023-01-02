@@ -85,7 +85,7 @@ for (i in 1: length(filenames)) {
     drop_na() # drop NAs
   
   Respo.Data1 <- Respo.Data1 %>%
-    filter(between(Time, max(Time)-60*21,max(Time)-60*1)) #taking last 20 minutes, from 21st to the last minute
+    filter(between(Time, max(Time)-60*61,max(Time)-60*1)) #taking last 60 minutes, from 21st to the last minute
   #filter(between(Time, Sample.Info$start.time[FRow], Sample.Info$stop.time[FRow])) # select only data between start and stop time
   
   
