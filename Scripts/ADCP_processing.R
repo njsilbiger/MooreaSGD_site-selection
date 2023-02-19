@@ -22,7 +22,7 @@ library(here)
 library(lubridate)
 
 #do you want to write out new copies of the data?
-write.out <- FALSE
+write.out <- TRUE
 
 #declination for Mo'orea
 declin <- 12.97
@@ -34,6 +34,7 @@ meta$End <- as.POSIXct(mdy_hms(meta$End,tz="Pacific/Tahiti",truncated=1))
 meta$Data_start <- as.POSIXct(mdy_hms(meta$Data_start,tz="Pacific/Tahiti",truncated=1))
 meta$Data_stop <- as.POSIXct(mdy_hms(meta$Data_stop,tz="Pacific/Tahiti",truncated=1))
 #View(meta)
+d.adcp.all <- NA
 
 for (filenum in c(1:length(meta[,1]))) {
   
@@ -108,11 +109,24 @@ for (filenum in c(1:length(meta[,1]))) {
     ungroup %>% 
     select(DateTime, Pressure, Temperature, Direction, Speed, Northing, Easting, Alongshore, Cross_shore)
   
+  if (filenum==1) {
+    d.adcp.all <- d.summary %>% mutate(Site=site,Trip=trip,ID=id)
+  } else {
+  d.adcp.all <- bind_rows(d.adcp.all,
+                          d.summary %>% mutate(Site=site,Trip=trip,ID=id))
+  }
+  
   if (write.out==TRUE){
     #write out files for each of the deployments
-    write.csv(d.csv,paste0(here("Data",trip,"ADCP",id),"/",id,"_trim.csv"))
-    write.csv(d.csv.l,paste0(here("Data",trip,"ADCP",id),"/",id,"_long.csv"))
-    write.csv(d.summary,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary.csv"))
-    write.csv(d.summary.h,paste0(here("Data",trip,"ADCP",id),"/",id,"_summary_hourly.csv"))
+    write.csv(d.csv,  here("Data",trip,"ADCP",id,paste0(id,"_trim.csv")))
+    write.csv(d.csv.l,here("Data",trip,"ADCP",id,paste0(id,"_long.csv")))
+    write.csv(d.summary,here("Data",trip,"ADCP",id,paste0(id,"_summary.csv")))
+    write.csv(d.summary.h,here("Data",trip,"ADCP",id,paste0(id,"_summary_hourly.csv")))
   }
 }
+
+if (write.out==TRUE){
+  #write out one file that combines all deployements
+  write.csv(d.adcp.all,here("Data","ADCP","ADCP_all.csv"))
+}
+  
