@@ -7,6 +7,39 @@ library(viridis)
 library(lubridate)
 library(scales)
 
+########PLOTS FOR PAPER
+d.adcp <- read.csv(here("Data","ADCP","ADCP_all.csv"))
+#View(d.adcp)
+d.adcp.plots <- d.adcp %>% 
+  filter(ID %in% c("210808","220329","210804","220320"))
+
+d.adcp %>% 
+  ggplot(aes(x=Speed,group=Trip, fill = Trip)) +
+  geom_density(alpha=0.5)+
+  labs(x = "Speed (m/s)",
+       y = "Density")+
+  facet_wrap(~Site, ncol=1, scales = "free_y")+
+  theme_bw()
+
+source(here("Scripts","ADCP_windrose.R"))
+plot.windrose(spd = d.adcp$Speed,
+              dir = d.adcp$Direction)
+# 
+# d.adcp %>% 
+#   mutate(SiteTripID = paste0(Site,"_",ID)) %>% 
+#   #filter(Site=="Cabral") %>% 
+#   ggplot(aes(Speed)) +
+#   geom_histogram() +
+#   facet_grid(rows="SiteTripID")
+# d.adcp %>% 
+#   mutate(SiteTripID = paste0(Site,"_",ID)) %>% 
+#   ggplot(aes(x=DateTime,y=Speed)) +
+#   geom_point() +
+#   facet_wrap("SiteTripID",scales="free")
+######OTHER PLOTS##############
+
+
+
 #metadata for each deployment
 meta <- read.csv(here("Data","ADCP_metadata.csv"))
 #depth bins 
@@ -106,15 +139,17 @@ for (filenum in c(1:length(meta[,1]))) {
   # lines(y=d.summary.h$Speed,x=as.POSIXct(d.summary.h$DateTime),col="blue")
   
   par(mfrow=c(2,2))
+  
   wr <- as.windrose(d.summary$Easting,d.summary$Northing)
   plot(wr,convention="m",type="count")
   hist(d.summary$Easting,main="Easting")
   hist(d.summary$Northing,main="Northing")
-  plot(d.summary$Northing~d.summary$Easting,type="p",main="Northing by Easting")
+  plot(d.summary$Northing~d.summary$Easting,type="p",main=paste(site,trip))
   
   par(mfrow=c(1,2))
   hist(d.summary$Speed,100,main="Current Speed, m/s")
-  plot(d.summary$Speed ~ d.summary$Direction, xlab="Direction", ylab = "Speed")
+  plot(d.summary$Speed ~ d.summary$Direction, 
+       xlab="Direction", ylab = "Speed", main=paste(site,trip))
   
   #heatmaps of magnitude, northing, and easting over time 
   
@@ -155,7 +190,7 @@ for (filenum in c(1:length(meta[,1]))) {
       )+
       geom_tile()
 
-
-
-
 }
+
+
+  
