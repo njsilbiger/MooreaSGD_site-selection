@@ -9,6 +9,9 @@ library(scales)
 
 ########PLOTS FOR PAPER
 d.adcp <- read.csv(here("Data","ADCP","ADCP_all.csv"))
+d.adcp <-d.adcp %>% 
+  mutate(Direction360 = if_else(Direction<0, Direction + 360,Direction))
+
 #View(d.adcp)
 d.adcp.plots <- d.adcp %>% 
   filter(ID %in% c("210808","220329","210804","220320"))
@@ -22,8 +25,33 @@ d.adcp %>%
   theme_bw()
 
 source(here("Scripts","ADCP_windrose.R"))
-plot.windrose(spd = d.adcp$Speed,
-              dir = d.adcp$Direction)
+
+#Varari
+for (id in c("210804","220320")) {
+    plot.windrose(spd = d.adcp$Speed[d.adcp$ID==id],
+              dir = d.adcp$Direction360[d.adcp$ID==id],
+              spdres = 0.05,
+              dirres = 30,
+              spdmin = 0,
+              spdmax = 0.45,
+              palette = "YlGnBu",
+              countmax = NA,
+              debug = 0)
+}
+#Cabral
+for (id in c("210808","220329")) {
+  plot.windrose(spd = d.adcp$Speed[d.adcp$ID==id],
+                dir = d.adcp$Direction360[d.adcp$ID==id],
+                spdres = 0.01,
+                dirres = 30,
+                spdmin = 0,
+                spdmax = 0.15,
+                palette = "YlGnBu",
+                countmax = NA,
+                debug = 0)
+}
+
+
 # 
 # d.adcp %>% 
 #   mutate(SiteTripID = paste0(Site,"_",ID)) %>% 
