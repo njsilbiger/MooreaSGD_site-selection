@@ -114,7 +114,7 @@ plot.windrose <- function(data,
     scale_x_discrete(drop = FALSE,
                      labels = waiver()) +
     coord_polar(start = -((dirres/2)/360) * 2*pi) +
-    scale_fill_manual(name = "Wind Speed (m/s)", 
+    scale_fill_manual(name = "Current Speed (m/s)", 
                       values = spd.colors,
                       drop = FALSE) +
     theme(axis.title.x = element_blank()) +
