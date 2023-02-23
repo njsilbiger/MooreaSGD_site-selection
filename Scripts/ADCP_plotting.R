@@ -6,6 +6,7 @@ library(plotrix)
 library(viridis)
 library(lubridate)
 library(scales)
+library(patchwork)
 
 ########PLOTS FOR PAPER
 d.adcp <- read.csv(here("Data","ADCP","ADCP_all.csv"))
@@ -27,31 +28,91 @@ d.adcp %>%
 source(here("Scripts","ADCP_windrose.R"))
 
 #Varari
-for (id in c("210804","220320")) {
-    plot.windrose(spd = d.adcp$Speed[d.adcp$ID==id],
-              dir = d.adcp$Direction360[d.adcp$ID==id],
+#for (id in c("210804","220320")) {
+  v1<-  plot.windrose(spd = d.adcp$Speed[d.adcp$ID=="210804"],
+              dir = d.adcp$Direction360[d.adcp$ID=="210804"],
               spdres = 0.05,
               dirres = 30,
               spdmin = 0,
               spdmax = 0.45,
               palette = "YlGnBu",
               countmax = NA,
-              debug = 0)
-}
+              debug = 0)+
+    labs(x = "",
+         y = "")+
+    theme_linedraw()+
+    scale_y_continuous(limits = c(0,1500))+
+    theme(axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.border = element_blank(),
+          panel.grid = element_line(color = "grey"))
+#}
+
+  v2<-  plot.windrose(spd = d.adcp$Speed[d.adcp$ID=="220320"],
+                      dir = d.adcp$Direction360[d.adcp$ID=="220320"],
+                      spdres = 0.05,
+                      dirres = 30,
+                      spdmin = 0,
+                      spdmax = 0.45,
+                      palette = "YlGnBu",
+                      countmax = NA,
+                      debug = 0)+
+    labs(x = "",
+         y = "")+
+    theme_linedraw()+
+    scale_y_continuous(limits = c(0,1500))+
+    theme(axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.border = element_blank(),
+          panel.grid = element_line(color = "grey"))
+  #}
+v1+v2+plot_layout(guides = "collect")
+  
 #Cabral
-for (id in c("210808","220329")) {
-  plot.windrose(spd = d.adcp$Speed[d.adcp$ID==id],
-                dir = d.adcp$Direction360[d.adcp$ID==id],
-                spdres = 0.01,
+#for (id in c("210808","220329")) {
+c1<-  plot.windrose(spd = d.adcp$Speed[d.adcp$ID=="210808"],
+                dir = d.adcp$Direction360[d.adcp$ID=="210808"],
+                spdres = 0.05,
                 dirres = 30,
                 spdmin = 0,
-                spdmax = 0.15,
+                spdmax = 0.45,
                 palette = "YlGnBu",
                 countmax = NA,
-                debug = 0)
-}
+                debug = 0)+
+    labs(x = "",
+         y = "")+
+  scale_y_continuous(limits = c(0,500))+
+    theme_linedraw()+
+    theme(axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.border = element_blank(),
+          panel.grid = element_line(color = "grey"))
 
+c2<-  plot.windrose(spd = d.adcp$Speed[d.adcp$ID=="220329"],
+                    dir = d.adcp$Direction360[d.adcp$ID=="220329"],
+                    spdres = 0.05,
+                    dirres = 30,
+                    spdmin = 0,
+                    spdmax = 0.45,
+                    palette = "YlGnBu",
+                    countmax = NA,
+                    debug = 0)+
+  labs(x = "",
+       y = "")+
+  scale_y_continuous(limits = c(0,500))+
+  theme_linedraw()+
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.border = element_blank(),
+        panel.grid = element_line(color = "grey")
+        )
+#}
 
+c1+c2+plot_layout(guides = "collect")
+
+(c1+c2)/(v1+v2)+plot_layout(guides = "collect")&theme(legend.position = "bottom")
+
+ggsave(here("Output","Windroseplots.pdf"), width = 5, height = 5)
 # 
 # d.adcp %>% 
 #   mutate(SiteTripID = paste0(Site,"_",ID)) %>% 
