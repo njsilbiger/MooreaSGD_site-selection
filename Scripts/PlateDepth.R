@@ -10,9 +10,9 @@ library(lubridate)
 
 
 #### READ IN DATA ####
-depth <- read_csv(here("Data","Sandwich_Depth.csv"))
-Vsled <- read_csv(here("Data","Biogeochem","July2022","Vsled_WL_06032022.csv"))
-Csled <- read_csv(here("Data","Biogeochem","July2022","Cabral_WL_06232022.csv"))
+depth <- read_csv(here("Data","Raw_Sandwich_Depth.csv"))
+Vsled <- read_csv(here("Data","June2022","Varari_Sled","20220603","QC_files","QC_WL_20220603_WL_876.csv"))
+Csled <- read_csv(here("Data","June2022","Cabral_CTD","QC_files","QC_WL_20220623_WL_877.csv"))
 
 #### PROCESS RAW DEPTH DATA ####
 
