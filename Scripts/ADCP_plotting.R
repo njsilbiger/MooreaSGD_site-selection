@@ -110,9 +110,9 @@ c2<-  plot.windrose(spd = d.adcp$Speed[d.adcp$ID=="220329"],
 
 c1+c2+plot_layout(guides = "collect")
 
-(c1+c2)/(v1+v2)+plot_layout(guides = "collect")&theme(panel.background = element_blank())
+(c1+c2)/plot_spacer()/(v1+v2)+plot_layout(guides = "collect",heights = c(1,-0.5, 1))&theme(panel.background = element_blank())
 
-ggsave(here("Output","Windroseplots.pdf"), width = 5, height = 5)
+ggsave(here("Output","Windroseplots.pdf"), width = 7, height = 7)
 # 
 # d.adcp %>% 
 #   mutate(SiteTripID = paste0(Site,"_",ID)) %>% 
