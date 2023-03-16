@@ -1,0 +1,24 @@
+Sled Deployment 1:
+	CT 353 – launched Feb 8 2023 16:48. 2 minute interval.
+	WL 876 – launched Feb 8 2023 16:50. 2 minute interval.
+	PH 501 – 
+	Lux 837 – launched Feb 9 2023 17:00. 2 minute interval. 
+	Lux 841 – launched Feb 9 2023 17:04. 2 minute interval.
+	CT calibration in the field:
+		
+		10:30
+		60808 Sp. cond.
+		32.4 C
+		35.0 sal
+	
+
+CTD (rockwall) Deployment:
+
+	CT 739 & 352 launched Feb 17 2023 6:00. 2 minute interval
+	WL 877 launched Feb 17 2023 6:00. 2 minute interval.
+	CT calibration at Gump:
+		Feb 17 2023
+		6:12 
+		57860 Sp. cond.
+		36.1 sal
+		28.1 C
