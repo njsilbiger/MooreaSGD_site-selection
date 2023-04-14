@@ -1,4 +1,7 @@
 CT calibration:
 
-1) Time 7:16, cond 53.7, sal 35.8, temp 24.6
-2) time 7:20, cond 53.7, sal 35.8, temp 24.6
+June 14 2022
+Time 7:16
+Sp.cond 53.7
+sal 35.8
+temp 24.6
