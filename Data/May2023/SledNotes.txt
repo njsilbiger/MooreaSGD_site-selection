@@ -1,15 +1,28 @@
 Sled deployed at seep in Varari at 13:24 on 5/29/2023 
 - WL held at surface 15:16 & 15:18 on 5/29/2023
 - CTs calibrated on 5/26/2023 at Gump
-	- 16:42; 39.3 psu, 59.0 spc, 29.2 C
-	- 16:44, 39.5 psu, 59.2 spc, 29.2 C
+	- 16:42; 39.3 ppt, 59.0 spc, 29.2 C
+	- 16:44, 39.5 ppt, 59.2 spc, 29.2 C
 
 miniPAR time offset: 
 	- Actual time: 2023-05-26 16:24
 	- miniPAR time: 2023-03-26 15:47
 
-Sled moved at ~8:10 6/3/2023
+------------------------------------------------
+Sled moved away from seep at ~8:10 6/3/2023
+Sled returned to seep at ~7:00 6/5/2023
+------------------------------------------------
 
+Sled moved away from seep at ~8:00 6/10/2023
+Sled returned to seep at ~6:30 6/11/2023
+
+Sled moved & returned... weekend of 9-11
+
+Sled removed at 9:00 on 6/17/2023
+- WL held at surface 9:04, 9:06, 9:08 on 6/17/2023
+- CTs calibrated on 6/17/2023 at Gump
+	- 10:30; 36.2 ppt, 54.8 spc, 27.9 C
+	- 10:32; 36.3 ppt, 54.9 spc, 28.0 C
 
 
 miniDOT needs to be calibrated 
