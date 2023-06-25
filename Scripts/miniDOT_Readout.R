@@ -11,12 +11,12 @@ library(here)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2022","Varari_Sled","20220822","raw_files", "miniDOT") # Logger in situ file path 
-file.date <- "20220822" # logger date used in file name(s)
+path.log<-here("Data","May2023","Varari_Sled","raw_files", "miniDOT") # Logger in situ file path 
+file.date <- "20230617" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2022","Varari_Sled","20220822","QC_files") # Output file path
+path.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path
 
 
 ###################################
@@ -30,8 +30,8 @@ DO_Serial <- "496"
 ###################################
 
 # Log dates
-start.date <- ymd('2022-08-22')
-end.date <- ymd('2022-08-24')
+start.date <- ymd('2023-06-11')
+end.date <- ymd('2023-06-17')
 
 # do you want to plot a graph?
 plotgraph<-'yes'

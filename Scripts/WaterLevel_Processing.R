@@ -29,27 +29,27 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","August2022","Varari_Sled","20220822","raw_files")
-file.date <- "20220822" # logger date for plot
+path.WL<-here("Data","May2023","Varari_Sled","raw_files")
+file.date <- "20230617" # logger date for plot
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","August2022","Varari_Sled","20220822","QC_files") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-WL_Serial <- "876"
+WL_Serial <- "870"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2022-08-22')
-end.date <- ymd('2022-08-26')
+start.date <- ymd('2023-06-11')
+end.date <- ymd('2023-06-17')
 
 ###################################
 ### Import calibration and launch records
@@ -99,21 +99,21 @@ launch.log <- launch.log %>%
 
 # Filter out in situ readings date and time 
 launch.log<-launch.log %>% 
-  filter(Serial == str_subset(launch.log$Serial, pattern = WL_Serial))
+  filter(Serial == str_subset(launch.log$Serial, pattern = WL_Serial))  
 
 presLog<-presLog %>% 
   filter(between(date, launch.log$time_start[[1]], launch.log$time_end[[1]]))
 
 # Plot Depth data
 # p<-list()
-presLog %>%
+ presLog %>%
   ggplot(aes(x = date, y = Depth, color = TempInSitu)) +
   geom_line() +
   scale_y_reverse() +
   theme_bw() +
   labs(x = "Date", color = "Temperature (C)", y = "Depth (m)") +
-  ggtitle(paste("WL",WL_Serial,"Depth", file.date))
-# 
+  ggtitle(paste("WL",WL_Serial,"Depth", file.date)) 
+ 
 # # Save all plots in a single dated pdf
 # pdf(paste0(fig.output,"/Depth_plot",file.date,"_WL_",WL_Serial,".pdf"), onefile = TRUE)
 # for (i in seq(length(p))) {

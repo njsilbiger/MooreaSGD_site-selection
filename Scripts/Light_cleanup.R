@@ -33,30 +33,30 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","August2022","Varari_Sled","20220822","raw_files", "Lux") # Logger in situ file path (CT and Water Level files)
-file.date <- "20220822" # logger date used in file name(s)
+path.log<-here("Data","May2023","Varari_Sled","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "20230610" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","August2022","Varari_Sled","20220822","QC_files") # Output file path
+path.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path
 
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-Light_Serial <- "870"
+Light_Serial <- "837"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2022-08-22')
-end.date <- ymd('2022-08-26')
+start.date <- ymd('2023-06-11')
+end.date <- ymd('2023-06-17')
 
 # do you want to plot a graph?
-plotgraph<-'yes'
+plotgraph<-'no'
 
 ###################################
 ### Import calibration and launch records
@@ -76,7 +76,8 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 
 # In Situ pH file
 Light.data <- light_cleanup(data.path = path.log, light.serial = Light_Serial) %>% 
-  rename(Light_Serial = Serial)
+  rename(Light_Serial = Serial) %>%
+  mutate(date=mdy_hm(date))
 
 ## parse the date ####
 launch.log <- launch.log %>%

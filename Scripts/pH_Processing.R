@@ -30,30 +30,30 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","June2022","Varari_Sled", "20220717","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "20220717" # logger date used in file name(s)
+path.log<-here("Data","May2023","Varari_Sled","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "20230617" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","June2022","Varari_Sled", "20220717","QC_files") # Output file path
+path.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path
 
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-pH_Serial <- "196"
+pH_Serial <- "195"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2022-07-17')
-end.date <- ymd('2022-07-22')
+start.date <- ymd('2023-06-11')
+end.date <- ymd('2023-06-17')
 
 # do you want to plot a graph?
-plotgraph<-'yes'
+plotgraph<-'no'
 
 ###################################
 ### Import calibration and launch records
@@ -79,7 +79,8 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 
 # In Situ pH file
 pH.data <- pH_cleanup(data.path = path.log, pH.serial = pH_Serial) %>% 
-  rename(pH_Serial = Serial)
+  rename(pH_Serial = Serial)  %>%
+  mutate(date=mdy_hm(date))
 
 
 ############################################################
@@ -110,7 +111,7 @@ launch.log <- launch.log %>%
          time_end = mdy_hm(time_end),
     start  = date(time_start), # extract the date
          end = date(time_end)) %>%
-    filter(Serial == paste0("PH_",pH_Serial), # pulll out the right serial number
+    filter(Serial == paste0("PH_",pH_Serial), # pull out the right serial number
          start == ymd(start.date),
          end == ymd(end.date))
 
