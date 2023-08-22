@@ -10,20 +10,27 @@
 ##########################################################################
 ##########################################################################
 
-ph_cleanup <- function (data.path, pH.serial, output.path, tf_write = FALSE, 
+pH_cleanup <- function (data.path, pH.serial, output.path, tf_write = FALSE, 
           recursive_tf = FALSE) 
 {
   file.names.Cal <- basename(list.files(data.path, pattern = c(pH.serial, 
                                                                "csv$", recursive = recursive_tf)))
   pHLog <- file.names.Cal %>% purrr::map_dfr(~readr:::read_csv(file.path(data.path, 
                                                                          .), skip = 0, col_names = T))
-  pHLog <- pHLog %>% dplyr::select(contains("Date"), 
-                                   contains(pH.serial), 
-                                   contains("Temp"), 
-                                   contains("mV"),
-                                   contains("pH")) %>% dplyr::mutate(Serial = paste0("pH_", 
-                                                                                               pH.serial)) %>% dplyr::rename(date = contains("Date"), 
-                                                                                                                             TempInSitu = contains("Temp")) %>% tidyr::drop_na()
+  pHLog <- pHLog %>% 
+    dplyr::select(contains("Date"), 
+                  contains(pH.serial), 
+                  contains("Temp"), 
+                  contains("mV"),
+                  contains("pH")) %>% 
+    dplyr::mutate(Serial = paste0("pH_", 
+                                  pH.serial)) %>% 
+    dplyr::rename(date = contains("Date"), 
+                  TempInSitu = contains("Temp"),
+                  mV = contains("mv"),
+                  pH = contains("pH")) %>% 
+    tidyr::drop_na()
+  
   if (tf_write == TRUE) {
     write.csv(pHLog, paste0(output.path, "/pH_", pH.serial, "_tidy.csv"))
   }
@@ -51,12 +58,12 @@ library(gridExtra)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","Feb2023","Varari_Sled","2023-02-26","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "2023-02-26" # logger date used in file name(s)
+path.log<-here("Data","Feb2023","Varari_Sled","2023-03-20","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "2023-03-20" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","Feb2023","Varari_Sled","2023-02-26","QC_files") # Output file path
+path.output<-here("Data","Feb2023","Varari_Sled","2023-03-20","QC_files") # Output file path
 
 
 ###################################
@@ -70,8 +77,8 @@ pH_Serial <- "195"
 ###################################
 
 # Log dates
-start.date <- ymd('2023-02-09')
-end.date <- ymd('2023-02-26')
+start.date <- ymd('2023-02-27')
+end.date <- ymd('2023-03-17')
 
 # do you want to plot a graph?
 plotgraph<-'no'
@@ -101,7 +108,7 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 # In Situ pH file
 pH.data <- pH_cleanup(data.path = path.log, pH.serial = pH_Serial) %>% 
   rename(pH_Serial = Serial)  %>%
-  mutate(date=ymd_hms(date))
+  mutate(date=mdy_hms(date))
 
 
 ############################################################
