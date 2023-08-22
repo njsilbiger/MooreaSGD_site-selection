@@ -36,16 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","Feb2023","Varari_Sled","2023-02-26", "raw_files") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","Feb2023","Varari_Sled","2023-04-21", "raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "2023-02-26" # date used in naming output file(s)
+file.date <- "2023-04-21" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
 ct.serial <- "353" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","Feb2023","Varari_Sled","2023-02-26", "QC_files") # Output file path
+path.output<-here("Data","Feb2023","Varari_Sled","2023-04-21","QC_files") # Output file path
 
 
 ###################################
@@ -54,8 +54,11 @@ path.output<-here("Data","Feb2023","Varari_Sled","2023-02-26", "QC_files") # Out
 
 # Log dates
 start.date <- ymd_hm('2023-02-09 12:30')
-end.date <- ymd_hm('2023-02-24 18:40')
+end.date <- ymd_hm('2023-04-11 16:30')
 
+# use for Feb2023 to avoid weekends and between launches
+# dates_removed <- tibble(date = as.character())
+# dates_removed$date <- c('')
 
 ###################################
 ### Import calibration and launch records
@@ -109,7 +112,7 @@ calibration.log <- calibration.log %>%
   unite(col = 'time_out', date,time_out, sep = " ", remove = F) %>% 
   mutate(date = mdy(date),
         time_in = mdy_hms(time_in), # assumes time is entered as hours and minutes (H:M) only
-        time_out = mdy_hms(time_out)) %>% 
+        time_out = mdy_hms(time_out)) %>%
   filter(date == date(start.date) & pre_post == "pre" | 
            date == date(end.date) & pre_post == "post") # filter only current pre- and post-calibration dates
 
@@ -129,9 +132,10 @@ if(exists('ct.serial') == T){
 ## in situ
 ## unite date to time columns and parse to POSIXct datetime
 launch.log <- launch.log %>%
+  filter(Log_Type == "CT") %>% 
   mutate(Date_launched = mdy_hm(time_start), # parse to date-time format
          Date_retrieved = mdy_hm(time_end)) %>% 
-  filter(Date_launched == start.date & Date_retrieved == end.date) # filter only current launch dates
+  filter(Date_launched == start.date | Date_retrieved == end.date) # filter only current launch dates
   #unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
   #unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
 # launch.log <- launch.log %>% 
@@ -467,8 +471,7 @@ for(i in 1:n2) {
   
   # filter by the i'th serial number
   C1.log<-CalLog %>% 
-    filter(LoggerID == str_subset(CalLog$LoggerID, pattern = sn.b)) #%>% 
-  #mutate(LoggerID = paste0("CT_",sn.b)) # make serial the same for easy join
+    filter(LoggerID == str_subset(CalLog$LoggerID, pattern = sn.b))
   C2.log<-launch.log %>% 
     filter(Serial == str_subset(launch.log$Serial, pattern = sn.b)) %>% 
     distinct()
@@ -508,6 +511,12 @@ for(i in 1:n2) {
     rbind(C1.log) %>% 
     distinct()
   
+}
+
+# remove weekends and other timepoints as needed
+if(exists(dates_removed) == TRUE){
+  Log <- Log %>% 
+    anti_join(dates_removed)
 }
 
 write_csv(Log, paste0(path.output,"/Full_CT_",file.date,".csv")) # write csv file for full set of logger data
