@@ -30,12 +30,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","May2023","Varari_Sled","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "20230617" # logger date used in file name(s)
+path.log<-here("Data","Feb2023","Varari_Sled","2023-02-26","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "2023-02-26" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path
+path.output<-here("Data","Feb2023","Varari_Sled","2023-02-26","QC_files") # Output file path
 
 
 ###################################
@@ -49,8 +49,8 @@ pH_Serial <- "195"
 ###################################
 
 # Log dates
-start.date <- ymd('2023-06-11')
-end.date <- ymd('2023-06-17')
+start.date <- ymd('2023-02-09')
+end.date <- ymd('2023-02-26')
 
 # do you want to plot a graph?
 plotgraph<-'no'
@@ -80,7 +80,7 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 # In Situ pH file
 pH.data <- pH_cleanup(data.path = path.log, pH.serial = pH_Serial) %>% 
   rename(pH_Serial = Serial)  %>%
-  mutate(date=mdy_hm(date))
+  mutate(date=ymd_hms(date))
 
 
 ############################################################
@@ -92,24 +92,11 @@ pH.data <- pH_cleanup(data.path = path.log, pH.serial = pH_Serial) %>%
 ## in situ
 ## unite date to time columns and parse to POSIXct datetime
 
-# THIS IS ALL DANIELLE'S CODE THAT I (NYSSA) CHANGED...
-# launch.log <- launch.log %>% 
-#   unite(col = 'start', date,start, sep = " ", remove = F) %>% 
-#   unite(col = 'end', date,end, sep = " ", remove = F) %>% 
-#   unite(col = 'cg.start', date,cg.start, sep = " ", remove = F) %>% 
-#   unite(col = 'cg.end', date,cg.end, sep = " ", remove = F) %>% 
-#   mutate(date = mdy(date)) %>% 
-#   mutate(start = mdy_hms(start)) %>% 
-#   mutate(end = mdy_hms(end)) %>% 
-#   mutate(cg.start = mdy_hms(cg.start)) %>% 
-#   mutate(cg.end = mdy_hms(cg.end))%>% 
-#   filter(date == start.date | date == end.date) %>%  # filter only current launch dates
-#   select(-date) # remove date column
 
 launch.log <- launch.log %>%
   mutate(time_start = mdy_hm(time_start), # convert to time
          time_end = mdy_hm(time_end),
-    start  = date(time_start), # extract the date
+         start  = date(time_start), # extract the date
          end = date(time_end)) %>%
     filter(Serial == paste0("PH_",pH_Serial), # pull out the right serial number
          start == ymd(start.date),
