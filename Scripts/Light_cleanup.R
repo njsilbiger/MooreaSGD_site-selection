@@ -4,11 +4,11 @@ light_cleanup<-function (data.path, light.serial, output.path, tf_write = FALSE,
   file.names.Cal <- basename(list.files(data.path, pattern = c(light.serial, 
                                                                "csv$", recursive = recursive_tf)))
   LightLog <- file.names.Cal %>% purrr::map_dfr(~readr:::read_csv(file.path(data.path, 
-                                                                         .), skip = 2, col_names = T))
+                                                                         .), skip = 0, col_names = T))
   LightLog <- LightLog %>% dplyr::select(contains("Date"), 
-                                   contains(light.serial), contains("temp"), contains("Intensity")) %>% 
+                                   contains(light.serial), contains("Temp"), contains("lux")) %>% 
     dplyr::mutate(Serial = paste0("LUX_", light.serial)) %>% 
-    dplyr::rename(date = contains("Date"), TempInSitu = contains("Temp"), Lux = contains("Intensity")) %>% 
+    dplyr::rename(date = contains("Date"), TempInSitu = contains("Temp"), Lux = contains("lux")) %>% 
     tidyr::drop_na()
   if (tf_write == TRUE) {
     write_csv(LightLog, paste0(output.path, "/Light_", 
@@ -33,27 +33,27 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","May2023","Varari_Sled","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "20230610" # logger date used in file name(s)
+path.log<-here("Data","Feb2023","Varari_Sled","2023-04-21","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "2023-04-21" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path
+path.output<-here("Data","Feb2023","Varari_Sled","2023-04-21","QC_files") # Output file path
 
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-Light_Serial <- "837"
+Light_Serial <- "841"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2023-06-11')
-end.date <- ymd('2023-06-17')
+start.date <- ymd('2023-03-21')
+end.date <- ymd('2023-04-12')
 
 # do you want to plot a graph?
 plotgraph<-'no'
@@ -77,7 +77,7 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 # In Situ pH file
 Light.data <- light_cleanup(data.path = path.log, light.serial = Light_Serial) %>% 
   rename(Light_Serial = Serial) %>%
-  mutate(date=mdy_hm(date))
+  mutate(date=mdy_hms(date))
 
 ## parse the date ####
 launch.log <- launch.log %>%
@@ -85,7 +85,7 @@ launch.log <- launch.log %>%
          time_end = mdy_hm(time_end),
          start  = date(time_start), # extract the date
          end = date(time_end)) %>%
-  filter(Serial == paste0("LUX_",Light_Serial), # pulll out the right serial number
+  filter(Serial == paste0("LUX_",Light_Serial), # pull out the right serial number
          start == ymd(start.date),
          end == ymd(end.date))
 
@@ -116,6 +116,6 @@ if(plotgraph=='yes'){
 }
 
 # write out the clean data
-write_csv(LightLog, paste0(path.output,"/QC_Light_",file.date,"_Light_",Light_Serial,".csv"))
+write_csv(LightLog, paste0(path.output,"/QC_Light_",Light_Serial,"_",file.date,".csv"))
 
 
