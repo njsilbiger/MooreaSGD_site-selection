@@ -36,16 +36,16 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","June2022","Varari_Sled","20220607", "raw_files") # Logger in situ file path (CT and Water Level files)
+path.log<-here("Data","Feb2023","Varari_Sled","2023-02-26", "raw_files") # Logger in situ file path (CT and Water Level files)
 #path.WL<-here("Data","May2021","Depth")
-file.date <- "20220607" # date used in naming output file(s)
+file.date <- "2023-02-26" # date used in naming output file(s)
 hobo.csv <- FALSE # TRUE if csv has been processed and calibrated through HOBOware
 csv.pattern <- "CT" # file identifier at path.log (ex. "csv$")
-ct.serial <- "332" # if isolating one CT logger
+ct.serial <- "353" # if isolating one CT logger
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","June2022","Varari_Sled","20220607", "QC_files") # Output file path
+path.output<-here("Data","Feb2023","Varari_Sled","2023-02-26", "QC_files") # Output file path
 
 
 ###################################
@@ -53,8 +53,8 @@ path.output<-here("Data","June2022","Varari_Sled","20220607", "QC_files") # Outp
 ###################################
 
 # Log dates
-start.date <- ymd_hm('2022-06-07 10:00')
-end.date <- ymd_hm('2022-06-11 9:52')
+start.date <- ymd_hm('2023-02-09 12:30')
+end.date <- ymd_hm('2023-02-24 18:40')
 
 
 ###################################
@@ -107,10 +107,11 @@ condLog <- condLog %>%
 calibration.log <- calibration.log %>% 
   unite(col = 'time_in', date,time_in, sep = " ", remove = F) %>% # unite while maintaining separate date column
   unite(col = 'time_out', date,time_out, sep = " ", remove = F) %>% 
-  mutate(date = mdy(date)) %>% 
-  mutate(time_in = mdy_hms(time_in)) %>% # assumes time is entered as hours and minutes (H:M) only
-  mutate(time_out = mdy_hms(time_out)) %>% 
-  filter(date == start.date & pre_post == "pre" | date == end.date & pre_post == "post") # filter only current pre- and post-calibration dates
+  mutate(date = mdy(date),
+        time_in = mdy_hms(time_in), # assumes time is entered as hours and minutes (H:M) only
+        time_out = mdy_hms(time_out)) %>% 
+  filter(date == date(start.date) & pre_post == "pre" | 
+           date == date(end.date) & pre_post == "post") # filter only current pre- and post-calibration dates
 
 # potential filters for sandwich loggers
 # calibration.log <- calibration.log %>%
@@ -130,7 +131,7 @@ if(exists('ct.serial') == T){
 launch.log <- launch.log %>%
   mutate(Date_launched = mdy_hm(time_start), # parse to date-time format
          Date_retrieved = mdy_hm(time_end)) %>% 
-  filter(Date_launched == start.date & Date_retrieved == end.date)# %>% # filter only current launch dates
+  filter(Date_launched == start.date & Date_retrieved == end.date) # filter only current launch dates
   #unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
   #unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
 # launch.log <- launch.log %>% 
@@ -440,7 +441,8 @@ for(i in 1:n1) {
 ############################################################
 
 n2 <- launch.log %>%
-  distinct(LoggerID) %>%
+  distinct(Serial) %>%
+  rename(LoggerID = Serial) %>% 
   nrow() %>%
   as.numeric()
 
@@ -459,7 +461,7 @@ p <- list()
 for(i in 1:n2) {
 
   sn.b <- launch.log %>% # vector of all serial numbers
-    distinct(LoggerID) #%>% 
+    distinct(Serial) #%>% 
   #separate(col = 'LoggerID', into = c(NA,'LoggerID'), sep = "_")
   sn.b <- as.character(sn.b[i,]) # i'th serial number
   
@@ -468,18 +470,12 @@ for(i in 1:n2) {
     filter(LoggerID == str_subset(CalLog$LoggerID, pattern = sn.b)) #%>% 
   #mutate(LoggerID = paste0("CT_",sn.b)) # make serial the same for easy join
   C2.log<-launch.log %>% 
-    filter(LoggerID == str_subset(launch.log$LoggerID, pattern = sn.b)) %>% 
+    filter(Serial == str_subset(launch.log$Serial, pattern = sn.b)) %>% 
     distinct()
   
   
-  launch.start<-C2.log %>% 
-    select(Time_launched) %>%
-    as.character()
-  launch.start <- ymd_hms(launch.start)
-  launch.end<-C2.log %>% 
-    select(Time_retrieved)%>% 
-    as.character()
-  launch.end <- ymd_hms(launch.end)
+  launch.start<-C2.log$Date_launched[[1]]
+  launch.end<-C2.log$Date_retrieved[[1]]
   
   
   # pull out original CT serial name
