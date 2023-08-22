@@ -10,6 +10,27 @@
 ##########################################################################
 ##########################################################################
 
+ph_cleanup <- function (data.path, pH.serial, output.path, tf_write = FALSE, 
+          recursive_tf = FALSE) 
+{
+  file.names.Cal <- basename(list.files(data.path, pattern = c(pH.serial, 
+                                                               "csv$", recursive = recursive_tf)))
+  pHLog <- file.names.Cal %>% purrr::map_dfr(~readr:::read_csv(file.path(data.path, 
+                                                                         .), skip = 0, col_names = T))
+  pHLog <- pHLog %>% dplyr::select(contains("Date"), 
+                                   contains(pH.serial), 
+                                   contains("Temp"), 
+                                   contains("mV"),
+                                   contains("pH")) %>% dplyr::mutate(Serial = paste0("pH_", 
+                                                                                               pH.serial)) %>% dplyr::rename(date = contains("Date"), 
+                                                                                                                             TempInSitu = contains("Temp")) %>% tidyr::drop_na()
+  if (tf_write == TRUE) {
+    write.csv(pHLog, paste0(output.path, "/pH_", pH.serial, "_tidy.csv"))
+  }
+  return(pHLog)
+}
+
+
 
 ###################################
 ### Load Libraries
@@ -21,7 +42,7 @@ library(lubridate)
 library(gsw)
 library(here)
 library(gridExtra)
-library(mooreasgd)
+#library(mooreasgd)
 
 
 ###################################
@@ -108,14 +129,6 @@ launch.log <- launch.log %>%
 pHLog<-pH.data %>% # extract the data you need
   filter(between(date,launch.log$time_start, launch.log$time_end))
 
-# # Filter out in situ readings date and time 
-# C2<-launch.log %>% 
-#   filter(Serial == str_subset(launch.log$Serial, pattern = pH_Serial))
-# 
-# pHLog<-pH.data %>% 
-#   filter(between(date, C2$cg.start[1], C2$cg.end[1]) |
-#            between(date, C2$start[1], C2$end[nrow(C2)]))
-
 
 if(plotgraph=='yes'){
 # Plot pH data
@@ -138,7 +151,7 @@ dev.off()
 }
 
 # write out the clean data
-write_csv(pHLog, paste0(path.output,"/QC_pH_",file.date,"_pH_",pH_Serial,".csv"))
+write_csv(pHLog, paste0(path.output,"/QC_pH_",pH_Serial,"_",file.date,".csv"))
 
 
 
