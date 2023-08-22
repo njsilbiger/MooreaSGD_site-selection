@@ -29,27 +29,30 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","May2023","Varari_Sled","raw_files")
-file.date <- "20230617" # logger date for plot
+path.WL<-here("Data","Feb2023","Varari_Sled","2023-04-21","raw_files")
+file.date <- "2023-04-21" # logger date for plot
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","May2023","Varari_Sled","weekday_20230617") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","Feb2023","Varari_Sled","2023-04-21","QC_files") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
 ### Logger Serial Numbers
 ###################################
 
-WL_Serial <- "870"
+WL_Serial <- "876"
 
 ###################################
 ### Logger Launch and Retrieval dates
 ###################################
 
 # Log dates
-start.date <- ymd('2023-06-11')
-end.date <- ymd('2023-06-17')
+start.date <- ymd('2023-03-21')
+end.date <- ymd('2023-04-12')
+
+# do you want to plot a graph?
+plotgraph<-'no'
 
 ###################################
 ### Import calibration and launch records
@@ -73,8 +76,9 @@ launch.log<-read_csv(here("Data","Launch_Log.csv")) %>%  # Launch time logs
 
 
 # In Situ Pressure/Depth file
-presLog <- WL_cleanup(data.path = path.WL, path.pattern = "WL") %>% 
-  rename(LoggerID = Serial)
+presLog <- WL_cleanup(data.path = path.WL, path.pattern = WL_Serial) %>% 
+  mutate(Serial = paste0("WL_",WL_Serial)) %>% 
+  rename(WL_Serial = Serial)
 
 ############################################################
 ### Parse date and time
@@ -85,11 +89,12 @@ presLog <- WL_cleanup(data.path = path.WL, path.pattern = "WL") %>%
 ## in situ
 ## unite date to time columns and parse to POSIXct datetime
 launch.log <- launch.log %>% 
-  mutate(time_start = mdy_hm(time_start)) %>% 
-  mutate(time_end = mdy_hm(time_end)) %>% 
-  separate(col = time_start, into = c("date", NA), sep = " ", remove = F) %>% 
-  filter(date == start.date | date == end.date) %>%  # filter only current launch dates
-  select(-date) # remove date column
+  mutate(time_start = mdy_hm(time_start),
+         time_end = mdy_hm(time_end),
+         start  = date(time_start), # extract the date
+         end = date(time_end)) %>%
+  filter(start.date == start,
+         end.date == end) # filter only current launch dates
 
 
 ############################################################
@@ -98,12 +103,10 @@ launch.log <- launch.log %>%
 
 
 # Filter out in situ readings date and time 
-launch.log<-launch.log %>% 
-  filter(Serial == str_subset(launch.log$Serial, pattern = WL_Serial))  
-
 presLog<-presLog %>% 
   filter(between(date, launch.log$time_start[[1]], launch.log$time_end[[1]]))
 
+if(plotgraph=='yes'){
 # Plot Depth data
 # p<-list()
  presLog %>%
@@ -121,8 +124,8 @@ presLog<-presLog %>%
 #   print(tplot)
 # }
 # dev.off()
+}
 
-
-write_csv(presLog, paste0(file.output,"/QC_WL_",file.date,"_WL_",WL_Serial,".csv"))
+write_csv(presLog, paste0(file.output,"/QC_WL_",WL_Serial,"_",file.date,".csv"))
 
 
