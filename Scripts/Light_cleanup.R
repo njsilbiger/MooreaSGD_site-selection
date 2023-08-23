@@ -33,12 +33,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.log<-here("Data","Feb2023","Varari_Sled","2023-04-21","raw_files") # Logger in situ file path (CT and Water Level files)
-file.date <- "2023-04-21" # logger date used in file name(s)
+path.log<-here("Data","Feb2023","Varari_Sled","2023-03-20","raw_files") # Logger in situ file path (CT and Water Level files)
+file.date <- "2023-03-20" # logger date used in file name(s)
 
 ### Output
 # Path to store logger files
-path.output<-here("Data","Feb2023","Varari_Sled","2023-04-21","QC_files") # Output file path
+path.output<-here("Data","Feb2023","Varari_Sled","2023-03-20","QC_files") # Output file path
 
 
 ###################################
@@ -52,11 +52,15 @@ Light_Serial <- "841"
 ###################################
 
 # Log dates
-start.date <- ymd('2023-03-21')
-end.date <- ymd('2023-04-12')
+start.date <- ymd('2023-02-27')
+end.date <- ymd('2023-03-17')
 
 # do you want to plot a graph?
 plotgraph<-'no'
+
+# use for Feb2023 to avoid weekends and time between launches
+dates_removed <- read_csv(here("Data", "Feb2023", "Varari_Sled", "Anti_Join_sled_weekend_data.csv"))
+
 
 ###################################
 ### Import calibration and launch records
@@ -95,10 +99,16 @@ launch.log <- launch.log %>%
 LightLog<-Light.data %>% # extract the data you need
   filter(between(date,launch.log$time_start, launch.log$time_end))
 
+# remove weekends and other timepoints as needed
+if(exists('dates_removed') == T){
+  LightLog <- LightLog %>% 
+    anti_join(dates_removed)
+}
+
 if(plotgraph=='yes'){
   # Plot pH data
   p<-list()
-  p[[1]]<-LightLog %>% 
+  p[[1]]<- LightLog %>% 
     ggplot(aes(x = date, y = Lux, color = TempInSitu)) + 
     geom_line() + 
     theme_bw() +

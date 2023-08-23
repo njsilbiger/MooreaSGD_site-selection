@@ -54,11 +54,10 @@ path.output<-here("Data","Feb2023","Varari_Sled","2023-04-21","QC_files") # Outp
 
 # Log dates
 start.date <- ymd_hm('2023-02-09 12:30')
-end.date <- ymd_hm('2023-04-11 16:30')
+end.date <- ymd_hm('2023-03-24 18:06')
 
-# use for Feb2023 to avoid weekends and between launches
-# dates_removed <- tibble(date = as.character())
-# dates_removed$date <- c('')
+# use for Feb2023 to avoid weekends and time between launches
+dates_removed <- read_csv(here("Data", "Feb2023", "Varari_Sled", "Anti_Join_sled_weekend_data.csv"))
 
 ###################################
 ### Import calibration and launch records
@@ -136,12 +135,8 @@ launch.log <- launch.log %>%
   mutate(Date_launched = mdy_hm(time_start), # parse to date-time format
          Date_retrieved = mdy_hm(time_end)) %>% 
   filter(Date_launched == start.date | Date_retrieved == end.date) # filter only current launch dates
-  #unite(col = "Time_launched",Date_launched,Time_launched, sep = " ", remove = F) %>% # reunite date and time columns
-  #unite(col = "Time_retrieved",Date_retrieved,Time_retrieved, sep = " ", remove = F) 
-# launch.log <- launch.log %>% 
-#   filter(CowTagID != "Sled") #%>% 
-  #filter(LoggerID != "351") # Varari 3/18/2022
 
+#launch.log <- launch.log[2,]
 
 # if selecting single CT from same calibration date
 if(exists('ct.serial') == T){
@@ -513,8 +508,8 @@ for(i in 1:n2) {
   
 }
 
-# remove weekends and other timepoints as needed
-if(exists(dates_removed) == TRUE){
+# remove weekends and other time points as needed
+if(exists('dates_removed') == TRUE){
   Log <- Log %>% 
     anti_join(dates_removed)
 }

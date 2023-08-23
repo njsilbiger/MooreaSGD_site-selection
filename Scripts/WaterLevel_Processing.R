@@ -29,12 +29,12 @@ library(mooreasgd)
 
 ### Input
 # Path to folder storing logger .csv files
-path.WL<-here("Data","Feb2023","Varari_Sled","2023-04-21","raw_files")
-file.date <- "2023-04-21" # logger date for plot
+path.WL<-here("Data","Feb2023","Varari_Sled","2023-02-26","raw_files")
+file.date <- "2023-02-26" # logger date for plot
 
 ### Output
 # Path to store logger files
-file.output<-here("Data","Feb2023","Varari_Sled","2023-04-21","QC_files") # Output file path; Spatial vs Timeseries survey
+file.output<-here("Data","Feb2023","Varari_Sled","2023-02-26","QC_files") # Output file path; Spatial vs Timeseries survey
 #fig.output<-here("Data","August2021","Varari_Sled","20210825")
 
 ###################################
@@ -48,11 +48,15 @@ WL_Serial <- "876"
 ###################################
 
 # Log dates
-start.date <- ymd('2023-03-21')
-end.date <- ymd('2023-04-12')
+start.date <- ymd('2023-02-08')
+end.date <- ymd('2023-02-26')
 
 # do you want to plot a graph?
 plotgraph<-'no'
+
+# use for Feb2023 to avoid weekends and time between launches
+dates_removed <- read_csv(here("Data", "Feb2023", "Varari_Sled", "Anti_Join_sled_weekend_data.csv"))
+
 
 ###################################
 ### Import calibration and launch records
@@ -105,6 +109,12 @@ launch.log <- launch.log %>%
 # Filter out in situ readings date and time 
 presLog<-presLog %>% 
   filter(between(date, launch.log$time_start[[1]], launch.log$time_end[[1]]))
+
+# remove weekends and other timepoints as needed
+if(exists('dates_removed') == T){
+  presLog <- presLog %>% 
+    anti_join(dates_removed)
+}
 
 if(plotgraph=='yes'){
 # Plot Depth data

@@ -60,3 +60,12 @@ Sled Deployment 3: Trained Hannah (launch times based on when data makes sense o
 	Stop loggers:
 	Lux, WL: Apr 12 2023 14:00
 	CT, DO: Apr 11 2023 16:30
+
+
+Sled date removal:
+	All Saturday and Sunday time points
+	Prior to initial launch < 2023-03-09 12:30
+	2023-02-17 14:12 -> 2023-02-20 16:20
+	2023-03-03 13:02 -> 2023-03-06 16:42
+	2023-03-10 08:14 -> 2023-03-13 16:50
+	After respirometry and cage takedown > 2023-03-24 18:08
