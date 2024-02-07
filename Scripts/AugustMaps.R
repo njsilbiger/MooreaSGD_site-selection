@@ -13,7 +13,7 @@ library(kriging)
 library(ggnewscale)
 library(wql)
 library(glue)
-library(gridExtra)
+library(gridExtra) 
 
 
 ## Read in data
